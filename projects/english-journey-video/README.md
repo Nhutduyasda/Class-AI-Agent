@@ -1,41 +1,60 @@
-# English Journey — TikTok Video Agent (pilot)
+# English Journey — rendered TikTok pilot
 
-A small, review-first video pipeline for the **English Journey** Vietnamese English-learning journal. This folder is isolated inside the existing repository and does not modify its top-level AI Agent configuration.
+A local Remotion/React pipeline for truthful, text-led Vietnamese English lessons. No paid API, remote font, stock footage, music, ChatGPT screenshot, or publishing integration is required.
 
-**Status:** folder/skills and pilot brief prepared. The Remotion renderer and MP4 are an explicit *ChatGPT Work* implementation task; they are **not** already generated.
+## Render again
 
-## Start with Work
+Requirements: Node.js 22+ (tested 24.19.0), npm, FFmpeg/ffprobe on PATH, and a Chromium-compatible browser. Dependencies and a browser are downloaded on first setup; no voice service is used.
 
-1. Open ChatGPT **Work** mode and connect the GitHub repository `Nhutduyasda/Class-AI-Agent`.
-2. Choose branch `feat/english-journey-video-agent-pilot` (do not modify `main`).
-3. Paste the exact instructions in [prompts/WORK_VIDEO_PILOT.md](prompts/WORK_VIDEO_PILOT.md).
-4. Ask Work to produce **one** actual vertical MP4, show 3 sample frames and share the output for your approval. Do **not** auto-post it.
-5. Review English correctness and factual accuracy before posting.
+```bash
+cd projects/english-journey-video
+npm ci
+npx remotion browser ensure
+npm run typecheck
+npm run proofs
+npm run render
+npm run qa
+```
 
-## Skills
+Outputs are in `out/`: `lesson15-writing-retry.mp4`, three requested decoded proof PNGs (`proof-hook`, `proof-middle`, `proof-end`), two extra BEFORE/AFTER proofs, `ffprobe.json`, and an SRT reading transcript. `npm run studio` opens the editing preview. Optional `CHROME_PATH=/absolute/path/to/chrome` selects an installed browser.
 
-| Folder | Purpose | Source |
-| --- | --- | --- |
-| `skills/short-form-video/` | Vertical 9:16 structure, hooks, pacing and retention-aware edits | vendored iart-ai, MIT |
-| `skills/caption-animation/` | Voice-aligned captions and smartphone safe areas | vendored iart-ai, MIT |
-| `skills/english-journey-story/` | Evidence-based, trustworthy English-learning storyboards | local |
-| `skills/production-qa/` | Correct text/audio/technical output checks | local |
+**This pilot is silent captions-only.** Natural free Vietnamese TTS was not installed in the execution environment; paid voice tools were not used. Captions are editorial reading cues, not speech alignment or fabricated word timestamps. The SRT provides the lesson reading transcript, not a claimed voice transcription.
 
-The first two folders (including `references/`) are copies from [iart-ai/tiktok-video-skills](https://github.com/iart-ai/tiktok-video-skills), reproduced under the upstream MIT license in `third_party/`. Do not assume other upstream packs are installed. Countdown and broadcast lower-thirds are intentionally omitted from this pilot.
+## Source and reuse
 
-## Pilot
-- Brief: [briefs/pilot-lesson15.json](briefs/pilot-lesson15.json)
-- Work prompt: [prompts/WORK_VIDEO_PILOT.md](prompts/WORK_VIDEO_PILOT.md)
-- Source footage: none needed; use text-led motion graphics, not a fabricated ChatGPT screenshot.
-- Assets: original shapes and text only; narration optional, with disclosure in handoff.
-- Expected: `out/lesson15-writing-retry.mp4` (1080x1920 portrait, about 30 seconds), 3 PNG proof frames, and a short QA report.
+- `src/index.tsx`: composition registration, Zod schema and metadata from brief.
+- `src/Video.tsx`: five scene templates, original shapes, exact English strings from brief, frame-driven motion and progress.
+- `src/story.ts`: validated brief and Vietnamese editorial reading cues.
+- `scripts/shared.mjs`: brief loading, continuity validation and bundling.
+- `scripts/render.mjs`: H.264 MP4 rendering, 2 concurrent workers, CRF 18, yuv420p.
+- `scripts/proofs.mjs`: pre-render layout stills.
+- `scripts/qa.mjs`: actual MP4 probing, full decode, proof-frame extraction and SRT.
+- `public/fonts/`: bundled DejaVu Sans regular/bold with upstream license, supporting Vietnamese offline.
 
-## Guardrails
-- The English learning evidence must be exact; do not claim the user passed TOEIC 790 or promise rapid fluency.
-- Include no personal information, login tokens, copyrighted music, watermark, impersonation or fabricated audience testimonials.
-- Do not post or publish externally without explicit owner approval.
-- Avoid paid API calls, paid voice services or stock subscriptions without owner permission.
-- Keep output assets out of Git by default; deliver the MP4 via Work. Commit reproducible source code + brief to the working branch, not `main`.
+For another correction lesson, duplicate `briefs/pilot-lesson15.json`, update approved sentences, beat text and timeline, and revise the editorial teaching cards/cues in `src/Video.tsx` and `src/story.ts` for the actual lesson. This is a reusable five-beat template, **not an automatic grammar checker**. Pass the new brief to each production script:
 
-## Why no ready-to-run renderer yet?
-This first commit provides actual skills and a deterministic creative brief. Work will create the renderer, test dependencies, render, and iterate against the QA checklist. This avoids presenting an untested video as completed.
+```bash
+npm run proofs -- briefs/my-lesson.json
+npm run render -- briefs/my-lesson.json
+npm run qa -- briefs/my-lesson.json
+```
+
+Keep width/height/FPS at 1080/1920/30. All five beats must cover the duration without gaps. Review every lesson's teaching text and proof stills before rendering. Do not reuse Lesson 15 copy for an unrelated mistake. Remotion Studio opens with the pilot defaults; use its composition props for alternatives.
+
+## Pilot timing and design
+
+0–4s hook; 4–11s exact BEFORE; 11–18s two error categories; 18–27s exact AFTER; 27–30s grounded practice payoff. The first frame contains the hook. Cards slide 16px into place over 0.28 seconds; no fade from black, no frame-timed text removal within the corrected sentence. Captions change by short editorial phrases. The entire AFTER sentence stays readable for nine seconds.
+
+Critical content sits within x=96…920 and y=250…1555, leaving the right 160px and bottom 365px clear. Preview images must be checked on a phone before publication; platform overlays vary. The safe margin is a design precaution, not a platform guarantee.
+
+## Environment-specific execution note
+
+The ChatGPT render host denied Node's network-interface enumeration (`uv_interface_addresses`); the production run used a temporary preload outside the repository that falls back to the loopback interface only when that system call fails. This does not modify dependencies or video source and is not needed on a normal developer machine. The browser was downloaded by Remotion. No cloud deploy or TikTok publishing occurred.
+
+## QA and review
+
+See `docs/PILOT_QA_REPORT.md` for the measured output, inspections and limitations, and `docs/QA_CHECKLIST.md` for acceptance criteria. Output binaries stay ignored in Git. Source changes belong to `feat/english-journey-video-agent-pilot`; owner approval is required before posting.
+
+## Skills and licenses
+
+All four project skill files were read before production. Story and production rules take priority over unverified upstream retention heuristics. Silent phrase captions intentionally omit karaoke and voice alignment. Vendored short-form/caption skills retain the upstream MIT license in `third_party/`; bundled font licensing is in `public/fonts/LICENSE.txt`.
