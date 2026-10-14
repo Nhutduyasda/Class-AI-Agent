@@ -18,3 +18,6 @@ out/*
 public/voice/*
 __pycache__/
 .venv/
+
+# V2 generated audio and manifest
+public/v2/

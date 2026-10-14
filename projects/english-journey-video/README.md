@@ -1,3 +1,11 @@
+# English Journey — Lesson 15 V2
+
+The V2 remake uses a fresh personal story, animated spelling edits/connector bridge, two voice auditions, locally synthesized original music/SFX, and speech-synchronized captions. Start with [V2 production](docs/V2_PRODUCTION.md) for build/render commands, provenance, human-voice import and acceptance limits.
+
+**V2 remains NOT APPROVED until human listening, naturalness/comprehension scoring and publication voice rights are cleared.** A technical encode is not a human quality rating.
+
+---
+
 # English Journey — Lesson 15 video pipeline
 
 Extend the existing text-led Remotion/React pilot with natural TTS narration and true word-timed subtitles. The original dark green/mint design and exact approved English BEFORE/AFTER strings remain intact. No paid service, account signup, background music, stock footage or posting integration is used.

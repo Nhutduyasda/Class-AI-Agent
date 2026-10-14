@@ -13,7 +13,11 @@
     "render:voice": "node scripts/render.mjs --voice",
     "proofs:voice": "node scripts/proofs.mjs --voice",
     "qa:voice": "node scripts/qa-voice.mjs",
-    "test:voice": "node --test scripts/voiceover/timing.test.mjs"
+    "test:voice": "node --test scripts/voiceover/timing.test.mjs",
+    "build:v2": "python3 scripts/v2/build.py",
+    "proofs:v2": "node scripts/v2/render.mjs --proofs",
+    "render:v2": "node scripts/v2/render.mjs",
+    "qa:v2": "python3 scripts/v2/qa.py"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.535",
