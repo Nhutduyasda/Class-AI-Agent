@@ -1,0 +1,100 @@
+{
+  "title": "Có ChatGPT rồi, tại sao vẫn không biết học tiếng Anh từ đâu?",
+  "status": "APPROVED by owner on 2026-10-14",
+  "objective": "TOFU/awareness: target adults who have lost their English foundations and use ChatGPT without a structured plan. Interest / comment BẮT ĐẦU, not product checkout.",
+  "takeaway": "English Journey structures learning by area, tracks errors and supports targeted next-session review; a real writing correction demonstrates rather than just claims.",
+  "spokenSegments": [
+    {
+      "id": "hook",
+      "label": "HOOK — Nhận diện vấn đề",
+      "spoken": "Mất gốc tiếng Anh? Có ChatGPT rồi… nhưng vẫn không biết học từ đâu?"
+    },
+    {
+      "id": "problem",
+      "label": "PROBLEM — Khơi đúng nỗi đau",
+      "spoken": "Hôm nay hỏi ngữ pháp, ngày mai học vài từ mới. ChatGPT trả lời được rất nhiều thứ. Nhưng học xong, mình lại chẳng biết đang yếu ở đâu, hay ngày mai cần ôn lại những gì."
+    },
+    {
+      "id": "solution",
+      "label": "SOLUTION — Giới thiệu English Journey",
+      "spoken": "Tôi cũng từng học khá rời rạc như vậy. Nên tôi bắt đầu xây dựng English Journey — một hệ thống học tiếng Anh với AI, chia riêng từng phần: Reading, Vocabulary và theo dõi lỗi sai."
+    },
+    {
+      "id": "demo",
+      "label": "DEMO — Cho thấy cách hoạt động",
+      "spoken": "Ví dụ, đây là một câu tiếng Anh tôi từng viết sai. Thay vì chỉ nhận đáp án, tôi xem lỗi nằm ở đâu: sai chính tả, thiếu từ nối and. Sau đó, tôi phải tự viết lại câu cho đúng."
+    },
+    {
+      "id": "benefit",
+      "label": "BENEFIT — Giá trị thực sự",
+      "spoken": "Và điều tôi thấy hữu ích nhất là những lỗi mình hay mắc được ghi lại, để buổi sau tập trung ôn đúng phần còn yếu."
+    },
+    {
+      "id": "cta",
+      "label": "CTA — Hành động tiếp theo",
+      "spoken": "Nếu bạn cũng muốn dùng ChatGPT để học tiếng Anh có lộ trình, hãy bình luận BẮT ĐẦU. Tôi sẽ chia sẻ cách thiết lập hệ thống này từ số 0."
+    }
+  ],
+  "approvedEvidence": {
+    "lesson": "English Journey Reading & Grammar Lesson 15",
+    "original": "After work I went to the supermarke bought food yesteday",
+    "correction": "After work yesterday, I went to the supermarket and bought food for dinner.",
+    "educationalFacts": [
+      "supermarke → supermarket (spelling)",
+      "yesteday → yesterday (spelling)",
+      "missing conjunction and between went and bought"
+    ],
+    "caveat": "The corrected sentence also includes other natural phrasing changes. Do NOT say only 'and' changed, or portray the student's original as a screenshot of ChatGPT."
+  },
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationTargetSeconds": [
+      45,
+      55
+    ],
+    "audio": "Vietnamese expressive narration, low-volume original/licensed instrumental music, tasteful small SFX, native English insert when needed"
+  },
+  "creative": "Practical, human, relatable, never a diary intro. Keep typography legible and animate learning, not decoration.",
+  "storyboard": [
+    {
+      "scene": "hook",
+      "suggestedSeconds": "0–4",
+      "visual": "Frame 0 text: MẤT GỐC TIẾNG ANH? / CÓ CHATGPT NHƯNG HỌC TỪ ĐÂU? One question, immediate contextual relevance."
+    },
+    {
+      "scene": "problem",
+      "suggestedSeconds": "4–13",
+      "visual": "Disordered Grammar / Vocabulary / Speaking blocks, uncertain tomorrow study plan; end visually with 'Ngày mai học gì?'."
+    },
+    {
+      "scene": "solution",
+      "suggestedSeconds": "13–23",
+      "visual": "Scattered blocks organize into English Journey: Reading & Grammar, Vocabulary, Error Log. Depict a process, do not claim automatic cross-chat persistence."
+    },
+    {
+      "scene": "demo",
+      "suggestedSeconds": "23–37",
+      "visual": "Exact original sentence on screen; emphasize 'supermarke', 'yesteday' and missing 'and'; animate corrections in sequence, hold full correct sentence enough to read."
+    },
+    {
+      "scene": "benefit",
+      "suggestedSeconds": "37–45",
+      "visual": "Error Log example records precisely the demonstrated mistakes; next lesson icon indicates review is planned, not falsely auto-synced."
+    },
+    {
+      "scene": "cta",
+      "suggestedSeconds": "45–55",
+      "visual": "Simple memorable card: HỌC CÓ LỘ TRÌNH — BIẾT MÌNH CẦN ÔN GÌ; BÌNH LUẬN 'BẮT ĐẦU' to receive setup guide."
+    }
+  ],
+  "guardrails": [
+    "No claim TOEIC 790 already achieved",
+    "No guaranteed TOEIC improvements or expert course outcomes",
+    "No fake ChatGPT screens, testimonials, metrics or automated cross-chat memory promise",
+    "One CTA only; no price or hard sell",
+    "No unlicensed music; log rights/provenance",
+    "Do not post without owner's final approval"
+  ]
+}
