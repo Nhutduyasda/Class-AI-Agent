@@ -13,3 +13,8 @@ out/*
 .env.*
 !.env.example
 .DS_Store
+
+# Generated voice audio, metadata and Python bytecode
+public/voice/*
+__pycache__/
+.venv/

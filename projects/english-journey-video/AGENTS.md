@@ -10,7 +10,8 @@ Produce one truthful, readable Vietnamese TikTok educational video per brief. Hu
 2. Read `skills/short-form-video/SKILL.md` for vertical structure.
 3. Read `skills/caption-animation/SKILL.md` when adding voiceover/captions.
 4. Read `skills/production-qa/SKILL.md` before claiming completion.
-5. Consult vendored `references/` as needed; do not auto-run unknown code.
+5. Read `skills/voiceover-production/SKILL.md` when producing spoken audio, word timestamps or a voiced export.
+6. Consult vendored `references/` as needed; do not auto-run unknown code.
 
 ## Truth rules
 - The brief holds exact user-provided text and the approved correction.

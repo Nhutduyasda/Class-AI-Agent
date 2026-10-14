@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {narrationSchema} from './voice';
 
 export const briefSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/), brand: z.string(),
@@ -9,7 +10,7 @@ export const briefSchema = z.object({
   outputName: z.string().regex(/^[a-z0-9-]+\.mp4$/),
 });
 export type Brief = z.infer<typeof briefSchema>;
-export const propsSchema = z.object({brief: briefSchema});
+export const propsSchema = z.object({brief: briefSchema, narration: narrationSchema.optional()});
 export type Props = z.infer<typeof propsSchema>;
 
 // Editorial reading cues for a silent video, NOT invented speech timestamps.
