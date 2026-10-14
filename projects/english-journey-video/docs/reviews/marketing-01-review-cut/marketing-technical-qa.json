@@ -1,0 +1,27 @@
+{
+  "technical": "PASS",
+  "runtimeSeconds": 65.33333333333333,
+  "loudness": {
+    "input_i": "-16.19",
+    "input_tp": "-1.47",
+    "input_lra": "3.30",
+    "input_thresh": "-27.59",
+    "output_i": "-16.31",
+    "output_tp": "-1.50",
+    "output_lra": "3.30",
+    "output_thresh": "-27.41",
+    "normalization_type": "dynamic",
+    "target_offset": "0.31"
+  },
+  "sourceExportCorrelation": 0.9991454988947281,
+  "muxLagMs": 0.0,
+  "stemCoefficients": {
+    "voice": 0.9983371496200562,
+    "music": 0.9988436102867126,
+    "sfx": 0.9982879757881165
+  },
+  "copyLock": "PASS — exact approved token reconstruction and stage order",
+  "sha256": "8e56d06c8c0c4b50fa78a318414568c6d93c886f5a841f7b8c528b8c2c91af7a",
+  "listening": "BLOCKED — audio perception unavailable; ASR is not listening",
+  "publication": "NOT APPROVED"
+}
