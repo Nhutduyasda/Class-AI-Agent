@@ -1,3 +1,7 @@
+# Marketing Video 01
+
+New locked-script marketing composition: see [production commands](docs/MARKETING_VIDEO_01_PRODUCTION.md) and [render acceptance](docs/MARKETING_VIDEO_01_RENDER_QA.md). Main output: `out/english-journey-marketing-video-01.mp4`. Natural-rate runtime 66 seconds; approved narration unchanged. NOT APPROVED until human voice/music/editorial review and voice rights clearance.
+
 # English Journey — Lesson 15 V2
 
 The V2 remake uses a fresh personal story, animated spelling edits/connector bridge, two voice auditions, locally synthesized original music/SFX, and speech-synchronized captions. Start with [V2 production](docs/V2_PRODUCTION.md) for build/render commands, provenance, human-voice import and acceptance limits.

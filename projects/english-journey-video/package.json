@@ -17,7 +17,11 @@
     "build:v2": "python3 scripts/v2/build.py",
     "proofs:v2": "node scripts/v2/render.mjs --proofs",
     "render:v2": "node scripts/v2/render.mjs",
-    "qa:v2": "python3 scripts/v2/qa.py"
+    "qa:v2": "python3 scripts/v2/qa.py",
+    "build:marketing": "python3 scripts/marketing/build.py",
+    "proofs:marketing": "node scripts/marketing/render.mjs --proofs",
+    "render:marketing": "node scripts/marketing/render.mjs",
+    "qa:marketing": "python3 scripts/marketing/qa.py"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.535",

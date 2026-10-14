@@ -21,3 +21,5 @@ __pycache__/
 
 # V2 generated audio and manifest
 public/v2/
+
+/public/marketing/
