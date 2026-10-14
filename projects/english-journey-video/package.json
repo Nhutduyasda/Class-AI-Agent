@@ -21,7 +21,10 @@
     "build:marketing": "python3 scripts/marketing/build.py",
     "proofs:marketing": "node scripts/marketing/render.mjs --proofs",
     "render:marketing": "node scripts/marketing/render.mjs",
-    "qa:marketing": "python3 scripts/marketing/qa.py"
+    "qa:marketing": "python3 scripts/marketing/qa.py",
+    "review:prepare": "node scripts/review/prepare.mjs",
+    "review:compare": "node scripts/review/compare.mjs",
+    "test:review": "node --test scripts/review/*.test.mjs"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.535",

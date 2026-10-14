@@ -25,3 +25,13 @@ Produce one truthful, readable Vietnamese TikTok educational video per brief. Hu
 - Use local/available tools. If no suitable Vietnamese TTS exists for free, use an honest captions-first silent version and report that voice was omitted. Never pretend the video has voiceover.
 - Do not remove/modify existing repository files outside this folder.
 - Submit code changes for review on a feature branch, not the default branch.
+
+
+## Editorial and self-review upgrade (Marketing Video 01)
+- Read skills/editorial-shot-planning/SKILL.md before building a storyboard from the immutable approved script.
+- Read skills/video-self-review/SKILL.md for export evidence and technical vs human creative QA separation.
+- Read skills/video-version-comparison/SKILL.md before comparing two genuinely rendered files.
+- Use npm run test:review and npm run review:prepare after the existing render and QA commands.
+- A review report is not an approval. Never claim voice emotion, retention, or subjective watch quality PASS from ffprobe, still frames or transcription alone.
+- Do not import SeeCut source/code/assets: its PolyForm Noncommercial license is inappropriate for this commercial-intent workflow without additional permission.
+- Preserve existing Remotion compositions, unchanged owner-approved marketing dialogue, no main merge, publishing or new paid services.
