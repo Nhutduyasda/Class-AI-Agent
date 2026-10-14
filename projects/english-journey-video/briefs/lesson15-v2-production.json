@@ -1,0 +1,122 @@
+{
+  "id": "lesson15-writing-retry-v2",
+  "sourceBrief": "briefs/pilot-lesson15.json",
+  "fps": 30,
+  "bpm": 90,
+  "durationMin": 32,
+  "durationMax": 39,
+  "provisionalVoice": "vi-VN-NamMinhNeural",
+  "voiceSelectionStatus": "PROVISIONAL_TECHNICAL_ONLY; auditions not listened to by agent",
+  "scenes": [
+    {
+      "id": "opening",
+      "minimumSeconds": 6.5,
+      "lines": [
+        {
+          "id": "hook",
+          "text": "Một câu thôi... mà mình sai mấy chỗ.",
+          "rate": "+0%",
+          "intent": "Mild surprise; stress một câu and mấy chỗ; leave the ellipsis pause",
+          "captionParts": [
+            "Một câu thôi... mà mình sai mấy chỗ."
+          ]
+        },
+        {
+          "id": "context",
+          "text": "Mình viết về chuyện đi siêu thị hôm qua.",
+          "rate": "+0%",
+          "intent": "Personal journal; relaxed context, no sales tone",
+          "captionParts": [
+            "Mình viết về chuyện",
+            "đi siêu thị hôm qua."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mistakes",
+      "minimumSeconds": 5.5,
+      "lines": [
+        {
+          "id": "spelling",
+          "text": "Hai từ sai chính tả. Nhìn nhé, mình sửa từng chữ.",
+          "rate": "-2%",
+          "intent": "Discovery; gentle pause after chính tả; invite viewers to look",
+          "captionParts": [
+            "Hai từ sai chính tả.",
+            "Nhìn nhé, mình sửa từng chữ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bridge",
+      "minimumSeconds": 5.5,
+      "lines": [
+        {
+          "id": "connector",
+          "text": "Rồi thêm từ nối: và. Nối đã đi với đã mua.",
+          "rate": "-2%",
+          "intent": "Clear explanation; stress và; allow a beat before the connection",
+          "captionParts": [
+            "Rồi thêm từ nối: và.",
+            "Nối đã đi với đã mua."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fullfix",
+      "minimumSeconds": 10.0,
+      "lines": [
+        {
+          "id": "retry",
+          "text": "Mình đưa hôm qua lên đầu, thêm ý mua đồ cho bữa tối.",
+          "rate": "+0%",
+          "intent": "Relief and clarity; leave time for reading the full English sentence",
+          "captionParts": [
+            "Mình đưa hôm qua lên đầu,",
+            "thêm ý mua đồ cho bữa tối."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "minimumSeconds": 6.0,
+      "lines": [
+        {
+          "id": "reveal",
+          "text": "AI sửa và giải thích. Còn mình, phải hiểu rồi viết lại.",
+          "rate": "-2%",
+          "intent": "Warm ownership; contrast AI with mình without exaggerated motivation",
+          "captionParts": [
+            "AI sửa và giải thích.",
+            "Còn mình, phải hiểu rồi viết lại."
+          ]
+        },
+        {
+          "id": "question",
+          "text": "Bạn từng sai lỗi này chưa?",
+          "rate": "+0%",
+          "intent": "Curious friendly question, not a forced follow request",
+          "captionParts": [
+            "Bạn từng sai lỗi này chưa?"
+          ]
+        }
+      ]
+    }
+  ],
+  "auditions": [
+    {
+      "id": "A",
+      "voice": "vi-VN-HoaiMyNeural",
+      "rate": "+0%"
+    },
+    {
+      "id": "B",
+      "voice": "vi-VN-NamMinhNeural",
+      "rate": "-2%"
+    }
+  ]
+}

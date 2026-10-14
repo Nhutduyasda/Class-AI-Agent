@@ -1,0 +1,48 @@
+{
+  "consentToUseRecording": false,
+  "description": "Fill with a consented human recording and REAL word alignment; this is a template, not recorded audio.",
+  "segments": [
+    {
+      "id": "hook",
+      "audioPath": "local-recordings/hook.wav",
+      "transcript": "Một câu thôi... mà mình sai mấy chỗ.",
+      "tokens": []
+    },
+    {
+      "id": "context",
+      "audioPath": "local-recordings/context.wav",
+      "transcript": "Mình viết về chuyện đi siêu thị hôm qua.",
+      "tokens": []
+    },
+    {
+      "id": "spelling",
+      "audioPath": "local-recordings/spelling.wav",
+      "transcript": "Hai từ sai chính tả. Nhìn nhé, mình sửa từng chữ.",
+      "tokens": []
+    },
+    {
+      "id": "connector",
+      "audioPath": "local-recordings/connector.wav",
+      "transcript": "Rồi thêm từ nối: và. Nối đã đi với đã mua.",
+      "tokens": []
+    },
+    {
+      "id": "retry",
+      "audioPath": "local-recordings/retry.wav",
+      "transcript": "Mình đưa hôm qua lên đầu, thêm ý mua đồ cho bữa tối.",
+      "tokens": []
+    },
+    {
+      "id": "reveal",
+      "audioPath": "local-recordings/reveal.wav",
+      "transcript": "AI sửa và giải thích. Còn mình, phải hiểu rồi viết lại.",
+      "tokens": []
+    },
+    {
+      "id": "question",
+      "audioPath": "local-recordings/question.wav",
+      "transcript": "Bạn từng sai lỗi này chưa?",
+      "tokens": []
+    }
+  ]
+}

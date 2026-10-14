@@ -1,0 +1,26 @@
+{
+  "music": {
+    "title": "English Journey — Paper & Progress",
+    "creator": "Original project algorithmic synthesis",
+    "source": "scripts/v2/build.py:original_music",
+    "bpm": 90,
+    "thirdPartyMusic": false,
+    "borrowedMelody": false,
+    "importedSamples": false,
+    "method": "Original sine-harmonic pads/plucks, common chord tones, bass pulses; deterministic pattern. No stock song."
+  },
+  "sfx": {
+    "source": "scripts/v2/build.py:original_sfx",
+    "method": "Original sine chimes and seeded filtered noise; no imported samples"
+  },
+  "voice": {
+    "provider": "Microsoft Edge consumer read-aloud via edge-tts",
+    "usage": "Review-only technical TTS auditions; no identity cloning",
+    "commercialRightsStatus": "NOT_VERIFIED; do not represent an Edge audition as a commercially licensed voice asset. Use a consented human recording or an approved licensed provider before publication."
+  },
+  "font": {
+    "name": "DejaVu Sans",
+    "licenseFile": "public/fonts/LICENSE.txt"
+  },
+  "paidCalls": 0
+}

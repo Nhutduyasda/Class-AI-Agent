@@ -1,0 +1,78 @@
+{
+  "id": "lesson15-writing-retry-voice",
+  "sourceBrief": "briefs/pilot-lesson15.json",
+  "provider": "edge",
+  "fps": 30,
+  "minDurationSeconds": 35,
+  "maxDurationSeconds": 45,
+  "leadInSeconds": 0.1,
+  "betweenSegmentsSeconds": 0.18,
+  "sceneTailSeconds": 0.22,
+  "segments": [
+    {
+      "id": "hook",
+      "scene": "hook",
+      "language": "vi-VN",
+      "voice": "vi-VN-HoaiMyNeural",
+      "rate": "-5%",
+      "text": "Tôi từng viết sai câu tiếng Anh đơn giản này."
+    },
+    {
+      "id": "before",
+      "scene": "before",
+      "language": "vi-VN",
+      "voice": "vi-VN-HoaiMyNeural",
+      "rate": "-5%",
+      "text": "Đây là câu mình viết ở bài mười lăm. Bạn thấy lỗi ở đâu?"
+    },
+    {
+      "id": "teach-vi",
+      "scene": "teach",
+      "language": "vi-VN",
+      "voice": "vi-VN-HoaiMyNeural",
+      "rate": "-5%",
+      "text": "Sửa hai lỗi chính tả. Rồi thêm từ nối hai hành động."
+    },
+    {
+      "id": "teach-en",
+      "scene": "teach",
+      "language": "en-US",
+      "voice": "en-US-JennyNeural",
+      "rate": "-5%",
+      "text": "supermarket. yesterday. and."
+    },
+    {
+      "id": "after-intro",
+      "scene": "after",
+      "language": "vi-VN",
+      "voice": "vi-VN-HoaiMyNeural",
+      "rate": "-5%",
+      "text": "Đưa thời gian lên đầu câu. Câu sửa là:"
+    },
+    {
+      "id": "after-en",
+      "scene": "after",
+      "language": "en-US",
+      "voice": "en-US-JennyNeural",
+      "rate": "-20%",
+      "text": "After work yesterday, I went to the supermarket and bought food for dinner.",
+      "approvedFact": "revised"
+    },
+    {
+      "id": "after-note",
+      "scene": "after",
+      "language": "vi-VN",
+      "voice": "vi-VN-HoaiMyNeural",
+      "rate": "-5%",
+      "text": "Mình thêm ý: mua thức ăn cho bữa tối."
+    },
+    {
+      "id": "cta",
+      "scene": "cta",
+      "language": "vi-VN",
+      "voice": "vi-VN-HoaiMyNeural",
+      "rate": "-5%",
+      "text": "Viết sai, hiểu lỗi, rồi mình viết lại. Mỗi lần sửa là một lần luyện tập."
+    }
+  ]
+}
