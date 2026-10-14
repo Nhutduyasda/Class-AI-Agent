@@ -1,0 +1,32 @@
+{
+  "name": "english-journey-video",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.tsx",
+    "render": "node scripts/render.mjs",
+    "proofs": "node scripts/proofs.mjs",
+    "qa": "node scripts/qa.mjs",
+    "typecheck": "tsc --noEmit",
+    "tts": "python3 scripts/voiceover/build.py",
+    "render:voice": "node scripts/render.mjs --voice",
+    "proofs:voice": "node scripts/proofs.mjs --voice",
+    "qa:voice": "node scripts/qa-voice.mjs",
+    "test:voice": "node --test scripts/voiceover/timing.test.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.535",
+    "@remotion/cli": "4.0.535",
+    "@remotion/renderer": "4.0.535",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.535",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "typescript": "5.9.3"
+  }
+}

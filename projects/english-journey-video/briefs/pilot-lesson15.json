@@ -1,0 +1,63 @@
+{
+  "id": "lesson15-writing-retry",
+  "brand": "English Journey",
+  "language": "vi-VN",
+  "aspectRatio": "9:16",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "targetDurationSeconds": 30,
+  "format": "faceless text-led education",
+  "purpose": "Demonstrate one authentic self-correction from English Journey Lesson 15, without promising learning outcomes.",
+  "audience": "Vietnamese A1-A2 learners who struggle with writing English",
+  "facts": {
+    "lesson": "Reading & Grammar — Lesson 15",
+    "original": "After work I went to the supermarke bought food yesteday",
+    "revised": "After work yesterday, I went to the supermarket and bought food for dinner.",
+    "explanation": [
+      "supermarke → supermarket (chính tả)",
+      "yesteday → yesterday (chính tả)",
+      "Nối hai hành động bằng 'and'",
+      "Đặt 'yesterday' ở vị trí tự nhiên trong câu"
+    ],
+    "note": "Đây là một ví dụ về sửa và viết lại câu, không phải bằng chứng về điểm TOEIC hay hiệu quả của một khoá học."
+  },
+  "beats": [
+    {
+      "start": 0,
+      "end": 4,
+      "type": "hook",
+      "text": "Tôi từng viết sai câu tiếng Anh đơn giản này!"
+    },
+    {
+      "start": 4,
+      "end": 11,
+      "type": "before",
+      "label": "BEFORE",
+      "text": "After work I went to the supermarke bought food yesteday"
+    },
+    {
+      "start": 11,
+      "end": 18,
+      "type": "teach",
+      "text": "Hai lỗi chính tả + thiếu 'and' để nối hai hành động"
+    },
+    {
+      "start": 18,
+      "end": 27,
+      "type": "after",
+      "label": "AFTER",
+      "text": "After work yesterday, I went to the supermarket and bought food for dinner."
+    },
+    {
+      "start": 27,
+      "end": 30,
+      "type": "cta",
+      "text": "Viết sai → hiểu lỗi → tự viết lại. English Journey."
+    }
+  ],
+  "narrationPolicy": "Vietnamese natural voice if free local voice is clearly usable; otherwise captions-only; no paid services.",
+  "musicPolicy": "No background music unless original or properly licensed.",
+  "outputName": "lesson15-writing-retry.mp4",
+  "approvalRequired": true
+}
