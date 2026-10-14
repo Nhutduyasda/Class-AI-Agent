@@ -8,7 +8,7 @@ from scipy.signal import correlate
 
 def run(a):return subprocess.run(a,check=True,capture_output=True)
 def main():
-    out=Path('out');video=out/'english-journey-marketing-video-01.mp4';m=json.loads((out/'marketing-timeline.json').read_text());b=json.loads(Path('briefs/marketing-video-01-approved.json').read_text())
+    out=Path('out');video=Path(sys.argv[1]) if len(sys.argv)>1 else out/'english-journey-marketing-video-01.mp4';m=json.loads((out/'marketing-timeline.json').read_text());b=json.loads(Path('briefs/marketing-video-01-approved.json').read_text())
     probe=json.loads(run(['ffprobe','-v','error','-count_frames','-show_streams','-show_format','-of','json',str(video)]).stdout)
     v=next(s for s in probe['streams'] if s['codec_type']=='video');a=next(s for s in probe['streams'] if s['codec_type']=='audio')
     assert (v['width'],v['height'],v['r_frame_rate'],v['codec_name'],a['codec_name'])==(1080,1920,'30/1','h264','aac')
@@ -39,5 +39,5 @@ def main():
         for name,f in frames:
             dest=out/f'marketing-proof-{name}.png';run(['ffmpeg','-v','error','-y','-i',str(video),'-vf',f'select=eq(n\\,{f})','-frames:v','1',str(dest)]);proofs.append({'name':name,'frame':f,'path':str(dest)})
     report={'voice':m['voice'],'voiceSelection':m['voiceSelection'],'technical':'PASS','publication':'NOT APPROVED','listening':'BLOCKED — audio perception unavailable; ASR is not listening','format':probe,'runtimeSeconds':m['durationSeconds'],'durationTarget':'NOT MET; locked script retained at +0% speech rate','loudness':metrics,'sourceExportCorrelation':corr,'muxLagMs':lag/16,'stemCoefficientTolerance':0.12,'stemCoefficients':dict(zip(['voice','music','sfx'],coeff.tolist())),'copyLock':'PASS — exact approved token reconstruction and stage order','proofs':proofs,'sha256':hashlib.sha256(video.read_bytes()).hexdigest()}
-    (out/'marketing-technical-qa.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps({k:report[k] for k in ['technical','runtimeSeconds','loudness','sourceExportCorrelation','stemCoefficients']},indent=2))
+    (out/('marketing-review-cut-technical-qa.json' if len(sys.argv)>1 else 'marketing-technical-qa.json')).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps({k:report[k] for k in ['technical','runtimeSeconds','loudness','sourceExportCorrelation','stemCoefficients']},indent=2))
 if __name__=='__main__':main()
