@@ -1,0 +1,4 @@
+interface:
+  display_name: "Voiceover Production"
+  short_description: "Produce spoken lessons with verified audio timing"
+  default_prompt: "Use $voiceover-production to add Vietnamese narration and synchronized subtitles to an English Journey lesson."

@@ -1,0 +1,5 @@
+# Optional machine intelligibility QA only; not needed for TTS or rendering.
+faster-whisper==1.2.1
+socksio==1.0.0
+numpy==2.3.5
+scipy==1.17.0

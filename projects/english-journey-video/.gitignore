@@ -1,0 +1,25 @@
+node_modules/
+.cache/
+dist/
+out/*
+!out/.gitkeep
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.srt
+*.vtt
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Generated voice audio, metadata and Python bytecode
+public/voice/*
+__pycache__/
+.venv/
+
+# V2 generated audio and manifest
+public/v2/
+
+/public/marketing/
