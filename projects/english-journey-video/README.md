@@ -1,6 +1,6 @@
 # Marketing Video 01
 
-New locked-script marketing composition: see [production commands](docs/MARKETING_VIDEO_01_PRODUCTION.md) and [render acceptance](docs/MARKETING_VIDEO_01_RENDER_QA.md). Main output: `out/english-journey-marketing-video-01.mp4`. Natural-rate runtime 66 seconds; approved narration unchanged. NOT APPROVED until human voice/music/editorial review and voice rights clearance.
+New locked-script marketing composition: see [production commands](docs/MARKETING_VIDEO_01_PRODUCTION.md) and [render acceptance](docs/MARKETING_VIDEO_01_RENDER_QA.md). Main output: `out/english-journey-marketing-video-01.mp4`. Owner-requested Nam Minh narration; natural-rate runtime 65.33 seconds, approved narration unchanged. NOT APPROVED until human voice/music/editorial review and voice rights clearance.
 
 # English Journey — Lesson 15 V2
 

@@ -10,8 +10,8 @@ async def main():
     source=Path('briefs/marketing-video-01-approved.json'); brief=json.loads(source.read_text())
     cache=Path('.cache/marketing'); cache.mkdir(parents=True,exist_ok=True)
     out=Path('out'); out.mkdir(exist_ok=True)
-    voice='vi-VN-HoaiMyNeural'
-    for name,v in [('A',voice),('B','vi-VN-NamMinhNeural')]:
+    voice='vi-VN-NamMinhNeural'
+    for name,v in [('A','vi-VN-HoaiMyNeural'),('B','vi-VN-NamMinhNeural')]:
         clips=[]
         for line in brief['spokenSegments'][:2]:
             a,_=await synth({'id':line['id'],'text':line['spoken'],'rate':'+0%'},v,cache)
@@ -58,7 +58,7 @@ async def main():
         for i,g in enumerate(groups):
             end=groups[i+1][0]['startMs'] if i+1<len(groups) else scene['endFrame']/30*1000
             pages.append({'startMs':g[0]['startMs'],'endMs':end,'text':' '.join(w['text'] for w in g),'tokens':g})
-    m={'fps':30,'durationInFrames':cursor//1600,'durationSeconds':cursor/SR,'audioSrc':'marketing/mix.wav','scenes':scenes,'segments':segments,'tokens':tokens,'pages':pages,'events':events,'facts':brief['approvedEvidence'],'voice':voice,'voiceSelection':'PROVISIONAL; listening BLOCKED','briefSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'builderSha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'mixMetrics':loudness(out/'marketing-mix.wav'),'voiceMetrics':loudness(out/'marketing-voice.wav'),'musicMetrics':loudness(out/'marketing-music.wav')}
+    m={'fps':30,'durationInFrames':cursor//1600,'durationSeconds':cursor/SR,'audioSrc':'marketing/mix.wav','scenes':scenes,'segments':segments,'tokens':tokens,'pages':pages,'events':events,'facts':brief['approvedEvidence'],'voice':voice,'voiceSelection':'OWNER_REQUESTED_NAM_MINH; emotional acceptance pending human review','briefSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'builderSha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'mixMetrics':loudness(out/'marketing-mix.wav'),'voiceMetrics':loudness(out/'marketing-voice.wav'),'musicMetrics':loudness(out/'marketing-music.wav')}
     public=Path('public/marketing');public.mkdir(exist_ok=True);shutil.copyfile(out/'marketing-mix.wav',public/'mix.wav')
     for p in [public/'manifest.json',out/'marketing-timeline.json']:p.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n')
     for ext in ['srt','vtt']:

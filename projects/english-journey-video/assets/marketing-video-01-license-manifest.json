@@ -1,8 +1,32 @@
 {
-  "music": {"title": "English Journey — A Clear Next Step", "creator": "Original project algorithmic synthesis", "source": "scripts/v2/build.py:original_music invoked by scripts/marketing/build.py", "bpm": 90, "thirdPartyMusic": false, "importedSamples": false, "borrowedMelody": false, "method": "Deterministic sine-harmonic pads, sparse plucks and bass pulses; common chord tones; score synthesized for this exact timeline"},
-  "sfx": {"source": "scripts/v2/build.py:original_sfx", "method": "Original sine chimes and seeded filtered noise; no sampled branded sounds"},
-  "voice": {"provider": "Microsoft Edge consumer read-aloud via edge-tts", "voice": "vi-VN-HoaiMyNeural", "rate": "+0%", "selection": "PROVISIONAL; two takes generated, listening BLOCKED", "commercialRights": "NOT VERIFIED; review-only pilot. Clear rights or use a consented human recording before publishing."},
-  "visuals": {"source": "src/Marketing.tsx", "method": "Original SVG and React illustration; no fake chat UI"},
-  "fonts": {"name": "DejaVu Sans", "license": "public/fonts/LICENSE.txt"},
+  "music": {
+    "title": "English Journey — A Clear Next Step",
+    "creator": "Original project algorithmic synthesis",
+    "source": "scripts/v2/build.py:original_music invoked by scripts/marketing/build.py",
+    "bpm": 90,
+    "thirdPartyMusic": false,
+    "importedSamples": false,
+    "borrowedMelody": false,
+    "method": "Deterministic sine-harmonic pads, sparse plucks and bass pulses; common chord tones; score synthesized for this exact timeline"
+  },
+  "sfx": {
+    "source": "scripts/v2/build.py:original_sfx",
+    "method": "Original sine chimes and seeded filtered noise; no sampled branded sounds"
+  },
+  "voice": {
+    "provider": "Microsoft Edge consumer read-aloud via edge-tts",
+    "voice": "vi-VN-NamMinhNeural",
+    "rate": "+0%",
+    "selection": "Owner requested Nam Minh after reviewing HoaiMy; new export emotional acceptance pending",
+    "commercialRights": "NOT VERIFIED; review-only pilot. Clear rights or use a consented human recording before publishing."
+  },
+  "visuals": {
+    "source": "src/Marketing.tsx",
+    "method": "Original SVG and React illustration; no fake chat UI"
+  },
+  "fonts": {
+    "name": "DejaVu Sans",
+    "license": "public/fonts/LICENSE.txt"
+  },
   "paidCalls": 0
 }
