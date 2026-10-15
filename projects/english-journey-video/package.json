@@ -31,7 +31,11 @@
     "qa:marketing02": "PYTHONPATH=. python3 scripts/marketing02/qa.py",
     "azure:marketing02:estimate": "node scripts/marketing02/azure-namminh-auditions.mjs",
     "azure:marketing02:samples": "node scripts/marketing02/azure-namminh-auditions.mjs --execute --confirm-standard-s0",
-    "test:azure:marketing02": "node --test scripts/marketing02/azure-namminh-auditions.test.mjs"
+    "test:azure:marketing02": "node --test scripts/marketing02/azure-namminh-auditions.test.mjs",
+    "build:marketing02:v12": "python3 scripts/marketing02/build-v12.py",
+    "render:marketing02:v12": "node scripts/marketing02/render-v12.mjs",
+    "proofs:marketing02:v12": "node scripts/marketing02/render-v12.mjs --proofs",
+    "qa:marketing02:v12": "PYTHONPATH=. python3 scripts/marketing02/qa-v12.py"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.535",
