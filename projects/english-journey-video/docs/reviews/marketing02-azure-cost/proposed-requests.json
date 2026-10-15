@@ -1,0 +1,45 @@
+{
+  "status": "TEXT_ONLY_DO_NOT_EXECUTE",
+  "auditionIds": [
+    "hook",
+    "demo"
+  ],
+  "fullVoiceRequestsForCostVerificationOnly": [
+    {
+      "id": "hook",
+      "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\">Học 10 từ tiếng Anh hôm nay… vài ngày sau quên gần hết? Bạn có đang như vậy không?</voice></speak>",
+      "billableCharacters": 82,
+      "executionAllowed": false
+    },
+    {
+      "id": "problem",
+      "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\">Bạn học nghĩa của từ, ghi vào vở, đọc lại vài lần. Nhưng đến khi cần đặt câu, bạn lại chẳng biết dùng từ đó như thế nào.</voice></speak>",
+      "billableCharacters": 120,
+      "executionAllowed": false
+    },
+    {
+      "id": "solution",
+      "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\">Vậy thử đổi cách học xem! Thay vì chỉ nhờ ChatGPT giải nghĩa, mình dùng AI để luyện cách sử dụng từ vựng ngay trong câu.</voice></speak>",
+      "billableCharacters": 120,
+      "executionAllowed": false
+    },
+    {
+      "id": "demo",
+      "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\">Ví dụ với từ improve, nghĩa là cải thiện. AI không chỉ giải thích, mà còn yêu cầu mình tự đặt câu. Mình viết: I want to improve my English. Sau đó, AI kiểm tra và giúp mình sửa nếu có lỗi.</voice></speak>",
+      "billableCharacters": 188,
+      "executionAllowed": false
+    },
+    {
+      "id": "benefit",
+      "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\">Những từ chưa nhớ, mình lưu lại để buổi sau nhờ AI kiểm tra tiếp. Như vậy, mình biết cần ôn từ nào thay vì cứ học thêm từ mới.</voice></speak>",
+      "billableCharacters": 126,
+      "executionAllowed": false
+    },
+    {
+      "id": "cta",
+      "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\">Muốn biết cách mình thiết lập ChatGPT để học như vậy? Bình luận BẮT ĐẦU, mình chia sẻ cách làm nhé!</voice></speak>",
+      "billableCharacters": 99,
+      "executionAllowed": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "checkedDate": "2026-10-15",
+  "retailApi": "https://prices.azure.com/api/retail/prices",
+  "filter": "armRegionName eq 'southeastasia' and contains(meterName, 'Neural') and priceType eq 'Consumption'",
+  "meterId": "0f98e708-a16c-407b-8089-a0ed9e14ab49",
+  "pricingPage": "https://azure.microsoft.com/en-us/pricing/details/speech/",
+  "voiceList": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support",
+  "commercialTerms": "https://www.microsoft.com/licensing/terms/en-US/productoffering/MicrosoftAzure/allprograms",
+  "termsVerifiedClauseAlsoAt": "https://www.microsoft.com/licensing/terms/en-US/productoffering/MicrosoftAzureServices/EAEAS/SpecificUseRights",
+  "billingCharacters": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech#pricing-note",
+  "budgetLimits": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets",
+  "fxXml": "https://portal.vietcombank.com.vn/Usercontrols/TVPortal.TyGia/pXML.aspx",
+  "fxUsdRecord": {
+    "CurrencyCode": "USD",
+    "CurrencyName": "US DOLLAR           ",
+    "Buy": "25,680.00",
+    "Transfer": "25,710.00",
+    "Sell": "26,090.00"
+  },
+  "fxTimestamp": "10/15/2026 9:18:40 AM"
+}
