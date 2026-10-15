@@ -1,0 +1,37 @@
+{
+  "status": "VOICE RIGHTS / PROVIDER BLOCKED",
+  "sourceBriefSha256": "18492023b4e75f5208f65f8cc619caba27dd6f64a526aa01a656f408279f70c0",
+  "voiceId": "vi-VN-NamMinhNeural",
+  "rate": "+0%",
+  "pitch": "default; no shift",
+  "allowVoiceFallback": false,
+  "allowPiper": false,
+  "allowEnglishSpeakerSwitch": false,
+  "ownerAuditionApproval": false,
+  "fullNarrationAllowed": false,
+  "videoV12RenderAllowed": false,
+  "paidCallsAllowed": false,
+  "generationCallsMade": 0,
+  "requiredBeforeGeneration": [
+    "Rights-cleared source/provider for the selected voice",
+    "Explicit approval of any paid call and budget",
+    "Configured authorized provider or supplied licensed audio"
+  ],
+  "samples": [
+    {
+      "id": "A-hook",
+      "text": "Học 10 từ tiếng Anh hôm nay… vài ngày sau quên gần hết? Bạn có đang như vậy không?",
+      "scope": "one exact approved segment",
+      "intent": "Matching reference at +0%; natural question; no pitch or time stretch",
+      "audioPath": null
+    },
+    {
+      "id": "B-demo",
+      "text": "Ví dụ với từ improve, nghĩa là cải thiện. AI không chỉ giải thích, mà còn yêu cầu mình tự đặt câu. Mình viết: I want to improve my English. Sau đó, AI kiểm tra và giúp mình sửa nếu có lỗi.",
+      "scope": "one exact approved segment",
+      "intent": "Same narrator for improve and full English example first; owner checks pronunciation and continuity",
+      "audioPath": null
+    }
+  ],
+  "nextAfterApproval": "Generate only these 2 audition clips first, compare against actual Video01 reference and wait for owner choice. Full VO/subtitles/timing rebuild only after selection."
+}
