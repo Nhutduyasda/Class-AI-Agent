@@ -1,0 +1,12 @@
+{
+  "status": "RENDERED_TECHNICAL_PASS_AWAITING_OWNER_LISTENING",
+  "version": "1.2",
+  "file": "out/marketing02/English-Journey-Marketing-02-V1.2-NamMinh.mp4",
+  "sha256": "b6f7b11110e0a73fd76578f40e658a5785bbdb96996aea39aab73f67a0ca48fd",
+  "durationSeconds": 60.181,
+  "newAzureSynthesisRequests": 5,
+  "hookAttempts": 1,
+  "demoRegenerated": false,
+  "referenceTotalUsd": 0.012255,
+  "publication": "NOT APPROVED"
+}

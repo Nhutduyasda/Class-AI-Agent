@@ -1,0 +1,157 @@
+{
+  "status": "TECHNICAL_PASS",
+  "durationSeconds": 60.181,
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "codec_name": "h264",
+    "avg_frame_rate": "30/1",
+    "nb_frames": "1805"
+  },
+  "audio": {
+    "codec_name": "aac",
+    "sample_rate": "48000",
+    "channels": 2
+  },
+  "fullDecode": "PASS",
+  "exactAuthoredCopy": "PASS (input and caption text; not acoustic certification)",
+  "originalVisualSource": "BYTE_IDENTICAL",
+  "demoReusedUnchanged": "PASS",
+  "rawAudio": [
+    {
+      "scene": "hook",
+      "sha256": "81f0f02bc446c32a494ab4fcf593eba051465bfc6138f35c7e82779650542522",
+      "durationSeconds": 6.0625,
+      "sourceSampleRate": 24000,
+      "decode": "PASS"
+    },
+    {
+      "scene": "problem",
+      "sha256": "fbffe86a5462469a72c0bc44af2cf993e23bab0806a30d586ee943683f9eb86e",
+      "durationSeconds": 8.9125,
+      "sourceSampleRate": 24000,
+      "decode": "PASS"
+    },
+    {
+      "scene": "solution",
+      "sha256": "f464e3a48bc8c0096195dc44e1c1d2b4295415fcc3630baba06af3291bb7b468",
+      "durationSeconds": 8.05,
+      "sourceSampleRate": 24000,
+      "decode": "PASS"
+    },
+    {
+      "scene": "demo",
+      "sha256": "6bc9bca6f5ca8a8e7e86248a4d9b45057a3491f5e1b5b9ce0f68eafacba72cc4",
+      "durationSeconds": 15.325,
+      "sourceSampleRate": 24000,
+      "decode": "PASS"
+    },
+    {
+      "scene": "benefit",
+      "sha256": "5e762353c31846c70f2c74d65450ec7e10d59d1ad334a585f21b381a1486fa0c",
+      "durationSeconds": 8.85,
+      "sourceSampleRate": 24000,
+      "decode": "PASS"
+    },
+    {
+      "scene": "cta",
+      "sha256": "f760bc0734b57e938f885cf9436bf2884d6c056f58c18bb8bb1b3c5af225d04b",
+      "durationSeconds": 6.775,
+      "sourceSampleRate": 24000,
+      "decode": "PASS"
+    }
+  ],
+  "phraseCues": "ASR observed endpoints; no uniform word interpolation",
+  "loudness": {
+    "input_i": "-16.01",
+    "input_tp": "-2.57",
+    "input_lra": "3.70",
+    "input_thresh": "-27.57",
+    "output_i": "-16.15",
+    "output_tp": "-2.54",
+    "output_lra": "3.50",
+    "output_thresh": "-27.52",
+    "normalization_type": "dynamic",
+    "target_offset": "0.15"
+  },
+  "stems": {
+    "voice": {
+      "input_i": "-16.00",
+      "input_tp": "-2.64",
+      "input_lra": "3.60",
+      "input_thresh": "-26.24",
+      "output_i": "-16.14",
+      "output_tp": "-2.62",
+      "output_lra": "3.60",
+      "output_thresh": "-26.38",
+      "normalization_type": "dynamic",
+      "target_offset": "0.14"
+    },
+    "music": {
+      "input_i": "-35.78",
+      "input_tp": "-22.77",
+      "input_lra": "2.20",
+      "input_thresh": "-45.78",
+      "output_i": "-15.83",
+      "output_tp": "-2.89",
+      "output_lra": "2.00",
+      "output_thresh": "-25.83",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.17"
+    },
+    "sfx": {
+      "input_i": "-48.21",
+      "input_tp": "-33.76",
+      "input_lra": "1.30",
+      "input_thresh": "-58.86",
+      "output_i": "-43.08",
+      "output_tp": "-28.07",
+      "output_lra": "8.00",
+      "output_thresh": "-53.86",
+      "normalization_type": "dynamic",
+      "target_offset": "27.08"
+    },
+    "mix": {
+      "input_i": "-16.00",
+      "input_tp": "-2.53",
+      "input_lra": "3.80",
+      "input_thresh": "-27.56",
+      "output_i": "-16.15",
+      "output_tp": "-2.51",
+      "output_lra": "3.50",
+      "output_thresh": "-27.52",
+      "normalization_type": "dynamic",
+      "target_offset": "0.15"
+    }
+  },
+  "motionEvidence": [
+    {
+      "startSeconds": 0,
+      "halfSecondMeanPixelChange": 0.6310442386831275
+    },
+    {
+      "startSeconds": 2,
+      "halfSecondMeanPixelChange": 9.922935956790123
+    },
+    {
+      "startSeconds": 28,
+      "halfSecondMeanPixelChange": 0.6699942129629629
+    },
+    {
+      "startSeconds": 37,
+      "halfSecondMeanPixelChange": 0.0744116512345679
+    },
+    {
+      "startSeconds": 53,
+      "halfSecondMeanPixelChange": 2.2996399176954734
+    }
+  ],
+  "subjectiveListening": "BLOCKED: cannot listen to full audiovisual export in current tools",
+  "pronunciationAndEmotion": "OWNER_REVIEW_REQUIRED; ASR contains substitutions including ChatGPT and mixed English",
+  "publication": "NOT APPROVED",
+  "newSynthesisRequests": 5,
+  "knownPriorSampleRequests": 2,
+  "referenceTotalUsd": 0.012255,
+  "sha256": "b6f7b11110e0a73fd76578f40e658a5785bbdb96996aea39aab73f67a0ca48fd",
+  "bytes": 3639697
+}

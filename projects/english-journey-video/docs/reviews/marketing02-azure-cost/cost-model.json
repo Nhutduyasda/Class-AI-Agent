@@ -1,0 +1,136 @@
+{
+  "asOf": "2026-10-15",
+  "status": "ESTIMATE_ONLY_NOT_AUTHORIZED_TO_SPEND",
+  "voice": "vi-VN-NamMinhNeural",
+  "service": "Azure Speech prebuilt non-HD Neural pay-as-you-go",
+  "regionProposal": "southeastasia",
+  "ratePercent": 0,
+  "pitch": "default",
+  "outputProposal": "riff-48khz-16bit-mono-pcm",
+  "baseBriefSha256": "18492023b4e75f5208f65f8cc619caba27dd6f64a526aa01a656f408279f70c0",
+  "pricingMeter": {
+    "currencyCode": "USD",
+    "tierMinimumUnits": 0.0,
+    "retailPrice": 15.0,
+    "unitPrice": 15.0,
+    "armRegionName": "southeastasia",
+    "location": "AP Southeast",
+    "effectiveStartDate": "2024-02-01T00:00:00Z",
+    "meterId": "0f98e708-a16c-407b-8089-a0ed9e14ab49",
+    "meterName": "S1 Neural Text To Speech Characters",
+    "productId": "DZH318Z0BP4S",
+    "skuId": "DZH318Z0BP4S/000B",
+    "productName": "Azure Speech",
+    "skuName": "S1",
+    "serviceName": "Foundry Tools",
+    "serviceId": "DZH319RLHTZC",
+    "serviceFamily": "AI + Machine Learning",
+    "unitOfMeasure": "1M",
+    "type": "Consumption",
+    "isPrimaryMeterRegion": false,
+    "armSkuName": ""
+  },
+  "exchangeRateReference": {
+    "bank": "Vietcombank",
+    "timestampAsReturned": "10/15/2026 9:18:40 AM",
+    "currency": "USD",
+    "sellVndPerUsd": "26090.00",
+    "actualCardRateNotGuaranteed": true
+  },
+  "billingAssumptions": [
+    "Only speak/voice wrapper; no extra SSML markup or whitespace outside exact source text",
+    "No discounts/free credits assumed",
+    "No taxes/card fee included",
+    "One successful synthesis per counted segment; every repeat adds characters",
+    "Full voice has 6 requests, no separator newline charged",
+    "Cost is for Speech synthesis only, not all charges on an Azure subscription"
+  ],
+  "segments": [
+    {
+      "id": "hook",
+      "billableUnicodeCodePoints": 82,
+      "costUsd": "0.00123"
+    },
+    {
+      "id": "problem",
+      "billableUnicodeCodePoints": 120,
+      "costUsd": "0.0018"
+    },
+    {
+      "id": "solution",
+      "billableUnicodeCodePoints": 120,
+      "costUsd": "0.0018"
+    },
+    {
+      "id": "demo",
+      "billableUnicodeCodePoints": 188,
+      "costUsd": "0.00282"
+    },
+    {
+      "id": "benefit",
+      "billableUnicodeCodePoints": 126,
+      "costUsd": "0.00189"
+    },
+    {
+      "id": "cta",
+      "billableUnicodeCodePoints": 99,
+      "costUsd": "0.001485"
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": "hook",
+      "characters": 82,
+      "usdBeforeTax": "0.00123",
+      "vndReferenceBeforeTax": "32.0907000"
+    },
+    {
+      "scenario": "demo",
+      "characters": 188,
+      "usdBeforeTax": "0.00282",
+      "vndReferenceBeforeTax": "73.5738000"
+    },
+    {
+      "scenario": "bothAuditions",
+      "characters": 270,
+      "usdBeforeTax": "0.00405",
+      "vndReferenceBeforeTax": "105.6645000"
+    },
+    {
+      "scenario": "fullVoiceOnce",
+      "characters": 735,
+      "usdBeforeTax": "0.011025",
+      "vndReferenceBeforeTax": "287.64225000"
+    },
+    {
+      "scenario": "auditionsPlusFullRegenerated",
+      "characters": 1005,
+      "usdBeforeTax": "0.015075",
+      "vndReferenceBeforeTax": "393.30675000"
+    },
+    {
+      "scenario": "remainingAfterReusingAuditions",
+      "characters": 465,
+      "usdBeforeTax": "0.006975",
+      "vndReferenceBeforeTax": "181.97775000"
+    },
+    {
+      "scenario": "auditionsAndFullFourPasses",
+      "characters": 4020,
+      "usdBeforeTax": "0.0603",
+      "vndReferenceBeforeTax": "1573.227000"
+    }
+  ],
+  "proposedAuditionApprovalScope": {
+    "requests": 2,
+    "characters": 270,
+    "usdBeforeTax": "0.00405",
+    "fullNarrationAuthorized": false,
+    "autoRetryOnAmbiguousTimeout": false,
+    "allowVoiceFallback": false
+  },
+  "createdSpeechResources": 0,
+  "speechRequests": 0,
+  "audioGenerated": false,
+  "costIncurred": 0
+}

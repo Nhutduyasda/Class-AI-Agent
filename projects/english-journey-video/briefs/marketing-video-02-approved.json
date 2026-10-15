@@ -1,0 +1,131 @@
+{
+  "title": "English Journey — Marketing Video 02: Học từ vựng mãi vẫn quên?",
+  "approval": {
+    "status": "OWNER_APPROVED_V1_1",
+    "date": "2026-10-15",
+    "source": "Conversation approval: Duyệt kịch bản Video 02 V1.1",
+    "spokenCopyLocked": true,
+    "structureLocked": true
+  },
+  "objective": "TikTok educational awareness for Vietnamese beginner English learners who memorize vocabulary but cannot use it; demonstrate a concrete ChatGPT-supported practice/review habit and invite comments.",
+  "audience": "Người mất gốc tiếng Anh / học trước quên sau",
+  "takeaway": "Learning a word includes using it in a sentence, checking accuracy, and intentionally reviewing words not remembered.",
+  "spokenSegments": [
+    {
+      "id": "hook",
+      "label": "HOOK",
+      "spoken": "Học 10 từ tiếng Anh hôm nay… vài ngày sau quên gần hết? Bạn có đang như vậy không?"
+    },
+    {
+      "id": "problem",
+      "label": "PROBLEM",
+      "spoken": "Bạn học nghĩa của từ, ghi vào vở, đọc lại vài lần. Nhưng đến khi cần đặt câu, bạn lại chẳng biết dùng từ đó như thế nào."
+    },
+    {
+      "id": "solution",
+      "label": "SOLUTION",
+      "spoken": "Vậy thử đổi cách học xem! Thay vì chỉ nhờ ChatGPT giải nghĩa, mình dùng AI để luyện cách sử dụng từ vựng ngay trong câu."
+    },
+    {
+      "id": "demo",
+      "label": "DEMO",
+      "spoken": "Ví dụ với từ improve, nghĩa là cải thiện. AI không chỉ giải thích, mà còn yêu cầu mình tự đặt câu. Mình viết: I want to improve my English. Sau đó, AI kiểm tra và giúp mình sửa nếu có lỗi."
+    },
+    {
+      "id": "benefit",
+      "label": "BENEFIT",
+      "spoken": "Những từ chưa nhớ, mình lưu lại để buổi sau nhờ AI kiểm tra tiếp. Như vậy, mình biết cần ôn từ nào thay vì cứ học thêm từ mới."
+    },
+    {
+      "id": "cta",
+      "label": "CTA",
+      "spoken": "Muốn biết cách mình thiết lập ChatGPT để học như vậy? Bình luận BẮT ĐẦU, mình chia sẻ cách làm nhé!"
+    }
+  ],
+  "approvedDemo": {
+    "word": "improve",
+    "meaningVi": "cải thiện",
+    "wordClass": "verb",
+    "sentence": "I want to improve my English.",
+    "sentenceValidity": "This is already a natural and grammatical sentence; feedback should confirm it, not invent a correction.",
+    "labelRequired": "Minh họa",
+    "uiProvenance": "Educational visualization; never mislabel as a genuine ChatGPT screenshot.",
+    "practiceFlow": [
+      "Hiểu nghĩa",
+      "Đặt câu",
+      "Kiểm tra",
+      "Chủ động lưu từ cần ôn",
+      "Ôn tập buổi sau"
+    ]
+  },
+  "format": {
+    "platform": "TikTok",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "targetDurationSeconds": [
+      60,
+      75
+    ],
+    "durationRule": "Suggested storyboard timings only; voice-derived scene lengths take precedence. Do not cut/splice approved wording or speed up narration to force timing.",
+    "preferredVoice": "vi-VN-NamMinhNeural",
+    "voiceCondition": "Use only if available and commercial rights independently verified; emotional naturalness requires human review."
+  },
+  "storyboard": [
+    {
+      "scene": "hook",
+      "suggestedSeconds": "0–6",
+      "visual": "Show a 10-word vocabulary list; most words fade, leaving just a few. Frame-zero headline: HỌC TRƯỚC — QUÊN SAU? Open on pain, no brand intro.",
+      "voice": "Pause after hôm nay; warm questioning, not scolding."
+    },
+    {
+      "scene": "problem",
+      "suggestedSeconds": "6–17",
+      "visual": "Contrast a notebook word list with a blank practice prompt. The viewer sees the gap between remembering a meaning and composing a sentence.",
+      "voice": "Relatable, mildly uncertain; do not rush the last clause."
+    },
+    {
+      "scene": "solution",
+      "suggestedSeconds": "17–30",
+      "visual": "Show a clear three-step learning process: Hiểu nghĩa → Đặt câu → Kiểm tra. Cards settle into an intentional progression.",
+      "voice": "Helpful, optimistic, practical."
+    },
+    {
+      "scene": "demo",
+      "suggestedSeconds": "30–52",
+      "visual": "Clearly label Vocabulary Practice as a constructed educational example (NOT a genuine ChatGPT screenshot). Show improve = cải thiện, a request to write a sentence, 'I want to improve my English.', then an accurate positive check; hold the English sentence legibly. Do NOT invent an incorrect first attempt.",
+      "voice": "Explain improve and the English sentence at a patient learner-friendly pace."
+    },
+    {
+      "scene": "benefit",
+      "suggestedSeconds": "52–65",
+      "visual": "Show learner explicitly saving unfamiliar vocabulary in a Vocabulary Log and using that list for next-session review. Do not suggest cross-chat automatic sync.",
+      "voice": "Practical, reassuring."
+    },
+    {
+      "scene": "cta",
+      "suggestedSeconds": "65–75",
+      "visual": "Finish with one headline: MUỐN HỌC TỪ VỰNG CÙNG AI? and one action: BÌNH LUẬN BẮT ĐẦU. Avoid extra link, follow or sales CTA.",
+      "voice": "Personal, conversational invitation; clearly stress BẮT ĐẦU."
+    }
+  ],
+  "style": {
+    "brand": "English Journey",
+    "visual": "Dark green/mint established style, clear vector/real evidence hierarchy, no fake ChatGPT UI",
+    "audience": "First-time viewer; mobile typography, platform overlays safe"
+  },
+  "cta": {
+    "spoken": "Bình luận BẮT ĐẦU, mình chia sẻ cách làm nhé!",
+    "screen": "BÌNH LUẬN “BẮT ĐẦU”",
+    "oneCtaOnly": true
+  },
+  "guardrails": [
+    "Do not alter the six approved spoken segments or order without owner reapproval.",
+    "Illustrative improve exercise is NOT claimed to be a genuine prior user session.",
+    "Do not invent misspelling or grammatical errors in the correct example.",
+    "No invented learning metrics, TOEIC guarantees, testimonials, AI memory or automatic Vocabulary Log syncing.",
+    "No unlicensed music, TTS use or purchased service without approval.",
+    "No posting, merging to main or ready-to-post claim without final human acceptance."
+  ],
+  "state": "SCRIPT_LOCKED_NOT_RENDERED"
+}

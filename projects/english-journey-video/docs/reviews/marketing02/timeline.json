@@ -1,0 +1,853 @@
+{
+  "fps": 30,
+  "durationInFrames": 1876,
+  "durationSeconds": 62.53333333333333,
+  "audioSrc": "marketing02/mix.wav",
+  "scenes": [
+    {
+      "type": "hook",
+      "startFrame": 0,
+      "endFrame": 190
+    },
+    {
+      "type": "problem",
+      "startFrame": 190,
+      "endFrame": 505
+    },
+    {
+      "type": "solution",
+      "startFrame": 505,
+      "endFrame": 818
+    },
+    {
+      "type": "demo",
+      "startFrame": 818,
+      "endFrame": 1320
+    },
+    {
+      "type": "benefit",
+      "startFrame": 1320,
+      "endFrame": 1638
+    },
+    {
+      "type": "cta",
+      "startFrame": 1638,
+      "endFrame": 1876
+    }
+  ],
+  "segments": [
+    {
+      "id": "hook",
+      "label": "HOOK",
+      "spoken": "Học 10 từ tiếng Anh hôm nay… vài ngày sau quên gần hết? Bạn có đang như vậy không?",
+      "startMs": 0.0,
+      "endMs": 6333.333333333333
+    },
+    {
+      "id": "problem",
+      "label": "PROBLEM",
+      "spoken": "Bạn học nghĩa của từ, ghi vào vở, đọc lại vài lần. Nhưng đến khi cần đặt câu, bạn lại chẳng biết dùng từ đó như thế nào.",
+      "startMs": 6333.333333333333,
+      "endMs": 16833.333333333332
+    },
+    {
+      "id": "solution",
+      "label": "SOLUTION",
+      "spoken": "Vậy thử đổi cách học xem! Thay vì chỉ nhờ ChatGPT giải nghĩa, mình dùng AI để luyện cách sử dụng từ vựng ngay trong câu.",
+      "startMs": 16833.333333333332,
+      "endMs": 27266.666666666664
+    },
+    {
+      "id": "demo",
+      "label": "DEMO",
+      "spoken": "Ví dụ với từ improve, nghĩa là cải thiện. AI không chỉ giải thích, mà còn yêu cầu mình tự đặt câu. Mình viết: I want to improve my English. Sau đó, AI kiểm tra và giúp mình sửa nếu có lỗi.",
+      "startMs": 27266.666666666664,
+      "endMs": 44000.0
+    },
+    {
+      "id": "benefit",
+      "label": "BENEFIT",
+      "spoken": "Những từ chưa nhớ, mình lưu lại để buổi sau nhờ AI kiểm tra tiếp. Như vậy, mình biết cần ôn từ nào thay vì cứ học thêm từ mới.",
+      "startMs": 44000.0,
+      "endMs": 54600.0
+    },
+    {
+      "id": "cta",
+      "label": "CTA",
+      "spoken": "Muốn biết cách mình thiết lập ChatGPT để học như vậy? Bình luận BẮT ĐẦU, mình chia sẻ cách làm nhé!",
+      "startMs": 54600.0,
+      "endMs": 62533.33333333333
+    }
+  ],
+  "tokens": [
+    {
+      "text": "Học 10 từ tiếng Anh hôm nay…",
+      "startMs": 0.0,
+      "endMs": 2147.854166666667,
+      "scene": "hook",
+      "segmentId": "hook-0",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "vài ngày sau quên gần hết?",
+      "startMs": 2267.8541666666665,
+      "endMs": 3939.7083333333335,
+      "scene": "hook",
+      "segmentId": "hook-1",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "Bạn có đang như vậy không?",
+      "startMs": 4059.708333333333,
+      "endMs": 5789.604166666667,
+      "scene": "hook",
+      "segmentId": "hook-2",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "Bạn học nghĩa của từ,",
+      "startMs": 6333.333333333333,
+      "endMs": 8341.875,
+      "scene": "problem",
+      "segmentId": "problem-0",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "ghi vào vở, đọc lại vài lần.",
+      "startMs": 8461.875,
+      "endMs": 10899.979166666666,
+      "scene": "problem",
+      "segmentId": "problem-1",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "Nhưng đến khi cần đặt câu,",
+      "startMs": 11019.979166666668,
+      "endMs": 13005.291666666666,
+      "scene": "problem",
+      "segmentId": "problem-2",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "bạn lại chẳng biết dùng từ đó như thế nào.",
+      "startMs": 13125.291666666668,
+      "endMs": 16294.833333333334,
+      "scene": "problem",
+      "segmentId": "problem-3",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "Vậy thử đổi cách học xem!",
+      "startMs": 16833.333333333332,
+      "endMs": 18923.145833333332,
+      "scene": "solution",
+      "segmentId": "solution-0",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "Thay vì chỉ nhờ ChatGPT giải nghĩa,",
+      "startMs": 19043.145833333332,
+      "endMs": 22177.854166666668,
+      "scene": "solution",
+      "segmentId": "solution-1",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "mình dùng AI để luyện cách sử dụng",
+      "startMs": 22297.854166666668,
+      "endMs": 25235.1875,
+      "scene": "solution",
+      "segmentId": "solution-2",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "từ vựng ngay trong câu.",
+      "startMs": 25355.1875,
+      "endMs": 26736.791666666664,
+      "scene": "solution",
+      "segmentId": "solution-3",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "Ví dụ với từ improve,",
+      "startMs": 27266.666666666664,
+      "endMs": 29204.291666666668,
+      "scene": "demo",
+      "segmentId": "demo-0",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "nghĩa là cải thiện.",
+      "startMs": 29324.291666666668,
+      "endMs": 30717.5,
+      "scene": "demo",
+      "segmentId": "demo-1",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "AI không chỉ giải thích,",
+      "startMs": 30837.5,
+      "endMs": 32544.166666666668,
+      "scene": "demo",
+      "segmentId": "demo-2",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "mà còn yêu cầu mình tự đặt câu.",
+      "startMs": 32664.166666666668,
+      "endMs": 35369.29166666667,
+      "scene": "demo",
+      "segmentId": "demo-3",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "Mình viết:",
+      "startMs": 35489.291666666664,
+      "endMs": 36034.979166666664,
+      "scene": "demo",
+      "segmentId": "demo-4",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "I want to improve my English.",
+      "startMs": 36154.979166666664,
+      "endMs": 38627.916666666664,
+      "scene": "demo",
+      "segmentId": "demo-5",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "Sau đó, AI kiểm tra",
+      "startMs": 38747.91666666667,
+      "endMs": 41046.708333333336,
+      "scene": "demo",
+      "segmentId": "demo-6",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "và giúp mình sửa nếu có lỗi.",
+      "startMs": 41166.708333333336,
+      "endMs": 43465.5,
+      "scene": "demo",
+      "segmentId": "demo-7",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "Những từ chưa nhớ, mình lưu lại",
+      "startMs": 44000.0,
+      "endMs": 46391.666666666664,
+      "scene": "benefit",
+      "segmentId": "benefit-0",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "để buổi sau nhờ AI kiểm tra tiếp.",
+      "startMs": 46511.666666666664,
+      "endMs": 49367.729166666664,
+      "scene": "benefit",
+      "segmentId": "benefit-1",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "Như vậy, mình biết cần ôn từ nào",
+      "startMs": 49487.72916666667,
+      "endMs": 52041.9375,
+      "scene": "benefit",
+      "segmentId": "benefit-2",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "thay vì cứ học thêm từ mới.",
+      "startMs": 52161.9375,
+      "endMs": 54054.375,
+      "scene": "benefit",
+      "segmentId": "benefit-3",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "Muốn biết cách mình thiết lập ChatGPT",
+      "startMs": 54600.0,
+      "endMs": 57177.416666666664,
+      "scene": "cta",
+      "segmentId": "cta-0",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "để học như vậy?",
+      "startMs": 57297.416666666664,
+      "endMs": 58342.333333333336,
+      "scene": "cta",
+      "segmentId": "cta-1",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "Bình luận BẮT ĐẦU,",
+      "startMs": 58462.333333333336,
+      "endMs": 59704.60416666667,
+      "scene": "cta",
+      "segmentId": "cta-2",
+      "timingLevel": "measured-phrase"
+    },
+    {
+      "text": "mình chia sẻ cách làm nhé!",
+      "startMs": 59824.604166666664,
+      "endMs": 61995.6875,
+      "scene": "cta",
+      "segmentId": "cta-3",
+      "timingLevel": "measured-phrase"
+    }
+  ],
+  "pages": [
+    {
+      "text": "Học 10 từ tiếng Anh hôm nay…",
+      "startMs": 0.0,
+      "endMs": 2147.854166666667,
+      "scene": "hook",
+      "segmentId": "hook-0",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "Học 10 từ tiếng Anh hôm nay…",
+          "startMs": 0.0,
+          "endMs": 2147.854166666667,
+          "scene": "hook",
+          "segmentId": "hook-0",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "vài ngày sau quên gần hết?",
+      "startMs": 2267.8541666666665,
+      "endMs": 3939.7083333333335,
+      "scene": "hook",
+      "segmentId": "hook-1",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "vài ngày sau quên gần hết?",
+          "startMs": 2267.8541666666665,
+          "endMs": 3939.7083333333335,
+          "scene": "hook",
+          "segmentId": "hook-1",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "Bạn có đang như vậy không?",
+      "startMs": 4059.708333333333,
+      "endMs": 5789.604166666667,
+      "scene": "hook",
+      "segmentId": "hook-2",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "Bạn có đang như vậy không?",
+          "startMs": 4059.708333333333,
+          "endMs": 5789.604166666667,
+          "scene": "hook",
+          "segmentId": "hook-2",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "Bạn học nghĩa của từ,",
+      "startMs": 6333.333333333333,
+      "endMs": 8341.875,
+      "scene": "problem",
+      "segmentId": "problem-0",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "Bạn học nghĩa của từ,",
+          "startMs": 6333.333333333333,
+          "endMs": 8341.875,
+          "scene": "problem",
+          "segmentId": "problem-0",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "ghi vào vở, đọc lại vài lần.",
+      "startMs": 8461.875,
+      "endMs": 10899.979166666666,
+      "scene": "problem",
+      "segmentId": "problem-1",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "ghi vào vở, đọc lại vài lần.",
+          "startMs": 8461.875,
+          "endMs": 10899.979166666666,
+          "scene": "problem",
+          "segmentId": "problem-1",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "Nhưng đến khi cần đặt câu,",
+      "startMs": 11019.979166666668,
+      "endMs": 13005.291666666666,
+      "scene": "problem",
+      "segmentId": "problem-2",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "Nhưng đến khi cần đặt câu,",
+          "startMs": 11019.979166666668,
+          "endMs": 13005.291666666666,
+          "scene": "problem",
+          "segmentId": "problem-2",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "bạn lại chẳng biết dùng từ đó như thế nào.",
+      "startMs": 13125.291666666668,
+      "endMs": 16294.833333333334,
+      "scene": "problem",
+      "segmentId": "problem-3",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "bạn lại chẳng biết dùng từ đó như thế nào.",
+          "startMs": 13125.291666666668,
+          "endMs": 16294.833333333334,
+          "scene": "problem",
+          "segmentId": "problem-3",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "Vậy thử đổi cách học xem!",
+      "startMs": 16833.333333333332,
+      "endMs": 18923.145833333332,
+      "scene": "solution",
+      "segmentId": "solution-0",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "Vậy thử đổi cách học xem!",
+          "startMs": 16833.333333333332,
+          "endMs": 18923.145833333332,
+          "scene": "solution",
+          "segmentId": "solution-0",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "Thay vì chỉ nhờ ChatGPT giải nghĩa,",
+      "startMs": 19043.145833333332,
+      "endMs": 22177.854166666668,
+      "scene": "solution",
+      "segmentId": "solution-1",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "Thay vì chỉ nhờ ChatGPT giải nghĩa,",
+          "startMs": 19043.145833333332,
+          "endMs": 22177.854166666668,
+          "scene": "solution",
+          "segmentId": "solution-1",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "mình dùng AI để luyện cách sử dụng",
+      "startMs": 22297.854166666668,
+      "endMs": 25235.1875,
+      "scene": "solution",
+      "segmentId": "solution-2",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "mình dùng AI để luyện cách sử dụng",
+          "startMs": 22297.854166666668,
+          "endMs": 25235.1875,
+          "scene": "solution",
+          "segmentId": "solution-2",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "từ vựng ngay trong câu.",
+      "startMs": 25355.1875,
+      "endMs": 26736.791666666664,
+      "scene": "solution",
+      "segmentId": "solution-3",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "từ vựng ngay trong câu.",
+          "startMs": 25355.1875,
+          "endMs": 26736.791666666664,
+          "scene": "solution",
+          "segmentId": "solution-3",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "Ví dụ với từ improve,",
+      "startMs": 27266.666666666664,
+      "endMs": 29204.291666666668,
+      "scene": "demo",
+      "segmentId": "demo-0",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "Ví dụ với từ improve,",
+          "startMs": 27266.666666666664,
+          "endMs": 29204.291666666668,
+          "scene": "demo",
+          "segmentId": "demo-0",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "nghĩa là cải thiện.",
+      "startMs": 29324.291666666668,
+      "endMs": 30717.5,
+      "scene": "demo",
+      "segmentId": "demo-1",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "nghĩa là cải thiện.",
+          "startMs": 29324.291666666668,
+          "endMs": 30717.5,
+          "scene": "demo",
+          "segmentId": "demo-1",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "AI không chỉ giải thích,",
+      "startMs": 30837.5,
+      "endMs": 32544.166666666668,
+      "scene": "demo",
+      "segmentId": "demo-2",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "AI không chỉ giải thích,",
+          "startMs": 30837.5,
+          "endMs": 32544.166666666668,
+          "scene": "demo",
+          "segmentId": "demo-2",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "mà còn yêu cầu mình tự đặt câu.",
+      "startMs": 32664.166666666668,
+      "endMs": 35369.29166666667,
+      "scene": "demo",
+      "segmentId": "demo-3",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "mà còn yêu cầu mình tự đặt câu.",
+          "startMs": 32664.166666666668,
+          "endMs": 35369.29166666667,
+          "scene": "demo",
+          "segmentId": "demo-3",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "Mình viết:",
+      "startMs": 35489.291666666664,
+      "endMs": 36034.979166666664,
+      "scene": "demo",
+      "segmentId": "demo-4",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "Mình viết:",
+          "startMs": 35489.291666666664,
+          "endMs": 36034.979166666664,
+          "scene": "demo",
+          "segmentId": "demo-4",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "I want to improve my English.",
+      "startMs": 36154.979166666664,
+      "endMs": 38627.916666666664,
+      "scene": "demo",
+      "segmentId": "demo-5",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "I want to improve my English.",
+          "startMs": 36154.979166666664,
+          "endMs": 38627.916666666664,
+          "scene": "demo",
+          "segmentId": "demo-5",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "Sau đó, AI kiểm tra",
+      "startMs": 38747.91666666667,
+      "endMs": 41046.708333333336,
+      "scene": "demo",
+      "segmentId": "demo-6",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "Sau đó, AI kiểm tra",
+          "startMs": 38747.91666666667,
+          "endMs": 41046.708333333336,
+          "scene": "demo",
+          "segmentId": "demo-6",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "và giúp mình sửa nếu có lỗi.",
+      "startMs": 41166.708333333336,
+      "endMs": 43465.5,
+      "scene": "demo",
+      "segmentId": "demo-7",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "và giúp mình sửa nếu có lỗi.",
+          "startMs": 41166.708333333336,
+          "endMs": 43465.5,
+          "scene": "demo",
+          "segmentId": "demo-7",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "Những từ chưa nhớ, mình lưu lại",
+      "startMs": 44000.0,
+      "endMs": 46391.666666666664,
+      "scene": "benefit",
+      "segmentId": "benefit-0",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "Những từ chưa nhớ, mình lưu lại",
+          "startMs": 44000.0,
+          "endMs": 46391.666666666664,
+          "scene": "benefit",
+          "segmentId": "benefit-0",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "để buổi sau nhờ AI kiểm tra tiếp.",
+      "startMs": 46511.666666666664,
+      "endMs": 49367.729166666664,
+      "scene": "benefit",
+      "segmentId": "benefit-1",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "để buổi sau nhờ AI kiểm tra tiếp.",
+          "startMs": 46511.666666666664,
+          "endMs": 49367.729166666664,
+          "scene": "benefit",
+          "segmentId": "benefit-1",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "Như vậy, mình biết cần ôn từ nào",
+      "startMs": 49487.72916666667,
+      "endMs": 52041.9375,
+      "scene": "benefit",
+      "segmentId": "benefit-2",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "Như vậy, mình biết cần ôn từ nào",
+          "startMs": 49487.72916666667,
+          "endMs": 52041.9375,
+          "scene": "benefit",
+          "segmentId": "benefit-2",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "thay vì cứ học thêm từ mới.",
+      "startMs": 52161.9375,
+      "endMs": 54054.375,
+      "scene": "benefit",
+      "segmentId": "benefit-3",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "thay vì cứ học thêm từ mới.",
+          "startMs": 52161.9375,
+          "endMs": 54054.375,
+          "scene": "benefit",
+          "segmentId": "benefit-3",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "Muốn biết cách mình thiết lập ChatGPT",
+      "startMs": 54600.0,
+      "endMs": 57177.416666666664,
+      "scene": "cta",
+      "segmentId": "cta-0",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "Muốn biết cách mình thiết lập ChatGPT",
+          "startMs": 54600.0,
+          "endMs": 57177.416666666664,
+          "scene": "cta",
+          "segmentId": "cta-0",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "để học như vậy?",
+      "startMs": 57297.416666666664,
+      "endMs": 58342.333333333336,
+      "scene": "cta",
+      "segmentId": "cta-1",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "để học như vậy?",
+          "startMs": 57297.416666666664,
+          "endMs": 58342.333333333336,
+          "scene": "cta",
+          "segmentId": "cta-1",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "Bình luận BẮT ĐẦU,",
+      "startMs": 58462.333333333336,
+      "endMs": 59704.60416666667,
+      "scene": "cta",
+      "segmentId": "cta-2",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "Bình luận BẮT ĐẦU,",
+          "startMs": 58462.333333333336,
+          "endMs": 59704.60416666667,
+          "scene": "cta",
+          "segmentId": "cta-2",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    },
+    {
+      "text": "mình chia sẻ cách làm nhé!",
+      "startMs": 59824.604166666664,
+      "endMs": 61995.6875,
+      "scene": "cta",
+      "segmentId": "cta-3",
+      "timingLevel": "measured-phrase",
+      "tokens": [
+        {
+          "text": "mình chia sẻ cách làm nhé!",
+          "startMs": 59824.604166666664,
+          "endMs": 61995.6875,
+          "scene": "cta",
+          "segmentId": "cta-3",
+          "timingLevel": "measured-phrase"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "kind": "bridge",
+      "frame": 190
+    },
+    {
+      "kind": "bridge",
+      "frame": 505
+    },
+    {
+      "kind": "bridge",
+      "frame": 818
+    },
+    {
+      "kind": "bridge",
+      "frame": 1320
+    },
+    {
+      "kind": "bridge",
+      "frame": 1638
+    },
+    {
+      "kind": "complete",
+      "frame": 1162
+    }
+  ],
+  "voice": "Piper vi_VN-vais1000-medium; English example en_US-ljspeech-medium",
+  "captionTiming": "Measured synthesized phrase audio; no word-level alignment or karaoke claim",
+  "briefSha256": "18492023b4e75f5208f65f8cc619caba27dd6f64a526aa01a656f408279f70c0",
+  "mixMetrics": {
+    "input_i": "-16.00",
+    "input_tp": "-4.17",
+    "input_lra": "2.70",
+    "input_thresh": "-26.30",
+    "output_i": "-16.08",
+    "output_tp": "-4.00",
+    "output_lra": "2.50",
+    "output_thresh": "-26.33",
+    "normalization_type": "dynamic",
+    "target_offset": "0.08"
+  },
+  "voiceMetrics": {
+    "input_i": "-16.02",
+    "input_tp": "-4.33",
+    "input_lra": "2.70",
+    "input_thresh": "-26.24",
+    "output_i": "-16.07",
+    "output_tp": "-4.06",
+    "output_lra": "2.60",
+    "output_thresh": "-26.28",
+    "normalization_type": "dynamic",
+    "target_offset": "0.07"
+  },
+  "musicMetrics": {
+    "input_i": "-38.62",
+    "input_tp": "-24.64",
+    "input_lra": "1.30",
+    "input_thresh": "-48.62",
+    "output_i": "-15.94",
+    "output_tp": "-2.16",
+    "output_lra": "1.20",
+    "output_thresh": "-25.94",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.06"
+  }
+}

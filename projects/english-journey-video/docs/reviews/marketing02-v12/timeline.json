@@ -1,0 +1,1401 @@
+{
+  "version": "1.2",
+  "fps": 30,
+  "durationInFrames": 1805,
+  "durationSeconds": 60.166666666666664,
+  "audioSrc": "marketing02-v12/mix.wav",
+  "scenes": [
+    {
+      "type": "hook",
+      "startFrame": 0,
+      "endFrame": 206
+    },
+    {
+      "type": "problem",
+      "startFrame": 206,
+      "endFrame": 498
+    },
+    {
+      "type": "solution",
+      "startFrame": 498,
+      "endFrame": 764
+    },
+    {
+      "type": "demo",
+      "startFrame": 764,
+      "endFrame": 1248
+    },
+    {
+      "type": "benefit",
+      "startFrame": 1248,
+      "endFrame": 1538
+    },
+    {
+      "type": "cta",
+      "startFrame": 1538,
+      "endFrame": 1805
+    }
+  ],
+  "segments": [
+    {
+      "id": "hook",
+      "label": "HOOK",
+      "spoken": "Học 10 từ tiếng Anh hôm nay… vài ngày sau quên gần hết? Bạn có đang như vậy không?",
+      "startMs": 0.0,
+      "endMs": 6866.666666666666,
+      "audioDurationSeconds": 6.0625
+    },
+    {
+      "id": "problem",
+      "label": "PROBLEM",
+      "spoken": "Bạn học nghĩa của từ, ghi vào vở, đọc lại vài lần. Nhưng đến khi cần đặt câu, bạn lại chẳng biết dùng từ đó như thế nào.",
+      "startMs": 6866.666666666666,
+      "endMs": 16600.0,
+      "audioDurationSeconds": 8.9125
+    },
+    {
+      "id": "solution",
+      "label": "SOLUTION",
+      "spoken": "Vậy thử đổi cách học xem! Thay vì chỉ nhờ ChatGPT giải nghĩa, mình dùng AI để luyện cách sử dụng từ vựng ngay trong câu.",
+      "startMs": 16600.0,
+      "endMs": 25466.666666666664,
+      "audioDurationSeconds": 8.05
+    },
+    {
+      "id": "demo",
+      "label": "DEMO",
+      "spoken": "Ví dụ với từ improve, nghĩa là cải thiện. AI không chỉ giải thích, mà còn yêu cầu mình tự đặt câu. Mình viết: I want to improve my English. Sau đó, AI kiểm tra và giúp mình sửa nếu có lỗi.",
+      "startMs": 25466.666666666664,
+      "endMs": 41600.0,
+      "audioDurationSeconds": 15.325
+    },
+    {
+      "id": "benefit",
+      "label": "BENEFIT",
+      "spoken": "Những từ chưa nhớ, mình lưu lại để buổi sau nhờ AI kiểm tra tiếp. Như vậy, mình biết cần ôn từ nào thay vì cứ học thêm từ mới.",
+      "startMs": 41600.0,
+      "endMs": 51266.666666666664,
+      "audioDurationSeconds": 8.85
+    },
+    {
+      "id": "cta",
+      "label": "CTA",
+      "spoken": "Muốn biết cách mình thiết lập ChatGPT để học như vậy? Bình luận BẮT ĐẦU, mình chia sẻ cách làm nhé!",
+      "startMs": 51266.666666666664,
+      "endMs": 60166.666666666664,
+      "audioDurationSeconds": 6.775
+    }
+  ],
+  "tokens": [
+    {
+      "text": "Học 10 từ tiếng Anh hôm nay…",
+      "startMs": 0.0,
+      "endMs": 1540.0,
+      "scene": "hook",
+      "segmentId": "hook-0",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Học mươi từ tiếng Anh hôm nay",
+      "sourceStartSeconds": 0.0,
+      "sourceEndSeconds": 1.54
+    },
+    {
+      "text": "vài ngày sau quên gần hết?",
+      "startMs": 1540.0,
+      "endMs": 2940.0,
+      "scene": "hook",
+      "segmentId": "hook-1",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "vài ngày sau quên gần hết.",
+      "sourceStartSeconds": 1.54,
+      "sourceEndSeconds": 2.94
+    },
+    {
+      "text": "Bạn có đang như vậy không?",
+      "startMs": 3900.0,
+      "endMs": 5120.0,
+      "scene": "hook",
+      "segmentId": "hook-2",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Bạn có đang như vậy không?",
+      "sourceStartSeconds": 3.9,
+      "sourceEndSeconds": 5.12
+    },
+    {
+      "text": "Bạn học nghĩa của từ,",
+      "startMs": 6866.666666666666,
+      "endMs": 8046.666666666667,
+      "scene": "problem",
+      "segmentId": "problem-0",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Bạn học nghĩa của tư,",
+      "sourceStartSeconds": 0.0,
+      "sourceEndSeconds": 1.18
+    },
+    {
+      "text": "ghi vào vở, đọc lại vài lần.",
+      "startMs": 8486.666666666666,
+      "endMs": 10306.666666666666,
+      "scene": "problem",
+      "segmentId": "problem-1",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "ghi vào vỡ, đọc lại vài lần.",
+      "sourceStartSeconds": 1.62,
+      "sourceEndSeconds": 3.44
+    },
+    {
+      "text": "Nhưng đến khi cần đặt câu,",
+      "startMs": 11166.666666666666,
+      "endMs": 12686.666666666668,
+      "scene": "problem",
+      "segmentId": "problem-2",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Nhưng đến khi cần đặt câu,",
+      "sourceStartSeconds": 4.3,
+      "sourceEndSeconds": 5.82
+    },
+    {
+      "text": "bạn lại chẳng biết dùng từ đó như thế nào.",
+      "startMs": 12926.666666666666,
+      "endMs": 14866.666666666668,
+      "scene": "problem",
+      "segmentId": "problem-3",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "bạn lại chẳng biết dùng từ đó như thế nào.",
+      "sourceStartSeconds": 6.06,
+      "sourceEndSeconds": 8.0
+    },
+    {
+      "text": "Vậy thử đổi cách học xem!",
+      "startMs": 16600.0,
+      "endMs": 18060.000000000004,
+      "scene": "solution",
+      "segmentId": "solution-0",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Vậy thử đổi cách học xem.",
+      "sourceStartSeconds": 0.0,
+      "sourceEndSeconds": 1.46
+    },
+    {
+      "text": "Thay vì chỉ nhờ ChatGPT giải nghĩa,",
+      "startMs": 19000.0,
+      "endMs": 20880.000000000004,
+      "scene": "solution",
+      "segmentId": "solution-1",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Thay vì chỉ nhờ chắc giải nghĩa,",
+      "sourceStartSeconds": 2.4,
+      "sourceEndSeconds": 4.28
+    },
+    {
+      "text": "mình dùng AI để luyện cách sử dụng",
+      "startMs": 20940.0,
+      "endMs": 22720.000000000004,
+      "scene": "solution",
+      "segmentId": "solution-2",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "mình dùng AI để luyện các sử dụng",
+      "sourceStartSeconds": 4.34,
+      "sourceEndSeconds": 6.12
+    },
+    {
+      "text": "từ vựng ngay trong câu.",
+      "startMs": 22720.000000000004,
+      "endMs": 23960.0,
+      "scene": "solution",
+      "segmentId": "solution-3",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "từ vận ngay trong câu.",
+      "sourceStartSeconds": 6.12,
+      "sourceEndSeconds": 7.36
+    },
+    {
+      "text": "Ví dụ với từ improve,",
+      "startMs": 25466.666666666664,
+      "endMs": 26906.666666666668,
+      "scene": "demo",
+      "segmentId": "demo-0",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Ví dụ với từ impo,",
+      "sourceStartSeconds": 0.0,
+      "sourceEndSeconds": 1.44
+    },
+    {
+      "text": "nghĩa là cải thiện.",
+      "startMs": 27246.666666666668,
+      "endMs": 28206.666666666664,
+      "scene": "demo",
+      "segmentId": "demo-1",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "nghĩa là cải thiện.",
+      "sourceStartSeconds": 1.78,
+      "sourceEndSeconds": 2.74
+    },
+    {
+      "text": "AI không chỉ giải thích,",
+      "startMs": 29106.666666666664,
+      "endMs": 30346.666666666664,
+      "scene": "demo",
+      "segmentId": "demo-2",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "AI không chỉ giải thích,",
+      "sourceStartSeconds": 3.64,
+      "sourceEndSeconds": 4.88
+    },
+    {
+      "text": "mà còn yêu cầu mình tự đặt câu.",
+      "startMs": 30706.666666666664,
+      "endMs": 32606.66666666666,
+      "scene": "demo",
+      "segmentId": "demo-3",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "mà còn yêu cầu mình từ đặt câu.",
+      "sourceStartSeconds": 5.24,
+      "sourceEndSeconds": 7.14
+    },
+    {
+      "text": "Mình viết:",
+      "startMs": 33326.66666666667,
+      "endMs": 33926.666666666664,
+      "scene": "demo",
+      "segmentId": "demo-4",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Mình viết",
+      "sourceStartSeconds": 7.86,
+      "sourceEndSeconds": 8.46
+    },
+    {
+      "text": "I want to improve my English.",
+      "startMs": 33926.666666666664,
+      "endMs": 35806.666666666664,
+      "scene": "demo",
+      "segmentId": "demo-5",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "ưu an to improve me English.",
+      "sourceStartSeconds": 8.46,
+      "sourceEndSeconds": 10.34
+    },
+    {
+      "text": "Sau đó, AI kiểm tra",
+      "startMs": 36686.666666666664,
+      "endMs": 38446.666666666664,
+      "scene": "demo",
+      "segmentId": "demo-6",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Sau đó, AI kiểm tra",
+      "sourceStartSeconds": 11.22,
+      "sourceEndSeconds": 12.98
+    },
+    {
+      "text": "và giúp mình sửa nếu có lỗi.",
+      "startMs": 38446.666666666664,
+      "endMs": 39826.66666666667,
+      "scene": "demo",
+      "segmentId": "demo-7",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "và giúp mình sửa nếu có lỗi.",
+      "sourceStartSeconds": 12.98,
+      "sourceEndSeconds": 14.36
+    },
+    {
+      "text": "Những từ chưa nhớ, mình lưu lại",
+      "startMs": 41600.0,
+      "endMs": 43480.00000000001,
+      "scene": "benefit",
+      "segmentId": "benefit-0",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Những từ chưa nhớ, mình lưu lại",
+      "sourceStartSeconds": 0.0,
+      "sourceEndSeconds": 1.88
+    },
+    {
+      "text": "để buổi sau nhờ AI kiểm tra tiếp.",
+      "startMs": 43480.00000000001,
+      "endMs": 45320.0,
+      "scene": "benefit",
+      "segmentId": "benefit-1",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "để bụi sau nhờ AI kiểm tra tiếp.",
+      "sourceStartSeconds": 1.88,
+      "sourceEndSeconds": 3.72
+    },
+    {
+      "text": "Như vậy, mình biết cần ôn từ nào",
+      "startMs": 46260.00000000001,
+      "endMs": 48060.0,
+      "scene": "benefit",
+      "segmentId": "benefit-2",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Như vậy, mình biết cần ôn từ nào",
+      "sourceStartSeconds": 4.66,
+      "sourceEndSeconds": 6.46
+    },
+    {
+      "text": "thay vì cứ học thêm từ mới.",
+      "startMs": 48060.0,
+      "endMs": 49500.0,
+      "scene": "benefit",
+      "segmentId": "benefit-3",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "thay vì cứ học thêm từ mới.",
+      "sourceStartSeconds": 6.46,
+      "sourceEndSeconds": 7.9
+    },
+    {
+      "text": "Muốn biết cách mình thiết lập ChatGPT",
+      "startMs": 51266.666666666664,
+      "endMs": 53006.666666666664,
+      "scene": "cta",
+      "segmentId": "cta-0",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Muốn biết cách mình thiết lập chát",
+      "sourceStartSeconds": 0.0,
+      "sourceEndSeconds": 1.74
+    },
+    {
+      "text": "để học như vậy?",
+      "startMs": 53006.666666666664,
+      "endMs": 53766.666666666664,
+      "scene": "cta",
+      "segmentId": "cta-1",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "để học như vậy.",
+      "sourceStartSeconds": 1.74,
+      "sourceEndSeconds": 2.5
+    },
+    {
+      "text": "Bình luận BẮT ĐẦU,",
+      "startMs": 54526.666666666664,
+      "endMs": 55566.666666666664,
+      "scene": "cta",
+      "segmentId": "cta-2",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Bình luận bắt đầu,",
+      "sourceStartSeconds": 3.26,
+      "sourceEndSeconds": 4.3
+    },
+    {
+      "text": "mình chia sẻ cách làm nhé!",
+      "startMs": 55906.666666666664,
+      "endMs": 57206.666666666664,
+      "scene": "cta",
+      "segmentId": "cta-3",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "mình chia sẽ cách làm nhát.",
+      "sourceStartSeconds": 4.64,
+      "sourceEndSeconds": 5.94
+    }
+  ],
+  "pages": [
+    {
+      "text": "Học 10 từ tiếng Anh hôm nay…",
+      "startMs": 0.0,
+      "endMs": 1540.0,
+      "scene": "hook",
+      "segmentId": "hook-0",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Học mươi từ tiếng Anh hôm nay",
+      "sourceStartSeconds": 0.0,
+      "sourceEndSeconds": 1.54,
+      "tokens": [
+        {
+          "text": "Học 10 từ tiếng Anh hôm nay…",
+          "startMs": 0.0,
+          "endMs": 1540.0,
+          "scene": "hook",
+          "segmentId": "hook-0",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "Học mươi từ tiếng Anh hôm nay",
+          "sourceStartSeconds": 0.0,
+          "sourceEndSeconds": 1.54
+        }
+      ]
+    },
+    {
+      "text": "vài ngày sau quên gần hết?",
+      "startMs": 1540.0,
+      "endMs": 2940.0,
+      "scene": "hook",
+      "segmentId": "hook-1",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "vài ngày sau quên gần hết.",
+      "sourceStartSeconds": 1.54,
+      "sourceEndSeconds": 2.94,
+      "tokens": [
+        {
+          "text": "vài ngày sau quên gần hết?",
+          "startMs": 1540.0,
+          "endMs": 2940.0,
+          "scene": "hook",
+          "segmentId": "hook-1",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "vài ngày sau quên gần hết.",
+          "sourceStartSeconds": 1.54,
+          "sourceEndSeconds": 2.94
+        }
+      ]
+    },
+    {
+      "text": "Bạn có đang như vậy không?",
+      "startMs": 3900.0,
+      "endMs": 5120.0,
+      "scene": "hook",
+      "segmentId": "hook-2",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Bạn có đang như vậy không?",
+      "sourceStartSeconds": 3.9,
+      "sourceEndSeconds": 5.12,
+      "tokens": [
+        {
+          "text": "Bạn có đang như vậy không?",
+          "startMs": 3900.0,
+          "endMs": 5120.0,
+          "scene": "hook",
+          "segmentId": "hook-2",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "Bạn có đang như vậy không?",
+          "sourceStartSeconds": 3.9,
+          "sourceEndSeconds": 5.12
+        }
+      ]
+    },
+    {
+      "text": "Bạn học nghĩa của từ,",
+      "startMs": 6866.666666666666,
+      "endMs": 8046.666666666667,
+      "scene": "problem",
+      "segmentId": "problem-0",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Bạn học nghĩa của tư,",
+      "sourceStartSeconds": 0.0,
+      "sourceEndSeconds": 1.18,
+      "tokens": [
+        {
+          "text": "Bạn học nghĩa của từ,",
+          "startMs": 6866.666666666666,
+          "endMs": 8046.666666666667,
+          "scene": "problem",
+          "segmentId": "problem-0",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "Bạn học nghĩa của tư,",
+          "sourceStartSeconds": 0.0,
+          "sourceEndSeconds": 1.18
+        }
+      ]
+    },
+    {
+      "text": "ghi vào vở, đọc lại vài lần.",
+      "startMs": 8486.666666666666,
+      "endMs": 10306.666666666666,
+      "scene": "problem",
+      "segmentId": "problem-1",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "ghi vào vỡ, đọc lại vài lần.",
+      "sourceStartSeconds": 1.62,
+      "sourceEndSeconds": 3.44,
+      "tokens": [
+        {
+          "text": "ghi vào vở, đọc lại vài lần.",
+          "startMs": 8486.666666666666,
+          "endMs": 10306.666666666666,
+          "scene": "problem",
+          "segmentId": "problem-1",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "ghi vào vỡ, đọc lại vài lần.",
+          "sourceStartSeconds": 1.62,
+          "sourceEndSeconds": 3.44
+        }
+      ]
+    },
+    {
+      "text": "Nhưng đến khi cần đặt câu,",
+      "startMs": 11166.666666666666,
+      "endMs": 12686.666666666668,
+      "scene": "problem",
+      "segmentId": "problem-2",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Nhưng đến khi cần đặt câu,",
+      "sourceStartSeconds": 4.3,
+      "sourceEndSeconds": 5.82,
+      "tokens": [
+        {
+          "text": "Nhưng đến khi cần đặt câu,",
+          "startMs": 11166.666666666666,
+          "endMs": 12686.666666666668,
+          "scene": "problem",
+          "segmentId": "problem-2",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "Nhưng đến khi cần đặt câu,",
+          "sourceStartSeconds": 4.3,
+          "sourceEndSeconds": 5.82
+        }
+      ]
+    },
+    {
+      "text": "bạn lại chẳng biết dùng từ đó như thế nào.",
+      "startMs": 12926.666666666666,
+      "endMs": 14866.666666666668,
+      "scene": "problem",
+      "segmentId": "problem-3",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "bạn lại chẳng biết dùng từ đó như thế nào.",
+      "sourceStartSeconds": 6.06,
+      "sourceEndSeconds": 8.0,
+      "tokens": [
+        {
+          "text": "bạn lại chẳng biết dùng từ đó như thế nào.",
+          "startMs": 12926.666666666666,
+          "endMs": 14866.666666666668,
+          "scene": "problem",
+          "segmentId": "problem-3",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "bạn lại chẳng biết dùng từ đó như thế nào.",
+          "sourceStartSeconds": 6.06,
+          "sourceEndSeconds": 8.0
+        }
+      ]
+    },
+    {
+      "text": "Vậy thử đổi cách học xem!",
+      "startMs": 16600.0,
+      "endMs": 18060.000000000004,
+      "scene": "solution",
+      "segmentId": "solution-0",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Vậy thử đổi cách học xem.",
+      "sourceStartSeconds": 0.0,
+      "sourceEndSeconds": 1.46,
+      "tokens": [
+        {
+          "text": "Vậy thử đổi cách học xem!",
+          "startMs": 16600.0,
+          "endMs": 18060.000000000004,
+          "scene": "solution",
+          "segmentId": "solution-0",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "Vậy thử đổi cách học xem.",
+          "sourceStartSeconds": 0.0,
+          "sourceEndSeconds": 1.46
+        }
+      ]
+    },
+    {
+      "text": "Thay vì chỉ nhờ ChatGPT giải nghĩa,",
+      "startMs": 19000.0,
+      "endMs": 20880.000000000004,
+      "scene": "solution",
+      "segmentId": "solution-1",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Thay vì chỉ nhờ chắc giải nghĩa,",
+      "sourceStartSeconds": 2.4,
+      "sourceEndSeconds": 4.28,
+      "tokens": [
+        {
+          "text": "Thay vì chỉ nhờ ChatGPT giải nghĩa,",
+          "startMs": 19000.0,
+          "endMs": 20880.000000000004,
+          "scene": "solution",
+          "segmentId": "solution-1",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "Thay vì chỉ nhờ chắc giải nghĩa,",
+          "sourceStartSeconds": 2.4,
+          "sourceEndSeconds": 4.28
+        }
+      ]
+    },
+    {
+      "text": "mình dùng AI để luyện cách sử dụng",
+      "startMs": 20940.0,
+      "endMs": 22720.000000000004,
+      "scene": "solution",
+      "segmentId": "solution-2",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "mình dùng AI để luyện các sử dụng",
+      "sourceStartSeconds": 4.34,
+      "sourceEndSeconds": 6.12,
+      "tokens": [
+        {
+          "text": "mình dùng AI để luyện cách sử dụng",
+          "startMs": 20940.0,
+          "endMs": 22720.000000000004,
+          "scene": "solution",
+          "segmentId": "solution-2",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "mình dùng AI để luyện các sử dụng",
+          "sourceStartSeconds": 4.34,
+          "sourceEndSeconds": 6.12
+        }
+      ]
+    },
+    {
+      "text": "từ vựng ngay trong câu.",
+      "startMs": 22720.000000000004,
+      "endMs": 23960.0,
+      "scene": "solution",
+      "segmentId": "solution-3",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "từ vận ngay trong câu.",
+      "sourceStartSeconds": 6.12,
+      "sourceEndSeconds": 7.36,
+      "tokens": [
+        {
+          "text": "từ vựng ngay trong câu.",
+          "startMs": 22720.000000000004,
+          "endMs": 23960.0,
+          "scene": "solution",
+          "segmentId": "solution-3",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "từ vận ngay trong câu.",
+          "sourceStartSeconds": 6.12,
+          "sourceEndSeconds": 7.36
+        }
+      ]
+    },
+    {
+      "text": "Ví dụ với từ improve,",
+      "startMs": 25466.666666666664,
+      "endMs": 26906.666666666668,
+      "scene": "demo",
+      "segmentId": "demo-0",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Ví dụ với từ impo,",
+      "sourceStartSeconds": 0.0,
+      "sourceEndSeconds": 1.44,
+      "tokens": [
+        {
+          "text": "Ví dụ với từ improve,",
+          "startMs": 25466.666666666664,
+          "endMs": 26906.666666666668,
+          "scene": "demo",
+          "segmentId": "demo-0",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "Ví dụ với từ impo,",
+          "sourceStartSeconds": 0.0,
+          "sourceEndSeconds": 1.44
+        }
+      ]
+    },
+    {
+      "text": "nghĩa là cải thiện.",
+      "startMs": 27246.666666666668,
+      "endMs": 28206.666666666664,
+      "scene": "demo",
+      "segmentId": "demo-1",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "nghĩa là cải thiện.",
+      "sourceStartSeconds": 1.78,
+      "sourceEndSeconds": 2.74,
+      "tokens": [
+        {
+          "text": "nghĩa là cải thiện.",
+          "startMs": 27246.666666666668,
+          "endMs": 28206.666666666664,
+          "scene": "demo",
+          "segmentId": "demo-1",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "nghĩa là cải thiện.",
+          "sourceStartSeconds": 1.78,
+          "sourceEndSeconds": 2.74
+        }
+      ]
+    },
+    {
+      "text": "AI không chỉ giải thích,",
+      "startMs": 29106.666666666664,
+      "endMs": 30346.666666666664,
+      "scene": "demo",
+      "segmentId": "demo-2",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "AI không chỉ giải thích,",
+      "sourceStartSeconds": 3.64,
+      "sourceEndSeconds": 4.88,
+      "tokens": [
+        {
+          "text": "AI không chỉ giải thích,",
+          "startMs": 29106.666666666664,
+          "endMs": 30346.666666666664,
+          "scene": "demo",
+          "segmentId": "demo-2",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "AI không chỉ giải thích,",
+          "sourceStartSeconds": 3.64,
+          "sourceEndSeconds": 4.88
+        }
+      ]
+    },
+    {
+      "text": "mà còn yêu cầu mình tự đặt câu.",
+      "startMs": 30706.666666666664,
+      "endMs": 32606.66666666666,
+      "scene": "demo",
+      "segmentId": "demo-3",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "mà còn yêu cầu mình từ đặt câu.",
+      "sourceStartSeconds": 5.24,
+      "sourceEndSeconds": 7.14,
+      "tokens": [
+        {
+          "text": "mà còn yêu cầu mình tự đặt câu.",
+          "startMs": 30706.666666666664,
+          "endMs": 32606.66666666666,
+          "scene": "demo",
+          "segmentId": "demo-3",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "mà còn yêu cầu mình từ đặt câu.",
+          "sourceStartSeconds": 5.24,
+          "sourceEndSeconds": 7.14
+        }
+      ]
+    },
+    {
+      "text": "Mình viết:",
+      "startMs": 33326.66666666667,
+      "endMs": 33926.666666666664,
+      "scene": "demo",
+      "segmentId": "demo-4",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Mình viết",
+      "sourceStartSeconds": 7.86,
+      "sourceEndSeconds": 8.46,
+      "tokens": [
+        {
+          "text": "Mình viết:",
+          "startMs": 33326.66666666667,
+          "endMs": 33926.666666666664,
+          "scene": "demo",
+          "segmentId": "demo-4",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "Mình viết",
+          "sourceStartSeconds": 7.86,
+          "sourceEndSeconds": 8.46
+        }
+      ]
+    },
+    {
+      "text": "I want to improve my English.",
+      "startMs": 33926.666666666664,
+      "endMs": 35806.666666666664,
+      "scene": "demo",
+      "segmentId": "demo-5",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "ưu an to improve me English.",
+      "sourceStartSeconds": 8.46,
+      "sourceEndSeconds": 10.34,
+      "tokens": [
+        {
+          "text": "I want to improve my English.",
+          "startMs": 33926.666666666664,
+          "endMs": 35806.666666666664,
+          "scene": "demo",
+          "segmentId": "demo-5",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "ưu an to improve me English.",
+          "sourceStartSeconds": 8.46,
+          "sourceEndSeconds": 10.34
+        }
+      ]
+    },
+    {
+      "text": "Sau đó, AI kiểm tra",
+      "startMs": 36686.666666666664,
+      "endMs": 38446.666666666664,
+      "scene": "demo",
+      "segmentId": "demo-6",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Sau đó, AI kiểm tra",
+      "sourceStartSeconds": 11.22,
+      "sourceEndSeconds": 12.98,
+      "tokens": [
+        {
+          "text": "Sau đó, AI kiểm tra",
+          "startMs": 36686.666666666664,
+          "endMs": 38446.666666666664,
+          "scene": "demo",
+          "segmentId": "demo-6",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "Sau đó, AI kiểm tra",
+          "sourceStartSeconds": 11.22,
+          "sourceEndSeconds": 12.98
+        }
+      ]
+    },
+    {
+      "text": "và giúp mình sửa nếu có lỗi.",
+      "startMs": 38446.666666666664,
+      "endMs": 39826.66666666667,
+      "scene": "demo",
+      "segmentId": "demo-7",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "và giúp mình sửa nếu có lỗi.",
+      "sourceStartSeconds": 12.98,
+      "sourceEndSeconds": 14.36,
+      "tokens": [
+        {
+          "text": "và giúp mình sửa nếu có lỗi.",
+          "startMs": 38446.666666666664,
+          "endMs": 39826.66666666667,
+          "scene": "demo",
+          "segmentId": "demo-7",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "và giúp mình sửa nếu có lỗi.",
+          "sourceStartSeconds": 12.98,
+          "sourceEndSeconds": 14.36
+        }
+      ]
+    },
+    {
+      "text": "Những từ chưa nhớ, mình lưu lại",
+      "startMs": 41600.0,
+      "endMs": 43480.00000000001,
+      "scene": "benefit",
+      "segmentId": "benefit-0",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Những từ chưa nhớ, mình lưu lại",
+      "sourceStartSeconds": 0.0,
+      "sourceEndSeconds": 1.88,
+      "tokens": [
+        {
+          "text": "Những từ chưa nhớ, mình lưu lại",
+          "startMs": 41600.0,
+          "endMs": 43480.00000000001,
+          "scene": "benefit",
+          "segmentId": "benefit-0",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "Những từ chưa nhớ, mình lưu lại",
+          "sourceStartSeconds": 0.0,
+          "sourceEndSeconds": 1.88
+        }
+      ]
+    },
+    {
+      "text": "để buổi sau nhờ AI kiểm tra tiếp.",
+      "startMs": 43480.00000000001,
+      "endMs": 45320.0,
+      "scene": "benefit",
+      "segmentId": "benefit-1",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "để bụi sau nhờ AI kiểm tra tiếp.",
+      "sourceStartSeconds": 1.88,
+      "sourceEndSeconds": 3.72,
+      "tokens": [
+        {
+          "text": "để buổi sau nhờ AI kiểm tra tiếp.",
+          "startMs": 43480.00000000001,
+          "endMs": 45320.0,
+          "scene": "benefit",
+          "segmentId": "benefit-1",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "để bụi sau nhờ AI kiểm tra tiếp.",
+          "sourceStartSeconds": 1.88,
+          "sourceEndSeconds": 3.72
+        }
+      ]
+    },
+    {
+      "text": "Như vậy, mình biết cần ôn từ nào",
+      "startMs": 46260.00000000001,
+      "endMs": 48060.0,
+      "scene": "benefit",
+      "segmentId": "benefit-2",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Như vậy, mình biết cần ôn từ nào",
+      "sourceStartSeconds": 4.66,
+      "sourceEndSeconds": 6.46,
+      "tokens": [
+        {
+          "text": "Như vậy, mình biết cần ôn từ nào",
+          "startMs": 46260.00000000001,
+          "endMs": 48060.0,
+          "scene": "benefit",
+          "segmentId": "benefit-2",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "Như vậy, mình biết cần ôn từ nào",
+          "sourceStartSeconds": 4.66,
+          "sourceEndSeconds": 6.46
+        }
+      ]
+    },
+    {
+      "text": "thay vì cứ học thêm từ mới.",
+      "startMs": 48060.0,
+      "endMs": 49500.0,
+      "scene": "benefit",
+      "segmentId": "benefit-3",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "thay vì cứ học thêm từ mới.",
+      "sourceStartSeconds": 6.46,
+      "sourceEndSeconds": 7.9,
+      "tokens": [
+        {
+          "text": "thay vì cứ học thêm từ mới.",
+          "startMs": 48060.0,
+          "endMs": 49500.0,
+          "scene": "benefit",
+          "segmentId": "benefit-3",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "thay vì cứ học thêm từ mới.",
+          "sourceStartSeconds": 6.46,
+          "sourceEndSeconds": 7.9
+        }
+      ]
+    },
+    {
+      "text": "Muốn biết cách mình thiết lập ChatGPT",
+      "startMs": 51266.666666666664,
+      "endMs": 53006.666666666664,
+      "scene": "cta",
+      "segmentId": "cta-0",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Muốn biết cách mình thiết lập chát",
+      "sourceStartSeconds": 0.0,
+      "sourceEndSeconds": 1.74,
+      "tokens": [
+        {
+          "text": "Muốn biết cách mình thiết lập ChatGPT",
+          "startMs": 51266.666666666664,
+          "endMs": 53006.666666666664,
+          "scene": "cta",
+          "segmentId": "cta-0",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "Muốn biết cách mình thiết lập chát",
+          "sourceStartSeconds": 0.0,
+          "sourceEndSeconds": 1.74
+        }
+      ]
+    },
+    {
+      "text": "để học như vậy?",
+      "startMs": 53006.666666666664,
+      "endMs": 53766.666666666664,
+      "scene": "cta",
+      "segmentId": "cta-1",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "để học như vậy.",
+      "sourceStartSeconds": 1.74,
+      "sourceEndSeconds": 2.5,
+      "tokens": [
+        {
+          "text": "để học như vậy?",
+          "startMs": 53006.666666666664,
+          "endMs": 53766.666666666664,
+          "scene": "cta",
+          "segmentId": "cta-1",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "để học như vậy.",
+          "sourceStartSeconds": 1.74,
+          "sourceEndSeconds": 2.5
+        }
+      ]
+    },
+    {
+      "text": "Bình luận BẮT ĐẦU,",
+      "startMs": 54526.666666666664,
+      "endMs": 55566.666666666664,
+      "scene": "cta",
+      "segmentId": "cta-2",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "Bình luận bắt đầu,",
+      "sourceStartSeconds": 3.26,
+      "sourceEndSeconds": 4.3,
+      "tokens": [
+        {
+          "text": "Bình luận BẮT ĐẦU,",
+          "startMs": 54526.666666666664,
+          "endMs": 55566.666666666664,
+          "scene": "cta",
+          "segmentId": "cta-2",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "Bình luận bắt đầu,",
+          "sourceStartSeconds": 3.26,
+          "sourceEndSeconds": 4.3
+        }
+      ]
+    },
+    {
+      "text": "mình chia sẻ cách làm nhé!",
+      "startMs": 55906.666666666664,
+      "endMs": 57206.666666666664,
+      "scene": "cta",
+      "segmentId": "cta-3",
+      "timingLevel": "ASR-observed-phrase",
+      "observedText": "mình chia sẽ cách làm nhát.",
+      "sourceStartSeconds": 4.64,
+      "sourceEndSeconds": 5.94,
+      "tokens": [
+        {
+          "text": "mình chia sẻ cách làm nhé!",
+          "startMs": 55906.666666666664,
+          "endMs": 57206.666666666664,
+          "scene": "cta",
+          "segmentId": "cta-3",
+          "timingLevel": "ASR-observed-phrase",
+          "observedText": "mình chia sẽ cách làm nhát.",
+          "sourceStartSeconds": 4.64,
+          "sourceEndSeconds": 5.94
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "kind": "bridge",
+      "frame": 206
+    },
+    {
+      "kind": "bridge",
+      "frame": 498
+    },
+    {
+      "kind": "bridge",
+      "frame": 764
+    },
+    {
+      "kind": "bridge",
+      "frame": 1248
+    },
+    {
+      "kind": "bridge",
+      "frame": 1538
+    },
+    {
+      "kind": "complete",
+      "frame": 1101
+    }
+  ],
+  "voice": "Azure Speech Standard S0 vi-VN-NamMinhNeural",
+  "rate": "+0%",
+  "pitch": "default",
+  "captionTiming": "Phrase endpoints observed by local faster-whisper small; approved text retained. No interpolated word times or karaoke. Subjective alignment/pronunciation requires owner listening.",
+  "assets": [
+    {
+      "scene": "hook",
+      "file": "A-HOOK-NamMinh-S0.wav",
+      "sha256": "81f0f02bc446c32a494ab4fcf593eba051465bfc6138f35c7e82779650542522",
+      "sourceSampleRate": 24000,
+      "durationSeconds": 6.0625,
+      "normalization": {
+        "input": {
+          "input_i": "-19.44",
+          "input_tp": "-3.84",
+          "input_lra": "2.50",
+          "input_thresh": "-29.78",
+          "output_i": "-16.00",
+          "output_tp": "-1.50",
+          "output_lra": "2.80",
+          "output_thresh": "-26.28",
+          "normalization_type": "dynamic",
+          "target_offset": "0.00"
+        },
+        "gainDb": 2.3418937840686818,
+        "output": {
+          "input_i": "-17.08",
+          "input_tp": "-1.49",
+          "input_lra": "2.50",
+          "input_thresh": "-27.43",
+          "output_i": "-16.00",
+          "output_tp": "-1.50",
+          "output_lra": "2.80",
+          "output_thresh": "-26.28",
+          "normalization_type": "dynamic",
+          "target_offset": "0.00"
+        }
+      },
+      "provenance": "Azure Speech Studio S0 export, one synthesis request"
+    },
+    {
+      "scene": "problem",
+      "file": "C-PROBLEM-NamMinh-S0-V12.wav",
+      "sha256": "fbffe86a5462469a72c0bc44af2cf993e23bab0806a30d586ee943683f9eb86e",
+      "sourceSampleRate": 24000,
+      "durationSeconds": 8.9125,
+      "normalization": {
+        "input": {
+          "input_i": "-19.00",
+          "input_tp": "-2.71",
+          "input_lra": "2.50",
+          "input_thresh": "-29.30",
+          "output_i": "-15.82",
+          "output_tp": "-1.50",
+          "output_lra": "2.60",
+          "output_thresh": "-26.16",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.18"
+        },
+        "gainDb": 1.2112907263193895,
+        "output": {
+          "input_i": "-17.79",
+          "input_tp": "-1.50",
+          "input_lra": "2.50",
+          "input_thresh": "-28.09",
+          "output_i": "-15.81",
+          "output_tp": "-1.50",
+          "output_lra": "2.60",
+          "output_thresh": "-26.16",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.19"
+        }
+      },
+      "provenance": "Azure Speech Studio S0 export, one synthesis request"
+    },
+    {
+      "scene": "solution",
+      "file": "D-SOLUTION-NamMinh-S0-V12.wav",
+      "sha256": "f464e3a48bc8c0096195dc44e1c1d2b4295415fcc3630baba06af3291bb7b468",
+      "sourceSampleRate": 24000,
+      "durationSeconds": 8.05,
+      "normalization": {
+        "input": {
+          "input_i": "-20.15",
+          "input_tp": "-3.94",
+          "input_lra": "1.70",
+          "input_thresh": "-30.34",
+          "output_i": "-16.10",
+          "output_tp": "-1.50",
+          "output_lra": "1.40",
+          "output_thresh": "-26.24",
+          "normalization_type": "dynamic",
+          "target_offset": "0.10"
+        },
+        "gainDb": 2.441053114844138,
+        "output": {
+          "input_i": "-17.72",
+          "input_tp": "-1.50",
+          "input_lra": "1.70",
+          "input_thresh": "-27.91",
+          "output_i": "-16.11",
+          "output_tp": "-1.50",
+          "output_lra": "1.40",
+          "output_thresh": "-26.24",
+          "normalization_type": "dynamic",
+          "target_offset": "0.11"
+        }
+      },
+      "provenance": "Azure Speech Studio S0 export, one synthesis request"
+    },
+    {
+      "scene": "demo",
+      "file": "B-DEMO-NamMinh-S0.wav",
+      "sha256": "6bc9bca6f5ca8a8e7e86248a4d9b45057a3491f5e1b5b9ce0f68eafacba72cc4",
+      "sourceSampleRate": 24000,
+      "durationSeconds": 15.325,
+      "normalization": {
+        "input": {
+          "input_i": "-19.52",
+          "input_tp": "-2.85",
+          "input_lra": "1.70",
+          "input_thresh": "-29.81",
+          "output_i": "-16.09",
+          "output_tp": "-1.50",
+          "output_lra": "1.80",
+          "output_thresh": "-26.40",
+          "normalization_type": "dynamic",
+          "target_offset": "0.09"
+        },
+        "gainDb": 1.3522309492521576,
+        "output": {
+          "input_i": "-18.18",
+          "input_tp": "-1.50",
+          "input_lra": "1.70",
+          "input_thresh": "-28.47",
+          "output_i": "-16.08",
+          "output_tp": "-1.50",
+          "output_lra": "1.80",
+          "output_thresh": "-26.39",
+          "normalization_type": "dynamic",
+          "target_offset": "0.08"
+        }
+      },
+      "provenance": "Approved recovered sample; unchanged bytes"
+    },
+    {
+      "scene": "benefit",
+      "file": "E-BENEFIT-NamMinh-S0-V12.wav",
+      "sha256": "5e762353c31846c70f2c74d65450ec7e10d59d1ad334a585f21b381a1486fa0c",
+      "sourceSampleRate": 24000,
+      "durationSeconds": 8.85,
+      "normalization": {
+        "input": {
+          "input_i": "-19.49",
+          "input_tp": "-3.43",
+          "input_lra": "2.00",
+          "input_thresh": "-29.62",
+          "output_i": "-16.27",
+          "output_tp": "-1.50",
+          "output_lra": "1.70",
+          "output_thresh": "-26.38",
+          "normalization_type": "dynamic",
+          "target_offset": "0.27"
+        },
+        "gainDb": 1.9345264223418712,
+        "output": {
+          "input_i": "-17.55",
+          "input_tp": "-1.50",
+          "input_lra": "2.10",
+          "input_thresh": "-27.68",
+          "output_i": "-16.27",
+          "output_tp": "-1.50",
+          "output_lra": "1.70",
+          "output_thresh": "-26.38",
+          "normalization_type": "dynamic",
+          "target_offset": "0.27"
+        }
+      },
+      "provenance": "Azure Speech Studio S0 export, one synthesis request"
+    },
+    {
+      "scene": "cta",
+      "file": "F-CTA-NamMinh-S0-V12.wav",
+      "sha256": "f760bc0734b57e938f885cf9436bf2884d6c056f58c18bb8bb1b3c5af225d04b",
+      "sourceSampleRate": 24000,
+      "durationSeconds": 6.775,
+      "normalization": {
+        "input": {
+          "input_i": "-19.34",
+          "input_tp": "-2.78",
+          "input_lra": "0.90",
+          "input_thresh": "-29.67",
+          "output_i": "-15.94",
+          "output_tp": "-1.50",
+          "output_lra": "1.40",
+          "output_thresh": "-26.26",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.06"
+        },
+        "gainDb": 1.2854922448376929,
+        "output": {
+          "input_i": "-18.06",
+          "input_tp": "-1.50",
+          "input_lra": "0.80",
+          "input_thresh": "-28.39",
+          "output_i": "-15.94",
+          "output_tp": "-1.50",
+          "output_lra": "1.40",
+          "output_thresh": "-26.26",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.06"
+        }
+      },
+      "provenance": "Azure Speech Studio S0 export, one synthesis request"
+    }
+  ],
+  "briefSha256": "18492023b4e75f5208f65f8cc619caba27dd6f64a526aa01a656f408279f70c0",
+  "visualSourceSha256": "d97a401a3099d8200b8206fa86a08268e0a81efda0966d8ab9db290f011d08fe",
+  "mixMetrics": {
+    "input_i": "-16.00",
+    "input_tp": "-2.53",
+    "input_lra": "3.80",
+    "input_thresh": "-27.56",
+    "output_i": "-16.15",
+    "output_tp": "-2.51",
+    "output_lra": "3.50",
+    "output_thresh": "-27.52",
+    "normalization_type": "dynamic",
+    "target_offset": "0.15"
+  },
+  "voiceMetrics": {
+    "input_i": "-16.00",
+    "input_tp": "-2.64",
+    "input_lra": "3.60",
+    "input_thresh": "-26.24",
+    "output_i": "-16.14",
+    "output_tp": "-2.62",
+    "output_lra": "3.60",
+    "output_thresh": "-26.38",
+    "normalization_type": "dynamic",
+    "target_offset": "0.14"
+  },
+  "musicMetrics": {
+    "input_i": "-35.78",
+    "input_tp": "-22.77",
+    "input_lra": "2.20",
+    "input_thresh": "-45.78",
+    "output_i": "-15.83",
+    "output_tp": "-2.89",
+    "output_lra": "2.00",
+    "output_thresh": "-25.83",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.17"
+  },
+  "ducking": {
+    "minGain": 0.6,
+    "maxGain": 1.0,
+    "meanGain": 0.795399370036124
+  },
+  "synthesisCost": {
+    "resource": "english-journey-namminh",
+    "region": "southeastasia",
+    "tier": "S0",
+    "voice": "vi-VN-NamMinhNeural",
+    "limitUsd": 0.05,
+    "referencePricePerMillionUsd": 15,
+    "previousSamples": {
+      "characters": 270,
+      "referenceUsd": 0.00405,
+      "evidence": "Prior Work report, both source files visible Completed in Speech Studio; not Azure invoice"
+    },
+    "newPlan": [
+      {
+        "id": "hook",
+        "text": "Học 10 từ tiếng Anh hôm nay… vài ngày sau quên gần hết? Bạn có đang như vậy không?",
+        "characters": 82,
+        "referenceUsd": 0.00123,
+        "maxSynthesisRequests": 1,
+        "attempts": 1,
+        "status": "GENERATED_DOWNLOADED_DECODED",
+        "attemptUtc": "2026-10-15T03:36:20.194149+00:00",
+        "sha256": "81f0f02bc446c32a494ab4fcf593eba051465bfc6138f35c7e82779650542522",
+        "audioPath": "out/marketing02/azure-v12/A-HOOK-NamMinh-S0.wav"
+      },
+      {
+        "id": "problem",
+        "text": "Bạn học nghĩa của từ, ghi vào vở, đọc lại vài lần. Nhưng đến khi cần đặt câu, bạn lại chẳng biết dùng từ đó như thế nào.",
+        "characters": 120,
+        "referenceUsd": 0.0018,
+        "maxSynthesisRequests": 1,
+        "attempts": 1,
+        "status": "GENERATED_DOWNLOADED_DECODED",
+        "attemptUtc": "2026-10-15T03:39:31.847290+00:00",
+        "sha256": "fbffe86a5462469a72c0bc44af2cf993e23bab0806a30d586ee943683f9eb86e",
+        "audioPath": "out/marketing02/azure-v12/C-PROBLEM-NamMinh-S0-V12.wav"
+      },
+      {
+        "id": "solution",
+        "text": "Vậy thử đổi cách học xem! Thay vì chỉ nhờ ChatGPT giải nghĩa, mình dùng AI để luyện cách sử dụng từ vựng ngay trong câu.",
+        "characters": 120,
+        "referenceUsd": 0.0018,
+        "maxSynthesisRequests": 1,
+        "attempts": 1,
+        "status": "GENERATED_DOWNLOADED_DECODED",
+        "attemptUtc": "2026-10-15T03:40:35.343878+00:00",
+        "sha256": "f464e3a48bc8c0096195dc44e1c1d2b4295415fcc3630baba06af3291bb7b468",
+        "audioPath": "out/marketing02/azure-v12/D-SOLUTION-NamMinh-S0-V12.wav"
+      },
+      {
+        "id": "benefit",
+        "text": "Những từ chưa nhớ, mình lưu lại để buổi sau nhờ AI kiểm tra tiếp. Như vậy, mình biết cần ôn từ nào thay vì cứ học thêm từ mới.",
+        "characters": 126,
+        "referenceUsd": 0.00189,
+        "maxSynthesisRequests": 1,
+        "attempts": 1,
+        "status": "GENERATED_DOWNLOADED_DECODED",
+        "attemptUtc": "2026-10-15T03:41:19.334050+00:00",
+        "sha256": "5e762353c31846c70f2c74d65450ec7e10d59d1ad334a585f21b381a1486fa0c",
+        "audioPath": "out/marketing02/azure-v12/E-BENEFIT-NamMinh-S0-V12.wav"
+      },
+      {
+        "id": "cta",
+        "text": "Muốn biết cách mình thiết lập ChatGPT để học như vậy? Bình luận BẮT ĐẦU, mình chia sẻ cách làm nhé!",
+        "characters": 99,
+        "referenceUsd": 0.001485,
+        "maxSynthesisRequests": 1,
+        "attempts": 1,
+        "status": "GENERATED_DOWNLOADED_DECODED",
+        "attemptUtc": "2026-10-15T03:42:08.878447+00:00",
+        "sha256": "f760bc0734b57e938f885cf9436bf2884d6c056f58c18bb8bb1b3c5af225d04b",
+        "audioPath": "out/marketing02/azure-v12/F-CTA-NamMinh-S0-V12.wav"
+      }
+    ],
+    "reusedDemoSha256": "6bc9bca6f5ca8a8e7e86248a4d9b45057a3491f5e1b5b9ce0f68eafacba72cc4",
+    "newReferenceUsd": 0.008205,
+    "allKnownReferenceUsd": 0.012255
+  }
+}

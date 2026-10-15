@@ -1,0 +1,31 @@
+{
+  "version": "1.2",
+  "voice": {
+    "provider": "Azure Speech Standard S0",
+    "resource": "english-journey-namminh",
+    "region": "southeastasia",
+    "voice": "vi-VN-NamMinhNeural",
+    "rate": "+0%",
+    "pitch": "default",
+    "newSynthesisRequests": 5,
+    "reusedApprovedDemo": true,
+    "terms": "https://www.microsoft.com/licensing/terms/en-US/productoffering/MicrosoftAzure/allprograms",
+    "languageSupport": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support",
+    "verification": "Existing session official-source cost/licensing report; paid prebuilt neural output; no new terms acceptance"
+  },
+  "music": {
+    "source": "scripts/v2/build.py:original_music",
+    "bpm": 90,
+    "thirdPartySamples": false
+  },
+  "sfx": {
+    "source": "scripts/v2/build.py:original_sfx",
+    "thirdPartySamples": false
+  },
+  "visual": {
+    "source": "src/Marketing02.tsx",
+    "unchangedSha256": "d97a401a3099d8200b8206fa86a08268e0a81efda0966d8ab9db290f011d08fe"
+  },
+  "font": "public/fonts/LICENSE.txt",
+  "publication": "OWNER FINAL APPROVAL REQUIRED"
+}

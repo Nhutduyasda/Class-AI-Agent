@@ -1,0 +1,45 @@
+{
+  "video01_reference": {
+    "path": "/workspace/scratch/ad5631d8902a/voice-audit-inputs/english-journey-marketing-video-01-nam-minh.mp4",
+    "sha256": "8e56d06c8c0c4b50fa78a318414568c6d93c886f5a841f7b8c528b8c2c91af7a",
+    "durationSeconds": 65.344,
+    "audio": {
+      "codec_name": "aac",
+      "sample_rate": "48000",
+      "channels": 2
+    },
+    "integratedLufs": "-16.19",
+    "truePeakDbtp": "-1.47",
+    "containsMusic": true,
+    "comparisonExcerpt": "out/voice-match-audit/Video01-NamMinh-Reference-6s.wav"
+  },
+  "video02_rejected_stem": {
+    "path": "/workspace/scratch/ad5631d8902a/repo/projects/english-journey-video/out/marketing02/voice.wav",
+    "sha256": "2cb600d4a83a04b74fb0e60419b023020e23b42ee5a463b4e27c58c4d69e7319",
+    "durationSeconds": 62.533333,
+    "audio": {
+      "codec_name": "pcm_s16le",
+      "sample_rate": "48000",
+      "channels": 2
+    },
+    "integratedLufs": "-16.02",
+    "truePeakDbtp": "-4.33",
+    "containsMusic": false,
+    "comparisonExcerpt": "out/voice-match-audit/Video02-Rejected-Piper-6s.wav"
+  },
+  "video02_rejected_mp4": {
+    "path": "/workspace/scratch/ad5631d8902a/repo/projects/english-journey-video/out/marketing02/English-Journey-Marketing-02.mp4",
+    "sha256": "eec37056e1a8299eb27ec475c5856e3b259f9d3ff45b25f8ee45d37180abbe8c",
+    "durationSeconds": 62.549,
+    "audio": {
+      "codec_name": "aac",
+      "sample_rate": "48000",
+      "channels": 2
+    },
+    "integratedLufs": "-16.01",
+    "truePeakDbtp": "-4.15",
+    "containsMusic": true
+  },
+  "subjectiveListening": "BLOCKED: no actual audio listening performed; owner rejected Video02 voice",
+  "auditionGeneration": "VOICE RIGHTS / PROVIDER BLOCKED; no new synthesis calls"
+}
