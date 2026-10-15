@@ -23,9 +23,13 @@ These are offline and NEVER call Azure. They validate exact approved HOOK (82 ch
 For Windows PowerShell, securely place key in temporary process environment without pasting it into a message or file:
 
     $env:SPEECH_REGION = 'southeastasia'
-    $env:SPEECH_KEY = Read-Host 'Speech KEY1 (do not share)'
+    $keySecure = Read-Host 'Speech KEY1 (hidden input)' -AsSecureString
+    $ptr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($keySecure)
+    try { $env:SPEECH_KEY = [Runtime.InteropServices.Marshal]::PtrToStringBSTR($ptr) }
+    finally { [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($ptr) }
     npm run azure:marketing02:samples
     Remove-Item Env:SPEECH_KEY
+    $keySecure.Dispose()
 
 The samples command requires both --execute and --confirm-standard-s0 internally, and writes only:
 - out/marketing02/azure-namminh-auditions/A-HOOK-NamMinh-S0.wav
