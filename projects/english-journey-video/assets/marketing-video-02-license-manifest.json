@@ -1,0 +1,40 @@
+{
+  "voice": {
+    "selectedBy": "Owner selected free local voice in Work",
+    "provider": "Piper local inference",
+    "viModel": "rhasspy/piper-voices vi_VN-vais1000-medium",
+    "viModelCard": "https://huggingface.co/rhasspy/piper-voices/blob/main/vi/vi_VN/vais1000/medium/MODEL_CARD",
+    "datasetLicense": "CC BY 4.0; attribute VAIS1000 corpus and original authors as named by upstream",
+    "modelRepoLicense": "MIT",
+    "trainingCaveat": "Upstream vi model finetuned from lessac. Complete upstream training-chain clearance is not established by this run; publication rights gate pending.",
+    "englishModel": "en_US-ljspeech-medium; public-domain LJ Speech dataset; trained from scratch",
+    "englishModelCard": "https://huggingface.co/rhasspy/piper-voices/blob/main/en/en_US/ljspeech/medium/MODEL_CARD",
+    "engine": "piper-tts GPL-3.0; used as a separate local generation tool, not vendored",
+    "namMinh": "Not used. Edge redistribution rights unverified; no Azure paid API invoked.",
+    "viModelSha256": "ec7c89e2c85f4d1edc24b6120c18aaf1bda614f06b511567eb9c7c0de15e2dab",
+    "enModelSha256": "6f52a751e2349abe7a76735eb09dc1875298c77ea2342ffd2fef79ff81b87f22"
+  },
+  "music": {
+    "title": "English Journey — Vocabulary in Motion",
+    "creator": "Original project algorithmic synthesis",
+    "source": "scripts/v2/build.py:original_music",
+    "bpm": 90,
+    "thirdPartySamples": false,
+    "borrowedMelody": false,
+    "method": "Deterministic harmonic pads, sparse plucks and bass pulses; no third-party song"
+  },
+  "sfx": {
+    "source": "scripts/v2/build.py:original_sfx",
+    "method": "Original sine/noise transition accents, no imported samples"
+  },
+  "visuals": {
+    "source": "src/Marketing02.tsx",
+    "type": "Original React/SVG educational illustration; never represented as actual ChatGPT"
+  },
+  "font": {
+    "name": "DejaVu Sans",
+    "license": "public/fonts/LICENSE.txt"
+  },
+  "paidCalls": 0,
+  "publication": "NOT APPROVED; full listening and rights-chain acceptance pending"
+}

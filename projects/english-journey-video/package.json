@@ -24,7 +24,11 @@
     "qa:marketing": "python3 scripts/marketing/qa.py",
     "review:prepare": "node scripts/review/prepare.mjs",
     "review:compare": "node scripts/review/compare.mjs",
-    "test:review": "node --test scripts/review/*.test.mjs"
+    "test:review": "node --test scripts/review/*.test.mjs",
+    "build:marketing02": "python3 scripts/marketing02/build.py",
+    "proofs:marketing02": "node scripts/marketing02/render.mjs --proofs",
+    "render:marketing02": "node scripts/marketing02/render.mjs",
+    "qa:marketing02": "PYTHONPATH=. python3 scripts/marketing02/qa.py"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.535",
