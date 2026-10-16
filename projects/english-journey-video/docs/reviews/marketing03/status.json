@@ -1,23 +1,22 @@
 {
-  "status": "NOT_READY_FOR_LIVE_PRODUCTION",
-  "currentTask": "SECURE_AZURE_AUTHENTICATION_GATE_NO_SYNTHESIS",
+  "status": "TECHNICAL_PASS_PENDING_OWNER_REVIEW",
+  "currentTask": "FINAL_PRODUCTION_FROM_OWNER_VERIFIED_AUDIO",
   "liveSynthesisAuthorized": false,
-  "renderAuthorized": false,
+  "renderAuthorized": true,
   "hookRecoveryStatus": "HOOK_RECOVERY_FAILED",
-  "azureRequestsSubmittedTotal": 1,
+  "azureRequestsSubmittedTotal": 7,
   "azureRequestsThisTask": 0,
-  "possibleReferenceUsdTotal": 0.000915,
+  "possibleReferenceUsdTotal": 0.013605,
   "referenceUsdThisTask": 0,
   "localAudioPipeline": "PASS",
   "restWireContract": "PASS_MOCKED_ONLY",
   "azureLiveTransport": "NOT_TESTED",
   "secureRestCredentialReady": false,
   "remotionChrome": "PASS_EXISTING_COMPOSITION_ENUMERATION",
-  "video03Rendered": false,
-  "framesRendered": 0,
+  "video03Rendered": true,
+  "framesRendered": 1990,
   "blockers": [
-    "HOOK WAV missing; existing one-attempt authorization exhausted",
-    "Secure REST runtime credential unavailable; live auth/transport unverified"
+    "Subjective voice, pronunciation, subtitle sync and full motion review need owner playback"
   ],
   "publication": "NOT APPROVED",
   "previousCheckpoint": {
@@ -43,5 +42,7 @@
     "liveProviderAuth": "NOT_TESTED",
     "azureRequestsThisTask": 0,
     "newCostUsd": 0
-  }
+  },
+  "currentHookAudio": "IMPORTED_WINDOWS_ATTEMPT_2_VERIFIED",
+  "currentLedger": "audio-import-audit.json; prior azure-ledger.json preserved as historical checkpoint"
 }

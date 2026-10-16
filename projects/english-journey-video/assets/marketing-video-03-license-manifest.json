@@ -1,0 +1,52 @@
+{
+  "voice": {
+    "source": "Owner-attached Video03-2026-10-16T04-08-41.749Z-82c45fd7.zip",
+    "provider": "Azure Speech Standard S0",
+    "voice": "vi-VN-NamMinhNeural",
+    "resource": "english-journey-namminh",
+    "rate": "+0%",
+    "pitch": "default",
+    "verification": "Six raw WAV SHA-256 plus receipt text hashes and ledger exact-copy checks. Owner-supplied production provenance; not provider-signed.",
+    "newSynthesisCallsThisWork": 0
+  },
+  "music": {
+    "title": "English Journey — Learn From Errors",
+    "creator": "Original project algorithmic score",
+    "source": "scripts/v2/build.py:original_music",
+    "samples": "None; generated sine harmonics and envelopes",
+    "use": "Original project-generated commercial marketing soundtrack; retained existing project audio code"
+  },
+  "sfx": {
+    "creator": "Original project algorithmic effects",
+    "source": "scripts/v2/build.py:original_sfx",
+    "samples": "None; seeded noise and sine synthesis"
+  },
+  "font": {
+    "name": "DejaVu Sans",
+    "files": [
+      "public/fonts/DejaVuSans.ttf",
+      "public/fonts/DejaVuSans-Bold.ttf"
+    ],
+    "license": "Bitstream Vera license with DejaVu public-domain changes",
+    "notice": "public/fonts/LICENSE.txt",
+    "commercialUse": "Permitted by included license"
+  },
+  "visuals": {
+    "creator": "Project-authored Remotion vector/text animation",
+    "source": "src/Marketing03.tsx",
+    "stockAssets": "None",
+    "illustrationLabels": [
+      "GRAMMAR PRACTICE · MINH HỌA",
+      "MY ERROR LOG · MINH HỌA"
+    ],
+    "SeeCut": "No code or assets used"
+  },
+  "asr": {
+    "engine": "faster-whisper 1.2.1",
+    "model": "Systran/faster-whisper-small",
+    "purpose": "Local timestamp observation only, no synthesized voice",
+    "upstreamLicense": "MIT",
+    "revision": "536b0662742c02347bc0e980a01041f333bce120"
+  },
+  "publication": "Owner review required; not approved"
+}

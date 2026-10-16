@@ -1,0 +1,118 @@
+{
+  "source": "Owner-supplied Windows ZIP; exact SHA verification, no synthesis in Work",
+  "archiveSha256": "39d37fe5f26e3cf838c03ad591a25ccd9d20ec0bcab145071ccf4407238d45d9",
+  "historicalRepoLedgerPreserved": true,
+  "totalRecordedRequests": 7,
+  "requestsInImportedWindowsRun": 6,
+  "requestsThisWork": 0,
+  "referencePricePerMillionUsd": 15,
+  "referenceTotalUsd": 0.013605,
+  "referenceWindowsRunUsd": 0.01269,
+  "referenceThisWorkUsd": 0,
+  "budgetUsd": 0.05,
+  "invoiceVerified": false,
+  "calls": [
+    {
+      "id": "hook",
+      "text": "Hôm qua ChatGPT vừa sửa lỗi này… hôm nay bạn lại sai y chang?",
+      "characters": 61,
+      "attempts": 2,
+      "status": "AUDIO_SAVED_VERIFIED",
+      "sha256": "336ad0bd89ff09af548efb069632c4969932d7ecb2de3a50243275b5fbb9650f",
+      "history": [
+        {
+          "attempt": 2,
+          "approvalId": "OWNER_VIDEO03_PRIVATE_WINDOWS_2026-10-16",
+          "submittedAt": "2026-10-16T04:08:33.837Z",
+          "status": "AUDIO_SAVED_VERIFIED",
+          "sha256": "336ad0bd89ff09af548efb069632c4969932d7ecb2de3a50243275b5fbb9650f"
+        }
+      ]
+    },
+    {
+      "id": "problem",
+      "text": "Có bao giờ bạn nhờ ChatGPT sửa một câu tiếng Anh, thấy đáp án đúng rồi chuyển ngay sang bài khác? Nhưng đến khi tự đặt câu, bạn lại mắc đúng lỗi cũ.",
+      "characters": 148,
+      "attempts": 1,
+      "status": "AUDIO_SAVED_VERIFIED",
+      "sha256": "2d5ce709a12eeea3549875e91227803cd7d55278917eb8eed231d081f88dd478",
+      "history": [
+        {
+          "attempt": 1,
+          "approvalId": "OWNER_VIDEO03_PRIVATE_WINDOWS_2026-10-16",
+          "submittedAt": "2026-10-16T04:08:35.117Z",
+          "status": "AUDIO_SAVED_VERIFIED",
+          "sha256": "2d5ce709a12eeea3549875e91227803cd7d55278917eb8eed231d081f88dd478"
+        }
+      ]
+    },
+    {
+      "id": "solution",
+      "text": "Mình nhận ra, chỉ xem câu được sửa thì chưa đủ. Giờ mỗi khi mắc lỗi, mình hỏi AI vì sao mình sai, rồi thử tự viết lại câu cho đúng.",
+      "characters": 131,
+      "attempts": 1,
+      "status": "AUDIO_SAVED_VERIFIED",
+      "sha256": "233fac644068e1543dbdb3e3045a9494109970d9a168e0e1f79bebe28bfd592b",
+      "history": [
+        {
+          "attempt": 1,
+          "approvalId": "OWNER_VIDEO03_PRIVATE_WINDOWS_2026-10-16",
+          "submittedAt": "2026-10-16T04:08:36.190Z",
+          "status": "AUDIO_SAVED_VERIFIED",
+          "sha256": "233fac644068e1543dbdb3e3045a9494109970d9a168e0e1f79bebe28bfd592b"
+        }
+      ]
+    },
+    {
+      "id": "demo",
+      "text": "Ví dụ, mình viết: Yesterday, I go to school. ChatGPT chỉ ra rằng vì có yesterday, động từ go cần đổi thành went. Câu đúng là: Yesterday, I went to school. Sau đó, mình thử đặt thêm câu khác để luyện lại cấu trúc này.",
+      "characters": 216,
+      "attempts": 1,
+      "status": "AUDIO_SAVED_VERIFIED",
+      "sha256": "f6640f0f6d981243ba3ec76e7bdfa00e1961cff863d0b24462619093590c9ee4",
+      "history": [
+        {
+          "attempt": 1,
+          "approvalId": "OWNER_VIDEO03_PRIVATE_WINDOWS_2026-10-16",
+          "submittedAt": "2026-10-16T04:08:37.276Z",
+          "status": "AUDIO_SAVED_VERIFIED",
+          "sha256": "f6640f0f6d981243ba3ec76e7bdfa00e1961cff863d0b24462619093590c9ee4"
+        }
+      ]
+    },
+    {
+      "id": "benefit",
+      "text": "Cuối buổi, mình ghi lỗi đó vào Error Log. Buổi học sau, mình gửi lại danh sách lỗi và nhờ ChatGPT kiểm tra. Như vậy, mình biết mình thường sai ở đâu và cần luyện thêm phần nào.",
+      "characters": 176,
+      "attempts": 1,
+      "status": "AUDIO_SAVED_VERIFIED",
+      "sha256": "d1cb212aef49f0f57d93d1f4a451c50ac81ee113417840caafa827dbfa2e96f7",
+      "history": [
+        {
+          "attempt": 1,
+          "approvalId": "OWNER_VIDEO03_PRIVATE_WINDOWS_2026-10-16",
+          "submittedAt": "2026-10-16T04:08:38.867Z",
+          "status": "AUDIO_SAVED_VERIFIED",
+          "sha256": "d1cb212aef49f0f57d93d1f4a451c50ac81ee113417840caafa827dbfa2e96f7"
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "text": "Nếu bạn cũng hay được sửa rồi lại quên, bình luận BẮT ĐẦU nhé! Mình chia sẻ cách thiết lập ChatGPT để học như vậy.",
+      "characters": 114,
+      "attempts": 1,
+      "status": "AUDIO_SAVED_VERIFIED",
+      "sha256": "b109f45d809aba0186eb036815e4b6fc67fd2e6ab331920d2351d7aceb73f647",
+      "history": [
+        {
+          "attempt": 1,
+          "approvalId": "OWNER_VIDEO03_PRIVATE_WINDOWS_2026-10-16",
+          "submittedAt": "2026-10-16T04:08:40.327Z",
+          "status": "AUDIO_SAVED_VERIFIED",
+          "sha256": "b109f45d809aba0186eb036815e4b6fc67fd2e6ab331920d2351d7aceb73f647"
+        }
+      ]
+    }
+  ]
+}
