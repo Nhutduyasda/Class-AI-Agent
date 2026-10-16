@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "english-journey-marketing-video-03",
+  "title": "English Journey — Marketing Video 03 V1.1: ChatGPT sửa rồi… sao vẫn sai y chang?",
+  "approval": {
+    "status": "OWNER_APPROVED_V1_1",
+    "approvedDate": "2026-10-16",
+    "approvedIn": "Owner's explicit chat message approving Hook V1.1 and five unchanged segments",
+    "spokenCopyLocked": true,
+    "storyboardLocked": true,
+    "authorizedTasks": [
+      "Save approved script and storyboard to GitHub",
+      "Create dedicated Video 03 branch and preproduction QA/Work instructions"
+    ],
+    "notAuthorized": [
+      "Speech synthesis or paid Azure Speech API",
+      "Render MP4 or output any media",
+      "Deploy/publish TikTok",
+      "Merge branches or main",
+      "Modify approved spoken text or storyboard without reapproval"
+    ]
+  },
+  "audience": "Người Việt mất gốc tiếng Anh, đã từng được ChatGPT sửa câu nhưng dễ lặp lại lỗi cũ.",
+  "marketingObjective": "Giải thích phương pháp hỏi nguyên nhân lỗi, tự viết lại câu và chủ động lưu Error Log để ôn lần sau; một CTA bình luận BẮT ĐẦU.",
+  "positionInSeries": [
+    "Video 01: Người mất gốc không biết bắt đầu học từ đâu → xây lộ trình với AI.",
+    "Video 02: Học từ vựng nhanh quên → đặt câu, kiểm tra và chủ động ôn lại.",
+    "Video 03: AI sửa câu nhưng vẫn lặp lỗi → hiểu nguyên nhân, tự luyện lại, Error Log."
+  ],
+  "spokenSegments": [
+    {
+      "id": "hook",
+      "label": "HOOK",
+      "spoken": "Hôm qua ChatGPT vừa sửa lỗi này… hôm nay bạn lại sai y chang?"
+    },
+    {
+      "id": "problem",
+      "label": "PROBLEM",
+      "spoken": "Có bao giờ bạn nhờ ChatGPT sửa một câu tiếng Anh, thấy đáp án đúng rồi chuyển ngay sang bài khác? Nhưng đến khi tự đặt câu, bạn lại mắc đúng lỗi cũ."
+    },
+    {
+      "id": "solution",
+      "label": "SOLUTION",
+      "spoken": "Mình nhận ra, chỉ xem câu được sửa thì chưa đủ. Giờ mỗi khi mắc lỗi, mình hỏi AI vì sao mình sai, rồi thử tự viết lại câu cho đúng."
+    },
+    {
+      "id": "demo",
+      "label": "DEMO",
+      "spoken": "Ví dụ, mình viết: Yesterday, I go to school. ChatGPT chỉ ra rằng vì có yesterday, động từ go cần đổi thành went. Câu đúng là: Yesterday, I went to school. Sau đó, mình thử đặt thêm câu khác để luyện lại cấu trúc này."
+    },
+    {
+      "id": "benefit",
+      "label": "BENEFIT",
+      "spoken": "Cuối buổi, mình ghi lỗi đó vào Error Log. Buổi học sau, mình gửi lại danh sách lỗi và nhờ ChatGPT kiểm tra. Như vậy, mình biết mình thường sai ở đâu và cần luyện thêm phần nào."
+    },
+    {
+      "id": "cta",
+      "label": "CTA",
+      "spoken": "Nếu bạn cũng hay được sửa rồi lại quên, bình luận BẮT ĐẦU nhé! Mình chia sẻ cách thiết lập ChatGPT để học như vậy."
+    }
+  ],
+  "example": {
+    "label": "MINH HỌA",
+    "draftSentence": "Yesterday, I go to school.",
+    "correctSentence": "Yesterday, I went to school.",
+    "cause": "Trong ví dụ kể hành động đã xảy ra hôm qua, dùng past simple; go (present) → went (past).",
+    "learningSequence": [
+      "Đặt câu",
+      "Giải thích lỗi",
+      "Tự luyện lại",
+      "Chủ động ghi Error Log",
+      "Gửi lại danh sách buổi sau"
+    ],
+    "doNotImply": "Không có tính năng tự đồng bộ Error Log qua nhiều cuộc chat. Người học cần chủ động lưu và cung cấp lại danh sách."
+  },
+  "storyboard": [
+    {
+      "id": "hook",
+      "suggestedSeconds": "0–4",
+      "visual": "Ngay khung hình đầu: HÔM QUA ĐÃ SỬA / HÔM NAY VẪN SAI, hai thẻ đối lập xanh mint và đỏ nhẹ; tiêu đề AI SỬA RỒI... VẪN SAI? Không intro logo. Tương phản tạo tò mò, không giả làm số liệu.",
+      "voiceDirection": "Ngạc nhiên vừa phải, tự nhiên, không trách người học; giữ khoảng nghỉ tại dấu ba chấm.",
+      "proofFrames": [
+        "frame 0",
+        "mốc ~2.5 giây"
+      ]
+    },
+    {
+      "id": "problem",
+      "suggestedSeconds": "4–17",
+      "visual": "Chu trình trực quan: viết sai → xem câu được sửa → chuyển sang bài khác → lại mắc cùng lỗi. Mỗi chuyển động giải thích vòng lặp, không chỉ là hiệu ứng trang trí.",
+      "voiceDirection": "Đồng cảm, nhận diện vấn đề, không vội.",
+      "proofFrames": [
+        "lúc chuyển sang bài khác",
+        "lúc lặp lại lỗi"
+      ]
+    },
+    {
+      "id": "solution",
+      "suggestedSeconds": "17–31",
+      "visual": "Ba bước rõ ràng: Hiểu lỗi → Tự sửa → Luyện lại. Chỉ rõ người học chủ động viết lại, không chỉ sao chép đáp án.",
+      "voiceDirection": "Giọng chia sẻ kinh nghiệm, tích cực vừa phải.",
+      "proofFrames": [
+        "khi hiện đủ ba bước"
+      ]
+    },
+    {
+      "id": "demo",
+      "suggestedSeconds": "31–53",
+      "visual": "Minh họa, không giả là ảnh thật ChatGPT: hiện Yesterday, I go to school. → gạch chân go → giải thích yesterday gợi thì quá khứ đơn trong ví dụ → chuyển go thành went → giữ câu Yesterday, I went to school. đủ lâu. Đừng tự thêm lỗi giả.",
+      "voiceDirection": "Giải thích kiên nhẫn, phát âm câu tiếng Anh rõ, tránh đột ngột đổi sang giọng khác.",
+      "proofFrames": [
+        "câu sai hiển thị",
+        "câu đúng hiển thị",
+        "giải thích go → went"
+      ]
+    },
+    {
+      "id": "benefit",
+      "suggestedSeconds": "53–69",
+      "visual": "Error Log minh họa: Past Simple; lỗi go → went; ghi nhận từ cần ôn. Buổi sau NGƯỜI HỌC chủ động gửi lại danh sách và yêu cầu luyện; không gợi ý AI tự đồng bộ nhiều cuộc chat.",
+      "voiceDirection": "Trấn an, thực tế, không đưa ra cam kết tiến bộ.",
+      "proofFrames": [
+        "Error Log",
+        "người học gửi lại buổi sau"
+      ]
+    },
+    {
+      "id": "cta",
+      "suggestedSeconds": "69–80",
+      "visual": "Kết màn hình chỉ một CTA: ĐỪNG CHỈ SỬA LỖI. HÃY HỌC TỪ LỖI SAI! / Bình luận BẮT ĐẦU. Chừa không gian an toàn cho overlay TikTok.",
+      "voiceDirection": "Ấm áp, mời gọi tự nhiên, nhấn BẮT ĐẦU.",
+      "proofFrames": [
+        "CTA cuối"
+      ]
+    }
+  ],
+  "onScreenCopy": {
+    "frameZero": [
+      "HÔM QUA",
+      "ĐÃ SỬA",
+      "HÔM NAY",
+      "VẪN SAI"
+    ],
+    "hook": "AI SỬA RỒI… VẪN SAI?",
+    "solution": [
+      "HIỂU LỖI",
+      "TỰ SỬA",
+      "LUYỆN LẠI"
+    ],
+    "demoHeading": "GRAMMAR PRACTICE · MINH HỌA",
+    "benefitHeading": "MY ERROR LOG · MINH HỌA",
+    "cta": [
+      "ĐỪNG CHỈ SỬA LỖI.",
+      "HÃY HỌC TỪ LỖI SAI!",
+      "Bình luận “BẮT ĐẦU”"
+    ]
+  },
+  "format": {
+    "platform": "TikTok",
+    "orientation": "portrait",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "estimatedDurationSeconds": [
+      65,
+      80
+    ],
+    "durationPolicy": "Storyboarding seconds are not mandatory exact timestamps; measure approved actual voice duration first during separately authorized production. Never rewrite or accelerate the spoken script to fit 80 seconds.",
+    "preferredVoice": "vi-VN-NamMinhNeural",
+    "voiceRegion": "southeastasia",
+    "voiceRate": "+0%",
+    "voicePitch": "default",
+    "voiceResourceForLaterAuthorizedUse": "english-journey-namminh",
+    "voicePaidTier": "Standard S0",
+    "voiceStatus": "PRODUCTION_NOT_AUTHORIZED"
+  },
+  "visualStyle": {
+    "identity": "English Journey dark green + mint, consistent with Video 01/02",
+    "type": "Clean explanatory Remotion motion graphics, not static slide-only",
+    "evidence": "Illustrative English sentence and Error Log must be clearly labeled MINH HỌA; never fabricated ChatGPT screenshot.",
+    "editRhythm": "Storyboard timing must respect natural spoken syllables and adequate text reading time."
+  },
+  "qaStatus": "NOT_RUN_NO_RENDER_AUTHORIZED",
+  "publicationStatus": "NOT_APPROVED"
+}
