@@ -1,0 +1,10 @@
+{
+  "status": "BLOCKED_AUDIO_TRANSFER",
+  "productionAuthorized": true,
+  "rendered": false,
+  "mp4Exists": false,
+  "azureRequestsSubmitted": 1,
+  "possibleReferenceUsd": 0.000915,
+  "subjectiveAudioQA": "BLOCKED",
+  "publication": "NOT APPROVED"
+}

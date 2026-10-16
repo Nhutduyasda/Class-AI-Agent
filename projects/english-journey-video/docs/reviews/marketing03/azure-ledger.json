@@ -1,0 +1,85 @@
+{
+  "video": "03 V1.1",
+  "resource": "english-journey-namminh",
+  "region": "southeastasia",
+  "tier": "Standard S0",
+  "voice": "vi-VN-NamMinhNeural",
+  "rate": "+0%",
+  "pitch": "default",
+  "limitUsd": 0.05,
+  "pricePerMillionUsd": 15,
+  "totalCharacters": 846,
+  "estimatedTotalUsd": 0.01269,
+  "priceBasis": "Owner authorized $15/million reference; no invoice claim",
+  "briefSha256": "11948fabc4e153136ae2f48a4a005721c1077c5ee9f07018357c92ccbaf37031",
+  "calls": [
+    {
+      "id": "hook",
+      "text": "Hôm qua ChatGPT vừa sửa lỗi này… hôm nay bạn lại sai y chang?",
+      "characters": 61,
+      "estimatedUsd": 0.000915,
+      "maxAttempts": 1,
+      "attempts": 1,
+      "status": "DOWNLOAD_PATH_RETURNED_BUT_FILE_INACCESSIBLE",
+      "attemptUtc": "2026-10-16T01:06:18.430537+00:00",
+      "downloadPath": "/home/oai/share/1561ca79-814d-4670-a11f-3a88c3d15f26/92d6c1c2-614f-4834-9b6a-c996235af024",
+      "audioVerified": false,
+      "decode": "BLOCKED",
+      "retryAllowed": false
+    },
+    {
+      "id": "problem",
+      "text": "Có bao giờ bạn nhờ ChatGPT sửa một câu tiếng Anh, thấy đáp án đúng rồi chuyển ngay sang bài khác? Nhưng đến khi tự đặt câu, bạn lại mắc đúng lỗi cũ.",
+      "characters": 148,
+      "estimatedUsd": 0.00222,
+      "maxAttempts": 1,
+      "attempts": 0
+    },
+    {
+      "id": "solution",
+      "text": "Mình nhận ra, chỉ xem câu được sửa thì chưa đủ. Giờ mỗi khi mắc lỗi, mình hỏi AI vì sao mình sai, rồi thử tự viết lại câu cho đúng.",
+      "characters": 131,
+      "estimatedUsd": 0.001965,
+      "maxAttempts": 1,
+      "attempts": 0
+    },
+    {
+      "id": "demo",
+      "text": "Ví dụ, mình viết: Yesterday, I go to school. ChatGPT chỉ ra rằng vì có yesterday, động từ go cần đổi thành went. Câu đúng là: Yesterday, I went to school. Sau đó, mình thử đặt thêm câu khác để luyện lại cấu trúc này.",
+      "characters": 216,
+      "estimatedUsd": 0.00324,
+      "maxAttempts": 1,
+      "attempts": 0
+    },
+    {
+      "id": "benefit",
+      "text": "Cuối buổi, mình ghi lỗi đó vào Error Log. Buổi học sau, mình gửi lại danh sách lỗi và nhờ ChatGPT kiểm tra. Như vậy, mình biết mình thường sai ở đâu và cần luyện thêm phần nào.",
+      "characters": 176,
+      "estimatedUsd": 0.00264,
+      "maxAttempts": 1,
+      "attempts": 0
+    },
+    {
+      "id": "cta",
+      "text": "Nếu bạn cũng hay được sửa rồi lại quên, bình luận BẮT ĐẦU nhé! Mình chia sẻ cách thiết lập ChatGPT để học như vậy.",
+      "characters": 114,
+      "estimatedUsd": 0.00171,
+      "maxAttempts": 1,
+      "attempts": 0
+    }
+  ],
+  "status": "BLOCKED_AUDIO_TRANSFER",
+  "synthesisRequestsSubmitted": 1,
+  "knownReferenceChargeUsd": 0.000915,
+  "verifiedAudioFiles": 0,
+  "remainingRequestsNotSubmitted": 5,
+  "priceVerified": {
+    "source": "Azure Retail Prices API",
+    "meter": "S1 Neural Text To Speech Characters",
+    "region": "southeastasia",
+    "retailPrice": 15,
+    "unit": "1M",
+    "currency": "USD",
+    "date": "2026-10-16"
+  }
+}
