@@ -1,0 +1,23 @@
+{
+  "status": "PASS_LOCAL_HTTP_BINARY_WAV_ROUNDTRIP",
+  "azureRequests": 0,
+  "localHttpRequests": 1,
+  "ledgerUnchanged": true,
+  "receipt": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "bitsPerSample": 16,
+    "codec": "pcm_s16le",
+    "durationSeconds": 2,
+    "bytes": 192044,
+    "sha256": "1256c9ef3fd17c1f401fbe31e4d25ca5849f56df85b325498574791cf3839b47",
+    "file": "/workspace/scratch/ad5631d8902a/video03-recovery/projects/english-journey-video/out/marketing03/pipeline-check/run-1792114213113/LOCAL-TEST-TONE-NOT-NAMMINH.wav",
+    "provenance": {
+      "kind": "LOCAL_TEST_ONLY",
+      "description": "Two-second synthesized sine test tone; no speech and no Azure service"
+    },
+    "fullDecode": "PASS",
+    "readBack": "PASS",
+    "verifiedAt": "2026-10-16T01:30:13.257Z"
+  }
+}

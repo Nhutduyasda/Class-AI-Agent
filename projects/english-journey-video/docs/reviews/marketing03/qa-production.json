@@ -1,0 +1,76 @@
+{
+  "status": "TECHNICAL_PASS_PENDING_HUMAN_REVIEW",
+  "videoSha256": "5eaa05da32fd8592bcbab287ce9e622139156915e7dca0ed313083d7258cadf2",
+  "bytes": 6849779,
+  "durationSeconds": 66.33333333333333,
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "video": "h264",
+    "audio": "aac",
+    "pixelFormat": "yuvj420p"
+  },
+  "fullDecode": "PASS",
+  "exactCopy": "PASS_RECEIPT_TEXT_HASH_AND_CAPTION_COPY",
+  "subtitleTiming": "PASS_CONTAINMENT_MONOTONIC_ASR_PHRASE_ENDPOINTS",
+  "sixScenes": "PASS",
+  "aacSourceAlignment": [
+    {
+      "startSeconds": 0.0,
+      "lagMs": 0.0,
+      "correlationAtZeroLag": 0.9999758005142212
+    },
+    {
+      "startSeconds": 58.3333125,
+      "lagMs": 0.0,
+      "correlationAtZeroLag": 0.9999798536300659
+    }
+  ],
+  "loudness": {
+    "input_i": "-16.01",
+    "input_tp": "-2.45",
+    "input_lra": "4.10",
+    "input_thresh": "-27.49",
+    "output_i": "-16.03",
+    "output_tp": "-2.49",
+    "output_lra": "3.80",
+    "output_thresh": "-27.33",
+    "normalization_type": "dynamic",
+    "target_offset": "0.03"
+  },
+  "proofFrames": 11,
+  "newAzureRequests": 0,
+  "subjectiveAudioQA": "BLOCKED_NO_DIRECT_LISTENING",
+  "fullMotionViewing": "BLOCKED_NO_VIDEO_NATIVE_REVIEW",
+  "visualStills": "PASS_INSPECTED_EXTRACTED_CONTACT_SHEET_AND_DEMO_DETAIL",
+  "publication": "NOT_APPROVED",
+  "visualEvidenceReview": {
+    "samples": [
+      "frame 0",
+      "2.5s",
+      "PROBLEM",
+      "SOLUTION",
+      "DEMO wrong",
+      "DEMO correct",
+      "BENEFIT",
+      "CTA middle",
+      "CTA last"
+    ],
+    "findings": [
+      "Visible problem contrast at frame zero",
+      "Correct go/went example and explicit MINH HỌA labels",
+      "Manual Error Log and learner return illustrated",
+      "Text within inspected safe area, no visible clipping",
+      "Single comment BẮT ĐẦU CTA"
+    ],
+    "fullVideoWatched": false,
+    "audioListened": false
+  },
+  "containerDurationSeconds": 66.347,
+  "unitTests": {
+    "passed": 38,
+    "failed": 0
+  },
+  "typecheck": "PASS"
+}

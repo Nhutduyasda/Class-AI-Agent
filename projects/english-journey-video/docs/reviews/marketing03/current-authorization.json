@@ -1,0 +1,7 @@
+{
+  "liveSynthesisAllowed": false,
+  "reason": "Current task permits recovery and offline tests only. New synthesis requires separate owner approval and secure runtime credentials.",
+  "limitUsd": 0.05,
+  "maxAttempts": {"hook": 1, "problem": 1, "solution": 1, "demo": 1, "benefit": 1, "cta": 1},
+  "additionalHookAttemptExplicitlyApproved": false
+}

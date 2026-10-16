@@ -1,0 +1,33 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> english-journey-video@1.0.0 test:marketing03:pipeline
+> node --test scripts/marketing03/direct-audio.test.mjs
+
+✔ canonical 48k mono PCM file reports measured size, duration and SHA (1.537538ms)
+✔ RIFF parser handles odd-length metadata chunks before fmt (0.491071ms)
+✔ reject HTML/error text, truncated binary and wrong PCM format (1.007689ms)
+✔ atomic receiver decodes and reads back real WAV; refuses overwrite (248.833154ms)
+✔ malformed response never publishes final WAV or receipt (2.784278ms)
+✔ default-deny authorization and missing secret prevent transport calls (3.576911ms)
+✔ existing HOOK attempt remains blocked under original one-call limit (3.069832ms)
+✔ budget and script-hash guards run before any transport (3.080533ms)
+✔ non-finite ledger costs and missing historical scenes cannot bypass budget (3.696597ms)
+✔ REST wire contract uses fixed region, exact SSML and 48k PCM; mocked fetch only (3.831095ms)
+✔ REST 429 response causes one mocked fetch, without retry or response-body disclosure (0.724194ms)
+✔ one failed transport persists attempt and is never retried (5.621644ms)
+✔ bad WAV consumes the submitted attempt without marking audio received (4.464625ms)
+✔ successful mock saves and verifies before marking ledger, preserving HOOK history (119.00721ms)
+✔ pre-existing output or reservation prevents submission and remains untouched (4.468451ms)
+✔ credential status reveals presence only, never secret values (0.180455ms)
+✔ runtime initialization preserves existing attempts instead of replacing with checkpoint (3.212747ms)
+✔ Python recovery importer rejects corrupt WAV before touching destination or ledger (43.078933ms)
+✔ Python local fixture import preserves attempts and requires separate source proof (106.899018ms)
+✔ canonical ledger in repository remains byte identical throughout offline tests (0.976093ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 659.307778

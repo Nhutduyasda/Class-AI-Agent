@@ -1,0 +1,16 @@
+{
+  "result": "HOOK_RECOVERY_FAILED",
+  "checkedAt": "2026-10-16T01:31:50.518036+00:00",
+  "newAzureRequests": 0,
+  "searched": [
+    "Checkpoint workspace raw/output files",
+    "Documented /workspace/scratch shared download path",
+    "Browser /home/oai/share download directory (empty)",
+    "Speech Studio source Export history (no audio)",
+    "Speech Studio Audio library (empty)",
+    "Library search for Video03 HOOK WAV (no WAV candidate)"
+  ],
+  "sourceTextPresent": true,
+  "wavPresent": false,
+  "noPlayOrExportClicked": true
+}

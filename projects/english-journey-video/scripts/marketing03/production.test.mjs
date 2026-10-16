@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const load=p=>JSON.parse(readFileSync(p,'utf8'));
+const m=load('out/marketing03/timeline.json'),brief=load('briefs/marketing-video-03-approved.json'),proof=load('out/marketing03/input-verification.json');
+test('verified supplied WAV hashes and narration copy cover all six scenes',()=>{assert.equal(proof.files.length,6);assert.equal(m.briefSha256,createHash('sha256').update(readFileSync('briefs/marketing-video-03-approved.json')).digest('hex'));for(const s of brief.spokenSegments){assert.equal(m.tokens.filter(t=>t.scene===s.id).map(t=>t.text).join(' '),s.spoken);assert.equal(proof.files.find(x=>x.scene===s.id).decode,'PASS');}});
+test('scene boundaries are contiguous and never cut source speech',()=>{assert.deepEqual(m.scenes.map(s=>s.type),brief.spokenSegments.map(s=>s.id));for(let i=0;i<6;i++){const s=m.scenes[i];assert.equal(s.startFrame,i?m.scenes[i-1].endFrame:0);assert.ok((s.endFrame-s.startFrame)/30>=m.segments[i].rawDurationSeconds);}assert.equal(m.scenes.at(-1).endFrame,m.durationInFrames);assert.ok(m.durationSeconds>=65&&m.durationSeconds<=80);});
+test('caption pages are monotonic, contained in scene and exact-copy',()=>{let end=0;for(const p of m.pages){const s=m.scenes.find(x=>x.type===p.scene);assert.ok(p.startMs>=end-.01);assert.ok(p.endMs>p.startMs);assert.ok(p.startMs>=s.startFrame/30*1000-.01&&p.endMs<=s.endFrame/30*1000+.01);end=p.endMs;}for(const s of brief.spokenSegments)assert.equal(m.pages.filter(p=>p.scene===s.id).map(p=>p.text).join(' '),s.spoken);});
+test('grammar correction has at least six seconds reading time and correct examples',()=>{const d=m.scenes.find(x=>x.type==='demo');assert.ok((d.endFrame-m.markers['demo-correct'])/30>=6);assert.equal(brief.example.draftSentence,'Yesterday, I go to school.');assert.equal(brief.example.correctSentence,'Yesterday, I went to school.');});
+test('voice foreground dominates original music and mix avoids clipping',()=>{assert.ok(Number(m.voiceMetrics.input_i)-Number(m.musicMetrics.input_i)>=15);assert.ok(Number(m.mixMetrics.input_tp)<-1);assert.ok(Math.abs(Number(m.mixMetrics.input_i)+16)<1);});

@@ -1,0 +1,15 @@
+{
+  "mode": "OFFLINE_NO_NETWORK",
+  "endpoint": "https://southeastasia.tts.speech.microsoft.com/cognitiveservices/v1",
+  "format": "riff-48khz-16bit-mono-pcm",
+  "voice": "vi-VN-NamMinhNeural",
+  "briefSha256": "11948fabc4e153136ae2f48a4a005721c1077c5ee9f07018357c92ccbaf37031",
+  "characters": 846,
+  "credentials": {
+    "keyPresent": false,
+    "bearerPresent": false,
+    "ready": false,
+    "valuesLogged": false
+  },
+  "liveAuthorization": "REQUIRED_SEPARATELY"
+}

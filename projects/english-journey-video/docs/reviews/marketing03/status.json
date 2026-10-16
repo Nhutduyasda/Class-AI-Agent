@@ -1,0 +1,48 @@
+{
+  "status": "TECHNICAL_PASS_PENDING_OWNER_REVIEW",
+  "currentTask": "FINAL_PRODUCTION_FROM_OWNER_VERIFIED_AUDIO",
+  "liveSynthesisAuthorized": false,
+  "renderAuthorized": true,
+  "hookRecoveryStatus": "HOOK_RECOVERY_FAILED",
+  "azureRequestsSubmittedTotal": 7,
+  "azureRequestsThisTask": 0,
+  "possibleReferenceUsdTotal": 0.013605,
+  "referenceUsdThisTask": 0,
+  "localAudioPipeline": "PASS",
+  "restWireContract": "PASS_MOCKED_ONLY",
+  "azureLiveTransport": "NOT_TESTED",
+  "secureRestCredentialReady": false,
+  "remotionChrome": "PASS_EXISTING_COMPOSITION_ENUMERATION",
+  "video03Rendered": true,
+  "framesRendered": 1990,
+  "blockers": [
+    "Subjective voice, pronunciation, subtitle sync and full motion review need owner playback"
+  ],
+  "publication": "NOT APPROVED",
+  "previousCheckpoint": {
+    "commit": "5bc6faa",
+    "status": {
+      "status": "BLOCKED_AUDIO_TRANSFER",
+      "productionAuthorized": true,
+      "rendered": false,
+      "mp4Exists": false,
+      "azureRequestsSubmitted": 1,
+      "possibleReferenceUsd": 0.000915,
+      "subjectiveAudioQA": "BLOCKED",
+      "publication": "NOT APPROVED"
+    }
+  },
+  "authenticationGate": {
+    "status": "BLOCKED",
+    "checkedAt": "2026-10-16",
+    "customSubdomainConfigured": false,
+    "speechRoleObservedForCurrentUser": false,
+    "runtimeCredentialPresent": false,
+    "offlineAuthTests": "PASS",
+    "liveProviderAuth": "NOT_TESTED",
+    "azureRequestsThisTask": 0,
+    "newCostUsd": 0
+  },
+  "currentHookAudio": "IMPORTED_WINDOWS_ATTEMPT_2_VERIFIED",
+  "currentLedger": "audio-import-audit.json; prior azure-ledger.json preserved as historical checkpoint"
+}

@@ -1,0 +1,27 @@
+{
+  "checkpoint": "430eb316d2231a177c86078e05ce6aac8c7a9443",
+  "date": "2026-10-16",
+  "offlineTests": {
+    "pass": 28,
+    "fail": 0
+  },
+  "typecheck": "PASS",
+  "localWavRoundtrip": "PASS",
+  "azureRequests": 0,
+  "newCostUsd": 0,
+  "credential": {
+    "present": false,
+    "providerValidated": false
+  },
+  "readiness": "BLOCKED",
+  "integrity": {
+    "docs/reviews/marketing03/azure-ledger.json": {
+      "unchanged": true,
+      "sha256": "9a13eb6115ccdc0941312f0e2c9038929999087a820d5e0f9005fb8cdf63068a"
+    },
+    "briefs/marketing-video-03-approved.json": {
+      "unchanged": true,
+      "sha256": "11948fabc4e153136ae2f48a4a005721c1077c5ee9f07018357c92ccbaf37031"
+    }
+  }
+}
