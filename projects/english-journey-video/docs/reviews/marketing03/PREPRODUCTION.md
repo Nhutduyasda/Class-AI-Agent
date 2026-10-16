@@ -41,3 +41,7 @@ No resource/subscription created, no secrets, no merge, no TikTok posting. Final
 TypeScript PASS; existing review tests 5/5, voice timing tests 6/6, Azure audition tests 4/4. Those are source/unit checks, not Video 03 media QA. Exact six SSML text/voice/character checks passed locally.
 
 Remotion dependencies installed with npm ci. Automatic Chrome Headless Shell download timed out through the environment proxy; a working renderer browser is still required. No rendering attempted, no storyboard-derived fake audio timeline emitted.
+
+## Recovery task update
+
+The later recovery-only task completed offline WAV pipeline and Chrome/composition checks. See `RECOVERY_REPORT.md` and `status.json`. HOOK remains unrecovered, attempts unchanged. No new Azure request or Video 03 render is authorized or performed. Earlier authorization statements above are historical.

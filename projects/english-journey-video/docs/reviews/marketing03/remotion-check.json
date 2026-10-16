@@ -1,0 +1,38 @@
+{
+  "status": "PASS_BROWSER_START_AND_COMPOSITION_ENUMERATION",
+  "browserExecutable": "/workspace/scratch/ad5631d8902a/video03-recovery/projects/english-journey-video/.cache/marketing03/chrome-headless-shell-linux64/chrome-headless-shell",
+  "browserVersion": "Google Chrome for Testing 157.0.8080.0",
+  "ensureBrowser": {
+    "path": "/workspace/scratch/ad5631d8902a/video03-recovery/projects/english-journey-video/.cache/marketing03/chrome-headless-shell-linux64/chrome-headless-shell",
+    "type": "user-defined-path"
+  },
+  "results": [
+    {
+      "entry": "src/index.tsx",
+      "compositions": [
+        {
+          "id": "EnglishJourney",
+          "width": 1080,
+          "height": 1920,
+          "fps": 30,
+          "durationInFrames": 900
+        }
+      ]
+    },
+    {
+      "entry": "src/marketing02-index.tsx",
+      "compositions": [
+        {
+          "id": "EnglishJourneyMarketing02",
+          "width": 1080,
+          "height": 1920,
+          "fps": 30,
+          "durationInFrames": 2250
+        }
+      ]
+    }
+  ],
+  "video03Rendered": false,
+  "mediaFramesRendered": 0,
+  "azureRequests": 0
+}

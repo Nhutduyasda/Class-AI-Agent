@@ -1,10 +1,36 @@
 {
-  "status": "BLOCKED_AUDIO_TRANSFER",
-  "productionAuthorized": true,
-  "rendered": false,
-  "mp4Exists": false,
-  "azureRequestsSubmitted": 1,
-  "possibleReferenceUsd": 0.000915,
-  "subjectiveAudioQA": "BLOCKED",
-  "publication": "NOT APPROVED"
+  "status": "NOT_READY_FOR_LIVE_PRODUCTION",
+  "currentTask": "RECOVERY_AND_OFFLINE_TEST_ONLY",
+  "liveSynthesisAuthorized": false,
+  "renderAuthorized": false,
+  "hookRecoveryStatus": "HOOK_RECOVERY_FAILED",
+  "azureRequestsSubmittedTotal": 1,
+  "azureRequestsThisTask": 0,
+  "possibleReferenceUsdTotal": 0.000915,
+  "referenceUsdThisTask": 0,
+  "localAudioPipeline": "PASS",
+  "restWireContract": "PASS_MOCKED_ONLY",
+  "azureLiveTransport": "NOT_TESTED",
+  "secureRestCredentialReady": false,
+  "remotionChrome": "PASS_EXISTING_COMPOSITION_ENUMERATION",
+  "video03Rendered": false,
+  "framesRendered": 0,
+  "blockers": [
+    "HOOK WAV missing; existing one-attempt authorization exhausted",
+    "Secure REST runtime credential unavailable; live auth/transport unverified"
+  ],
+  "publication": "NOT APPROVED",
+  "previousCheckpoint": {
+    "commit": "5bc6faa",
+    "status": {
+      "status": "BLOCKED_AUDIO_TRANSFER",
+      "productionAuthorized": true,
+      "rendered": false,
+      "mp4Exists": false,
+      "azureRequestsSubmitted": 1,
+      "possibleReferenceUsd": 0.000915,
+      "subjectiveAudioQA": "BLOCKED",
+      "publication": "NOT APPROVED"
+    }
+  }
 }

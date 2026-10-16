@@ -35,7 +35,12 @@
     "build:marketing02:v12": "python3 scripts/marketing02/build-v12.py",
     "render:marketing02:v12": "node scripts/marketing02/render-v12.mjs",
     "proofs:marketing02:v12": "node scripts/marketing02/render-v12.mjs --proofs",
-    "qa:marketing02:v12": "PYTHONPATH=. python3 scripts/marketing02/qa-v12.py"
+    "qa:marketing02:v12": "PYTHONPATH=. python3 scripts/marketing02/qa-v12.py",
+    "azure:marketing03:preflight": "node scripts/marketing03/direct-audio.mjs --preflight",
+    "test:marketing03:pipeline": "node --test scripts/marketing03/direct-audio.test.mjs",
+    "check:marketing03:audio": "node scripts/marketing03/local-smoke.mjs",
+    "setup:marketing03:browser": "node scripts/marketing03/setup-browser.mjs",
+    "check:marketing03:remotion": "node scripts/marketing03/check-remotion.mjs"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.535",
