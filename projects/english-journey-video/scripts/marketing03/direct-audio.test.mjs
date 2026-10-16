@@ -89,7 +89,7 @@ test('pre-existing output or reservation prevents submission and remains untouch
  await assert.rejects(executeOne({...c,transport}));assert.equal(await readFile(c.destination+'.reservation','utf8'),'existing');assert.equal(calls,0);
 });
 test('credential status reveals presence only, never secret values',()=>{
- const r=credentialReadiness({SPEECH_KEY:'TEST_NOT_REAL',SPEECH_BEARER_TOKEN:'TEST_NOT_REAL'});assert.equal(r.ready,true);assert.ok(!JSON.stringify(r).includes('TEST_NOT_REAL'));
+ const r=credentialReadiness({SPEECH_KEY:'TEST_NOT_REAL',SPEECH_BEARER_TOKEN:'TEST_NOT_REAL'});assert.equal(r.ready,false);assert.equal(r.reason,'AMBIGUOUS_CREDENTIALS');assert.ok(!JSON.stringify(r).includes('TEST_NOT_REAL'));
 });
 test('runtime initialization preserves existing attempts instead of replacing with checkpoint',async t=>{
  const c=await context(t);const changed=JSON.parse(baseline);changed.calls[0].attempts=2;await writeFile(c.ledgerFile,JSON.stringify(changed));

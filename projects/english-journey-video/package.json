@@ -40,7 +40,9 @@
     "test:marketing03:pipeline": "node --test scripts/marketing03/direct-audio.test.mjs",
     "check:marketing03:audio": "node scripts/marketing03/local-smoke.mjs",
     "setup:marketing03:browser": "node scripts/marketing03/setup-browser.mjs",
-    "check:marketing03:remotion": "node scripts/marketing03/check-remotion.mjs"
+    "check:marketing03:remotion": "node scripts/marketing03/check-remotion.mjs",
+    "test:marketing03:auth": "node --test scripts/marketing03/auth.test.mjs",
+    "check:marketing03:auth": "node scripts/marketing03/auth-preflight.mjs"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.535",

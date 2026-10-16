@@ -4,6 +4,8 @@ import {resolve,dirname} from 'node:path';
 import {createHash,randomUUID} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {pathToFileURL} from 'node:url';
+import {credentialReadiness,authenticationHeaders} from './auth.mjs';
+export {credentialReadiness} from './auth.mjs';
 
 export const ENDPOINT='https://southeastasia.tts.speech.microsoft.com/cognitiveservices/v1';
 export const FORMAT='riff-48khz-16bit-mono-pcm';
@@ -64,11 +66,6 @@ export async function atomicJson(file,data){
  await rename(tmp,file);
 }
 
-export function credentialReadiness(env=process.env){
- return {keyPresent:Boolean(env.SPEECH_KEY),bearerPresent:Boolean(env.SPEECH_BEARER_TOKEN),
-  ready:Boolean(env.SPEECH_KEY||env.SPEECH_BEARER_TOKEN),valuesLogged:false};
-}
-
 export async function initializeRuntimeLedger(source='docs/reviews/marketing03/azure-ledger.json',target='out/marketing03/ledger.json'){
  const checkpoint=await readFile(source);await mkdir(dirname(resolve(target)),{recursive:true});
  try{await writeFile(target,checkpoint,{flag:'wx',mode:0o600});return {status:'INITIALIZED_FROM_CHECKPOINT'};}
@@ -82,7 +79,7 @@ export async function initializeRuntimeLedger(source='docs/reviews/marketing03/a
 
 export async function postAzureOnce(body,env=process.env){
  if(!credentialReadiness(env).ready)throw Error('Secure environment credential unavailable');
- const auth=env.SPEECH_KEY?{'Ocp-Apim-Subscription-Key':env.SPEECH_KEY}:{Authorization:'Bearer '+env.SPEECH_BEARER_TOKEN};
+ const auth=authenticationHeaders(env);
  // Redirects and retries disabled; never log provider response bodies or auth headers.
  const r=await fetch(ENDPOINT,{method:'POST',redirect:'error',headers:{...auth,'Content-Type':'application/ssml+xml','X-Microsoft-OutputFormat':FORMAT,'User-Agent':'EnglishJourneyVideo03/1.1'},body,signal:AbortSignal.timeout(45000)});
  if(!r.ok){await r.body?.cancel();throw Error('Azure HTTP '+r.status+'; no retry');}

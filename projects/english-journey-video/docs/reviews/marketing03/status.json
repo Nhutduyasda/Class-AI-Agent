@@ -1,6 +1,6 @@
 {
   "status": "NOT_READY_FOR_LIVE_PRODUCTION",
-  "currentTask": "RECOVERY_AND_OFFLINE_TEST_ONLY",
+  "currentTask": "SECURE_AZURE_AUTHENTICATION_GATE_NO_SYNTHESIS",
   "liveSynthesisAuthorized": false,
   "renderAuthorized": false,
   "hookRecoveryStatus": "HOOK_RECOVERY_FAILED",
@@ -32,5 +32,16 @@
       "subjectiveAudioQA": "BLOCKED",
       "publication": "NOT APPROVED"
     }
+  },
+  "authenticationGate": {
+    "status": "BLOCKED",
+    "checkedAt": "2026-10-16",
+    "customSubdomainConfigured": false,
+    "speechRoleObservedForCurrentUser": false,
+    "runtimeCredentialPresent": false,
+    "offlineAuthTests": "PASS",
+    "liveProviderAuth": "NOT_TESTED",
+    "azureRequestsThisTask": 0,
+    "newCostUsd": 0
   }
 }
