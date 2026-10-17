@@ -52,7 +52,12 @@
     "render:marketing04": "node scripts/marketing04/render.mjs",
     "proofs:marketing04": "node scripts/marketing04/render.mjs --proofs",
     "qa:marketing04": "python scripts/marketing04/qa.py",
-    "test:marketing04:production": "node --test scripts/marketing04/production.test.mjs"
+    "test:marketing04:production": "node --test scripts/marketing04/production.test.mjs",
+    "voice:plan": "node scripts/bilingual/plan.mjs",
+    "voice:price": "node scripts/bilingual/refresh-price.mjs",
+    "voice:timeline": "node scripts/bilingual/prepare-timeline.mjs",
+    "test:bilingual": "node --test scripts/bilingual/bilingual.test.mjs",
+    "test:bilingual:audio": "python scripts/bilingual/audio_test.py"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.535",

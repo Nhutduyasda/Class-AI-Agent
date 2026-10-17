@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "productionId": "bilingual-sample-001",
+  "briefRelativePath": "briefs/bilingual-sample-approved.json",
+  "briefSha256": "555c0baf725f37aea17f861ec1137222e654e5bb05aa140dd1997158b9556e03",
+  "profileSha256": "40b6702fbf417870ca4e673126c14ee166145f4f084f5c7d1ae9b5fc9606bf84",
+  "profile": {
+    "schemaVersion": 1,
+    "provider": "AZURE_OFFICIAL_ONLY",
+    "resource": "english-journey-namminh",
+    "region": "southeastasia",
+    "tier": "Standard S0",
+    "format": "riff-48khz-16bit-mono-pcm",
+    "mode": "multivoice",
+    "voices": {
+      "vi-VN": "vi-VN-NamMinhNeural",
+      "en-US": "en-US-AndrewNeural"
+    },
+    "rate": "+0%",
+    "pitch": "default",
+    "entityDefaults": {
+      "ChatGPT": "vi-VN",
+      "AI": "vi-VN",
+      "Error Log": "en-US"
+    },
+    "englishTerms": [
+      "Error Log",
+      "Reading & Grammar",
+      "Past Simple",
+      "Vocabulary",
+      "Grammar",
+      "Speaking",
+      "Reading",
+      "Writing",
+      "Listening",
+      "apple",
+      "cat",
+      "yesterday",
+      "went",
+      "go"
+    ],
+    "englishExamples": [
+      "I saw a cat.",
+      "The cat was sleeping.",
+      "I ate an apple.",
+      "I ate an apple,",
+      "Yesterday, I went to school.",
+      "Yesterday, I go to school."
+    ],
+    "splitGapMs": 120,
+    "liveSynthesisAllowed": false
+  },
+  "pricing": {
+    "schemaVersion": 1,
+    "verified": true,
+    "currency": "USD",
+    "region": "southeastasia",
+    "usdPerMillion": 15,
+    "meterName": "S1 Neural Text To Speech Characters",
+    "unitOfMeasure": "1M",
+    "meterId": "0f98e708-a16c-407b-8089-a0ed9e14ab49",
+    "publicSkuLabel": "S1",
+    "resourceTierClaim": "Standard S0 (owner configuration; account contract not inspected)",
+    "checkedAt": "2026-10-17T07:57:20.2572429Z",
+    "source": "https://prices.azure.com/api/retail/prices",
+    "query": "armRegionName eq 'southeastasia' and contains(productName, 'Speech')",
+    "invoiceVerified": false
+  },
+  "mode": "multivoice",
+  "scenes": [
+    {
+      "id": "sample",
+      "canonicalText": "Ví dụ, mình viết: I saw a cat. Vì đang nói đến một con mèo chưa xác định, mình dùng A. Tiếp theo: The cat was sleeping. Còn với câu I ate an apple. Sau đó: Yesterday, I went to school.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 18,
+          "text": "Ví dụ, mình viết: ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 18,
+          "end": 30,
+          "text": "I saw a cat.",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "english-clause"
+        },
+        {
+          "start": 30,
+          "end": 84,
+          "text": " Vì đang nói đến một con mèo chưa xác định, mình dùng ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 84,
+          "end": 85,
+          "text": "A",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "article-context",
+          "phoneme": "ə"
+        },
+        {
+          "start": 85,
+          "end": 98,
+          "text": ". Tiếp theo: ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 98,
+          "end": 119,
+          "text": "The cat was sleeping.",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "known-term"
+        },
+        {
+          "start": 119,
+          "end": 132,
+          "text": " Còn với câu ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 132,
+          "end": 147,
+          "text": "I ate an apple.",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "known-term"
+        },
+        {
+          "start": 147,
+          "end": 156,
+          "text": " Sau đó: ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 156,
+          "end": 184,
+          "text": "Yesterday, I went to school.",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "english-clause"
+        }
+      ],
+      "warnings": []
+    }
+  ],
+  "requests": [
+    {
+      "id": "sample",
+      "scene": "sample",
+      "spans": [
+        {
+          "start": 0,
+          "end": 18,
+          "text": "Ví dụ, mình viết: ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 18,
+          "end": 30,
+          "text": "I saw a cat.",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "english-clause"
+        },
+        {
+          "start": 30,
+          "end": 84,
+          "text": " Vì đang nói đến một con mèo chưa xác định, mình dùng ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 84,
+          "end": 85,
+          "text": "A",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "article-context",
+          "phoneme": "ə"
+        },
+        {
+          "start": 85,
+          "end": 98,
+          "text": ". Tiếp theo: ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 98,
+          "end": 119,
+          "text": "The cat was sleeping.",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "known-term"
+        },
+        {
+          "start": 119,
+          "end": 132,
+          "text": " Còn với câu ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 132,
+          "end": 147,
+          "text": "I ate an apple.",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "known-term"
+        },
+        {
+          "start": 147,
+          "end": 156,
+          "text": " Sau đó: ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 156,
+          "end": 184,
+          "text": "Yesterday, I went to school.",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "english-clause"
+        }
+      ],
+      "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\">Ví dụ, mình viết: </voice><voice name=\"en-US-AndrewNeural\">I saw a cat.</voice><voice name=\"vi-VN-NamMinhNeural\"> Vì đang nói đến một con mèo chưa xác định, mình dùng </voice><voice name=\"en-US-AndrewNeural\"><phoneme alphabet=\"ipa\" ph=\"ə\">A</phoneme></voice><voice name=\"vi-VN-NamMinhNeural\">. Tiếp theo: </voice><voice name=\"en-US-AndrewNeural\">The cat was sleeping.</voice><voice name=\"vi-VN-NamMinhNeural\"> Còn với câu </voice><voice name=\"en-US-AndrewNeural\">I ate an apple.</voice><voice name=\"vi-VN-NamMinhNeural\"> Sau đó: </voice><voice name=\"en-US-AndrewNeural\">Yesterday, I went to school.</voice></speak>",
+      "ssmlSha256": "60299d1e4c4e288fcc41407a4dd226fe34a157173228dc78886ba3e2c2a9cf89",
+      "text": "Ví dụ, mình viết: I saw a cat. Vì đang nói đến một con mèo chưa xác định, mình dùng A. Tiếp theo: The cat was sleeping. Còn với câu I ate an apple. Sau đó: Yesterday, I went to school.",
+      "billableCharacters": 225,
+      "method": "SSML_SERIALIZED_EXCLUDING_SPEAK_VOICE_INCLUDING_OPTIONAL_MARKUP",
+      "escapedEntitiesConservativelyCounted": true,
+      "estimatedUsd": 0.003375
+    }
+  ],
+  "requestCount": 1,
+  "textCodepoints": 184,
+  "billableCharacters": 225,
+  "estimatedUsd": 0.003375,
+  "warnings": [],
+  "liveSynthesisAllowed": false,
+  "planSha256": "720f8cd78006b3539a15d682089dc06ea8b057b3ff09ff3da07b1fbb8fc8b2a6"
+}

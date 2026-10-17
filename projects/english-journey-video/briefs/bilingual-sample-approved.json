@@ -1,0 +1,8 @@
+{
+  "id": "bilingual-sample-001",
+  "approved": true,
+  "approvalScope": "OFFLINE_DEMONSTRATION_ONLY_NO_AZURE_SPENDING",
+  "spokenSegments": [
+    {"id": "sample", "spoken": "Ví dụ, mình viết: I saw a cat. Vì đang nói đến một con mèo chưa xác định, mình dùng A. Tiếp theo: The cat was sleeping. Còn với câu I ate an apple. Sau đó: Yesterday, I went to school."}
+  ]
+}

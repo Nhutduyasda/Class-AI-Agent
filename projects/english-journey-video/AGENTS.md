@@ -35,3 +35,13 @@ Produce one truthful, readable Vietnamese TikTok educational video per brief. Hu
 - A review report is not an approval. Never claim voice emotion, retention, or subjective watch quality PASS from ffprobe, still frames or transcription alone.
 - Do not import SeeCut source/code/assets: its PolyForm Noncommercial license is inappropriate for this commercial-intent workflow without additional permission.
 - Preserve existing Remotion compositions, unchanged owner-approved marketing dialogue, no main merge, publishing or new paid services.
+
+## Default bilingual voice for NEW marketing productions
+
+- Read `docs/BILINGUAL_VOICE.md` and `config/bilingual-voice.json` before planning speech for a new approved marketing brief. Vietnamese uses Azure `vi-VN-NamMinhNeural`; English uses Azure `en-US-AndrewNeural`, default rate/pitch, existing southeastasia resource only. No consumer Edge/Piper or substitute voices in this workflow.
+- Use `npm run voice:plan -- <approved-brief.json> <new-plan.json>`. Resolve any language warnings through exact character-offset pronunciation metadata in the NEW brief/production metadata; do not rewrite approved words or request another script approval merely to add metadata. Ambiguous names/acronyms must not be guessed as English.
+- Use the shared `scripts/bilingual/Start-BilingualVoice.ps1` secure runner for a paid production only when that production prompt explicitly authorizes its own cost and request count. Compile that authorization into a new `BILINGUAL_V1` policy bound to the exact plan SHA. Never reuse Video 03/04 policies. A code/offline-only task grants no synthesis budget.
+- Refresh the public price snapshot using `npm run voice:price` when needed; check both exact voices through the authenticated GET-only catalogue check before synthesis. The launcher uses one private hidden key prompt. No credential in Codex, source, arguments or logs.
+- Multi-voice is the default, one request per scene. A failure or timeout stops the entire session without retry or automatic split fallback. Split mode requires a separately priced/authorized plan, not a hidden retry.
+- Use verified WAV plus `align.py`, `voice:timeline`, and `audio.py` for actual observed timing, canonical subtitles and sample-based mixing. Future Remotion compositions can use `src/BilingualVoiceClock.ts`; never fabricate timings or use ASR text as approved copy.
+- Existing Video 01–04 scripts, media, ledgers and render outputs are historical artifacts; do not migrate or rerender them unless explicitly requested. Subjective pronunciation/voice/emotion QA remains blocked until genuinely heard.

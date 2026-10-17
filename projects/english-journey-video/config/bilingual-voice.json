@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "provider": "AZURE_OFFICIAL_ONLY",
+  "resource": "english-journey-namminh",
+  "region": "southeastasia",
+  "tier": "Standard S0",
+  "format": "riff-48khz-16bit-mono-pcm",
+  "mode": "multivoice",
+  "voices": {"vi-VN": "vi-VN-NamMinhNeural", "en-US": "en-US-AndrewNeural"},
+  "rate": "+0%",
+  "pitch": "default",
+  "entityDefaults": {"ChatGPT": "vi-VN", "AI": "vi-VN", "Error Log": "en-US"},
+  "englishTerms": ["Error Log", "Reading & Grammar", "Past Simple", "Vocabulary", "Grammar", "Speaking", "Reading", "Writing", "Listening", "apple", "cat", "yesterday", "went", "go"],
+  "englishExamples": ["I saw a cat.", "The cat was sleeping.", "I ate an apple.", "I ate an apple,", "Yesterday, I went to school.", "Yesterday, I go to school."],
+  "splitGapMs": 120,
+  "liveSynthesisAllowed": false
+}

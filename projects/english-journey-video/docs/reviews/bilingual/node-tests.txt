@@ -1,0 +1,42 @@
+✔ English clause / canonical: I saw a cat. (3.5105ms)
+✔ English clause / canonical: The cat was sleeping. (0.3638ms)
+✔ English clause / canonical: I ate an apple. (0.1388ms)
+✔ English clause / canonical: I ate an apple, (0.0976ms)
+✔ English clause / canonical: Yesterday, I went to school. (0.1232ms)
+✔ English clause / canonical: Yesterday, I go to school. (0.0984ms)
+✔ mixed example selects Vietnamese, Andrew sentence and contextual article (0.4412ms)
+✔ contextual A / AN / THE including a list (0.3418ms)
+✔ Vietnamese letters and proper names are not blindly English (0.2347ms)
+✔ named term Error Log is Andrew; ChatGPT protected by default (0.2455ms)
+✔ manual pronunciation metadata supports proper names in either language (0.2393ms)
+✔ unknown Latin text blocks live plan until classified (3.1947ms)
+✔ stale, overlapping or invalid manual metadata rejected (0.2643ms)
+✔ exact copy includes whitespace, XML-sensitive characters and Unicode (0.189ms)
+✔ SSML does not inject rate, pitch, translation or language-only fallback (0.7227ms)
+✔ billable markup count includes phonemes; text codepoints differ (0.1884ms)
+✔ multi-voice preferred: one request, and fallback split preserves exact text (1.4323ms)
+✔ new scoped cost approval required; old video budgets never work (0.8144ms)
+✔ historical video IDs protected at live boundary (0.5123ms)
+✔ plan and SSML integrity are bound (0.3561ms)
+✔ regional voice catalogue check is GET-only and requires both exact Neural voices (0.6273ms)
+✔ live validation requires current voice and public price evidence, without synthesis (0.502ms)
+✔ Windows paths, traversal and reserved device names (0.2154ms)
+✔ WAV validation detects malformed, truncated and wrong sample-rate payloads (4.4136ms)
+✔ offline transport verifies WAV; successful cached rerun sends zero more calls (537.6973ms)
+✔ ambiguous attempt persists and stops ALL subsequent requests and reruns (147.6246ms)
+✔ missing cost approval cannot enter transport (1.1393ms)
+✔ live source is reread and any script change after planning is rejected (10.6194ms)
+✔ session lock prevents two simultaneous offline submissions (280.4578ms)
+✔ split fallback cannot reuse a multi-voice cost authorization (0.696ms)
+✔ observed timing, voice spans, article events and canonical subtitles: multivoice (1.7842ms)
+✔ observed timing, voice spans, article events and canonical subtitles: split (0.6888ms)
+✔ mock or incomplete timing cannot masquerade as production (1.0412ms)
+✔ Remotion clock uses actual frame time for Andrew, captions and article animation (0.5495ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1163.9829
