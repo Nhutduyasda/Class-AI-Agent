@@ -1,0 +1,23 @@
+{
+  "liveSynthesisAllowed": true,
+  "approvalId": "OWNER-PROMPT-VIDEO04-V1.1-2026-10-17",
+  "briefSha256": "aac903c2df5f5d99f0902930a96e2bf6bb2afb701a7136d0f6e00117ba2bde23",
+  "limitUsd": 0.05,
+  "pricePerMillionUsd": 15,
+  "maxAttempts": {
+    "hook": 1,
+    "problem": 1,
+    "solution": 1,
+    "demo": 1,
+    "benefit": 1,
+    "cta": 1
+  },
+  "expiresAt": "2026-10-24T16:59:59Z",
+  "resource": "english-journey-namminh",
+  "region": "southeastasia",
+  "tier": "Standard S0",
+  "voice": "vi-VN-NamMinhNeural",
+  "rate": "+0%",
+  "pitch": "default",
+  "format": "riff-48khz-16bit-mono-pcm"
+}

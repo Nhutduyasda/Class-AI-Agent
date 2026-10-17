@@ -1,0 +1,1219 @@
+{
+  "version": "1.1",
+  "fps": 30,
+  "durationInFrames": 2306,
+  "durationSeconds": 76.86666666666666,
+  "audioSrc": "marketing04/mix.wav",
+  "scenes": [
+    {
+      "type": "hook",
+      "startFrame": 0,
+      "endFrame": 152
+    },
+    {
+      "type": "problem",
+      "startFrame": 152,
+      "endFrame": 592
+    },
+    {
+      "type": "solution",
+      "startFrame": 592,
+      "endFrame": 933
+    },
+    {
+      "type": "demo",
+      "startFrame": 933,
+      "endFrame": 1526
+    },
+    {
+      "type": "benefit",
+      "startFrame": 1526,
+      "endFrame": 1963
+    },
+    {
+      "type": "cta",
+      "startFrame": 1963,
+      "endFrame": 2306
+    }
+  ],
+  "segments": [
+    {
+      "id": "hook",
+      "spoken": "A, AN, THE… sao học rồi mà lúc đặt câu vẫn phải đoán?",
+      "startMs": 0.0,
+      "speechEndMs": 4437.5,
+      "endMs": 5066.666666666667
+    },
+    {
+      "id": "problem",
+      "spoken": "Bạn đã học về mạo từ tiếng Anh rất nhiều lần. Nhưng cứ đến lúc đặt câu, bạn lại phân vân: chỗ này dùng A, AN hay THE? Mình nghĩ vấn đề là học quy tắc xong, nhưng chưa luyện cách dùng nó trong câu thực tế.",
+      "startMs": 5066.666666666666,
+      "speechEndMs": 19104.166666666664,
+      "endMs": 19733.333333333332
+    },
+    {
+      "id": "solution",
+      "spoken": "Thay vì nhờ ChatGPT giải thích cả trang lý thuyết, mình thử cách khác. Mình yêu cầu AI đưa ra những ví dụ thật đơn giản, giải thích từng lựa chọn, rồi cho mình tự luyện tập.",
+      "startMs": 19733.333333333336,
+      "speechEndMs": 30495.833333333332,
+      "endMs": 31100.0
+    },
+    {
+      "id": "demo",
+      "spoken": "Ví dụ, mình viết: I saw a cat. Vì đang nói đến một con mèo chưa xác định, mình dùng A. Tiếp theo: The cat was sleeping. Lúc này, mình đang nhắc lại chính con mèo đó, nên dùng THE. Còn với câu I ate an apple, mình dùng AN vì từ apple bắt đầu bằng âm nguyên âm.",
+      "startMs": 31100.0,
+      "speechEndMs": 50250.0,
+      "endMs": 50866.666666666664
+    },
+    {
+      "id": "benefit",
+      "spoken": "Sau khi hiểu ví dụ, mình thử tự viết những câu khác. ChatGPT kiểm tra, giải thích chỗ sai, rồi mình viết lại mà không nhìn đáp án. Như vậy, mình không chỉ nhớ quy tắc, mà còn luyện cách sử dụng trong ngữ cảnh.",
+      "startMs": 50866.666666666664,
+      "speechEndMs": 64829.166666666664,
+      "endMs": 65433.333333333336
+    },
+    {
+      "id": "cta",
+      "spoken": "Nếu bạn cũng đang rối vì A, AN, THE, bình luận BẮT ĐẦU nhé! Mình chia sẻ cách thiết lập ChatGPT để học từ những câu đơn giản như vậy.",
+      "startMs": 65433.333333333336,
+      "speechEndMs": 75258.33333333334,
+      "endMs": 76866.66666666667
+    }
+  ],
+  "tokens": [
+    {
+      "scene": "hook",
+      "text": "A,",
+      "startMs": 0.0,
+      "endMs": 650.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "hook",
+      "text": "AN,",
+      "startMs": 800.0,
+      "endMs": 1320.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "hook",
+      "text": "THE… sao học rồi mà lúc đặt",
+      "startMs": 1320.0,
+      "endMs": 2680.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "hook",
+      "text": "câu vẫn phải đoán?",
+      "startMs": 2680.0,
+      "endMs": 3520.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "Bạn đã học về mạo từ tiếng",
+      "startMs": 5066.666666666666,
+      "endMs": 6686.666666666667,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "Anh rất nhiều lần.",
+      "startMs": 6686.666666666667,
+      "endMs": 7506.666666666666,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "Nhưng cứ đến lúc đặt câu,",
+      "startMs": 8366.666666666668,
+      "endMs": 9966.666666666666,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "bạn lại phân vân:",
+      "startMs": 10066.666666666666,
+      "endMs": 10846.666666666668,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "chỗ này dùng A,",
+      "startMs": 11206.666666666668,
+      "endMs": 12026.666666666668,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "AN hay THE?",
+      "startMs": 12366.666666666668,
+      "endMs": 13016.666666666668,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "Mình nghĩ vấn đề là học quy",
+      "startMs": 13846.666666666668,
+      "endMs": 15306.666666666666,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "tắc xong,",
+      "startMs": 15306.666666666666,
+      "endMs": 15956.666666666666,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "nhưng chưa luyện cách dùng nó trong",
+      "startMs": 16026.666666666668,
+      "endMs": 17586.666666666664,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "câu thực tế.",
+      "startMs": 17586.666666666664,
+      "endMs": 18236.666666666664,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "solution",
+      "text": "Thay vì nhờ ChatGPT giải thích cả",
+      "startMs": 19733.333333333336,
+      "endMs": 21253.333333333332,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "solution",
+      "text": "trang lý thuyết,",
+      "startMs": 21253.333333333332,
+      "endMs": 21933.333333333332,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "solution",
+      "text": "mình thử cách khác.",
+      "startMs": 22233.333333333336,
+      "endMs": 23073.333333333336,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "solution",
+      "text": "Mình yêu cầu AI đưa ra những",
+      "startMs": 24053.333333333336,
+      "endMs": 25673.333333333336,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "solution",
+      "text": "ví dụ thật đơn giản,",
+      "startMs": 25673.333333333336,
+      "endMs": 26713.333333333336,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "solution",
+      "text": "giải thích từng lựa chọn,",
+      "startMs": 27073.333333333336,
+      "endMs": 28133.333333333332,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "solution",
+      "text": "rồi cho mình tự luyện tập.",
+      "startMs": 28493.333333333332,
+      "endMs": 29653.333333333336,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "Ví dụ,",
+      "startMs": 31100.0,
+      "endMs": 31750.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "mình viết:",
+      "startMs": 31980.0,
+      "endMs": 32480.000000000004,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "I saw a cat.",
+      "startMs": 32480.000000000004,
+      "endMs": 33780.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "Vì đang nói đến một con mèo",
+      "startMs": 34560.0,
+      "endMs": 35980.00000000001,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "chưa xác định,",
+      "startMs": 35980.00000000001,
+      "endMs": 36630.00000000001,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "mình dùng A.",
+      "startMs": 36860.0,
+      "endMs": 37480.00000000001,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "Tiếp theo:",
+      "startMs": 37480.00000000001,
+      "endMs": 38130.00000000001,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "The cat was sleeping.",
+      "startMs": 38660.00000000001,
+      "endMs": 39380.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "Lúc này,",
+      "startMs": 40060.0,
+      "endMs": 40710.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "mình đang nhắc lại chính con mèo",
+      "startMs": 40980.00000000001,
+      "endMs": 42360.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "đó,",
+      "startMs": 42360.0,
+      "endMs": 42900.00000000001,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "nên dùng THE.",
+      "startMs": 42900.00000000001,
+      "endMs": 43640.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "Còn với câu I ate an apple,",
+      "startMs": 44480.00000000001,
+      "endMs": 46300.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "mình dùng AN vì từ apple bắt",
+      "startMs": 46780.0,
+      "endMs": 48320.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "đầu bằng âm nguyên âm.",
+      "startMs": 48320.0,
+      "endMs": 49380.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "Sau khi hiểu ví dụ,",
+      "startMs": 50866.666666666664,
+      "endMs": 52026.666666666664,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "mình thử tự viết những câu khác.",
+      "startMs": 52346.666666666664,
+      "endMs": 53906.666666666664,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "ChatGPT kiểm tra,",
+      "startMs": 54666.666666666664,
+      "endMs": 55466.66666666667,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "giải thích chỗ sai,",
+      "startMs": 55826.66666666667,
+      "endMs": 56586.666666666664,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "rồi mình viết lại mà không nhìn",
+      "startMs": 57006.666666666664,
+      "endMs": 58326.66666666667,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "đáp án.",
+      "startMs": 58326.66666666667,
+      "endMs": 58976.66666666667,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "Như vậy,",
+      "startMs": 59546.666666666664,
+      "endMs": 60196.666666666664,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "mình không chỉ nhớ quy tắc,",
+      "startMs": 60506.666666666664,
+      "endMs": 61666.66666666667,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "mà còn luyện cách sử dụng trong",
+      "startMs": 61666.66666666667,
+      "endMs": 63386.66666666667,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "ngữ cảnh.",
+      "startMs": 63386.66666666667,
+      "endMs": 64036.66666666667,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "cta",
+      "text": "Nếu bạn cũng đang rối vì A,",
+      "startMs": 65433.333333333336,
+      "endMs": 67313.33333333333,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "cta",
+      "text": "AN,",
+      "startMs": 67753.33333333333,
+      "endMs": 68273.33333333334,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "cta",
+      "text": "THE,",
+      "startMs": 68273.33333333334,
+      "endMs": 68923.33333333334,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "cta",
+      "text": "bình luận BẮT ĐẦU nhé!",
+      "startMs": 68973.33333333334,
+      "endMs": 70033.33333333333,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "cta",
+      "text": "Mình chia sẻ cách thiết lập ChatGPT",
+      "startMs": 70953.33333333333,
+      "endMs": 72513.33333333333,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "cta",
+      "text": "để học từ những câu đơn giản",
+      "startMs": 72513.33333333333,
+      "endMs": 74013.33333333333,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "cta",
+      "text": "như vậy.",
+      "startMs": 74013.33333333333,
+      "endMs": 74663.33333333333,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    }
+  ],
+  "pages": [
+    {
+      "scene": "hook",
+      "text": "A,",
+      "startMs": 0.0,
+      "endMs": 650.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "hook",
+      "text": "AN,",
+      "startMs": 800.0,
+      "endMs": 1320.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "hook",
+      "text": "THE… sao học rồi mà lúc đặt",
+      "startMs": 1320.0,
+      "endMs": 2680.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "hook",
+      "text": "câu vẫn phải đoán?",
+      "startMs": 2680.0,
+      "endMs": 3520.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "Bạn đã học về mạo từ tiếng",
+      "startMs": 5066.666666666666,
+      "endMs": 6686.666666666667,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "Anh rất nhiều lần.",
+      "startMs": 6686.666666666667,
+      "endMs": 7506.666666666666,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "Nhưng cứ đến lúc đặt câu,",
+      "startMs": 8366.666666666668,
+      "endMs": 9966.666666666666,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "bạn lại phân vân:",
+      "startMs": 10066.666666666666,
+      "endMs": 10846.666666666668,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "chỗ này dùng A,",
+      "startMs": 11206.666666666668,
+      "endMs": 12026.666666666668,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "AN hay THE?",
+      "startMs": 12366.666666666668,
+      "endMs": 13016.666666666668,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "Mình nghĩ vấn đề là học quy",
+      "startMs": 13846.666666666668,
+      "endMs": 15306.666666666666,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "tắc xong,",
+      "startMs": 15306.666666666666,
+      "endMs": 15956.666666666666,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "nhưng chưa luyện cách dùng nó trong",
+      "startMs": 16026.666666666668,
+      "endMs": 17586.666666666664,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "problem",
+      "text": "câu thực tế.",
+      "startMs": 17586.666666666664,
+      "endMs": 18236.666666666664,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "solution",
+      "text": "Thay vì nhờ ChatGPT giải thích cả",
+      "startMs": 19733.333333333336,
+      "endMs": 21253.333333333332,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "solution",
+      "text": "trang lý thuyết,",
+      "startMs": 21253.333333333332,
+      "endMs": 21933.333333333332,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "solution",
+      "text": "mình thử cách khác.",
+      "startMs": 22233.333333333336,
+      "endMs": 23073.333333333336,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "solution",
+      "text": "Mình yêu cầu AI đưa ra những",
+      "startMs": 24053.333333333336,
+      "endMs": 25673.333333333336,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "solution",
+      "text": "ví dụ thật đơn giản,",
+      "startMs": 25673.333333333336,
+      "endMs": 26713.333333333336,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "solution",
+      "text": "giải thích từng lựa chọn,",
+      "startMs": 27073.333333333336,
+      "endMs": 28133.333333333332,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "solution",
+      "text": "rồi cho mình tự luyện tập.",
+      "startMs": 28493.333333333332,
+      "endMs": 29653.333333333336,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "Ví dụ,",
+      "startMs": 31100.0,
+      "endMs": 31750.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "mình viết:",
+      "startMs": 31980.0,
+      "endMs": 32480.000000000004,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "I saw a cat.",
+      "startMs": 32480.000000000004,
+      "endMs": 33780.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "Vì đang nói đến một con mèo",
+      "startMs": 34560.0,
+      "endMs": 35980.00000000001,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "chưa xác định,",
+      "startMs": 35980.00000000001,
+      "endMs": 36630.00000000001,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "mình dùng A.",
+      "startMs": 36860.0,
+      "endMs": 37480.00000000001,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "Tiếp theo:",
+      "startMs": 37480.00000000001,
+      "endMs": 38130.00000000001,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "The cat was sleeping.",
+      "startMs": 38660.00000000001,
+      "endMs": 39380.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "Lúc này,",
+      "startMs": 40060.0,
+      "endMs": 40710.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "mình đang nhắc lại chính con mèo",
+      "startMs": 40980.00000000001,
+      "endMs": 42360.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "đó,",
+      "startMs": 42360.0,
+      "endMs": 42900.00000000001,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "nên dùng THE.",
+      "startMs": 42900.00000000001,
+      "endMs": 43640.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "Còn với câu I ate an apple,",
+      "startMs": 44480.00000000001,
+      "endMs": 46300.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "mình dùng AN vì từ apple bắt",
+      "startMs": 46780.0,
+      "endMs": 48320.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "demo",
+      "text": "đầu bằng âm nguyên âm.",
+      "startMs": 48320.0,
+      "endMs": 49380.0,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "Sau khi hiểu ví dụ,",
+      "startMs": 50866.666666666664,
+      "endMs": 52026.666666666664,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "mình thử tự viết những câu khác.",
+      "startMs": 52346.666666666664,
+      "endMs": 53906.666666666664,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "ChatGPT kiểm tra,",
+      "startMs": 54666.666666666664,
+      "endMs": 55466.66666666667,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "giải thích chỗ sai,",
+      "startMs": 55826.66666666667,
+      "endMs": 56586.666666666664,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "rồi mình viết lại mà không nhìn",
+      "startMs": 57006.666666666664,
+      "endMs": 58326.66666666667,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "đáp án.",
+      "startMs": 58326.66666666667,
+      "endMs": 58976.66666666667,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "Như vậy,",
+      "startMs": 59546.666666666664,
+      "endMs": 60196.666666666664,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "mình không chỉ nhớ quy tắc,",
+      "startMs": 60506.666666666664,
+      "endMs": 61666.66666666667,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "mà còn luyện cách sử dụng trong",
+      "startMs": 61666.66666666667,
+      "endMs": 63386.66666666667,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "benefit",
+      "text": "ngữ cảnh.",
+      "startMs": 63386.66666666667,
+      "endMs": 64036.66666666667,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "cta",
+      "text": "Nếu bạn cũng đang rối vì A,",
+      "startMs": 65433.333333333336,
+      "endMs": 67313.33333333333,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "cta",
+      "text": "AN,",
+      "startMs": 67753.33333333333,
+      "endMs": 68273.33333333334,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "cta",
+      "text": "THE,",
+      "startMs": 68273.33333333334,
+      "endMs": 68923.33333333334,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "cta",
+      "text": "bình luận BẮT ĐẦU nhé!",
+      "startMs": 68973.33333333334,
+      "endMs": 70033.33333333333,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "cta",
+      "text": "Mình chia sẻ cách thiết lập ChatGPT",
+      "startMs": 70953.33333333333,
+      "endMs": 72513.33333333333,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "cta",
+      "text": "để học từ những câu đơn giản",
+      "startMs": 72513.33333333333,
+      "endMs": 74013.33333333333,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    },
+    {
+      "scene": "cta",
+      "text": "như vậy.",
+      "startMs": 74013.33333333333,
+      "endMs": 74663.33333333333,
+      "timingLevel": "ASR_OBSERVED_PHRASE"
+    }
+  ],
+  "markers": {
+    "demo-the": 1160,
+    "demo-an": 1361
+  },
+  "events": [
+    {
+      "kind": "bridge",
+      "frame": 152
+    },
+    {
+      "kind": "bridge",
+      "frame": 592
+    },
+    {
+      "kind": "bridge",
+      "frame": 933
+    },
+    {
+      "kind": "bridge",
+      "frame": 1526
+    },
+    {
+      "kind": "bridge",
+      "frame": 1963
+    },
+    {
+      "kind": "complete",
+      "frame": 1160
+    },
+    {
+      "kind": "complete",
+      "frame": 1361
+    }
+  ],
+  "briefSha256": "aac903c2df5f5d99f0902930a96e2bf6bb2afb701a7136d0f6e00117ba2bde23",
+  "assets": [
+    {
+      "scene": "hook",
+      "sampleRate": 48000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "codec": "pcm_s16le",
+      "durationSeconds": 4.4375,
+      "bytes": 426044,
+      "sha256": "eabbc817f790661461b963c6312703f32442bbbfd48ceb8e202ab9ff4411bf82",
+      "provenance": {
+        "kind": "AZURE_REST",
+        "voice": "vi-VN-NamMinhNeural",
+        "format": "riff-48khz-16bit-mono-pcm",
+        "scene": "hook",
+        "textSha256": "fc9e6d6b62d08d91fdceb90acad507b8709db58ea6b3b7319942fec0e2f35c49",
+        "approvalId": "OWNER-PROMPT-VIDEO04-V1.1-2026-10-17"
+      },
+      "fullDecode": "PASS",
+      "readBack": "PASS",
+      "verifiedAt": "2026-10-17T07:30:41.278Z",
+      "normalization": {
+        "input": {
+          "input_i": "-19.86",
+          "input_tp": "-3.47",
+          "input_lra": "0.50",
+          "input_thresh": "-30.07",
+          "output_i": "-16.19",
+          "output_tp": "-1.50",
+          "output_lra": "0.50",
+          "output_thresh": "-26.31",
+          "normalization_type": "dynamic",
+          "target_offset": "0.19"
+        },
+        "gainDb": 1.9680497740210001,
+        "output": {
+          "input_i": "-17.90",
+          "input_tp": "-1.50",
+          "input_lra": "0.50",
+          "input_thresh": "-28.10",
+          "output_i": "-16.18",
+          "output_tp": "-1.50",
+          "output_lra": "0.50",
+          "output_thresh": "-26.30",
+          "normalization_type": "dynamic",
+          "target_offset": "0.18"
+        }
+      }
+    },
+    {
+      "scene": "problem",
+      "sampleRate": 48000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "codec": "pcm_s16le",
+      "durationSeconds": 14.0375,
+      "bytes": 1347644,
+      "sha256": "29d84c7870d6406dfce5627260d59d1f56dcba4953f0aa086eb4facc31c26833",
+      "provenance": {
+        "kind": "AZURE_REST",
+        "voice": "vi-VN-NamMinhNeural",
+        "format": "riff-48khz-16bit-mono-pcm",
+        "scene": "problem",
+        "textSha256": "19446727aefa3e266c21114b9ac584b972b42a395f2e5dc9abc87509f70182d7",
+        "approvalId": "OWNER-PROMPT-VIDEO04-V1.1-2026-10-17"
+      },
+      "fullDecode": "PASS",
+      "readBack": "PASS",
+      "verifiedAt": "2026-10-17T07:30:42.455Z",
+      "normalization": {
+        "input": {
+          "input_i": "-19.52",
+          "input_tp": "-2.96",
+          "input_lra": "2.10",
+          "input_thresh": "-29.70",
+          "output_i": "-16.26",
+          "output_tp": "-1.50",
+          "output_lra": "2.10",
+          "output_thresh": "-26.44",
+          "normalization_type": "dynamic",
+          "target_offset": "0.26"
+        },
+        "gainDb": 1.4574080106760612,
+        "output": {
+          "input_i": "-18.07",
+          "input_tp": "-1.50",
+          "input_lra": "2.20",
+          "input_thresh": "-28.25",
+          "output_i": "-16.26",
+          "output_tp": "-1.50",
+          "output_lra": "2.10",
+          "output_thresh": "-26.44",
+          "normalization_type": "dynamic",
+          "target_offset": "0.26"
+        }
+      }
+    },
+    {
+      "scene": "solution",
+      "sampleRate": 48000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "codec": "pcm_s16le",
+      "durationSeconds": 10.7625,
+      "bytes": 1033244,
+      "sha256": "3d1ad3488f6398e6054c180e0282dc6add3b06d4cadc52244b4fd439bf345834",
+      "provenance": {
+        "kind": "AZURE_REST",
+        "voice": "vi-VN-NamMinhNeural",
+        "format": "riff-48khz-16bit-mono-pcm",
+        "scene": "solution",
+        "textSha256": "4287c84ff7bde8220f4e977f88db410f8d2d032238e8c6e82b5307b422f7561b",
+        "approvalId": "OWNER-PROMPT-VIDEO04-V1.1-2026-10-17"
+      },
+      "fullDecode": "PASS",
+      "readBack": "PASS",
+      "verifiedAt": "2026-10-17T07:30:43.400Z",
+      "normalization": {
+        "input": {
+          "input_i": "-19.98",
+          "input_tp": "-3.34",
+          "input_lra": "2.60",
+          "input_thresh": "-30.16",
+          "output_i": "-16.28",
+          "output_tp": "-1.50",
+          "output_lra": "1.80",
+          "output_thresh": "-26.42",
+          "normalization_type": "dynamic",
+          "target_offset": "0.28"
+        },
+        "gainDb": 1.837450124342035,
+        "output": {
+          "input_i": "-18.14",
+          "input_tp": "-1.50",
+          "input_lra": "2.60",
+          "input_thresh": "-28.32",
+          "output_i": "-16.28",
+          "output_tp": "-1.50",
+          "output_lra": "1.80",
+          "output_thresh": "-26.42",
+          "normalization_type": "dynamic",
+          "target_offset": "0.28"
+        }
+      }
+    },
+    {
+      "scene": "demo",
+      "sampleRate": 48000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "codec": "pcm_s16le",
+      "durationSeconds": 19.15,
+      "bytes": 1838444,
+      "sha256": "77b69b5d2984d1f33e48939686b1853588f35627c153963904fbc3bfa59ebe97",
+      "provenance": {
+        "kind": "AZURE_REST",
+        "voice": "vi-VN-NamMinhNeural",
+        "format": "riff-48khz-16bit-mono-pcm",
+        "scene": "demo",
+        "textSha256": "3fed814b2835593ab0b60565bf9793c7e2cb7a6f8bf086f990ee74fe1b0b712c",
+        "approvalId": "OWNER-PROMPT-VIDEO04-V1.1-2026-10-17"
+      },
+      "fullDecode": "PASS",
+      "readBack": "PASS",
+      "verifiedAt": "2026-10-17T07:30:44.863Z",
+      "normalization": {
+        "input": {
+          "input_i": "-19.91",
+          "input_tp": "-3.04",
+          "input_lra": "2.30",
+          "input_thresh": "-30.14",
+          "output_i": "-16.02",
+          "output_tp": "-1.50",
+          "output_lra": "1.70",
+          "output_thresh": "-26.25",
+          "normalization_type": "dynamic",
+          "target_offset": "0.02"
+        },
+        "gainDb": 1.5457880934722656,
+        "output": {
+          "input_i": "-18.37",
+          "input_tp": "-1.50",
+          "input_lra": "2.20",
+          "input_thresh": "-28.60",
+          "output_i": "-16.02",
+          "output_tp": "-1.50",
+          "output_lra": "1.70",
+          "output_thresh": "-26.25",
+          "normalization_type": "dynamic",
+          "target_offset": "0.02"
+        }
+      }
+    },
+    {
+      "scene": "benefit",
+      "sampleRate": 48000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "codec": "pcm_s16le",
+      "durationSeconds": 13.9625,
+      "bytes": 1340444,
+      "sha256": "fb3bf3db61f2bd1911d1c4b55478e81577f0f8fb78d2d81b2be7dd2a744eb396",
+      "provenance": {
+        "kind": "AZURE_REST",
+        "voice": "vi-VN-NamMinhNeural",
+        "format": "riff-48khz-16bit-mono-pcm",
+        "scene": "benefit",
+        "textSha256": "7b0853ec988159707f47f920c53f60dc1bb0b19370f44c1399330e069d46e5e9",
+        "approvalId": "OWNER-PROMPT-VIDEO04-V1.1-2026-10-17"
+      },
+      "fullDecode": "PASS",
+      "readBack": "PASS",
+      "verifiedAt": "2026-10-17T07:30:45.887Z",
+      "normalization": {
+        "input": {
+          "input_i": "-20.35",
+          "input_tp": "-3.75",
+          "input_lra": "2.70",
+          "input_thresh": "-30.50",
+          "output_i": "-16.28",
+          "output_tp": "-1.50",
+          "output_lra": "2.70",
+          "output_thresh": "-26.42",
+          "normalization_type": "dynamic",
+          "target_offset": "0.28"
+        },
+        "gainDb": 2.254465666351539,
+        "output": {
+          "input_i": "-18.09",
+          "input_tp": "-1.49",
+          "input_lra": "2.60",
+          "input_thresh": "-28.24",
+          "output_i": "-16.28",
+          "output_tp": "-1.50",
+          "output_lra": "2.70",
+          "output_thresh": "-26.42",
+          "normalization_type": "dynamic",
+          "target_offset": "0.28"
+        }
+      }
+    },
+    {
+      "scene": "cta",
+      "sampleRate": 48000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "codec": "pcm_s16le",
+      "durationSeconds": 9.825,
+      "bytes": 943244,
+      "sha256": "a750510ee8b3da4cd2f593a7f6467aeeb9c8d081243ae25a8cc72cc9072bb972",
+      "provenance": {
+        "kind": "AZURE_REST",
+        "voice": "vi-VN-NamMinhNeural",
+        "format": "riff-48khz-16bit-mono-pcm",
+        "scene": "cta",
+        "textSha256": "c0de379a6999fcb5051d1649bb851a57fb210ef8ed3435172b101669f553d555",
+        "approvalId": "OWNER-PROMPT-VIDEO04-V1.1-2026-10-17"
+      },
+      "fullDecode": "PASS",
+      "readBack": "PASS",
+      "verifiedAt": "2026-10-17T07:30:46.652Z",
+      "normalization": {
+        "input": {
+          "input_i": "-19.47",
+          "input_tp": "-2.25",
+          "input_lra": "1.60",
+          "input_thresh": "-29.79",
+          "output_i": "-16.28",
+          "output_tp": "-1.50",
+          "output_lra": "1.90",
+          "output_thresh": "-26.53",
+          "normalization_type": "dynamic",
+          "target_offset": "0.28"
+        },
+        "gainDb": 0.7593002577190783,
+        "output": {
+          "input_i": "-18.72",
+          "input_tp": "-1.49",
+          "input_lra": "1.50",
+          "input_thresh": "-29.04",
+          "output_i": "-16.26",
+          "output_tp": "-1.50",
+          "output_lra": "1.90",
+          "output_thresh": "-26.52",
+          "normalization_type": "dynamic",
+          "target_offset": "0.26"
+        }
+      }
+    }
+  ],
+  "alignment": [
+    {
+      "scene": "hook",
+      "normalizedEditDistance": 0.38461538461538464,
+      "expectedWords": 13,
+      "observedWords": 13,
+      "matchedWords": 13
+    },
+    {
+      "scene": "problem",
+      "normalizedEditDistance": 0.06382978723404255,
+      "expectedWords": 47,
+      "observedWords": 47,
+      "matchedWords": 47
+    },
+    {
+      "scene": "solution",
+      "normalizedEditDistance": 0.02702702702702703,
+      "expectedWords": 37,
+      "observedWords": 37,
+      "matchedWords": 37
+    },
+    {
+      "scene": "demo",
+      "normalizedEditDistance": 0.21666666666666667,
+      "expectedWords": 59,
+      "observedWords": 60,
+      "matchedWords": 58
+    },
+    {
+      "scene": "benefit",
+      "normalizedEditDistance": 0.044444444444444446,
+      "expectedWords": 45,
+      "observedWords": 45,
+      "matchedWords": 45
+    },
+    {
+      "scene": "cta",
+      "normalizedEditDistance": 0.2,
+      "expectedWords": 30,
+      "observedWords": 30,
+      "matchedWords": 30
+    }
+  ],
+  "captionTiming": "Local faster-whisper small observed phrase endpoints aligned lexically. Approved copy retained; no invented word times or karaoke. Human sync review pending.",
+  "mixMetrics": {
+    "input_i": "-16.00",
+    "input_tp": "-2.16",
+    "input_lra": "3.30",
+    "input_thresh": "-27.12",
+    "output_i": "-16.07",
+    "output_tp": "-2.17",
+    "output_lra": "3.20",
+    "output_thresh": "-27.09",
+    "normalization_type": "dynamic",
+    "target_offset": "0.07"
+  },
+  "cost": {
+    "requests": 6,
+    "estimatedUsd": 0.015465,
+    "limitUsd": 0.05,
+    "priceBasis": "15 USD per million characters reference; not invoice"
+  },
+  "subjectiveAudioQA": "BLOCKED_NO_DIRECT_LISTENING",
+  "publication": "NOT_APPROVED"
+}

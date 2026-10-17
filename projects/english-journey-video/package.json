@@ -47,7 +47,12 @@
     "render:marketing03": "node scripts/marketing03/render.mjs",
     "proofs:marketing03": "node scripts/marketing03/render.mjs --proofs",
     "qa:marketing03": "python3 scripts/marketing03/qa-production.py",
-    "test:marketing03:production": "node --test scripts/marketing03/production.test.mjs"
+    "test:marketing03:production": "node --test scripts/marketing03/production.test.mjs",
+    "build:marketing04": "python scripts/marketing04/build.py",
+    "render:marketing04": "node scripts/marketing04/render.mjs",
+    "proofs:marketing04": "node scripts/marketing04/render.mjs --proofs",
+    "qa:marketing04": "python scripts/marketing04/qa.py",
+    "test:marketing04:production": "node --test scripts/marketing04/production.test.mjs"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.535",
