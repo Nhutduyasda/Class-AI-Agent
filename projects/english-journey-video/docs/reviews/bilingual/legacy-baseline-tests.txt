@@ -1,0 +1,36 @@
+✔ no credential and untyped legacy bearer fail closed (0.9796ms)
+✔ key uses key header, rejects whitespace and mixed credentials (0.7608ms)
+✔ regional STS token requires explicit mode, matching origin and fresh expiry (0.9145ms)
+✔ Entra builds aad resource token envelope with correct scope (0.5522ms)
+✔ Entra rejects missing custom domain, wrong resource, audience, expired or malformed JWT (0.27ms)
+✔ status never exposes secret or decoded claims (0.1983ms)
+✔ standalone preflight cannot call network and stays blocked (55.9799ms)
+✔ masked local helper refuses non-interactive environment before reading input (63.2632ms)
+✔ canonical 48k mono PCM file reports measured size, duration and SHA (1.6144ms)
+✔ RIFF parser handles odd-length metadata chunks before fmt (0.3992ms)
+✔ reject HTML/error text, truncated binary and wrong PCM format (1.007ms)
+✔ atomic receiver decodes and reads back real WAV; refuses overwrite (259.5396ms)
+✔ malformed response never publishes final WAV or receipt (6.3586ms)
+✔ default-deny authorization and missing secret prevent transport calls (6.0594ms)
+✔ existing HOOK attempt remains blocked under original one-call limit (9.3309ms)
+✔ budget and script-hash guards run before any transport (9.6025ms)
+✔ non-finite ledger costs and missing historical scenes cannot bypass budget (10.8701ms)
+✔ REST wire contract uses fixed region, exact SSML and 48k PCM; mocked fetch only (17.7042ms)
+✔ REST 429 response causes one mocked fetch, without retry or response-body disclosure (0.5219ms)
+✔ one failed transport persists attempt and is never retried (19.8023ms)
+✔ bad WAV consumes the submitted attempt without marking audio received (16.1473ms)
+✔ successful mock saves and verifies before marking ledger, preserving HOOK history (166.6858ms)
+✔ pre-existing output or reservation prevents submission and remains untouched (11.2708ms)
+✔ credential status reveals presence only, never secret values (0.2784ms)
+✔ runtime initialization preserves existing attempts instead of replacing with checkpoint (8.3381ms)
+✔ Python recovery importer rejects corrupt WAV before touching destination or ledger (134.0204ms)
+✔ Python local fixture import preserves attempts and requires separate source proof (233.7154ms)
+✔ canonical ledger in repository remains byte identical throughout offline tests (1.046ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1019.0324

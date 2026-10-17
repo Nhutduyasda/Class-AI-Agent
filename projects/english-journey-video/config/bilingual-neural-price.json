@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "verified": true,
+  "currency": "USD",
+  "region": "southeastasia",
+  "usdPerMillion": 15.0,
+  "meterName": "S1 Neural Text To Speech Characters",
+  "unitOfMeasure": "1M",
+  "meterId": "0f98e708-a16c-407b-8089-a0ed9e14ab49",
+  "publicSkuLabel": "S1",
+  "resourceTierClaim": "Standard S0 (owner configuration; account contract not inspected)",
+  "checkedAt": "2026-10-17T07:57:20.2572429Z",
+  "source": "https://prices.azure.com/api/retail/prices",
+  "query": "armRegionName eq 'southeastasia' and contains(productName, 'Speech')",
+  "invoiceVerified": false
+}

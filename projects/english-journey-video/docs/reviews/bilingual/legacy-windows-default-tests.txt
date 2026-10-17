@@ -1,0 +1,175 @@
+✔ no credential and untyped legacy bearer fail closed (0.8598ms)
+✔ key uses key header, rejects whitespace and mixed credentials (0.9529ms)
+✔ regional STS token requires explicit mode, matching origin and fresh expiry (1.1311ms)
+✔ Entra builds aad resource token envelope with correct scope (0.6295ms)
+✔ Entra rejects missing custom domain, wrong resource, audience, expired or malformed JWT (0.3072ms)
+✔ status never exposes secret or decoded claims (0.2293ms)
+✔ standalone preflight cannot call network and stays blocked (60.6676ms)
+✔ masked local helper refuses non-interactive environment before reading input (752.1998ms)
+✔ canonical 48k mono PCM file reports measured size, duration and SHA (1.7714ms)
+✔ RIFF parser handles odd-length metadata chunks before fmt (0.5407ms)
+✔ reject HTML/error text, truncated binary and wrong PCM format (1.0009ms)
+✔ atomic receiver decodes and reads back real WAV; refuses overwrite (275.0101ms)
+✔ malformed response never publishes final WAV or receipt (3.3123ms)
+✔ default-deny authorization and missing secret prevent transport calls (3.7765ms)
+✖ existing HOOK attempt remains blocked under original one-call limit (6.9324ms)
+✖ budget and script-hash guards run before any transport (9.1265ms)
+✖ non-finite ledger costs and missing historical scenes cannot bypass budget (6.7396ms)
+✔ REST wire contract uses fixed region, exact SSML and 48k PCM; mocked fetch only (16.9819ms)
+✔ REST 429 response causes one mocked fetch, without retry or response-body disclosure (0.678ms)
+✖ one failed transport persists attempt and is never retried (8.1667ms)
+✖ bad WAV consumes the submitted attempt without marking audio received (7.9638ms)
+✖ successful mock saves and verifies before marking ledger, preserving HOOK history (6.3393ms)
+✔ pre-existing output or reservation prevents submission and remains untouched (7.8591ms)
+✔ credential status reveals presence only, never secret values (0.4473ms)
+✔ runtime initialization preserves existing attempts instead of replacing with checkpoint (6.879ms)
+✔ Python recovery importer rejects corrupt WAV before touching destination or ledger (815.7103ms)
+✖ Python local fixture import preserves attempts and requires separate source proof (112.11ms)
+✔ canonical ledger in repository remains byte identical throughout offline tests (1.019ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 21
+ℹ fail 7
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1416.3189
+
+✖ failing tests:
+
+test at scripts\marketing03\direct-audio.test.mjs:45:1
+✖ existing HOOK attempt remains blocked under original one-call limit (6.9324ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /ATTEMPT_LIMIT/. Input:
+
+  'Error: Approved copy hash mismatch'
+
+      at async TestContext.<anonymous> (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.test.mjs:47:2)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Approved copy hash mismatch
+        at executeOne (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.mjs:99:100)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.test.mjs:47:2)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    expected: /ATTEMPT_LIMIT/,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at scripts\marketing03\direct-audio.test.mjs:50:1
+✖ budget and script-hash guards run before any transport (9.1265ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Budget/. Input:
+
+  'Error: Approved copy hash mismatch'
+
+      at async TestContext.<anonymous> (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.test.mjs:52:2)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Approved copy hash mismatch
+        at executeOne (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.mjs:99:100)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.test.mjs:52:2)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    expected: /Budget/,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at scripts\marketing03\direct-audio.test.mjs:55:1
+✖ non-finite ledger costs and missing historical scenes cannot bypass budget (6.7396ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /cost/. Input:
+
+  'Error: Approved copy hash mismatch'
+
+      at async TestContext.<anonymous> (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.test.mjs:58:2)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Approved copy hash mismatch
+        at executeOne (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.mjs:99:100)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.test.mjs:58:2)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    expected: /cost/,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at scripts\marketing03\direct-audio.test.mjs:72:1
+✖ one failed transport persists attempt and is never retried (8.1667ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /ambiguous/. Input:
+
+  'Error: Approved copy hash mismatch'
+
+      at async TestContext.<anonymous> (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.test.mjs:74:2)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Approved copy hash mismatch
+        at executeOne (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.mjs:99:100)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.test.mjs:74:2)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    expected: /ambiguous/,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at scripts\marketing03\direct-audio.test.mjs:78:1
+✖ bad WAV consumes the submitted attempt without marking audio received (7.9638ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+  0 !== 1
+
+      at TestContext.<anonymous> (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.test.mjs:80:70)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts\marketing03\direct-audio.test.mjs:82:1
+✖ successful mock saves and verifies before marking ledger, preserving HOOK history (6.3393ms)
+  Error: Approved copy hash mismatch
+      at executeOne (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.mjs:99:100)
+      at async TestContext.<anonymous> (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.test.mjs:84:10)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at scripts\marketing03\direct-audio.test.mjs:106:1
+✖ Python local fixture import preserves attempts and requires separate source proof (112.11ms)
+  Error: Command failed: python3 C:\Users\nhutd\Documents\Codex\2026-10-17\files-pasted-by-the-user-codex\work\bilingual-baseline-check\projects\english-journey-video\scripts\marketing03\ledger.py import hook C:\Users\nhutd\AppData\Local\Temp\video03-test-1Bb2Bi\LOCAL-TEST.wav
+  Recovery import stopped; no synthesis/retry performed: UnicodeDecodeError
+
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:942:11)
+      at execFileSync (node:child_process:978:15)
+      at TestContext.<anonymous> (file:///C:/Users/nhutd/Documents/Codex/2026-10-17/files-pasted-by-the-user-codex/work/bilingual-baseline-check/projects/english-journey-video/scripts/marketing03/direct-audio.test.mjs:109:2)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    status: 1,
+    signal: null,
+    output: [ null, <Buffer >, <Buffer 52 65 63 6f 76 65 72 79 20 69 6d 70 6f 72 74 20 73 74 6f 70 70 65 64 3b 20 6e 6f 20 73 79 6e 74 68 65 73 69 73 2f 72 65 74 72 79 20 70 65 72 66 6f 72 ... 25 more bytes> ],
+    pid: 21012,
+    stdout: <Buffer >,
+    stderr: <Buffer 52 65 63 6f 76 65 72 79 20 69 6d 70 6f 72 74 20 73 74 6f 70 70 65 64 3b 20 6e 6f 20 73 79 6e 74 68 65 73 69 73 2f 72 65 74 72 79 20 70 65 72 66 6f 72 ... 25 more bytes>
+  }

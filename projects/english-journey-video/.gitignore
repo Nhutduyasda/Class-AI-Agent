@@ -31,3 +31,6 @@ public/v2/
 
 # Video 03 generated assets
 /public/marketing03/
+
+# Future bilingual production audio/manifests are generated, never source.
+/public/bilingual/

@@ -1,0 +1,16 @@
+{
+  "scope": "BILINGUAL_V1",
+  "liveSynthesisAllowed": false,
+  "approvalId": "NOT_YET_APPROVED",
+  "productionId": "bilingual-sample-001",
+  "planSha256": "720f8cd78006b3539a15d682089dc06ea8b057b3ff09ff3da07b1fbb8fc8b2a6",
+  "expiresAt": "REQUIRES_FRESH_OWNER_AUTHORIZATION",
+  "limitUsd": 0.005,
+  "maxRequests": 1,
+  "requestIds": [
+    "sample"
+  ],
+  "maxAttemptsPerRequest": 1,
+  "mode": "multivoice",
+  "priceUsdPerMillion": 15
+}

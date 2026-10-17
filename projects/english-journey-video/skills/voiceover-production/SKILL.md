@@ -5,6 +5,10 @@ description: Produce natural Vietnamese narration, optional native English examp
 
 # Voiceover Production
 
+## Default for new approved English Journey marketing briefs
+
+Use the shared Azure-only bilingual adapter in `scripts/bilingual/`, configured by `config/bilingual-voice.json` and documented in `docs/BILINGUAL_VOICE.md`: Nam Minh for Vietnamese and Andrew for English. This default supersedes the free-provider suggestion below for NEW marketing productions; historical lessons and Video 01–04 remain unchanged. Preserve exact canonical text, use pronunciation spans for ambiguous terms, and require a new exact-plan cost policy before paid synthesis. Never reuse a previous video's budget. The secure Windows launcher prompts for the key privately once; default planning and all fixture tests are offline.
+
 ## Ground the narration
 
 Read the project AGENTS.md, lesson brief, story/caption/QA skills and existing renderer. Extend the current design. Preserve the exact approved BEFORE and AFTER strings. Do not pronounce intentional BEFORE spelling errors as if they were valid vocabulary.
