@@ -1,0 +1,5 @@
+briefs/marketing-video-04-approved.json text eol=lf
+scripts/marketing04/*.json text eol=lf
+scripts/marketing04/*.mjs text eol=lf
+scripts/marketing04/*.py text eol=lf
+public/marketing04/*.json text eol=lf

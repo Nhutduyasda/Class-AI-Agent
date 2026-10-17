@@ -1,0 +1,46 @@
+{
+  "id": "marketing-video-04",
+  "version": "1.1",
+  "title": "A, AN, THE — Học rồi mà vẫn phải đoán?",
+  "approved": true,
+  "spokenSegments": [
+    {
+      "id": "hook",
+      "spoken": "A, AN, THE… sao học rồi mà lúc đặt câu vẫn phải đoán?"
+    },
+    {
+      "id": "problem",
+      "spoken": "Bạn đã học về mạo từ tiếng Anh rất nhiều lần. Nhưng cứ đến lúc đặt câu, bạn lại phân vân: chỗ này dùng A, AN hay THE? Mình nghĩ vấn đề là học quy tắc xong, nhưng chưa luyện cách dùng nó trong câu thực tế."
+    },
+    {
+      "id": "solution",
+      "spoken": "Thay vì nhờ ChatGPT giải thích cả trang lý thuyết, mình thử cách khác. Mình yêu cầu AI đưa ra những ví dụ thật đơn giản, giải thích từng lựa chọn, rồi cho mình tự luyện tập."
+    },
+    {
+      "id": "demo",
+      "spoken": "Ví dụ, mình viết: I saw a cat. Vì đang nói đến một con mèo chưa xác định, mình dùng A. Tiếp theo: The cat was sleeping. Lúc này, mình đang nhắc lại chính con mèo đó, nên dùng THE. Còn với câu I ate an apple, mình dùng AN vì từ apple bắt đầu bằng âm nguyên âm."
+    },
+    {
+      "id": "benefit",
+      "spoken": "Sau khi hiểu ví dụ, mình thử tự viết những câu khác. ChatGPT kiểm tra, giải thích chỗ sai, rồi mình viết lại mà không nhìn đáp án. Như vậy, mình không chỉ nhớ quy tắc, mà còn luyện cách sử dụng trong ngữ cảnh."
+    },
+    {
+      "id": "cta",
+      "spoken": "Nếu bạn cũng đang rối vì A, AN, THE, bình luận BẮT ĐẦU nhé! Mình chia sẻ cách thiết lập ChatGPT để học từ những câu đơn giản như vậy."
+    }
+  ],
+  "voice": {
+    "resource": "english-journey-namminh",
+    "region": "southeastasia",
+    "tier": "Standard S0",
+    "voice": "vi-VN-NamMinhNeural",
+    "rate": "+0%",
+    "pitch": "default",
+    "format": "riff-48khz-16bit-mono-pcm"
+  },
+  "authorization": {
+    "limitUsd": 0.05,
+    "maxAttemptsPerScene": 1,
+    "noRetry": true
+  }
+}

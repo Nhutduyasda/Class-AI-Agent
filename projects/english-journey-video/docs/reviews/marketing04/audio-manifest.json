@@ -1,0 +1,137 @@
+{
+  "briefSha256": "aac903c2df5f5d99f0902930a96e2bf6bb2afb701a7136d0f6e00117ba2bde23",
+  "files": [
+    {
+      "scene": "hook",
+      "sampleRate": 48000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "codec": "pcm_s16le",
+      "durationSeconds": 4.4375,
+      "bytes": 426044,
+      "sha256": "eabbc817f790661461b963c6312703f32442bbbfd48ceb8e202ab9ff4411bf82",
+      "provenance": {
+        "kind": "AZURE_REST",
+        "voice": "vi-VN-NamMinhNeural",
+        "format": "riff-48khz-16bit-mono-pcm",
+        "scene": "hook",
+        "textSha256": "fc9e6d6b62d08d91fdceb90acad507b8709db58ea6b3b7319942fec0e2f35c49",
+        "approvalId": "OWNER-PROMPT-VIDEO04-V1.1-2026-10-17"
+      },
+      "fullDecode": "PASS",
+      "readBack": "PASS",
+      "verifiedAt": "2026-10-17T07:30:41.278Z"
+    },
+    {
+      "scene": "problem",
+      "sampleRate": 48000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "codec": "pcm_s16le",
+      "durationSeconds": 14.0375,
+      "bytes": 1347644,
+      "sha256": "29d84c7870d6406dfce5627260d59d1f56dcba4953f0aa086eb4facc31c26833",
+      "provenance": {
+        "kind": "AZURE_REST",
+        "voice": "vi-VN-NamMinhNeural",
+        "format": "riff-48khz-16bit-mono-pcm",
+        "scene": "problem",
+        "textSha256": "19446727aefa3e266c21114b9ac584b972b42a395f2e5dc9abc87509f70182d7",
+        "approvalId": "OWNER-PROMPT-VIDEO04-V1.1-2026-10-17"
+      },
+      "fullDecode": "PASS",
+      "readBack": "PASS",
+      "verifiedAt": "2026-10-17T07:30:42.455Z"
+    },
+    {
+      "scene": "solution",
+      "sampleRate": 48000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "codec": "pcm_s16le",
+      "durationSeconds": 10.7625,
+      "bytes": 1033244,
+      "sha256": "3d1ad3488f6398e6054c180e0282dc6add3b06d4cadc52244b4fd439bf345834",
+      "provenance": {
+        "kind": "AZURE_REST",
+        "voice": "vi-VN-NamMinhNeural",
+        "format": "riff-48khz-16bit-mono-pcm",
+        "scene": "solution",
+        "textSha256": "4287c84ff7bde8220f4e977f88db410f8d2d032238e8c6e82b5307b422f7561b",
+        "approvalId": "OWNER-PROMPT-VIDEO04-V1.1-2026-10-17"
+      },
+      "fullDecode": "PASS",
+      "readBack": "PASS",
+      "verifiedAt": "2026-10-17T07:30:43.400Z"
+    },
+    {
+      "scene": "demo",
+      "sampleRate": 48000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "codec": "pcm_s16le",
+      "durationSeconds": 19.15,
+      "bytes": 1838444,
+      "sha256": "77b69b5d2984d1f33e48939686b1853588f35627c153963904fbc3bfa59ebe97",
+      "provenance": {
+        "kind": "AZURE_REST",
+        "voice": "vi-VN-NamMinhNeural",
+        "format": "riff-48khz-16bit-mono-pcm",
+        "scene": "demo",
+        "textSha256": "3fed814b2835593ab0b60565bf9793c7e2cb7a6f8bf086f990ee74fe1b0b712c",
+        "approvalId": "OWNER-PROMPT-VIDEO04-V1.1-2026-10-17"
+      },
+      "fullDecode": "PASS",
+      "readBack": "PASS",
+      "verifiedAt": "2026-10-17T07:30:44.863Z"
+    },
+    {
+      "scene": "benefit",
+      "sampleRate": 48000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "codec": "pcm_s16le",
+      "durationSeconds": 13.9625,
+      "bytes": 1340444,
+      "sha256": "fb3bf3db61f2bd1911d1c4b55478e81577f0f8fb78d2d81b2be7dd2a744eb396",
+      "provenance": {
+        "kind": "AZURE_REST",
+        "voice": "vi-VN-NamMinhNeural",
+        "format": "riff-48khz-16bit-mono-pcm",
+        "scene": "benefit",
+        "textSha256": "7b0853ec988159707f47f920c53f60dc1bb0b19370f44c1399330e069d46e5e9",
+        "approvalId": "OWNER-PROMPT-VIDEO04-V1.1-2026-10-17"
+      },
+      "fullDecode": "PASS",
+      "readBack": "PASS",
+      "verifiedAt": "2026-10-17T07:30:45.887Z"
+    },
+    {
+      "scene": "cta",
+      "sampleRate": 48000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "codec": "pcm_s16le",
+      "durationSeconds": 9.825,
+      "bytes": 943244,
+      "sha256": "a750510ee8b3da4cd2f593a7f6467aeeb9c8d081243ae25a8cc72cc9072bb972",
+      "provenance": {
+        "kind": "AZURE_REST",
+        "voice": "vi-VN-NamMinhNeural",
+        "format": "riff-48khz-16bit-mono-pcm",
+        "scene": "cta",
+        "textSha256": "c0de379a6999fcb5051d1649bb851a57fb210ef8ed3435172b101669f553d555",
+        "approvalId": "OWNER-PROMPT-VIDEO04-V1.1-2026-10-17"
+      },
+      "fullDecode": "PASS",
+      "readBack": "PASS",
+      "verifiedAt": "2026-10-17T07:30:46.652Z"
+    }
+  ],
+  "cost": {
+    "requests": 6,
+    "estimatedUsd": 0.015465,
+    "limitUsd": 0.05,
+    "priceBasis": "15 USD per million characters reference; not invoice"
+  }
+}
