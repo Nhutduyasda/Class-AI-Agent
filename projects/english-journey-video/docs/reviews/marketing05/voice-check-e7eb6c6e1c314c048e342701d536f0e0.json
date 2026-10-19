@@ -1,0 +1,23 @@
+{
+  "kind": "AZURE_VOICES_LIST",
+  "region": "southeastasia",
+  "resource": "english-journey-namminh",
+  "endpoint": "https://southeastasia.tts.speech.microsoft.com/cognitiveservices/voices/list",
+  "checkedAt": "2026-10-19T05:37:47.693Z",
+  "voices": [
+    {
+      "ShortName": "en-US-AndrewNeural",
+      "Locale": "en-US",
+      "Gender": "Male",
+      "VoiceType": "Neural",
+      "Status": "GA"
+    },
+    {
+      "ShortName": "vi-VN-NamMinhNeural",
+      "Locale": "vi-VN",
+      "Gender": "Male",
+      "VoiceType": "Neural",
+      "Status": "GA"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "STOPPED_FAILED_OR_AMBIGUOUS_NO_RETRY",
+  "complete": false,
+  "videoCreated": false,
+  "requestsSubmitted": 2,
+  "referenceReservedUsd": 0.00426,
+  "invoiceVerified": false,
+  "verifiedScenes": [
+    "hook"
+  ],
+  "blockedScene": "problem",
+  "unsubmittedScenes": [
+    "solution",
+    "demo",
+    "benefit",
+    "cta"
+  ],
+  "noRetry": true,
+  "planSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98"
+}

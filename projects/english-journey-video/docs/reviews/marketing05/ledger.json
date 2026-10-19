@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "productionId": "marketing-video-05",
+  "planSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98",
+  "kind": "AZURE_REST",
+  "requestsSubmitted": 2,
+  "reservedUsd": 0.00426,
+  "calls": [
+    {
+      "id": "hook",
+      "ssmlSha256": "25f409e8818104673e124cd7b06ea57d24fa8f93d6bdb71b52c5aaa5d4f1cd64",
+      "estimatedUsd": 0.00075,
+      "attempts": 1,
+      "status": "VERIFIED",
+      "approvalId": "VIDEO05-USD0.05-f11e7ce0972b45dea2ea9c7c1340a694",
+      "submittedAt": "2026-10-19T05:37:47.915Z",
+      "sha256": "6235294303d6c23e6be6e4a08ab1b396121797705a603deb5aab4b187916439c",
+      "durationSeconds": 3.85,
+      "file": "hook.wav"
+    },
+    {
+      "id": "problem",
+      "ssmlSha256": "2deced4ed817524d0ef5bbcad4995dd79eb89fa7b76d3a1e53ee3778790b4135",
+      "estimatedUsd": 0.00351,
+      "attempts": 1,
+      "status": "FAILED_OR_AMBIGUOUS_NO_RETRY",
+      "approvalId": "VIDEO05-USD0.05-f11e7ce0972b45dea2ea9c7c1340a694",
+      "submittedAt": "2026-10-19T05:37:48.751Z"
+    },
+    {
+      "id": "solution",
+      "ssmlSha256": "3a6c851d645a646dee8d398dc65d1e6c3d2c894cc23bfe968ea1290921136d96",
+      "estimatedUsd": 0.002325,
+      "attempts": 0,
+      "status": "NOT_SUBMITTED"
+    },
+    {
+      "id": "demo",
+      "ssmlSha256": "85c9de141e2f2f4e20cf6e0c1b754fb2fc0fc6f66da4e85d4fe2fc286b0fcb52",
+      "estimatedUsd": 0.004725,
+      "attempts": 0,
+      "status": "NOT_SUBMITTED"
+    },
+    {
+      "id": "benefit",
+      "ssmlSha256": "38159673129db30dc37dbb51b47a3111956a6d95c6ddf6d2f5651e6fc2a28cbb",
+      "estimatedUsd": 0.003255,
+      "attempts": 0,
+      "status": "NOT_SUBMITTED"
+    },
+    {
+      "id": "cta",
+      "ssmlSha256": "787b2c269d6311c518c99e09c5992991cb574711d746f3bf16bf761a8cf416aa",
+      "estimatedUsd": 0.0027,
+      "attempts": 0,
+      "status": "NOT_SUBMITTED"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+    "scope":  "BILINGUAL_V1",
+    "productionId":  "marketing-video-05-recovery-01",
+    "planSha256":  "1de62f6b7ba8ce07648038d0a7b394a7db09ab50ac31c1243977d2630a74c50a",
+    "liveSynthesisAllowed":  true,
+    "limitUsd":  0.02,
+    "maxRequests":  5,
+    "requestIds":  [
+                       "problem",
+                       "solution",
+                       "demo",
+                       "benefit",
+                       "cta"
+                   ],
+    "maxAttemptsPerRequest":  1,
+    "mode":  "multivoice",
+    "priceUsdPerMillion":  15,
+    "recoveryOf":  "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98",
+    "historicalLedgerSha256":  "6a388fe6d9fa365e568cc7ceb151f568ca4682658b81be935f179f147e86ed2f",
+    "additionalProblemAttemptExplicitlyApproved":  true,
+    "approvalId":  "VIDEO05-RECOVERY-5REQ-USD0.02-18083def3d404b0fac9ce1adbc23d503",
+    "approvedAt":  "2026-10-19T05:56:25.5901695Z",
+    "expiresAt":  "2026-10-19T17:56:25.5936755Z"
+}

@@ -1,0 +1,22 @@
+{
+    "scope":  "BILINGUAL_V1",
+    "productionId":  "marketing-video-05",
+    "planSha256":  "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98",
+    "liveSynthesisAllowed":  true,
+    "limitUsd":  0.05,
+    "maxRequests":  6,
+    "requestIds":  [
+                       "hook",
+                       "problem",
+                       "solution",
+                       "demo",
+                       "benefit",
+                       "cta"
+                   ],
+    "maxAttemptsPerRequest":  1,
+    "mode":  "multivoice",
+    "priceUsdPerMillion":  15,
+    "approvalId":  "VIDEO05-USD0.05-f11e7ce0972b45dea2ea9c7c1340a694",
+    "approvedAt":  "2026-10-19T05:37:35.8134497Z",
+    "expiresAt":  "2026-10-19T17:37:35.8295056Z"
+}

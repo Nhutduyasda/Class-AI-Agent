@@ -34,3 +34,6 @@ public/v2/
 
 # Future bilingual production audio/manifests are generated, never source.
 /public/bilingual/
+
+# Video 05 generated production manifest and audio.
+/public/marketing05/

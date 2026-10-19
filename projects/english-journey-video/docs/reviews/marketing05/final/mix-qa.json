@@ -1,0 +1,263 @@
+{
+  "samples": 5211200,
+  "sampleRate": 48000,
+  "timeStretch": false,
+  "pitchChange": false,
+  "requestMetrics": [
+    {
+      "scene": "hook",
+      "before": {
+        "input_i": "-20.02",
+        "input_tp": "-4.20",
+        "input_lra": "1.30",
+        "input_thresh": "-30.45",
+        "output_i": "-16.03",
+        "output_tp": "-1.50",
+        "output_lra": "0.00",
+        "output_thresh": "-26.49",
+        "normalization_type": "dynamic",
+        "target_offset": "0.03"
+      },
+      "samples": 184800
+    },
+    {
+      "scene": "problem",
+      "before": {
+        "input_i": "-19.73",
+        "input_tp": "-3.20",
+        "input_lra": "2.80",
+        "input_thresh": "-30.05",
+        "output_i": "-16.10",
+        "output_tp": "-1.50",
+        "output_lra": "3.90",
+        "output_thresh": "-26.41",
+        "normalization_type": "dynamic",
+        "target_offset": "0.10"
+      },
+      "samples": 805800
+    },
+    {
+      "scene": "solution",
+      "before": {
+        "input_i": "-20.03",
+        "input_tp": "-2.39",
+        "input_lra": "2.80",
+        "input_thresh": "-30.41",
+        "output_i": "-16.07",
+        "output_tp": "-1.50",
+        "output_lra": "2.90",
+        "output_thresh": "-26.60",
+        "normalization_type": "dynamic",
+        "target_offset": "0.07"
+      },
+      "samples": 779400
+    },
+    {
+      "scene": "demo",
+      "before": {
+        "input_i": "-19.65",
+        "input_tp": "-2.36",
+        "input_lra": "2.40",
+        "input_thresh": "-30.22",
+        "output_i": "-16.29",
+        "output_tp": "-1.50",
+        "output_lra": "2.70",
+        "output_thresh": "-26.89",
+        "normalization_type": "dynamic",
+        "target_offset": "0.29"
+      },
+      "samples": 1635600
+    },
+    {
+      "scene": "benefit",
+      "before": {
+        "input_i": "-19.56",
+        "input_tp": "-2.75",
+        "input_lra": "3.10",
+        "input_thresh": "-29.92",
+        "output_i": "-15.91",
+        "output_tp": "-1.50",
+        "output_lra": "2.50",
+        "output_thresh": "-26.33",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.09"
+      },
+      "samples": 945000
+    },
+    {
+      "scene": "cta",
+      "before": {
+        "input_i": "-19.74",
+        "input_tp": "-2.39",
+        "input_lra": "3.90",
+        "input_thresh": "-30.05",
+        "output_i": "-16.35",
+        "output_tp": "-1.50",
+        "output_lra": "3.60",
+        "output_thresh": "-26.73",
+        "normalization_type": "dynamic",
+        "target_offset": "0.35"
+      },
+      "samples": 625200
+    }
+  ],
+  "voiceMetrics": [
+    {
+      "voice": "en-US-AndrewNeural",
+      "startMs": 0,
+      "endMs": 540,
+      "gainDb": -1.45
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 980.0000000000002,
+      "endMs": 2900,
+      "gainDb": 0.0
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 4666.666666666667,
+      "endMs": 15106.666666666668,
+      "gainDb": 0.0
+    },
+    {
+      "voice": "en-US-AndrewNeural",
+      "startMs": 15186.666666666668,
+      "endMs": 15766.666666666668,
+      "gainDb": -0.4499999999999985
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 16126.666666666668,
+      "endMs": 20606.666666666668,
+      "gainDb": 1.0500000000000003
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 22266.666666666668,
+      "endMs": 27426.666666666668,
+      "gainDb": 1.79
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 27426.666666666668,
+      "endMs": 37646.66666666667,
+      "gainDb": 0.0
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 39333.333333333336,
+      "endMs": 41753.333333333336,
+      "gainDb": 1.410000000000001
+    },
+    {
+      "voice": "en-US-AndrewNeural",
+      "startMs": 41753.333333333336,
+      "endMs": 42653.333333333336,
+      "gainDb": 1.4899999999999989
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 43133.333333333336,
+      "endMs": 46013.333333333336,
+      "gainDb": 1.8299999999999996
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 46013.333333333336,
+      "endMs": 49913.333333333336,
+      "gainDb": 1.5599999999999996
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 50733.333333333336,
+      "endMs": 53593.333333333336,
+      "gainDb": 0.39000000000000096
+    },
+    {
+      "voice": "en-US-AndrewNeural",
+      "startMs": 54533.333333333336,
+      "endMs": 55053.333333333336,
+      "gainDb": 0.6700000000000004
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 55053.333333333336,
+      "endMs": 58913.333333333336,
+      "gainDb": 0.0
+    },
+    {
+      "voice": "en-US-AndrewNeural",
+      "startMs": 58913.333333333336,
+      "endMs": 60153.333333333336,
+      "gainDb": 0.7600000000000007
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 60213.333333333336,
+      "endMs": 63333.333333333336,
+      "gainDb": 0.8100000000000002
+    },
+    {
+      "voice": "en-US-AndrewNeural",
+      "startMs": 63333.333333333336,
+      "endMs": 64533.333333333336,
+      "gainDb": 0.8299999999999995
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 64533.333333333336,
+      "endMs": 67613.33333333334,
+      "gainDb": 0.5
+    },
+    {
+      "voice": "en-US-AndrewNeural",
+      "startMs": 67613.33333333334,
+      "endMs": 69093.33333333334,
+      "gainDb": 2.56
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 69093.33333333334,
+      "endMs": 71313.33333333334,
+      "gainDb": 1.4800000000000009
+    },
+    {
+      "voice": "en-US-AndrewNeural",
+      "startMs": 71813.33333333334,
+      "endMs": 73073.33333333334,
+      "gainDb": 1.6599999999999993
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 74233.33333333333,
+      "endMs": 92993.33333333333,
+      "gainDb": 0.0
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 94733.33333333333,
+      "endMs": 105033.33333333333,
+      "gainDb": 0.0
+    },
+    {
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 105033.33333333333,
+      "endMs": 106793.33333333333,
+      "gainDb": 1.7100000000000002
+    }
+  ],
+  "mixMetrics": {
+    "input_i": "-16.00",
+    "input_tp": "-2.35",
+    "input_lra": "3.30",
+    "input_thresh": "-27.70",
+    "output_i": "-16.11",
+    "output_tp": "-1.95",
+    "output_lra": "3.10",
+    "output_thresh": "-27.78",
+    "normalization_type": "dynamic",
+    "target_offset": "0.11"
+  },
+  "subjectiveListening": "NOT_VERIFIED"
+}

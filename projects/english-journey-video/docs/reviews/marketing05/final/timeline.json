@@ -1,0 +1,1288 @@
+{
+  "schemaVersion": 1,
+  "planSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98",
+  "briefSha256": "86001c116db5e69e8ed8373558d869aee39f55ac4b66e2370a8a56bb919b96ec",
+  "fps": 30,
+  "durationInFrames": 3257,
+  "durationSeconds": 108.56666666666666,
+  "audioSrc": "marketing05/mix.wav",
+  "scenes": [
+    {
+      "type": "hook",
+      "startFrame": 0,
+      "endFrame": 140
+    },
+    {
+      "type": "problem",
+      "startFrame": 140,
+      "endFrame": 668
+    },
+    {
+      "type": "solution",
+      "startFrame": 668,
+      "endFrame": 1180
+    },
+    {
+      "type": "demo",
+      "startFrame": 1180,
+      "endFrame": 2227
+    },
+    {
+      "type": "benefit",
+      "startFrame": 2227,
+      "endFrame": 2842
+    },
+    {
+      "type": "cta",
+      "startFrame": 2842,
+      "endFrame": 3257
+    }
+  ],
+  "pages": [
+    {
+      "text": "‘I am agree’…",
+      "startMs": 0,
+      "endMs": 540,
+      "scene": "hook"
+    },
+    {
+      "text": "bạn có biết câu này sai ở",
+      "startMs": 980.0000000000002,
+      "endMs": 2580,
+      "scene": "hook"
+    },
+    {
+      "text": "đâu không?",
+      "startMs": 2580,
+      "endMs": 2900,
+      "scene": "hook"
+    },
+    {
+      "text": "Hồi mới học tiếng Anh,",
+      "startMs": 4666.666666666667,
+      "endMs": 5726.666666666667,
+      "scene": "problem"
+    },
+    {
+      "text": "mình thường biết nghĩa của từng từ,",
+      "startMs": 6106.666666666667,
+      "endMs": 7446.666666666667,
+      "scene": "problem"
+    },
+    {
+      "text": "nhưng khi ghép lại thành câu thì",
+      "startMs": 7786.666666666667,
+      "endMs": 9226.666666666668,
+      "scene": "problem"
+    },
+    {
+      "text": "rất dễ sai.",
+      "startMs": 9226.666666666668,
+      "endMs": 9886.666666666668,
+      "scene": "problem"
+    },
+    {
+      "text": "Ví dụ,",
+      "startMs": 10686.666666666668,
+      "endMs": 11346.666666666668,
+      "scene": "problem"
+    },
+    {
+      "text": "muốn nói ‘Tôi đồng ý’,",
+      "startMs": 11606.666666666668,
+      "endMs": 12766.666666666668,
+      "scene": "problem"
+    },
+    {
+      "text": "mình có thể nghĩ đến câu",
+      "startMs": 13126.666666666668,
+      "endMs": 15106.666666666668,
+      "scene": "problem"
+    },
+    {
+      "text": "‘I am agree’.",
+      "startMs": 15186.666666666668,
+      "endMs": 15766.666666666668,
+      "scene": "problem"
+    },
+    {
+      "text": "Nghe có vẻ hợp lý,",
+      "startMs": 16126.666666666668,
+      "endMs": 18346.666666666668,
+      "scene": "problem"
+    },
+    {
+      "text": "nhưng thật ra câu này không đúng",
+      "startMs": 18666.666666666668,
+      "endMs": 20166.666666666668,
+      "scene": "problem"
+    },
+    {
+      "text": "ngữ pháp.",
+      "startMs": 20166.666666666668,
+      "endMs": 20606.666666666668,
+      "scene": "problem"
+    },
+    {
+      "text": "Thay vì đưa câu đó cho ChatGPT",
+      "startMs": 22266.666666666668,
+      "endMs": 27426.666666666668,
+      "scene": "solution"
+    },
+    {
+      "text": "rồi chỉ xem đáp án,",
+      "startMs": 27426.666666666668,
+      "endMs": 28446.666666666668,
+      "scene": "solution"
+    },
+    {
+      "text": "mình thử một cách khác.",
+      "startMs": 28686.666666666668,
+      "endMs": 29846.666666666668,
+      "scene": "solution"
+    },
+    {
+      "text": "Mình yêu cầu AI đừng sửa ngay,",
+      "startMs": 30506.666666666668,
+      "endMs": 34826.66666666667,
+      "scene": "solution"
+    },
+    {
+      "text": "mà hãy đưa gợi ý để mình",
+      "startMs": 35206.66666666667,
+      "endMs": 36286.66666666667,
+      "scene": "solution"
+    },
+    {
+      "text": "tự tìm ra lỗi sai trước.",
+      "startMs": 36286.66666666667,
+      "endMs": 37646.66666666667,
+      "scene": "solution"
+    },
+    {
+      "text": "Ví dụ,",
+      "startMs": 39333.333333333336,
+      "endMs": 39973.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "mình nhập câu:",
+      "startMs": 40213.333333333336,
+      "endMs": 41753.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "‘I am agree’.",
+      "startMs": 41753.333333333336,
+      "endMs": 42653.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "Rồi hỏi ChatGPT:",
+      "startMs": 43133.333333333336,
+      "endMs": 46013.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "‘Đừng đưa đáp án ngay.",
+      "startMs": 46013.333333333336,
+      "endMs": 47193.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "Hãy gợi ý để mình tự sửa",
+      "startMs": 48133.333333333336,
+      "endMs": 49573.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "câu này.’",
+      "startMs": 49573.333333333336,
+      "endMs": 49913.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "AI có thể gợi ý:",
+      "startMs": 50733.333333333336,
+      "endMs": 53593.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "‘Agree",
+      "startMs": 54533.333333333336,
+      "endMs": 55053.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "là động từ hay tính từ?’",
+      "startMs": 55053.333333333336,
+      "endMs": 57013.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "Khi nhận ra",
+      "startMs": 57813.333333333336,
+      "endMs": 58913.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "agree",
+      "startMs": 58913.333333333336,
+      "endMs": 60153.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "đã là một động từ,",
+      "startMs": 60213.333333333336,
+      "endMs": 61673.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "mình hiểu rằng",
+      "startMs": 62073.333333333336,
+      "endMs": 62633.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "không cần thêm",
+      "startMs": 62633.333333333336,
+      "endMs": 63333.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "am",
+      "startMs": 63333.333333333336,
+      "endMs": 64533.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "ở đây.",
+      "startMs": 64533.333333333336,
+      "endMs": 65453.333333333336,
+      "scene": "demo"
+    },
+    {
+      "text": "Vậy câu đúng sẽ là:",
+      "startMs": 66273.33333333334,
+      "endMs": 67613.33333333334,
+      "scene": "demo"
+    },
+    {
+      "text": "‘I agree’.",
+      "startMs": 67613.33333333334,
+      "endMs": 69093.33333333334,
+      "scene": "demo"
+    },
+    {
+      "text": "Sau đó,",
+      "startMs": 69093.33333333334,
+      "endMs": 70113.33333333334,
+      "scene": "demo"
+    },
+    {
+      "text": "mình thử viết thêm:",
+      "startMs": 70373.33333333334,
+      "endMs": 71313.33333333334,
+      "scene": "demo"
+    },
+    {
+      "text": "‘I agree with you’.",
+      "startMs": 71813.33333333334,
+      "endMs": 73073.33333333334,
+      "scene": "demo"
+    },
+    {
+      "text": "Điều mình thích ở cách này là",
+      "startMs": 74233.33333333333,
+      "endMs": 75733.33333333333,
+      "scene": "benefit"
+    },
+    {
+      "text": "mình phải tự suy nghĩ trước khi",
+      "startMs": 75733.33333333333,
+      "endMs": 79533.33333333333,
+      "scene": "benefit"
+    },
+    {
+      "text": "nhìn đáp án.",
+      "startMs": 79533.33333333333,
+      "endMs": 80353.33333333333,
+      "scene": "benefit"
+    },
+    {
+      "text": "Nếu trả lời sai,",
+      "startMs": 81133.33333333333,
+      "endMs": 82253.33333333333,
+      "scene": "benefit"
+    },
+    {
+      "text": "mình có thể nhờ AI giải thích",
+      "startMs": 82693.33333333333,
+      "endMs": 86493.33333333333,
+      "scene": "benefit"
+    },
+    {
+      "text": "thêm bằng ví dụ đơn giản hơn.",
+      "startMs": 86493.33333333333,
+      "endMs": 88213.33333333333,
+      "scene": "benefit"
+    },
+    {
+      "text": "Như vậy,",
+      "startMs": 88893.33333333333,
+      "endMs": 89573.33333333333,
+      "scene": "benefit"
+    },
+    {
+      "text": "mình vừa luyện đặt câu,",
+      "startMs": 89933.33333333333,
+      "endMs": 91133.33333333333,
+      "scene": "benefit"
+    },
+    {
+      "text": "vừa hiểu rõ hơn vì sao mình",
+      "startMs": 91353.33333333333,
+      "endMs": 92753.33333333333,
+      "scene": "benefit"
+    },
+    {
+      "text": "sai.",
+      "startMs": 92753.33333333333,
+      "endMs": 92993.33333333333,
+      "scene": "benefit"
+    },
+    {
+      "text": "Nếu bạn cũng biết từ vựng nhưng",
+      "startMs": 94733.33333333333,
+      "endMs": 96453.33333333333,
+      "scene": "cta"
+    },
+    {
+      "text": "vẫn khó đặt câu tiếng Anh,",
+      "startMs": 96453.33333333333,
+      "endMs": 97733.33333333333,
+      "scene": "cta"
+    },
+    {
+      "text": "hãy thử cách học này nhé!",
+      "startMs": 98113.33333333333,
+      "endMs": 99253.33333333333,
+      "scene": "cta"
+    },
+    {
+      "text": "Bình luận ‘BẮT ĐẦU’,",
+      "startMs": 100153.33333333333,
+      "endMs": 101073.33333333333,
+      "scene": "cta"
+    },
+    {
+      "text": "mình chia sẻ cách thiết lập ChatGPT",
+      "startMs": 101373.33333333333,
+      "endMs": 105033.33333333333,
+      "scene": "cta"
+    },
+    {
+      "text": "để luyện đặt câu từ những bước",
+      "startMs": 105033.33333333333,
+      "endMs": 106373.33333333333,
+      "scene": "cta"
+    },
+    {
+      "text": "cơ bản.",
+      "startMs": 106373.33333333333,
+      "endMs": 106793.33333333333,
+      "scene": "cta"
+    }
+  ],
+  "tokens": [
+    {
+      "text": "‘I am agree’…",
+      "startMs": 0,
+      "endMs": 540,
+      "scene": "hook",
+      "requestId": "hook",
+      "textStart": 0,
+      "textEnd": 13,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "bạn có biết câu này sai ở",
+      "startMs": 980.0000000000002,
+      "endMs": 2580,
+      "scene": "hook",
+      "requestId": "hook",
+      "textStart": 14,
+      "textEnd": 39,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "đâu không?",
+      "startMs": 2580,
+      "endMs": 2900,
+      "scene": "hook",
+      "requestId": "hook",
+      "textStart": 40,
+      "textEnd": 50,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Hồi mới học tiếng Anh,",
+      "startMs": 4666.666666666667,
+      "endMs": 5726.666666666667,
+      "scene": "problem",
+      "requestId": "problem",
+      "textStart": 0,
+      "textEnd": 22,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "mình thường biết nghĩa của từng từ,",
+      "startMs": 6106.666666666667,
+      "endMs": 7446.666666666667,
+      "scene": "problem",
+      "requestId": "problem",
+      "textStart": 23,
+      "textEnd": 58,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "nhưng khi ghép lại thành câu thì",
+      "startMs": 7786.666666666667,
+      "endMs": 9226.666666666668,
+      "scene": "problem",
+      "requestId": "problem",
+      "textStart": 59,
+      "textEnd": 91,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "rất dễ sai.",
+      "startMs": 9226.666666666668,
+      "endMs": 9886.666666666668,
+      "scene": "problem",
+      "requestId": "problem",
+      "textStart": 92,
+      "textEnd": 103,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Ví dụ,",
+      "startMs": 10686.666666666668,
+      "endMs": 11346.666666666668,
+      "scene": "problem",
+      "requestId": "problem",
+      "textStart": 104,
+      "textEnd": 110,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "muốn nói ‘Tôi đồng ý’,",
+      "startMs": 11606.666666666668,
+      "endMs": 12766.666666666668,
+      "scene": "problem",
+      "requestId": "problem",
+      "textStart": 111,
+      "textEnd": 133,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "mình có thể nghĩ đến câu",
+      "startMs": 13126.666666666668,
+      "endMs": 15106.666666666668,
+      "scene": "problem",
+      "requestId": "problem",
+      "textStart": 134,
+      "textEnd": 158,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "‘I am agree’.",
+      "startMs": 15186.666666666668,
+      "endMs": 15766.666666666668,
+      "scene": "problem",
+      "requestId": "problem",
+      "textStart": 159,
+      "textEnd": 172,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Nghe có vẻ hợp lý,",
+      "startMs": 16126.666666666668,
+      "endMs": 18346.666666666668,
+      "scene": "problem",
+      "requestId": "problem",
+      "textStart": 173,
+      "textEnd": 191,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "nhưng thật ra câu này không đúng",
+      "startMs": 18666.666666666668,
+      "endMs": 20166.666666666668,
+      "scene": "problem",
+      "requestId": "problem",
+      "textStart": 192,
+      "textEnd": 224,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "ngữ pháp.",
+      "startMs": 20166.666666666668,
+      "endMs": 20606.666666666668,
+      "scene": "problem",
+      "requestId": "problem",
+      "textStart": 225,
+      "textEnd": 234,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Thay vì đưa câu đó cho ChatGPT",
+      "startMs": 22266.666666666668,
+      "endMs": 27426.666666666668,
+      "scene": "solution",
+      "requestId": "solution",
+      "textStart": 0,
+      "textEnd": 30,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "rồi chỉ xem đáp án,",
+      "startMs": 27426.666666666668,
+      "endMs": 28446.666666666668,
+      "scene": "solution",
+      "requestId": "solution",
+      "textStart": 31,
+      "textEnd": 50,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "mình thử một cách khác.",
+      "startMs": 28686.666666666668,
+      "endMs": 29846.666666666668,
+      "scene": "solution",
+      "requestId": "solution",
+      "textStart": 51,
+      "textEnd": 74,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Mình yêu cầu AI đừng sửa ngay,",
+      "startMs": 30506.666666666668,
+      "endMs": 34826.66666666667,
+      "scene": "solution",
+      "requestId": "solution",
+      "textStart": 75,
+      "textEnd": 105,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "mà hãy đưa gợi ý để mình",
+      "startMs": 35206.66666666667,
+      "endMs": 36286.66666666667,
+      "scene": "solution",
+      "requestId": "solution",
+      "textStart": 106,
+      "textEnd": 130,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "tự tìm ra lỗi sai trước.",
+      "startMs": 36286.66666666667,
+      "endMs": 37646.66666666667,
+      "scene": "solution",
+      "requestId": "solution",
+      "textStart": 131,
+      "textEnd": 155,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Ví dụ,",
+      "startMs": 39333.333333333336,
+      "endMs": 39973.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 0,
+      "textEnd": 6,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "mình nhập câu:",
+      "startMs": 40213.333333333336,
+      "endMs": 41753.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 7,
+      "textEnd": 21,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "‘I am agree’.",
+      "startMs": 41753.333333333336,
+      "endMs": 42653.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 22,
+      "textEnd": 35,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Rồi hỏi ChatGPT:",
+      "startMs": 43133.333333333336,
+      "endMs": 46013.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 36,
+      "textEnd": 52,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "‘Đừng đưa đáp án ngay.",
+      "startMs": 46013.333333333336,
+      "endMs": 47193.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 53,
+      "textEnd": 75,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Hãy gợi ý để mình tự sửa",
+      "startMs": 48133.333333333336,
+      "endMs": 49573.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 76,
+      "textEnd": 100,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "câu này.’",
+      "startMs": 49573.333333333336,
+      "endMs": 49913.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 101,
+      "textEnd": 110,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "AI có thể gợi ý:",
+      "startMs": 50733.333333333336,
+      "endMs": 53593.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 111,
+      "textEnd": 127,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "‘Agree",
+      "startMs": 54533.333333333336,
+      "endMs": 55053.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 128,
+      "textEnd": 134,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "là động từ hay tính từ?’",
+      "startMs": 55053.333333333336,
+      "endMs": 57013.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 135,
+      "textEnd": 159,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Khi nhận ra",
+      "startMs": 57813.333333333336,
+      "endMs": 58913.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 160,
+      "textEnd": 171,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "agree",
+      "startMs": 58913.333333333336,
+      "endMs": 60153.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 172,
+      "textEnd": 177,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "đã là một động từ,",
+      "startMs": 60213.333333333336,
+      "endMs": 61673.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 178,
+      "textEnd": 196,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "mình hiểu rằng",
+      "startMs": 62073.333333333336,
+      "endMs": 62633.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 197,
+      "textEnd": 211,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "không cần thêm",
+      "startMs": 62633.333333333336,
+      "endMs": 63333.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 212,
+      "textEnd": 226,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "am",
+      "startMs": 63333.333333333336,
+      "endMs": 64533.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 227,
+      "textEnd": 229,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "ở đây.",
+      "startMs": 64533.333333333336,
+      "endMs": 65453.333333333336,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 230,
+      "textEnd": 236,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Vậy câu đúng sẽ là:",
+      "startMs": 66273.33333333334,
+      "endMs": 67613.33333333334,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 237,
+      "textEnd": 256,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "‘I agree’.",
+      "startMs": 67613.33333333334,
+      "endMs": 69093.33333333334,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 257,
+      "textEnd": 267,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Sau đó,",
+      "startMs": 69093.33333333334,
+      "endMs": 70113.33333333334,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 268,
+      "textEnd": 275,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "mình thử viết thêm:",
+      "startMs": 70373.33333333334,
+      "endMs": 71313.33333333334,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 276,
+      "textEnd": 295,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "‘I agree with you’.",
+      "startMs": 71813.33333333334,
+      "endMs": 73073.33333333334,
+      "scene": "demo",
+      "requestId": "demo",
+      "textStart": 296,
+      "textEnd": 315,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Điều mình thích ở cách này là",
+      "startMs": 74233.33333333333,
+      "endMs": 75733.33333333333,
+      "scene": "benefit",
+      "requestId": "benefit",
+      "textStart": 0,
+      "textEnd": 29,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "mình phải tự suy nghĩ trước khi",
+      "startMs": 75733.33333333333,
+      "endMs": 79533.33333333333,
+      "scene": "benefit",
+      "requestId": "benefit",
+      "textStart": 30,
+      "textEnd": 61,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "nhìn đáp án.",
+      "startMs": 79533.33333333333,
+      "endMs": 80353.33333333333,
+      "scene": "benefit",
+      "requestId": "benefit",
+      "textStart": 62,
+      "textEnd": 74,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Nếu trả lời sai,",
+      "startMs": 81133.33333333333,
+      "endMs": 82253.33333333333,
+      "scene": "benefit",
+      "requestId": "benefit",
+      "textStart": 75,
+      "textEnd": 91,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "mình có thể nhờ AI giải thích",
+      "startMs": 82693.33333333333,
+      "endMs": 86493.33333333333,
+      "scene": "benefit",
+      "requestId": "benefit",
+      "textStart": 92,
+      "textEnd": 121,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "thêm bằng ví dụ đơn giản hơn.",
+      "startMs": 86493.33333333333,
+      "endMs": 88213.33333333333,
+      "scene": "benefit",
+      "requestId": "benefit",
+      "textStart": 122,
+      "textEnd": 151,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Như vậy,",
+      "startMs": 88893.33333333333,
+      "endMs": 89573.33333333333,
+      "scene": "benefit",
+      "requestId": "benefit",
+      "textStart": 152,
+      "textEnd": 160,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "mình vừa luyện đặt câu,",
+      "startMs": 89933.33333333333,
+      "endMs": 91133.33333333333,
+      "scene": "benefit",
+      "requestId": "benefit",
+      "textStart": 161,
+      "textEnd": 184,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "vừa hiểu rõ hơn vì sao mình",
+      "startMs": 91353.33333333333,
+      "endMs": 92753.33333333333,
+      "scene": "benefit",
+      "requestId": "benefit",
+      "textStart": 185,
+      "textEnd": 212,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "sai.",
+      "startMs": 92753.33333333333,
+      "endMs": 92993.33333333333,
+      "scene": "benefit",
+      "requestId": "benefit",
+      "textStart": 213,
+      "textEnd": 217,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Nếu bạn cũng biết từ vựng nhưng",
+      "startMs": 94733.33333333333,
+      "endMs": 96453.33333333333,
+      "scene": "cta",
+      "requestId": "cta",
+      "textStart": 0,
+      "textEnd": 31,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "vẫn khó đặt câu tiếng Anh,",
+      "startMs": 96453.33333333333,
+      "endMs": 97733.33333333333,
+      "scene": "cta",
+      "requestId": "cta",
+      "textStart": 32,
+      "textEnd": 58,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "hãy thử cách học này nhé!",
+      "startMs": 98113.33333333333,
+      "endMs": 99253.33333333333,
+      "scene": "cta",
+      "requestId": "cta",
+      "textStart": 59,
+      "textEnd": 84,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "Bình luận ‘BẮT ĐẦU’,",
+      "startMs": 100153.33333333333,
+      "endMs": 101073.33333333333,
+      "scene": "cta",
+      "requestId": "cta",
+      "textStart": 85,
+      "textEnd": 105,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "mình chia sẻ cách thiết lập ChatGPT",
+      "startMs": 101373.33333333333,
+      "endMs": 105033.33333333333,
+      "scene": "cta",
+      "requestId": "cta",
+      "textStart": 106,
+      "textEnd": 141,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "để luyện đặt câu từ những bước",
+      "startMs": 105033.33333333333,
+      "endMs": 106373.33333333333,
+      "scene": "cta",
+      "requestId": "cta",
+      "textStart": 142,
+      "textEnd": 172,
+      "kind": "LOCAL_ASR_OBSERVED"
+    },
+    {
+      "text": "cơ bản.",
+      "startMs": 106373.33333333333,
+      "endMs": 106793.33333333333,
+      "scene": "cta",
+      "requestId": "cta",
+      "textStart": 173,
+      "textEnd": 180,
+      "kind": "LOCAL_ASR_OBSERVED"
+    }
+  ],
+  "segments": [
+    {
+      "id": "hook",
+      "spoken": "‘I am agree’… bạn có biết câu này sai ở đâu không?",
+      "startMs": 0,
+      "speechEndMs": 3850,
+      "endMs": 4666.666666666667
+    },
+    {
+      "id": "problem",
+      "spoken": "Hồi mới học tiếng Anh, mình thường biết nghĩa của từng từ, nhưng khi ghép lại thành câu thì rất dễ sai. Ví dụ, muốn nói ‘Tôi đồng ý’, mình có thể nghĩ đến câu ‘I am agree’. Nghe có vẻ hợp lý, nhưng thật ra câu này không đúng ngữ pháp.",
+      "startMs": 4666.666666666667,
+      "speechEndMs": 21454.166666666668,
+      "endMs": 22266.666666666668
+    },
+    {
+      "id": "solution",
+      "spoken": "Thay vì đưa câu đó cho ChatGPT rồi chỉ xem đáp án, mình thử một cách khác. Mình yêu cầu AI đừng sửa ngay, mà hãy đưa gợi ý để mình tự tìm ra lỗi sai trước.",
+      "startMs": 22266.666666666668,
+      "speechEndMs": 38504.166666666664,
+      "endMs": 39333.333333333336
+    },
+    {
+      "id": "demo",
+      "spoken": "Ví dụ, mình nhập câu: ‘I am agree’. Rồi hỏi ChatGPT: ‘Đừng đưa đáp án ngay. Hãy gợi ý để mình tự sửa câu này.’ AI có thể gợi ý: ‘Agree là động từ hay tính từ?’ Khi nhận ra agree đã là một động từ, mình hiểu rằng không cần thêm am ở đây. Vậy câu đúng sẽ là: ‘I agree’. Sau đó, mình thử viết thêm: ‘I agree with you’.",
+      "startMs": 39333.333333333336,
+      "speechEndMs": 73408.33333333333,
+      "endMs": 74233.33333333333
+    },
+    {
+      "id": "benefit",
+      "spoken": "Điều mình thích ở cách này là mình phải tự suy nghĩ trước khi nhìn đáp án. Nếu trả lời sai, mình có thể nhờ AI giải thích thêm bằng ví dụ đơn giản hơn. Như vậy, mình vừa luyện đặt câu, vừa hiểu rõ hơn vì sao mình sai.",
+      "startMs": 74233.33333333333,
+      "speechEndMs": 93920.83333333333,
+      "endMs": 94733.33333333333
+    },
+    {
+      "id": "cta",
+      "spoken": "Nếu bạn cũng biết từ vựng nhưng vẫn khó đặt câu tiếng Anh, hãy thử cách học này nhé! Bình luận ‘BẮT ĐẦU’, mình chia sẻ cách thiết lập ChatGPT để luyện đặt câu từ những bước cơ bản.",
+      "startMs": 94733.33333333333,
+      "speechEndMs": 107758.33333333333,
+      "endMs": 108566.66666666667
+    }
+  ],
+  "voiceSpans": [
+    {
+      "scene": "hook",
+      "requestId": "hook",
+      "text": "I am agree",
+      "language": "en-US",
+      "voice": "en-US-AndrewNeural",
+      "startMs": 0,
+      "endMs": 540,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "hook",
+      "requestId": "hook",
+      "text": "’… bạn có biết câu này sai ở đâu không?",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 980.0000000000002,
+      "endMs": 2900,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "problem",
+      "requestId": "problem",
+      "text": "Hồi mới học tiếng Anh, mình thường biết nghĩa của từng từ, nhưng khi ghép lại thành câu thì rất dễ sai. Ví dụ, muốn nói ‘Tôi đồng ý’, mình có thể nghĩ đến câu ‘",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 4666.666666666667,
+      "endMs": 15106.666666666668,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "problem",
+      "requestId": "problem",
+      "text": "I am agree",
+      "language": "en-US",
+      "voice": "en-US-AndrewNeural",
+      "startMs": 15186.666666666668,
+      "endMs": 15766.666666666668,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "problem",
+      "requestId": "problem",
+      "text": "Nghe có vẻ hợp lý, nhưng thật ra câu này không đúng ngữ pháp.",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 16126.666666666668,
+      "endMs": 20606.666666666668,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "solution",
+      "requestId": "solution",
+      "text": "Thay vì đưa câu đó cho ChatGPT",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 22266.666666666668,
+      "endMs": 27426.666666666668,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "solution",
+      "requestId": "solution",
+      "text": " rồi chỉ xem đáp án, mình thử một cách khác. Mình yêu cầu AI đừng sửa ngay, mà hãy đưa gợi ý để mình tự tìm ra lỗi sai trước.",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 27426.666666666668,
+      "endMs": 37646.66666666667,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "demo",
+      "requestId": "demo",
+      "text": "Ví dụ, mình nhập câu: ‘",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 39333.333333333336,
+      "endMs": 41753.333333333336,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "demo",
+      "requestId": "demo",
+      "text": "I am agree",
+      "language": "en-US",
+      "voice": "en-US-AndrewNeural",
+      "startMs": 41753.333333333336,
+      "endMs": 42653.333333333336,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "demo",
+      "requestId": "demo",
+      "text": "’. Rồi hỏi ChatGPT",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 43133.333333333336,
+      "endMs": 46013.333333333336,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "demo",
+      "requestId": "demo",
+      "text": ": ‘Đừng đưa đáp án ngay. Hãy gợi ý để mình tự sửa câu này.’ ",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 46013.333333333336,
+      "endMs": 49913.333333333336,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "demo",
+      "requestId": "demo",
+      "text": "AI có thể gợi ý: ‘",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 50733.333333333336,
+      "endMs": 53593.333333333336,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "demo",
+      "requestId": "demo",
+      "text": "Agree",
+      "language": "en-US",
+      "voice": "en-US-AndrewNeural",
+      "startMs": 54533.333333333336,
+      "endMs": 55053.333333333336,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "demo",
+      "requestId": "demo",
+      "text": " là động từ hay tính từ?’ Khi nhận ra ",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 55053.333333333336,
+      "endMs": 58913.333333333336,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "demo",
+      "requestId": "demo",
+      "text": "agree",
+      "language": "en-US",
+      "voice": "en-US-AndrewNeural",
+      "startMs": 58913.333333333336,
+      "endMs": 60153.333333333336,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "demo",
+      "requestId": "demo",
+      "text": " đã là một động từ, mình hiểu rằng không cần thêm ",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 60213.333333333336,
+      "endMs": 63333.333333333336,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "demo",
+      "requestId": "demo",
+      "text": "am",
+      "language": "en-US",
+      "voice": "en-US-AndrewNeural",
+      "startMs": 63333.333333333336,
+      "endMs": 64533.333333333336,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "demo",
+      "requestId": "demo",
+      "text": " ở đây. Vậy câu đúng sẽ là: ‘",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 64533.333333333336,
+      "endMs": 67613.33333333334,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "demo",
+      "requestId": "demo",
+      "text": "I agree",
+      "language": "en-US",
+      "voice": "en-US-AndrewNeural",
+      "startMs": 67613.33333333334,
+      "endMs": 69093.33333333334,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "demo",
+      "requestId": "demo",
+      "text": "’. Sau đó, mình thử viết thêm: ‘",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 69093.33333333334,
+      "endMs": 71313.33333333334,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "demo",
+      "requestId": "demo",
+      "text": "I agree with you",
+      "language": "en-US",
+      "voice": "en-US-AndrewNeural",
+      "startMs": 71813.33333333334,
+      "endMs": 73073.33333333334,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "benefit",
+      "requestId": "benefit",
+      "text": "Điều mình thích ở cách này là mình phải tự suy nghĩ trước khi nhìn đáp án. Nếu trả lời sai, mình có thể nhờ AI giải thích thêm bằng ví dụ đơn giản hơn. Như vậy, mình vừa luyện đặt câu, vừa hiểu rõ hơn vì sao mình sai.",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 74233.33333333333,
+      "endMs": 92993.33333333333,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "cta",
+      "requestId": "cta",
+      "text": "Nếu bạn cũng biết từ vựng nhưng vẫn khó đặt câu tiếng Anh, hãy thử cách học này nhé! Bình luận ‘BẮT ĐẦU’, mình chia sẻ cách thiết lập ChatGPT",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 94733.33333333333,
+      "endMs": 105033.33333333333,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    },
+    {
+      "scene": "cta",
+      "requestId": "cta",
+      "text": " để luyện đặt câu từ những bước cơ bản.",
+      "language": "vi-VN",
+      "voice": "vi-VN-NamMinhNeural",
+      "startMs": 105033.33333333333,
+      "endMs": 106793.33333333333,
+      "kind": "OBSERVED_AUDIO_SPAN"
+    }
+  ],
+  "events": [],
+  "markers": {
+    "request": 1294,
+    "hint": 1636,
+    "strike": 1879,
+    "correct": 2029,
+    "practice": 2155
+  },
+  "audioSamples": 5211200,
+  "timing": "OBSERVED_AUDIO_ONLY_NO_INTERPOLATION",
+  "subjectiveQA": "BLOCKED_REQUIRES_REAL_LISTENING",
+  "sourceAssembly": "audio-assembly.json",
+  "captionTiming": "Canonical copy with local ASR observed audio endpoints; no interpolated word timestamps. Human sync review pending."
+}
