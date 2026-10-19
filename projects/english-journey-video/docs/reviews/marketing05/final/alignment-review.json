@@ -1,0 +1,56 @@
+[
+  {
+    "scene": "hook",
+    "canonicalWords": 12,
+    "observedWordsEn": 12,
+    "observedWordsVi": 9,
+    "phraseIntervals": 3,
+    "minimumPhraseMatchRatio": 1.0,
+    "humanPronunciationAndSync": "NEEDS_LISTENING"
+  },
+  {
+    "scene": "problem",
+    "canonicalWords": 52,
+    "observedWordsEn": 52,
+    "observedWordsVi": 52,
+    "phraseIntervals": 11,
+    "minimumPhraseMatchRatio": 1.0,
+    "humanPronunciationAndSync": "NEEDS_LISTENING"
+  },
+  {
+    "scene": "solution",
+    "canonicalWords": 37,
+    "observedWordsEn": 37,
+    "observedWordsVi": 37,
+    "phraseIntervals": 6,
+    "minimumPhraseMatchRatio": 1.0,
+    "humanPronunciationAndSync": "NEEDS_LISTENING"
+  },
+  {
+    "scene": "demo",
+    "canonicalWords": 72,
+    "observedWordsEn": 66,
+    "observedWordsVi": 72,
+    "phraseIntervals": 22,
+    "minimumPhraseMatchRatio": 0.75,
+    "humanPronunciationAndSync": "NEEDS_LISTENING"
+  },
+  {
+    "scene": "benefit",
+    "canonicalWords": 50,
+    "observedWordsEn": 50,
+    "observedWordsVi": 50,
+    "phraseIntervals": 10,
+    "minimumPhraseMatchRatio": 1.0,
+    "humanPronunciationAndSync": "NEEDS_LISTENING"
+  },
+  {
+    "scene": "cta",
+    "canonicalWords": 39,
+    "observedWordsEn": 39,
+    "observedWordsVi": 39,
+    "phraseIntervals": 7,
+    "minimumPhraseMatchRatio": 1.0,
+    "humanPronunciationAndSync": "NEEDS_LISTENING"
+  }
+]

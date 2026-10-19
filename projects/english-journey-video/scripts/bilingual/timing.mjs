@@ -24,8 +24,12 @@ export function buildTimeline(plan,files,observations,{fps=30,gapMs=120,tailMs=6
       let requestOffset=0;
       for(const span of r.spans){
         const begin=requestOffset,end=begin+span.text.length;requestOffset=end;
-        const times=obs.filter(o=>o.textStart<end&&o.textEnd>begin);
-        if(!/[\p{L}\p{N}]/u.test(span.text))continue;
+        // A phrase may include a closing quote assigned to the next voice in
+        // SSML. Punctuation alone must not make that voice inherit the preceding
+        // English phrase's audio interval.
+        const letters=[...span.text.matchAll(/[\p{L}\p{N}]/gu)];if(!letters.length)continue;
+        const speechBegin=begin+letters[0].index,speechEnd=begin+letters.at(-1).index+letters.at(-1)[0].length;
+        const times=obs.filter(o=>o.textStart<speechEnd&&o.textEnd>speechBegin);
         if(!times.length)throw Error('VOICE_SPAN_TIMING_UNAVAILABLE');
         voiceSpans.push({scene:scene.id,requestId:r.id,text:span.text,language:span.language,voice:span.voice,startMs:sampleOffset/48+times[0].startMs,endMs:sampleOffset/48+times.at(-1).endMs,kind:'OBSERVED_AUDIO_SPAN'});
         for(const o of times){

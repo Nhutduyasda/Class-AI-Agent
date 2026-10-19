@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "planSha256": "a472d1eeab69e0c0615d77bfbe7d9696486839f7d21c1e26fc2193381e7c4316",
+  "kind": "AZURE_REST",
+  "resource": "english-journey-namminh",
+  "region": "southeastasia",
+  "requestsSubmitted": 5,
+  "reservedUsd": 0.016515000000000002,
+  "files": [
+    {
+      "id": "problem",
+      "ssmlSha256": "2deced4ed817524d0ef5bbcad4995dd79eb89fa7b76d3a1e53ee3778790b4135",
+      "estimatedUsd": 0.00351,
+      "attempts": 1,
+      "status": "VERIFIED",
+      "approvalId": "VIDEO05-RECOVERY02-5REQ-USD0.02-207179f4ed864e2aa7f8551256c1787c",
+      "submittedAt": "2026-10-19T06:02:04.007Z",
+      "sha256": "c4ce481abb79381fd5efbf5f044ea08a4afaabbe10c4dd9bac9b5edd900c2085",
+      "durationSeconds": 16.7875,
+      "file": "problem.wav",
+      "scene": "problem"
+    },
+    {
+      "id": "solution",
+      "ssmlSha256": "3a6c851d645a646dee8d398dc65d1e6c3d2c894cc23bfe968ea1290921136d96",
+      "estimatedUsd": 0.002325,
+      "attempts": 1,
+      "status": "VERIFIED",
+      "approvalId": "VIDEO05-RECOVERY02-5REQ-USD0.02-207179f4ed864e2aa7f8551256c1787c",
+      "submittedAt": "2026-10-19T06:02:05.016Z",
+      "sha256": "0b880513f7bf47e2d3db5770ff0145a1fb39fff7b772e5a9fa9f167ead2ad10f",
+      "durationSeconds": 16.2375,
+      "file": "solution.wav",
+      "scene": "solution"
+    },
+    {
+      "id": "demo",
+      "ssmlSha256": "85c9de141e2f2f4e20cf6e0c1b754fb2fc0fc6f66da4e85d4fe2fc286b0fcb52",
+      "estimatedUsd": 0.004725,
+      "attempts": 1,
+      "status": "VERIFIED",
+      "approvalId": "VIDEO05-RECOVERY02-5REQ-USD0.02-207179f4ed864e2aa7f8551256c1787c",
+      "submittedAt": "2026-10-19T06:02:06.228Z",
+      "sha256": "400f8ce8353c68a2c398370836e9ca5f3b30e33b6ea502ba0cc54dd378fa6a09",
+      "durationSeconds": 34.075,
+      "file": "demo.wav",
+      "scene": "demo"
+    },
+    {
+      "id": "benefit",
+      "ssmlSha256": "38159673129db30dc37dbb51b47a3111956a6d95c6ddf6d2f5651e6fc2a28cbb",
+      "estimatedUsd": 0.003255,
+      "attempts": 1,
+      "status": "VERIFIED",
+      "approvalId": "VIDEO05-RECOVERY02-5REQ-USD0.02-207179f4ed864e2aa7f8551256c1787c",
+      "submittedAt": "2026-10-19T06:02:08.380Z",
+      "sha256": "3e7ff006b464619747fb8acc213d529feda30a1336a5ce9812f0ade1e5786c0a",
+      "durationSeconds": 19.6875,
+      "file": "benefit.wav",
+      "scene": "benefit"
+    },
+    {
+      "id": "cta",
+      "ssmlSha256": "787b2c269d6311c518c99e09c5992991cb574711d746f3bf16bf761a8cf416aa",
+      "estimatedUsd": 0.0027,
+      "attempts": 1,
+      "status": "VERIFIED",
+      "approvalId": "VIDEO05-RECOVERY02-5REQ-USD0.02-207179f4ed864e2aa7f8551256c1787c",
+      "submittedAt": "2026-10-19T06:02:09.466Z",
+      "sha256": "e7992ecb1a731c2cb1f1dbd63d2386ca240fe6ea9f26741979016bca54c5b50e",
+      "durationSeconds": 13.025,
+      "file": "cta.wav",
+      "scene": "cta"
+    }
+  ],
+  "subjectiveQA": "BLOCKED_REQUIRES_REAL_LISTENING",
+  "timing": "PENDING_OBSERVED_AUDIO_ALIGNMENT"
+}

@@ -116,3 +116,9 @@ test('mock or incomplete timing cannot masquerade as production',()=>{
 test('Remotion clock uses actual frame time for Andrew, captions and article animation',()=>{
  const {plan,files,obs}=timingFixture(),m=buildTimeline(plan,files,obs,{allowOffline:true});const span=m.voiceSpans.find(s=>s.language==='en-US'),frame=Math.ceil(span.startMs*.03),clock=activeAtFrame(m,frame);assert.equal(clock.voiceSpan.voice,'en-US-AndrewNeural');assert.ok(clock.caption);const event=m.events.at(-1);assert.equal(activeAtFrame(m,event.frame).articleEvent.article,event.article);assert.equal(activeAtFrame(m,0).voiceSpan,null);assert.equal(activeAtFrame(m,m.durationInFrames).articleEvent,null);
 });
+test('phrase-closing quotes do not assign English audio to the following Vietnamese voice',()=>{
+ const text='‘I saw a cat.’ Mình tự luyện.',brief={id:'quoted-fixture',approved:true,spokenSegments:[{id:'demo',spoken:text,voiceProduction:{spans:[{start:1,end:13,text:'I saw a cat.',language:'en-US'}]}}]};
+ const plan=makePlan(brief,Buffer.from(JSON.stringify(brief)),profile,price),hash=digest(text),files=[{id:'demo',kind:'OFFLINE_FIXTURE_ONLY',sha256:hash,sampleRate:48000,samples:144000,planSha256:plan.planSha256}];
+ const obs=[{requestId:'demo',audioSha256:hash,kind:'LOCAL_ASR_OBSERVED',textStart:0,textEnd:14,canonicalText:text.slice(0,14),startMs:100,endMs:900},{requestId:'demo',audioSha256:hash,kind:'LOCAL_ASR_OBSERVED',textStart:15,textEnd:text.length,canonicalText:text.slice(15),startMs:1200,endMs:1800}];
+ const m=buildTimeline(plan,files,obs,{allowOffline:true});assert.equal(m.voiceSpans.find(s=>s.language==='vi-VN').startMs,1200);assert.equal(m.voiceSpans.find(s=>s.language==='en-US').endMs,900);
+});

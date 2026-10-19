@@ -1,0 +1,757 @@
+{
+  "schemaVersion": 1,
+  "productionId": "marketing-video-05-recovery-02",
+  "briefRelativePath": "briefs/marketing-video-05-recovery-02.json",
+  "briefSha256": "7c6f24127eef5cf098539c4caaba590cac78f40eb5a06df89e1bd54ee724a0ee",
+  "profileSha256": "40b6702fbf417870ca4e673126c14ee166145f4f084f5c7d1ae9b5fc9606bf84",
+  "profile": {
+    "schemaVersion": 1,
+    "provider": "AZURE_OFFICIAL_ONLY",
+    "resource": "english-journey-namminh",
+    "region": "southeastasia",
+    "tier": "Standard S0",
+    "format": "riff-48khz-16bit-mono-pcm",
+    "mode": "multivoice",
+    "voices": {
+      "vi-VN": "vi-VN-NamMinhNeural",
+      "en-US": "en-US-AndrewNeural"
+    },
+    "rate": "+0%",
+    "pitch": "default",
+    "entityDefaults": {
+      "ChatGPT": "vi-VN",
+      "AI": "vi-VN",
+      "Error Log": "en-US"
+    },
+    "englishTerms": [
+      "Error Log",
+      "Reading & Grammar",
+      "Past Simple",
+      "Vocabulary",
+      "Grammar",
+      "Speaking",
+      "Reading",
+      "Writing",
+      "Listening",
+      "apple",
+      "cat",
+      "yesterday",
+      "went",
+      "go"
+    ],
+    "englishExamples": [
+      "I saw a cat.",
+      "The cat was sleeping.",
+      "I ate an apple.",
+      "I ate an apple,",
+      "Yesterday, I went to school.",
+      "Yesterday, I go to school."
+    ],
+    "splitGapMs": 120,
+    "liveSynthesisAllowed": false
+  },
+  "pricing": {
+    "schemaVersion": 1,
+    "verified": true,
+    "currency": "USD",
+    "region": "southeastasia",
+    "usdPerMillion": 15,
+    "meterName": "S1 Neural Text To Speech Characters",
+    "unitOfMeasure": "1M",
+    "meterId": "0f98e708-a16c-407b-8089-a0ed9e14ab49",
+    "publicSkuLabel": "S1",
+    "resourceTierClaim": "Standard S0 (owner configuration; account contract not inspected)",
+    "checkedAt": "2026-10-17T07:57:20.2572429Z",
+    "source": "https://prices.azure.com/api/retail/prices",
+    "query": "armRegionName eq 'southeastasia' and contains(productName, 'Speech')",
+    "invoiceVerified": false
+  },
+  "mode": "multivoice",
+  "scenes": [
+    {
+      "id": "problem",
+      "canonicalText": "Hồi mới học tiếng Anh, mình thường biết nghĩa của từng từ, nhưng khi ghép lại thành câu thì rất dễ sai. Ví dụ, muốn nói ‘Tôi đồng ý’, mình có thể nghĩ đến câu ‘I am agree’. Nghe có vẻ hợp lý, nhưng thật ra câu này không đúng ngữ pháp.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 160,
+          "text": "Hồi mới học tiếng Anh, mình thường biết nghĩa của từng từ, nhưng khi ghép lại thành câu thì rất dễ sai. Ví dụ, muốn nói ‘Tôi đồng ý’, mình có thể nghĩ đến câu ‘",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 160,
+          "end": 170,
+          "text": "I am agree",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 170,
+          "end": 173,
+          "text": "’. ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 173,
+          "end": 177,
+          "text": "Nghe",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 177,
+          "end": 234,
+          "text": " có vẻ hợp lý, nhưng thật ra câu này không đúng ngữ pháp.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "id": "solution",
+      "canonicalText": "Thay vì đưa câu đó cho ChatGPT rồi chỉ xem đáp án, mình thử một cách khác. Mình yêu cầu AI đừng sửa ngay, mà hãy đưa gợi ý để mình tự tìm ra lỗi sai trước.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "Thay",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 4,
+          "end": 23,
+          "text": " vì đưa câu đó cho ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 23,
+          "end": 30,
+          "text": "ChatGPT",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 30,
+          "end": 88,
+          "text": " rồi chỉ xem đáp án, mình thử một cách khác. Mình yêu cầu ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 88,
+          "end": 90,
+          "text": "AI",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 90,
+          "end": 155,
+          "text": " đừng sửa ngay, mà hãy đưa gợi ý để mình tự tìm ra lỗi sai trước.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "id": "demo",
+      "canonicalText": "Ví dụ, mình nhập câu: ‘I am agree’. Rồi hỏi ChatGPT: ‘Đừng đưa đáp án ngay. Hãy gợi ý để mình tự sửa câu này.’ AI có thể gợi ý: ‘Agree là động từ hay tính từ?’ Khi nhận ra agree đã là một động từ, mình hiểu rằng không cần thêm am ở đây. Vậy câu đúng sẽ là: ‘I agree’. Sau đó, mình thử viết thêm: ‘I agree with you’.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 23,
+          "text": "Ví dụ, mình nhập câu: ‘",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 23,
+          "end": 33,
+          "text": "I am agree",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 33,
+          "end": 44,
+          "text": "’. Rồi hỏi ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 44,
+          "end": 51,
+          "text": "ChatGPT",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 51,
+          "end": 111,
+          "text": ": ‘Đừng đưa đáp án ngay. Hãy gợi ý để mình tự sửa câu này.’ ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 111,
+          "end": 113,
+          "text": "AI",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 113,
+          "end": 129,
+          "text": " có thể gợi ý: ‘",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 129,
+          "end": 134,
+          "text": "Agree",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 134,
+          "end": 172,
+          "text": " là động từ hay tính từ?’ Khi nhận ra ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 172,
+          "end": 177,
+          "text": "agree",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 177,
+          "end": 227,
+          "text": " đã là một động từ, mình hiểu rằng không cần thêm ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 227,
+          "end": 229,
+          "text": "am",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 229,
+          "end": 258,
+          "text": " ở đây. Vậy câu đúng sẽ là: ‘",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 258,
+          "end": 265,
+          "text": "I agree",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 265,
+          "end": 297,
+          "text": "’. Sau đó, mình thử viết thêm: ‘",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 297,
+          "end": 313,
+          "text": "I agree with you",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 313,
+          "end": 315,
+          "text": "’.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "id": "benefit",
+      "canonicalText": "Điều mình thích ở cách này là mình phải tự suy nghĩ trước khi nhìn đáp án. Nếu trả lời sai, mình có thể nhờ AI giải thích thêm bằng ví dụ đơn giản hơn. Như vậy, mình vừa luyện đặt câu, vừa hiểu rõ hơn vì sao mình sai.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 43,
+          "text": "Điều mình thích ở cách này là mình phải tự ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 43,
+          "end": 46,
+          "text": "suy",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 46,
+          "end": 108,
+          "text": " nghĩ trước khi nhìn đáp án. Nếu trả lời sai, mình có thể nhờ ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 108,
+          "end": 110,
+          "text": "AI",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 110,
+          "end": 217,
+          "text": " giải thích thêm bằng ví dụ đơn giản hơn. Như vậy, mình vừa luyện đặt câu, vừa hiểu rõ hơn vì sao mình sai.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "id": "cta",
+      "canonicalText": "Nếu bạn cũng biết từ vựng nhưng vẫn khó đặt câu tiếng Anh, hãy thử cách học này nhé! Bình luận ‘BẮT ĐẦU’, mình chia sẻ cách thiết lập ChatGPT để luyện đặt câu từ những bước cơ bản.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 134,
+          "text": "Nếu bạn cũng biết từ vựng nhưng vẫn khó đặt câu tiếng Anh, hãy thử cách học này nhé! Bình luận ‘BẮT ĐẦU’, mình chia sẻ cách thiết lập ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 134,
+          "end": 141,
+          "text": "ChatGPT",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 141,
+          "end": 180,
+          "text": " để luyện đặt câu từ những bước cơ bản.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        }
+      ],
+      "warnings": []
+    }
+  ],
+  "requests": [
+    {
+      "id": "problem",
+      "scene": "problem",
+      "spans": [
+        {
+          "start": 0,
+          "end": 160,
+          "text": "Hồi mới học tiếng Anh, mình thường biết nghĩa của từng từ, nhưng khi ghép lại thành câu thì rất dễ sai. Ví dụ, muốn nói ‘Tôi đồng ý’, mình có thể nghĩ đến câu ‘",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 160,
+          "end": 170,
+          "text": "I am agree",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 170,
+          "end": 173,
+          "text": "’. ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 173,
+          "end": 177,
+          "text": "Nghe",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 177,
+          "end": 234,
+          "text": " có vẻ hợp lý, nhưng thật ra câu này không đúng ngữ pháp.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        }
+      ],
+      "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\">Hồi mới học tiếng Anh, mình thường biết nghĩa của từng từ, nhưng khi ghép lại thành câu thì rất dễ sai. Ví dụ, muốn nói ‘Tôi đồng ý’, mình có thể nghĩ đến câu ‘</voice><voice name=\"en-US-AndrewNeural\">I am agree</voice><voice name=\"vi-VN-NamMinhNeural\">’. </voice><voice name=\"vi-VN-NamMinhNeural\">Nghe</voice><voice name=\"vi-VN-NamMinhNeural\"> có vẻ hợp lý, nhưng thật ra câu này không đúng ngữ pháp.</voice></speak>",
+      "ssmlSha256": "2deced4ed817524d0ef5bbcad4995dd79eb89fa7b76d3a1e53ee3778790b4135",
+      "text": "Hồi mới học tiếng Anh, mình thường biết nghĩa của từng từ, nhưng khi ghép lại thành câu thì rất dễ sai. Ví dụ, muốn nói ‘Tôi đồng ý’, mình có thể nghĩ đến câu ‘I am agree’. Nghe có vẻ hợp lý, nhưng thật ra câu này không đúng ngữ pháp.",
+      "billableCharacters": 234,
+      "method": "SSML_SERIALIZED_EXCLUDING_SPEAK_VOICE_INCLUDING_OPTIONAL_MARKUP",
+      "escapedEntitiesConservativelyCounted": true,
+      "estimatedUsd": 0.00351
+    },
+    {
+      "id": "solution",
+      "scene": "solution",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "Thay",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 4,
+          "end": 23,
+          "text": " vì đưa câu đó cho ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 23,
+          "end": 30,
+          "text": "ChatGPT",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 30,
+          "end": 88,
+          "text": " rồi chỉ xem đáp án, mình thử một cách khác. Mình yêu cầu ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 88,
+          "end": 90,
+          "text": "AI",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 90,
+          "end": 155,
+          "text": " đừng sửa ngay, mà hãy đưa gợi ý để mình tự tìm ra lỗi sai trước.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        }
+      ],
+      "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\">Thay</voice><voice name=\"vi-VN-NamMinhNeural\"> vì đưa câu đó cho </voice><voice name=\"vi-VN-NamMinhNeural\">ChatGPT</voice><voice name=\"vi-VN-NamMinhNeural\"> rồi chỉ xem đáp án, mình thử một cách khác. Mình yêu cầu </voice><voice name=\"vi-VN-NamMinhNeural\">AI</voice><voice name=\"vi-VN-NamMinhNeural\"> đừng sửa ngay, mà hãy đưa gợi ý để mình tự tìm ra lỗi sai trước.</voice></speak>",
+      "ssmlSha256": "3a6c851d645a646dee8d398dc65d1e6c3d2c894cc23bfe968ea1290921136d96",
+      "text": "Thay vì đưa câu đó cho ChatGPT rồi chỉ xem đáp án, mình thử một cách khác. Mình yêu cầu AI đừng sửa ngay, mà hãy đưa gợi ý để mình tự tìm ra lỗi sai trước.",
+      "billableCharacters": 155,
+      "method": "SSML_SERIALIZED_EXCLUDING_SPEAK_VOICE_INCLUDING_OPTIONAL_MARKUP",
+      "escapedEntitiesConservativelyCounted": true,
+      "estimatedUsd": 0.002325
+    },
+    {
+      "id": "demo",
+      "scene": "demo",
+      "spans": [
+        {
+          "start": 0,
+          "end": 23,
+          "text": "Ví dụ, mình nhập câu: ‘",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 23,
+          "end": 33,
+          "text": "I am agree",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 33,
+          "end": 44,
+          "text": "’. Rồi hỏi ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 44,
+          "end": 51,
+          "text": "ChatGPT",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 51,
+          "end": 111,
+          "text": ": ‘Đừng đưa đáp án ngay. Hãy gợi ý để mình tự sửa câu này.’ ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 111,
+          "end": 113,
+          "text": "AI",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 113,
+          "end": 129,
+          "text": " có thể gợi ý: ‘",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 129,
+          "end": 134,
+          "text": "Agree",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 134,
+          "end": 172,
+          "text": " là động từ hay tính từ?’ Khi nhận ra ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 172,
+          "end": 177,
+          "text": "agree",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 177,
+          "end": 227,
+          "text": " đã là một động từ, mình hiểu rằng không cần thêm ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 227,
+          "end": 229,
+          "text": "am",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 229,
+          "end": 258,
+          "text": " ở đây. Vậy câu đúng sẽ là: ‘",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 258,
+          "end": 265,
+          "text": "I agree",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 265,
+          "end": 297,
+          "text": "’. Sau đó, mình thử viết thêm: ‘",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 297,
+          "end": 313,
+          "text": "I agree with you",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 313,
+          "end": 315,
+          "text": "’.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        }
+      ],
+      "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\">Ví dụ, mình nhập câu: ‘</voice><voice name=\"en-US-AndrewNeural\">I am agree</voice><voice name=\"vi-VN-NamMinhNeural\">’. Rồi hỏi </voice><voice name=\"vi-VN-NamMinhNeural\">ChatGPT</voice><voice name=\"vi-VN-NamMinhNeural\">: ‘Đừng đưa đáp án ngay. Hãy gợi ý để mình tự sửa câu này.’ </voice><voice name=\"vi-VN-NamMinhNeural\">AI</voice><voice name=\"vi-VN-NamMinhNeural\"> có thể gợi ý: ‘</voice><voice name=\"en-US-AndrewNeural\">Agree</voice><voice name=\"vi-VN-NamMinhNeural\"> là động từ hay tính từ?’ Khi nhận ra </voice><voice name=\"en-US-AndrewNeural\">agree</voice><voice name=\"vi-VN-NamMinhNeural\"> đã là một động từ, mình hiểu rằng không cần thêm </voice><voice name=\"en-US-AndrewNeural\">am</voice><voice name=\"vi-VN-NamMinhNeural\"> ở đây. Vậy câu đúng sẽ là: ‘</voice><voice name=\"en-US-AndrewNeural\">I agree</voice><voice name=\"vi-VN-NamMinhNeural\">’. Sau đó, mình thử viết thêm: ‘</voice><voice name=\"en-US-AndrewNeural\">I agree with you</voice><voice name=\"vi-VN-NamMinhNeural\">’.</voice></speak>",
+      "ssmlSha256": "85c9de141e2f2f4e20cf6e0c1b754fb2fc0fc6f66da4e85d4fe2fc286b0fcb52",
+      "text": "Ví dụ, mình nhập câu: ‘I am agree’. Rồi hỏi ChatGPT: ‘Đừng đưa đáp án ngay. Hãy gợi ý để mình tự sửa câu này.’ AI có thể gợi ý: ‘Agree là động từ hay tính từ?’ Khi nhận ra agree đã là một động từ, mình hiểu rằng không cần thêm am ở đây. Vậy câu đúng sẽ là: ‘I agree’. Sau đó, mình thử viết thêm: ‘I agree with you’.",
+      "billableCharacters": 315,
+      "method": "SSML_SERIALIZED_EXCLUDING_SPEAK_VOICE_INCLUDING_OPTIONAL_MARKUP",
+      "escapedEntitiesConservativelyCounted": true,
+      "estimatedUsd": 0.004725
+    },
+    {
+      "id": "benefit",
+      "scene": "benefit",
+      "spans": [
+        {
+          "start": 0,
+          "end": 43,
+          "text": "Điều mình thích ở cách này là mình phải tự ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 43,
+          "end": 46,
+          "text": "suy",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 46,
+          "end": 108,
+          "text": " nghĩ trước khi nhìn đáp án. Nếu trả lời sai, mình có thể nhờ ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 108,
+          "end": 110,
+          "text": "AI",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 110,
+          "end": 217,
+          "text": " giải thích thêm bằng ví dụ đơn giản hơn. Như vậy, mình vừa luyện đặt câu, vừa hiểu rõ hơn vì sao mình sai.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        }
+      ],
+      "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\">Điều mình thích ở cách này là mình phải tự </voice><voice name=\"vi-VN-NamMinhNeural\">suy</voice><voice name=\"vi-VN-NamMinhNeural\"> nghĩ trước khi nhìn đáp án. Nếu trả lời sai, mình có thể nhờ </voice><voice name=\"vi-VN-NamMinhNeural\">AI</voice><voice name=\"vi-VN-NamMinhNeural\"> giải thích thêm bằng ví dụ đơn giản hơn. Như vậy, mình vừa luyện đặt câu, vừa hiểu rõ hơn vì sao mình sai.</voice></speak>",
+      "ssmlSha256": "38159673129db30dc37dbb51b47a3111956a6d95c6ddf6d2f5651e6fc2a28cbb",
+      "text": "Điều mình thích ở cách này là mình phải tự suy nghĩ trước khi nhìn đáp án. Nếu trả lời sai, mình có thể nhờ AI giải thích thêm bằng ví dụ đơn giản hơn. Như vậy, mình vừa luyện đặt câu, vừa hiểu rõ hơn vì sao mình sai.",
+      "billableCharacters": 217,
+      "method": "SSML_SERIALIZED_EXCLUDING_SPEAK_VOICE_INCLUDING_OPTIONAL_MARKUP",
+      "escapedEntitiesConservativelyCounted": true,
+      "estimatedUsd": 0.003255
+    },
+    {
+      "id": "cta",
+      "scene": "cta",
+      "spans": [
+        {
+          "start": 0,
+          "end": 134,
+          "text": "Nếu bạn cũng biết từ vựng nhưng vẫn khó đặt câu tiếng Anh, hãy thử cách học này nhé! Bình luận ‘BẮT ĐẦU’, mình chia sẻ cách thiết lập ",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        },
+        {
+          "start": 134,
+          "end": 141,
+          "text": "ChatGPT",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "manual"
+        },
+        {
+          "start": 141,
+          "end": 180,
+          "text": " để luyện đặt câu từ những bước cơ bản.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "reason": "default-vi"
+        }
+      ],
+      "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\">Nếu bạn cũng biết từ vựng nhưng vẫn khó đặt câu tiếng Anh, hãy thử cách học này nhé! Bình luận ‘BẮT ĐẦU’, mình chia sẻ cách thiết lập </voice><voice name=\"vi-VN-NamMinhNeural\">ChatGPT</voice><voice name=\"vi-VN-NamMinhNeural\"> để luyện đặt câu từ những bước cơ bản.</voice></speak>",
+      "ssmlSha256": "787b2c269d6311c518c99e09c5992991cb574711d746f3bf16bf761a8cf416aa",
+      "text": "Nếu bạn cũng biết từ vựng nhưng vẫn khó đặt câu tiếng Anh, hãy thử cách học này nhé! Bình luận ‘BẮT ĐẦU’, mình chia sẻ cách thiết lập ChatGPT để luyện đặt câu từ những bước cơ bản.",
+      "billableCharacters": 180,
+      "method": "SSML_SERIALIZED_EXCLUDING_SPEAK_VOICE_INCLUDING_OPTIONAL_MARKUP",
+      "escapedEntitiesConservativelyCounted": true,
+      "estimatedUsd": 0.0027
+    }
+  ],
+  "requestCount": 5,
+  "textCodepoints": 1101,
+  "billableCharacters": 1101,
+  "estimatedUsd": 0.016515,
+  "warnings": [],
+  "liveSynthesisAllowed": false,
+  "planSha256": "a472d1eeab69e0c0615d77bfbe7d9696486839f7d21c1e26fc2193381e7c4316"
+}

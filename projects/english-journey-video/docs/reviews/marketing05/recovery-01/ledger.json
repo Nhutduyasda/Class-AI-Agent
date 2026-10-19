@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "productionId": "marketing-video-05-recovery-01",
+  "planSha256": "1de62f6b7ba8ce07648038d0a7b394a7db09ab50ac31c1243977d2630a74c50a",
+  "kind": "AZURE_REST",
+  "requestsSubmitted": 1,
+  "reservedUsd": 0.00351,
+  "calls": [
+    {
+      "id": "problem",
+      "ssmlSha256": "2deced4ed817524d0ef5bbcad4995dd79eb89fa7b76d3a1e53ee3778790b4135",
+      "estimatedUsd": 0.00351,
+      "attempts": 1,
+      "status": "FAILED_OR_AMBIGUOUS_NO_RETRY",
+      "approvalId": "VIDEO05-RECOVERY-5REQ-USD0.02-18083def3d404b0fac9ce1adbc23d503",
+      "submittedAt": "2026-10-19T05:56:32.284Z",
+      "failure": {
+        "stage": "WAV_PROBE",
+        "errorType": "Error",
+        "httpStatus": 200,
+        "failedAt": "2026-10-19T05:56:33.168Z"
+      }
+    },
+    {
+      "id": "solution",
+      "ssmlSha256": "3a6c851d645a646dee8d398dc65d1e6c3d2c894cc23bfe968ea1290921136d96",
+      "estimatedUsd": 0.002325,
+      "attempts": 0,
+      "status": "NOT_SUBMITTED"
+    },
+    {
+      "id": "demo",
+      "ssmlSha256": "85c9de141e2f2f4e20cf6e0c1b754fb2fc0fc6f66da4e85d4fe2fc286b0fcb52",
+      "estimatedUsd": 0.004725,
+      "attempts": 0,
+      "status": "NOT_SUBMITTED"
+    },
+    {
+      "id": "benefit",
+      "ssmlSha256": "38159673129db30dc37dbb51b47a3111956a6d95c6ddf6d2f5651e6fc2a28cbb",
+      "estimatedUsd": 0.003255,
+      "attempts": 0,
+      "status": "NOT_SUBMITTED"
+    },
+    {
+      "id": "cta",
+      "ssmlSha256": "787b2c269d6311c518c99e09c5992991cb574711d746f3bf16bf761a8cf416aa",
+      "estimatedUsd": 0.0027,
+      "attempts": 0,
+      "status": "NOT_SUBMITTED"
+    }
+  ]
+}

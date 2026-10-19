@@ -1,0 +1,91 @@
+{
+  "kind": "VERIFIED_AUDIO_ASSEMBLY_NOT_SPENDING_LEDGER",
+  "assemblyPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98",
+  "files": [
+    {
+      "id": "hook",
+      "sourceFile": "out/bilingual/marketing-video-05/hook.wav",
+      "receiptFile": "out/bilingual/marketing-video-05/hook.wav.receipt.json",
+      "originPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98",
+      "originLedgerSha256": "6a388fe6d9fa365e568cc7ceb151f568ca4682658b81be935f179f147e86ed2f",
+      "ssmlSha256": "25f409e8818104673e124cd7b06ea57d24fa8f93d6bdb71b52c5aaa5d4f1cd64",
+      "sha256": "6235294303d6c23e6be6e4a08ab1b396121797705a603deb5aab4b187916439c",
+      "samples": 184800,
+      "sampleRate": 48000,
+      "kind": "AZURE_REST",
+      "assemblyPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98"
+    },
+    {
+      "id": "problem",
+      "sourceFile": "out/bilingual/marketing-video-05-recovery-02/problem.wav",
+      "receiptFile": "out/bilingual/marketing-video-05-recovery-02/problem.wav.receipt.json",
+      "originPlanSha256": "a472d1eeab69e0c0615d77bfbe7d9696486839f7d21c1e26fc2193381e7c4316",
+      "originLedgerSha256": "1f0c7352e3ef3606b33e881e8b4058383388c7f1cab7c339c661084085b74d2c",
+      "ssmlSha256": "2deced4ed817524d0ef5bbcad4995dd79eb89fa7b76d3a1e53ee3778790b4135",
+      "sha256": "c4ce481abb79381fd5efbf5f044ea08a4afaabbe10c4dd9bac9b5edd900c2085",
+      "samples": 805800,
+      "sampleRate": 48000,
+      "kind": "AZURE_REST",
+      "assemblyPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98"
+    },
+    {
+      "id": "solution",
+      "sourceFile": "out/bilingual/marketing-video-05-recovery-02/solution.wav",
+      "receiptFile": "out/bilingual/marketing-video-05-recovery-02/solution.wav.receipt.json",
+      "originPlanSha256": "a472d1eeab69e0c0615d77bfbe7d9696486839f7d21c1e26fc2193381e7c4316",
+      "originLedgerSha256": "1f0c7352e3ef3606b33e881e8b4058383388c7f1cab7c339c661084085b74d2c",
+      "ssmlSha256": "3a6c851d645a646dee8d398dc65d1e6c3d2c894cc23bfe968ea1290921136d96",
+      "sha256": "0b880513f7bf47e2d3db5770ff0145a1fb39fff7b772e5a9fa9f167ead2ad10f",
+      "samples": 779400,
+      "sampleRate": 48000,
+      "kind": "AZURE_REST",
+      "assemblyPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98"
+    },
+    {
+      "id": "demo",
+      "sourceFile": "out/bilingual/marketing-video-05-recovery-02/demo.wav",
+      "receiptFile": "out/bilingual/marketing-video-05-recovery-02/demo.wav.receipt.json",
+      "originPlanSha256": "a472d1eeab69e0c0615d77bfbe7d9696486839f7d21c1e26fc2193381e7c4316",
+      "originLedgerSha256": "1f0c7352e3ef3606b33e881e8b4058383388c7f1cab7c339c661084085b74d2c",
+      "ssmlSha256": "85c9de141e2f2f4e20cf6e0c1b754fb2fc0fc6f66da4e85d4fe2fc286b0fcb52",
+      "sha256": "400f8ce8353c68a2c398370836e9ca5f3b30e33b6ea502ba0cc54dd378fa6a09",
+      "samples": 1635600,
+      "sampleRate": 48000,
+      "kind": "AZURE_REST",
+      "assemblyPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98"
+    },
+    {
+      "id": "benefit",
+      "sourceFile": "out/bilingual/marketing-video-05-recovery-02/benefit.wav",
+      "receiptFile": "out/bilingual/marketing-video-05-recovery-02/benefit.wav.receipt.json",
+      "originPlanSha256": "a472d1eeab69e0c0615d77bfbe7d9696486839f7d21c1e26fc2193381e7c4316",
+      "originLedgerSha256": "1f0c7352e3ef3606b33e881e8b4058383388c7f1cab7c339c661084085b74d2c",
+      "ssmlSha256": "38159673129db30dc37dbb51b47a3111956a6d95c6ddf6d2f5651e6fc2a28cbb",
+      "sha256": "3e7ff006b464619747fb8acc213d529feda30a1336a5ce9812f0ade1e5786c0a",
+      "samples": 945000,
+      "sampleRate": 48000,
+      "kind": "AZURE_REST",
+      "assemblyPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98"
+    },
+    {
+      "id": "cta",
+      "sourceFile": "out/bilingual/marketing-video-05-recovery-02/cta.wav",
+      "receiptFile": "out/bilingual/marketing-video-05-recovery-02/cta.wav.receipt.json",
+      "originPlanSha256": "a472d1eeab69e0c0615d77bfbe7d9696486839f7d21c1e26fc2193381e7c4316",
+      "originLedgerSha256": "1f0c7352e3ef3606b33e881e8b4058383388c7f1cab7c339c661084085b74d2c",
+      "ssmlSha256": "787b2c269d6311c518c99e09c5992991cb574711d746f3bf16bf761a8cf416aa",
+      "sha256": "e7992ecb1a731c2cb1f1dbd63d2386ca240fe6ea9f26741979016bca54c5b50e",
+      "samples": 625200,
+      "sampleRate": 48000,
+      "kind": "AZURE_REST",
+      "assemblyPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98"
+    }
+  ],
+  "oldLedgerSha256": "6a388fe6d9fa365e568cc7ceb151f568ca4682658b81be935f179f147e86ed2f",
+  "previousRecoveryLedgerSha256": "da2220e3a19eadf6339142c2600fea0bd35a831cc441cc895348f873275aaa1d",
+  "recoveryLedgerSha256": "1f0c7352e3ef3606b33e881e8b4058383388c7f1cab7c339c661084085b74d2c",
+  "historicalReservedUsd": 0.00777,
+  "recoveryReservedUsd": 0.016515000000000002,
+  "combinedReferenceUsd": 0.024285,
+  "invoiceVerified": false
+}

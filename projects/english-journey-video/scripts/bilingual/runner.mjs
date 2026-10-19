@@ -8,6 +8,7 @@ import {digest,validatePlan,containedPath} from './core.mjs';
 import {authenticationHeaders,credentialReadiness} from '../marketing03/auth.mjs';
 import {inspectWave,atomicJson} from '../marketing03/direct-audio.mjs';
 import {saveVerifiedWave,verifyWave} from './wave.mjs';
+import {PipelineFailure,safeFailure} from './diagnostics.mjs';
 export const ENDPOINT='https://southeastasia.tts.speech.microsoft.com/cognitiveservices/v1';
 export const VOICES_ENDPOINT='https://southeastasia.tts.speech.microsoft.com/cognitiveservices/voices/list';
 export function validateVoiceEvidence(e,now=Date.now()) {
@@ -26,25 +27,38 @@ export function validateAuthorization(plan,p,e,{now=Date.now(),offline=false}={}
   if(p?.scope!=='BILINGUAL_V1'||p.liveSynthesisAllowed!==true||!p.approvalId||p.productionId!==plan.productionId||p.planSha256!==plan.planSha256||!Number.isFinite(Date.parse(p.expiresAt))||Date.parse(p.expiresAt)<=now||!Number.isFinite(p.limitUsd)||p.limitUsd<=0||p.limitUsd<plan.estimatedUsd||p.maxRequests!==plan.requests.length||JSON.stringify(p.requestIds)!==JSON.stringify(plan.requests.map(r=>r.id))||p.maxAttemptsPerRequest!==1||p.mode!==plan.mode||p.priceUsdPerMillion!==plan.pricing.usdPerMillion)throw Error('NEW_EXACT_COST_AUTHORIZATION_REQUIRED');
   if(plan.warnings.length)throw Error('UNRESOLVED_LANGUAGE_SPANS');
   if(/^marketing-video-0[1-4]$/.test(plan.productionId))throw Error('HISTORICAL_VIDEO_PROTECTED');
+  if(/^marketing-video-05-recovery-/.test(plan.productionId)&&(p.additionalProblemAttemptExplicitlyApproved!==true||p.recoveryOf!=='aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98'||typeof p.historicalLedgerSha256!=='string'))throw Error('EXPLICIT_PROBLEM_RECOVERY_APPROVAL_REQUIRED');
   if(!offline){
     validateVoiceEvidence(e,now);
     if(plan.pricing.verified!==true||!Number.isFinite(Date.parse(plan.pricing.checkedAt))||now-Date.parse(plan.pricing.checkedAt)>7*86400000||Date.parse(plan.pricing.checkedAt)>now+60000||plan.pricing.meterName!=='S1 Neural Text To Speech Characters'||plan.pricing.unitOfMeasure!=='1M')throw Error('CURRENT_NEURAL_PRICE_REQUIRED');
   }
 }
-export async function postOnce(ssml,env=process.env) {
+export async function postOnce(ssml,env=process.env,fetcher=fetch) {
   if(!credentialReadiness(env).ready)throw Error('PRIVATE_CREDENTIAL_REQUIRED');
-  const r=await fetch(ENDPOINT,{method:'POST',redirect:'error',headers:{...authenticationHeaders(env),'Content-Type':'application/ssml+xml','X-Microsoft-OutputFormat':'riff-48khz-16bit-mono-pcm','User-Agent':'EnglishJourneyBilingual/1.0'},body:ssml,signal:AbortSignal.timeout(60000)});
-  if(!r.ok){await r.body?.cancel();throw Error('AZURE_REQUEST_FAILED_NO_RETRY');}
+  let r;
+  try { r=await fetcher(ENDPOINT,{method:'POST',redirect:'error',headers:{...authenticationHeaders(env),'Content-Type':'application/ssml+xml','X-Microsoft-OutputFormat':'riff-48khz-16bit-mono-pcm','User-Agent':'EnglishJourneyBilingual/1.0'},body:ssml,signal:AbortSignal.timeout(60000)}); }
+  catch(e){throw new PipelineFailure('HTTP_SEND',e);}
+  const context={httpStatus:r.status,requestId:r.headers?.get('x-requestid')??r.headers?.get('x-microsoft-requestid')??r.headers?.get('apim-request-id')};
+  if(!r.ok){await r.body?.cancel().catch(()=>{});throw new PipelineFailure('HTTP_STATUS',null,context);}
   let bytes=0;const chunks=[];
-  for await(const chunk of r.body){bytes+=chunk.length;if(bytes>60_000_000)throw Error('OVERSIZE_RESPONSE');chunks.push(chunk);}
-  return Buffer.concat(chunks);
+  try { for await(const chunk of r.body){bytes+=chunk.length;if(bytes>60_000_000)throw Error('OVERSIZE_RESPONSE');chunks.push(chunk);} }
+  catch(e){throw new PipelineFailure('HTTP_STREAM',e,context);}
+  const result=Buffer.concat(chunks);
+  // Non-enumerable safe metadata remains available if local validation fails.
+  Object.defineProperty(result,'responseDiagnostic',{value:context});return result;
 }
-export async function validateBriefSource(projectRoot,plan){
+export async function validateBriefSource(projectRoot,plan,authorization){
   if(typeof plan.briefRelativePath!=='string'||!plan.briefRelativePath.startsWith('briefs/')||plan.briefRelativePath.includes('..'))throw Error('LIVE_BRIEF_SOURCE_REQUIRED');
   const file=containedPath(projectRoot,[plan.briefRelativePath]),actual=await realpath(file),rel=relative(await realpath(projectRoot),actual);
   if(rel.startsWith('..')||isAbsolute(rel))throw Error('BRIEF_SYMLINK_ESCAPE');
   const bytes=await readFile(actual),brief=JSON.parse(bytes);
   if(digest(bytes)!==plan.briefSha256||brief.approved!==true||brief.id!==plan.productionId||JSON.stringify(brief.spokenSegments.map(s=>({id:s.id,spoken:s.spoken})))!==JSON.stringify(plan.scenes.map(s=>({id:s.id,spoken:s.canonicalText}))))throw Error('APPROVED_BRIEF_CHANGED_AFTER_PLAN');
+  if(brief.recovery){
+    const r=brief.recovery;
+    for(const [path,hash] of [['out/bilingual/marketing-video-05/ledger.json',r.oldLedgerSha256],['out/bilingual/marketing-video-05/authorization.json',r.oldAuthorizationSha256],['out/bilingual/marketing-video-05/hook.wav',r.hookSha256],['out/bilingual/marketing-video-05/hook.wav.receipt.json',r.hookReceiptSha256],['briefs/marketing-video-05-approved.json',r.canonicalBriefSha256]])if(digest(await readFile(containedPath(projectRoot,[path])))!==hash)throw Error('RECOVERY_ANCESTOR_CHANGED');
+    if(r.previousRecoveryLedgerSha256)for(const [path,hash]of [['out/bilingual/marketing-video-05-recovery-01/ledger.json',r.previousRecoveryLedgerSha256],['out/bilingual/marketing-video-05-recovery-01/authorization.json',r.previousRecoveryAuthorizationSha256]])if(digest(await readFile(containedPath(projectRoot,[path])))!==hash)throw Error('PREVIOUS_RECOVERY_CHANGED');
+    if(authorization&&(authorization.recoveryOf!==r.oldPlanSha256||authorization.historicalLedgerSha256!==r.oldLedgerSha256||authorization.additionalProblemAttemptExplicitlyApproved!==true))throw Error('RECOVERY_AUTHORIZATION_LINK_MISMATCH');
+  }
 }
 function assertLedger(plan,ledger) {
   if(ledger.planSha256!==plan.planSha256||ledger.productionId!==plan.productionId||ledger.calls.length!==plan.requests.length||ledger.calls.some((c,i)=>c.id!==plan.requests[i].id||c.ssmlSha256!==plan.requests[i].ssmlSha256||c.estimatedUsd!==plan.requests[i].estimatedUsd||!Number.isInteger(c.attempts)||c.attempts<0||c.attempts>1)||ledger.requestsSubmitted!==ledger.calls.reduce((n,c)=>n+c.attempts,0)||Math.abs(ledger.reservedUsd-ledger.calls.reduce((n,c)=>n+c.attempts*c.estimatedUsd,0))>1e-10)throw Error('LEDGER_INVALID_DO_NOT_RESET');
@@ -54,7 +68,7 @@ function assertLedger(plan,ledger) {
 export async function runPlan({projectRoot,plan,authorization,voiceEvidence,transport=postOnce,offline=false}) {
   if((transport!==postOnce)!==offline)throw Error('MOCK_TRANSPORT_MUST_BE_EXPLICIT');
   validateAuthorization(plan,authorization,voiceEvidence,{offline});
-  if(!offline)await validateBriefSource(projectRoot,plan);
+  if(!offline)await validateBriefSource(projectRoot,plan,authorization);
   if(!offline&&!credentialReadiness().ready)throw Error('PRIVATE_CREDENTIAL_REQUIRED_BEFORE_ATTEMPT');
   // Every run has its own output/ledger; Video 01–04 assets are never destinations.
   const root=await realpath(projectRoot),out=containedPath(root,['out','bilingual',plan.productionId]);await mkdir(out,{recursive:true});
@@ -81,16 +95,20 @@ export async function runPlan({projectRoot,plan,authorization,voiceEvidence,tran
       }
       try{await access(file);throw Error('EXISTING_WAV_RECOVER_DO_NOT_RESYNTHESIZE');}catch(e){if(e.code!=='ENOENT')throw e;}
       validateAuthorization(plan,authorization,voiceEvidence,{offline});
-      if(!offline)await validateBriefSource(root,plan);
+      if(!offline)await validateBriefSource(root,plan,authorization);
       if(ledger.reservedUsd+request.estimatedUsd>authorization.limitUsd+1e-12)throw Error('BUDGET_EXCEEDED');
       call.attempts=1;call.status='SUBMITTING';call.approvalId=authorization.approvalId;call.submittedAt=new Date().toISOString();ledger.requestsSubmitted++;ledger.reservedUsd+=request.estimatedUsd;
       await atomicJson(ledgerFile,ledger);
+      let responseContext;
       try{
-        const bytes=await transport(request.ssml),receipt=await saveVerifiedWave(bytes,file,{kind:ledger.kind,planSha256:plan.planSha256,ssmlSha256:request.ssmlSha256,textSha256:digest(request.text),voices:[...new Set(request.spans.map(s=>s.voice))],format:plan.profile.format,scene:request.scene,request:request.id});
+        const bytes=await transport(request.ssml);responseContext=bytes.responseDiagnostic;
+        const receipt=await saveVerifiedWave(bytes,file,{kind:ledger.kind,planSha256:plan.planSha256,ssmlSha256:request.ssmlSha256,textSha256:digest(request.text),voices:[...new Set(request.spans.map(s=>s.voice))],format:plan.profile.format,scene:request.scene,request:request.id});
         call.status='VERIFIED';call.sha256=receipt.sha256;call.durationSeconds=receipt.durationSeconds;call.file=request.id+'.wav';
         await atomicJson(ledgerFile,ledger);
       }catch(e){
-        call.status='FAILED_OR_AMBIGUOUS_NO_RETRY';await atomicJson(ledgerFile,ledger);if(offline)throw e;throw Error('FAILED_OR_AMBIGUOUS_NO_RETRY');
+        call.status='FAILED_OR_AMBIGUOUS_NO_RETRY';
+        call.failure={...new PipelineFailure('UNKNOWN',null,responseContext).diagnostic,...safeFailure(e,'TRANSPORT'),failedAt:new Date().toISOString()};
+        await atomicJson(ledgerFile,ledger);if(offline)throw e;throw Error('FAILED_OR_AMBIGUOUS_NO_RETRY');
       }
     }
     const manifest={schemaVersion:1,planSha256:plan.planSha256,kind:ledger.kind,resource:plan.profile.resource,region:plan.profile.region,requestsSubmitted:ledger.requestsSubmitted,reservedUsd:ledger.reservedUsd,files:ledger.calls.map(c=>({...c,scene:plan.requests.find(r=>r.id===c.id).scene})),subjectiveQA:'BLOCKED_REQUIRES_REAL_LISTENING',timing:'PENDING_OBSERVED_AUDIO_ALIGNMENT'};

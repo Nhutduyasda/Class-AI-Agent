@@ -1,0 +1,423 @@
+{
+  "technicalStatus": "PASS",
+  "checks": {
+    "format": true,
+    "duration": true,
+    "fullDecode": true,
+    "sixContinuousScenes": true,
+    "approvedCopy": true,
+    "subtitleTiming": true,
+    "uncutSpeech": true,
+    "demoRevealOrder": true,
+    "correctSentenceReadingTime": true,
+    "practiceSentenceReadingTime": true,
+    "spendingHistoryPreserved": true,
+    "sixRealVerifiedWavs": true,
+    "loudness": true,
+    "truePeak": true,
+    "muxAudioSync": true,
+    "voiceRoutingMetadata": true,
+    "submittedSsmlExactCopy": true
+  },
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640028",
+        "width": 1080,
+        "height": 1920,
+        "coded_width": 1080,
+        "coded_height": 1920,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "9:16",
+        "pix_fmt": "yuvj420p",
+        "level": 40,
+        "color_range": "pc",
+        "color_space": "bt470bg",
+        "chroma_location": "center",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/90000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 9771000,
+        "duration": "108.566667",
+        "bit_rate": "564363",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "3257",
+        "extradata_size": 51,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler"
+        },
+        "side_data_list": [
+          {
+            "side_data_type": "ICC Profile"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "mime_codec_string": "mp4a.40.2",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 2048,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 5212176,
+        "duration": "108.587000",
+        "bit_rate": "189374",
+        "nb_frames": "5092",
+        "extradata_size": 2,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler"
+        }
+      }
+    ],
+    "format": {
+      "filename": "C:\\Users\\nhutd\\Documents\\Codex\\2026-10-19\\gate-5b-mvp-pass-pr-16\\work\\Class-AI-Agent\\projects\\english-journey-video\\out\\marketing05-production\\English-Journey-Marketing-05-V1.1-Bilingual.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "108.587000",
+      "size": "10351791",
+      "bit_rate": "762654",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf61.7.100",
+        "comment": "Made with Remotion 4.0.535"
+      }
+    }
+  },
+  "loudness": {
+    "input_i": "-16.01",
+    "input_tp": "-2.38",
+    "input_lra": "3.30",
+    "input_thresh": "-27.72",
+    "output_i": "-16.11",
+    "output_tp": "-1.94",
+    "output_lra": "3.10",
+    "output_thresh": "-27.78",
+    "normalization_type": "dynamic",
+    "target_offset": "0.11"
+  },
+  "muxLagMs": 0,
+  "waveformCorrelation": 0.9999843956748342,
+  "evidence": [
+    {
+      "name": "opening",
+      "frame": 0,
+      "seconds": 0,
+      "file": "opening.png"
+    },
+    {
+      "name": "hook-1s",
+      "frame": 30,
+      "seconds": 1,
+      "file": "hook-1s.png"
+    },
+    {
+      "name": "hook-2.5s",
+      "frame": 75,
+      "seconds": 2.5,
+      "file": "hook-2.5s.png"
+    },
+    {
+      "name": "hook",
+      "frame": 70,
+      "seconds": 2.3333333333333335,
+      "file": "hook.png"
+    },
+    {
+      "name": "problem",
+      "frame": 404,
+      "seconds": 13.466666666666667,
+      "file": "problem.png"
+    },
+    {
+      "name": "solution",
+      "frame": 924,
+      "seconds": 30.8,
+      "file": "solution.png"
+    },
+    {
+      "name": "demo",
+      "frame": 1703,
+      "seconds": 56.766666666666666,
+      "file": "demo.png"
+    },
+    {
+      "name": "benefit",
+      "frame": 2534,
+      "seconds": 84.46666666666667,
+      "file": "benefit.png"
+    },
+    {
+      "name": "cta",
+      "frame": 3049,
+      "seconds": 101.63333333333334,
+      "file": "cta.png"
+    },
+    {
+      "name": "request-before",
+      "frame": 1293,
+      "seconds": 43.1,
+      "file": "request-before.png"
+    },
+    {
+      "name": "hint-before",
+      "frame": 1635,
+      "seconds": 54.5,
+      "file": "hint-before.png"
+    },
+    {
+      "name": "strike-before",
+      "frame": 1878,
+      "seconds": 62.6,
+      "file": "strike-before.png"
+    },
+    {
+      "name": "correct-before",
+      "frame": 2028,
+      "seconds": 67.6,
+      "file": "correct-before.png"
+    },
+    {
+      "name": "practice-before",
+      "frame": 2154,
+      "seconds": 71.8,
+      "file": "practice-before.png"
+    },
+    {
+      "name": "request-after",
+      "frame": 1314,
+      "seconds": 43.8,
+      "file": "request-after.png"
+    },
+    {
+      "name": "hint-after",
+      "frame": 1656,
+      "seconds": 55.2,
+      "file": "hint-after.png"
+    },
+    {
+      "name": "strike-after",
+      "frame": 1899,
+      "seconds": 63.3,
+      "file": "strike-after.png"
+    },
+    {
+      "name": "correct-after",
+      "frame": 2049,
+      "seconds": 68.3,
+      "file": "correct-after.png"
+    },
+    {
+      "name": "practice-after",
+      "frame": 2175,
+      "seconds": 72.5,
+      "file": "practice-after.png"
+    },
+    {
+      "name": "ending",
+      "frame": 3256,
+      "seconds": 108.53333333333333,
+      "file": "ending.png"
+    }
+  ],
+  "sha256": "d15caf2df19d9f95d48c1ba5c02b5c436304508131a00c78f62c2ec258fecb9d",
+  "assembly": {
+    "kind": "VERIFIED_AUDIO_ASSEMBLY_NOT_SPENDING_LEDGER",
+    "assemblyPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98",
+    "files": [
+      {
+        "id": "hook",
+        "sourceFile": "out/bilingual/marketing-video-05/hook.wav",
+        "receiptFile": "out/bilingual/marketing-video-05/hook.wav.receipt.json",
+        "originPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98",
+        "originLedgerSha256": "6a388fe6d9fa365e568cc7ceb151f568ca4682658b81be935f179f147e86ed2f",
+        "ssmlSha256": "25f409e8818104673e124cd7b06ea57d24fa8f93d6bdb71b52c5aaa5d4f1cd64",
+        "sha256": "6235294303d6c23e6be6e4a08ab1b396121797705a603deb5aab4b187916439c",
+        "samples": 184800,
+        "sampleRate": 48000,
+        "kind": "AZURE_REST",
+        "assemblyPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98"
+      },
+      {
+        "id": "problem",
+        "sourceFile": "out/bilingual/marketing-video-05-recovery-02/problem.wav",
+        "receiptFile": "out/bilingual/marketing-video-05-recovery-02/problem.wav.receipt.json",
+        "originPlanSha256": "a472d1eeab69e0c0615d77bfbe7d9696486839f7d21c1e26fc2193381e7c4316",
+        "originLedgerSha256": "1f0c7352e3ef3606b33e881e8b4058383388c7f1cab7c339c661084085b74d2c",
+        "ssmlSha256": "2deced4ed817524d0ef5bbcad4995dd79eb89fa7b76d3a1e53ee3778790b4135",
+        "sha256": "c4ce481abb79381fd5efbf5f044ea08a4afaabbe10c4dd9bac9b5edd900c2085",
+        "samples": 805800,
+        "sampleRate": 48000,
+        "kind": "AZURE_REST",
+        "assemblyPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98"
+      },
+      {
+        "id": "solution",
+        "sourceFile": "out/bilingual/marketing-video-05-recovery-02/solution.wav",
+        "receiptFile": "out/bilingual/marketing-video-05-recovery-02/solution.wav.receipt.json",
+        "originPlanSha256": "a472d1eeab69e0c0615d77bfbe7d9696486839f7d21c1e26fc2193381e7c4316",
+        "originLedgerSha256": "1f0c7352e3ef3606b33e881e8b4058383388c7f1cab7c339c661084085b74d2c",
+        "ssmlSha256": "3a6c851d645a646dee8d398dc65d1e6c3d2c894cc23bfe968ea1290921136d96",
+        "sha256": "0b880513f7bf47e2d3db5770ff0145a1fb39fff7b772e5a9fa9f167ead2ad10f",
+        "samples": 779400,
+        "sampleRate": 48000,
+        "kind": "AZURE_REST",
+        "assemblyPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98"
+      },
+      {
+        "id": "demo",
+        "sourceFile": "out/bilingual/marketing-video-05-recovery-02/demo.wav",
+        "receiptFile": "out/bilingual/marketing-video-05-recovery-02/demo.wav.receipt.json",
+        "originPlanSha256": "a472d1eeab69e0c0615d77bfbe7d9696486839f7d21c1e26fc2193381e7c4316",
+        "originLedgerSha256": "1f0c7352e3ef3606b33e881e8b4058383388c7f1cab7c339c661084085b74d2c",
+        "ssmlSha256": "85c9de141e2f2f4e20cf6e0c1b754fb2fc0fc6f66da4e85d4fe2fc286b0fcb52",
+        "sha256": "400f8ce8353c68a2c398370836e9ca5f3b30e33b6ea502ba0cc54dd378fa6a09",
+        "samples": 1635600,
+        "sampleRate": 48000,
+        "kind": "AZURE_REST",
+        "assemblyPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98"
+      },
+      {
+        "id": "benefit",
+        "sourceFile": "out/bilingual/marketing-video-05-recovery-02/benefit.wav",
+        "receiptFile": "out/bilingual/marketing-video-05-recovery-02/benefit.wav.receipt.json",
+        "originPlanSha256": "a472d1eeab69e0c0615d77bfbe7d9696486839f7d21c1e26fc2193381e7c4316",
+        "originLedgerSha256": "1f0c7352e3ef3606b33e881e8b4058383388c7f1cab7c339c661084085b74d2c",
+        "ssmlSha256": "38159673129db30dc37dbb51b47a3111956a6d95c6ddf6d2f5651e6fc2a28cbb",
+        "sha256": "3e7ff006b464619747fb8acc213d529feda30a1336a5ce9812f0ade1e5786c0a",
+        "samples": 945000,
+        "sampleRate": 48000,
+        "kind": "AZURE_REST",
+        "assemblyPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98"
+      },
+      {
+        "id": "cta",
+        "sourceFile": "out/bilingual/marketing-video-05-recovery-02/cta.wav",
+        "receiptFile": "out/bilingual/marketing-video-05-recovery-02/cta.wav.receipt.json",
+        "originPlanSha256": "a472d1eeab69e0c0615d77bfbe7d9696486839f7d21c1e26fc2193381e7c4316",
+        "originLedgerSha256": "1f0c7352e3ef3606b33e881e8b4058383388c7f1cab7c339c661084085b74d2c",
+        "ssmlSha256": "787b2c269d6311c518c99e09c5992991cb574711d746f3bf16bf761a8cf416aa",
+        "sha256": "e7992ecb1a731c2cb1f1dbd63d2386ca240fe6ea9f26741979016bca54c5b50e",
+        "samples": 625200,
+        "sampleRate": 48000,
+        "kind": "AZURE_REST",
+        "assemblyPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98"
+      }
+    ],
+    "oldLedgerSha256": "6a388fe6d9fa365e568cc7ceb151f568ca4682658b81be935f179f147e86ed2f",
+    "previousRecoveryLedgerSha256": "da2220e3a19eadf6339142c2600fea0bd35a831cc441cc895348f873275aaa1d",
+    "recoveryLedgerSha256": "1f0c7352e3ef3606b33e881e8b4058383388c7f1cab7c339c661084085b74d2c",
+    "historicalReservedUsd": 0.00777,
+    "recoveryReservedUsd": 0.016515000000000002,
+    "combinedReferenceUsd": 0.024285,
+    "invoiceVerified": false
+  },
+  "captionTiming": "Dual local VI/EN ASR observed phrase endpoints; no interpolated word timestamps. Canonical copy retained.",
+  "listeningFlags": [
+    {
+      "scene": "demo",
+      "seconds": 70.37333333333335,
+      "canonical": "mình thử viết thêm:",
+      "observedAsr": "mình thử việc thêm.",
+      "matchRatio": 0.75
+    }
+  ],
+  "subjectiveListening": "NOT_VERIFIED",
+  "audibleWordForWordCopy": "NEEDS_LISTENING_NOT_CERTIFIED_BY_ASR",
+  "subjectiveFullMotionViewing": "NOT_VERIFIED",
+  "visualProofInspection": {
+    "status": "PASS_SAMPLED_STILLS_ONLY",
+    "inspectedActualMp4Frames": [
+      "opening.png",
+      "hook-2.5s.png",
+      "problem.png",
+      "solution.png",
+      "hint-before.png",
+      "correct-before.png",
+      "correct-after.png",
+      "practice-after.png",
+      "benefit.png",
+      "ending.png"
+    ],
+    "findings": "Sampled critical text legible, intentional wrong example retained, answer withheld before hint/correct cue, correct/practice examples and single CTA intact. No sampled text clipping; critical text stays in configured safe area. Not a full-motion or listening certification."
+  },
+  "publication": "NOT_POSTED_OWNER_REVIEW_REQUIRED"
+}

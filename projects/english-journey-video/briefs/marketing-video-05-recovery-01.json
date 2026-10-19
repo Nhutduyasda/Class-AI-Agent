@@ -1,0 +1,173 @@
+{
+  "id": "marketing-video-05-recovery-01",
+  "version": "1.1",
+  "approved": true,
+  "approvedAt": "2026-10-19",
+  "approvalScope": "UNCHANGED_OWNER_APPROVED_COPY_RECOVERY_COST_NOT_APPROVED",
+  "title": "Biết từ vựng, sao vẫn không đặt được câu tiếng Anh?",
+  "normalization": {
+    "rule": "Remove only outer U+201C/U+201D presentation quotes per scene, replace each whitespace run with one U+0020; preserve all inner quotes, words, punctuation and order.",
+    "offsetUnit": "UTF-16 [start,end)"
+  },
+  "sourceRequestSha256": "40234be05c977645b8c274723badedfa073fcee74aeb313cc93d4d3fd95f0745",
+  "spokenSegments": [
+    {
+      "id": "problem",
+      "approvedText": "Hồi mới học tiếng Anh, mình thường biết nghĩa của từng từ, nhưng khi ghép lại thành câu thì rất dễ sai.\r\n\r\nVí dụ, muốn nói ‘Tôi đồng ý’, mình có thể nghĩ đến câu ‘I am agree’.\r\n\r\nNghe có vẻ hợp lý, nhưng thật ra câu này không đúng ngữ pháp.",
+      "spoken": "Hồi mới học tiếng Anh, mình thường biết nghĩa của từng từ, nhưng khi ghép lại thành câu thì rất dễ sai. Ví dụ, muốn nói ‘Tôi đồng ý’, mình có thể nghĩ đến câu ‘I am agree’. Nghe có vẻ hợp lý, nhưng thật ra câu này không đúng ngữ pháp.",
+      "voiceProduction": {
+        "spans": [
+          {
+            "start": 160,
+            "end": 170,
+            "text": "I am agree",
+            "language": "en-US"
+          },
+          {
+            "start": 173,
+            "end": 177,
+            "text": "Nghe",
+            "language": "vi-VN"
+          }
+        ],
+        "entityRationale": "ChatGPT and AI explicitly retain configured Nam Minh pronunciation; English examples and metalinguistic terms use Andrew. No phonetic rewrite."
+      }
+    },
+    {
+      "id": "solution",
+      "approvedText": "Thay vì đưa câu đó cho ChatGPT rồi chỉ xem đáp án, mình thử một cách khác.\r\n\r\nMình yêu cầu AI đừng sửa ngay, mà hãy đưa gợi ý để mình tự tìm ra lỗi sai trước.",
+      "spoken": "Thay vì đưa câu đó cho ChatGPT rồi chỉ xem đáp án, mình thử một cách khác. Mình yêu cầu AI đừng sửa ngay, mà hãy đưa gợi ý để mình tự tìm ra lỗi sai trước.",
+      "voiceProduction": {
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "Thay",
+            "language": "vi-VN"
+          },
+          {
+            "start": 23,
+            "end": 30,
+            "text": "ChatGPT",
+            "language": "vi-VN"
+          },
+          {
+            "start": 88,
+            "end": 90,
+            "text": "AI",
+            "language": "vi-VN"
+          }
+        ],
+        "entityRationale": "ChatGPT and AI explicitly retain configured Nam Minh pronunciation; English examples and metalinguistic terms use Andrew. No phonetic rewrite."
+      }
+    },
+    {
+      "id": "demo",
+      "approvedText": "Ví dụ, mình nhập câu: ‘I am agree’.\r\n\r\nRồi hỏi ChatGPT: ‘Đừng đưa đáp án ngay. Hãy gợi ý để mình tự sửa câu này.’\r\n\r\nAI có thể gợi ý: ‘Agree là động từ hay tính từ?’\r\n\r\nKhi nhận ra agree đã là một động từ, mình hiểu rằng không cần thêm am ở đây.\r\n\r\nVậy câu đúng sẽ là: ‘I agree’.\r\n\r\nSau đó, mình thử viết thêm: ‘I agree with you’.",
+      "spoken": "Ví dụ, mình nhập câu: ‘I am agree’. Rồi hỏi ChatGPT: ‘Đừng đưa đáp án ngay. Hãy gợi ý để mình tự sửa câu này.’ AI có thể gợi ý: ‘Agree là động từ hay tính từ?’ Khi nhận ra agree đã là một động từ, mình hiểu rằng không cần thêm am ở đây. Vậy câu đúng sẽ là: ‘I agree’. Sau đó, mình thử viết thêm: ‘I agree with you’.",
+      "voiceProduction": {
+        "spans": [
+          {
+            "start": 23,
+            "end": 33,
+            "text": "I am agree",
+            "language": "en-US"
+          },
+          {
+            "start": 44,
+            "end": 51,
+            "text": "ChatGPT",
+            "language": "vi-VN"
+          },
+          {
+            "start": 111,
+            "end": 113,
+            "text": "AI",
+            "language": "vi-VN"
+          },
+          {
+            "start": 129,
+            "end": 134,
+            "text": "Agree",
+            "language": "en-US"
+          },
+          {
+            "start": 172,
+            "end": 177,
+            "text": "agree",
+            "language": "en-US"
+          },
+          {
+            "start": 227,
+            "end": 229,
+            "text": "am",
+            "language": "en-US"
+          },
+          {
+            "start": 258,
+            "end": 265,
+            "text": "I agree",
+            "language": "en-US"
+          },
+          {
+            "start": 297,
+            "end": 313,
+            "text": "I agree with you",
+            "language": "en-US"
+          }
+        ],
+        "entityRationale": "ChatGPT and AI explicitly retain configured Nam Minh pronunciation; English examples and metalinguistic terms use Andrew. No phonetic rewrite."
+      }
+    },
+    {
+      "id": "benefit",
+      "approvedText": "Điều mình thích ở cách này là mình phải tự suy nghĩ trước khi nhìn đáp án.\r\n\r\nNếu trả lời sai, mình có thể nhờ AI giải thích thêm bằng ví dụ đơn giản hơn.\r\n\r\nNhư vậy, mình vừa luyện đặt câu, vừa hiểu rõ hơn vì sao mình sai.",
+      "spoken": "Điều mình thích ở cách này là mình phải tự suy nghĩ trước khi nhìn đáp án. Nếu trả lời sai, mình có thể nhờ AI giải thích thêm bằng ví dụ đơn giản hơn. Như vậy, mình vừa luyện đặt câu, vừa hiểu rõ hơn vì sao mình sai.",
+      "voiceProduction": {
+        "spans": [
+          {
+            "start": 43,
+            "end": 46,
+            "text": "suy",
+            "language": "vi-VN"
+          },
+          {
+            "start": 108,
+            "end": 110,
+            "text": "AI",
+            "language": "vi-VN"
+          }
+        ],
+        "entityRationale": "ChatGPT and AI explicitly retain configured Nam Minh pronunciation; English examples and metalinguistic terms use Andrew. No phonetic rewrite."
+      }
+    },
+    {
+      "id": "cta",
+      "approvedText": "Nếu bạn cũng biết từ vựng nhưng vẫn khó đặt câu tiếng Anh, hãy thử cách học này nhé!\r\n\r\nBình luận ‘BẮT ĐẦU’, mình chia sẻ cách thiết lập ChatGPT để luyện đặt câu từ những bước cơ bản.",
+      "spoken": "Nếu bạn cũng biết từ vựng nhưng vẫn khó đặt câu tiếng Anh, hãy thử cách học này nhé! Bình luận ‘BẮT ĐẦU’, mình chia sẻ cách thiết lập ChatGPT để luyện đặt câu từ những bước cơ bản.",
+      "voiceProduction": {
+        "spans": [
+          {
+            "start": 134,
+            "end": 141,
+            "text": "ChatGPT",
+            "language": "vi-VN"
+          }
+        ],
+        "entityRationale": "ChatGPT and AI explicitly retain configured Nam Minh pronunciation; English examples and metalinguistic terms use Andrew. No phonetic rewrite."
+      }
+    }
+  ],
+  "recovery": {
+    "oldPlanSha256": "aa774784c377120bb8474619b36afd74e66c66d9a26a840fbac9698dbe93ab98",
+    "oldPlanFileSha256": "12a72bce2eb8d58e5eb38271d38bd15f913329d66cb8ade2751fc5ae98d4717d",
+    "oldLedgerSha256": "6a388fe6d9fa365e568cc7ceb151f568ca4682658b81be935f179f147e86ed2f",
+    "oldAuthorizationSha256": "787d47176e0a9b295509f05b3d62bfd8922905b64722fefa1ac0c1b7512bd285",
+    "oldApprovalId": "VIDEO05-USD0.05-f11e7ce0972b45dea2ea9c7c1340a694",
+    "canonicalBriefSha256": "86001c116db5e69e8ed8373558d869aee39f55ac4b66e2370a8a56bb919b96ec",
+    "hookSha256": "6235294303d6c23e6be6e4a08ab1b396121797705a603deb5aab4b187916439c",
+    "hookReceiptSha256": "4a0a366dd60515fd43a903e5f5b8f070078e28c6c3ede439b223e1a4b5365c06",
+    "historicalReservedUsd": 0.00426,
+    "oldProblemMayHaveBeenCharged": true
+  }
+}

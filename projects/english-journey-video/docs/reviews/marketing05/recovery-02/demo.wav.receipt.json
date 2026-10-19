@@ -1,0 +1,25 @@
+{
+  "sampleRate": 48000,
+  "channels": 1,
+  "bitsPerSample": 16,
+  "codec": "pcm_s16le",
+  "durationSeconds": 34.075,
+  "bytes": 3271244,
+  "sha256": "400f8ce8353c68a2c398370836e9ca5f3b30e33b6ea502ba0cc54dd378fa6a09",
+  "provenance": {
+    "kind": "AZURE_REST",
+    "planSha256": "a472d1eeab69e0c0615d77bfbe7d9696486839f7d21c1e26fc2193381e7c4316",
+    "ssmlSha256": "85c9de141e2f2f4e20cf6e0c1b754fb2fc0fc6f66da4e85d4fe2fc286b0fcb52",
+    "textSha256": "d0edf51b65991e06a634091980cd3fe7138aa62442b25eccc27505b9e3a14140",
+    "voices": [
+      "vi-VN-NamMinhNeural",
+      "en-US-AndrewNeural"
+    ],
+    "format": "riff-48khz-16bit-mono-pcm",
+    "scene": "demo",
+    "request": "demo"
+  },
+  "fullDecode": "PASS",
+  "readBack": "PASS",
+  "verifiedAt": "2026-10-19T06:02:08.357Z"
+}

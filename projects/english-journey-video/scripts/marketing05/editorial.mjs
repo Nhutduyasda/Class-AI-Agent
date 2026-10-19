@@ -1,6 +1,6 @@
 export function editorialMarkers(plan,timeline){
  const text=plan.scenes.find(s=>s.id==='demo').canonicalText;
- const cues={hint:'Agree là động từ hay tính từ?',strike:'không cần thêm am',correct:'I agree’',practice:'I agree with you'};
+ const cues={request:'Rồi hỏi ChatGPT',hint:'Agree là động từ hay tính từ?',strike:'không cần thêm am',correct:'I agree’',practice:'I agree with you'};
  const markers={};
  for(const [name,needle] of Object.entries(cues)){
   const start=text.indexOf(needle);if(start<0)throw Error('MISSING_DEMO_CUE_'+name);
