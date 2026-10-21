@@ -4,7 +4,7 @@
   "reviewedRuntimeCodeSha": "3bf3c3a807e4f1a96f7dafdcd9e3ce7a4fae875c",
   "runtimeReviewScope": "P1 offline implementation only; no approved paid executor",
   "p1DocumentationHead": "72274a9d1202b63f3064727213dd6aaab9c6d7a6",
-  "preparationCodeSha": null,
+  "preparationCodeSha": "a0ae1513d3f99b9787d9d6a4ca24b1d15a083924",
   "documentationHeadSource": "Final handoff/PR immutable HEAD; not the historical runtime SHA",
   "preparationSourceDigests": [
     {
