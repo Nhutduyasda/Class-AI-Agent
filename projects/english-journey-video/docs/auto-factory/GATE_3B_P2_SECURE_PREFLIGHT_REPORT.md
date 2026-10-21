@@ -12,7 +12,7 @@ Started from PR #10 HEAD `abc68b337a0d6aff4bed6b663bdf39c7cf5bfd58`; preserved i
 - V2 canonical readiness plan: `8487406dca081a9ae91fe0bd9e1fe8602fe32f06e1b784edd3bc7b1a50a19b83`.
 - Readiness file byte SHA256: `6836db73d76ba69f18c9bcac8ea725abef1f6eb3c0bd9e5b0553886c7cb045e8`.
 
-The documentation commit is not an authorization. `P2_SECURE_PREFLIGHT.json` lists all 12 SSML hashes. The owner-reviewed executable remains null. Mock evidence code SHAs identify disposable clean fixture commits, not this repository's reviewed production executable. A later owner must approve the implementation commit and exact exported build manifest; any changed executable, dependency, script, plan or SSML invalidates that approval.
+Implementation commit: `d02d57c02798f12c0493fd07d88f6e3c78d74427`. The subsequent documentation commit only binds this identity and is not an authorization. `P2_SECURE_PREFLIGHT.json` lists all 12 SSML hashes. The owner-reviewed executable remains null. Mock evidence code SHAs identify disposable clean fixture commits, not this repository's reviewed production executable. A later owner must approve the implementation commit and exact exported build manifest; any changed executable, dependency, script, plan or SSML invalidates that approval.
 
 ## Implementation
 

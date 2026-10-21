@@ -95,5 +95,7 @@
   "productionJournalAndIndependentCheckpoint": "UNVERIFIED",
   "transport": "REAL_PROVIDER_DISABLED",
   "paidExecutionAllowed": false,
-  "realPilot": "NO_GO"
+  "realPilot": "NO_GO",
+  "implementationCommit": "d02d57c02798f12c0493fd07d88f6e3c78d74427",
+  "implementationReview": "PENDING_OWNER_NOT_AUTHORIZATION"
 }
