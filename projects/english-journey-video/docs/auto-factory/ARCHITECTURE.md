@@ -72,3 +72,7 @@ Templates v1: marketing six-stage structure with one CTA; learning micro-lesson 
 ## State machine
 
 PLANNED → TOPIC_SELECTED → SCRIPT_DRAFT → SCRIPT_VALIDATED → SCRIPT_APPROVED → COST_RESERVED → AUDIO_PENDING → AUDIO_VERIFIED → RENDERED → QA_PASSED → PENDING_OWNER_REVIEW → OWNER_ACCEPTED or OWNER_REJECTED. Terminal alternatives: BLOCKED, FAILED_TECHNICAL, AMBIGUOUS_PAID. Each transition carries expected revision and input hashes; only technical steps without paid side effects can resume idempotently. No transition to PUBLISHED exists. Any paid request reserved/submitting without a verified outcome becomes AMBIGUOUS_PAID and blocks further paid work pending owner reconciliation. Script edits invalidate plan, approval, downstream artifacts and cost authorization; they never erase spending.
+
+## Scope extension after Gate 0 (2026-10-21)
+
+Owner added `PRODUCT_SHOWCASE` as a separate on-demand content mode and asked for more engaging, configurable narration inspired by an uploaded video. The normative extension is `MULTI_MODE_AND_VOICE.md` alongside this file. Existing English, budget, credential, immutable history and publication safeguards remain mandatory. In Gate 1, extend contracts and fixtures for both modes; do not implement live marketplace access or voice cloning. No live platform API capability has been verified.

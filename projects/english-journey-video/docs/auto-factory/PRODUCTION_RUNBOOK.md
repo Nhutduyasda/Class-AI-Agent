@@ -37,3 +37,9 @@ Confirm current remaining USD 10 and liabilities; approve LLM provider or fixtur
 - `python3 scripts/marketing05/observed_test.py`: 4/4 PASS.
 - `git diff --check`: PASS. Ancestor checks for all PR 1–8 heads against Video 05: PASS. Final tracked diff restricted to four new docs; no historical tracked file changed.
 - No paid API calls, voice-catalogue request, price refresh, secret access, render, schedule, merge or publication. Historical media QA remains unverified locally.
+
+## Gate 0 scope change before Gate 1 handoff
+
+The owner introduced a second future mode: evidence-backed product showcases from Shopee/TikTok Shop references, plus configurable more dynamic spoken delivery inspired by an uploaded reference MP4. Read `MULTI_MODE_AND_VOICE.md`. Gate 1 is now two-mode OFFLINE contract/render preparation. Live marketplace fetch, login/OAuth, scraping, affiliate links, paid voice auditions and real product video production are NOT authorized by Gate 0. Keep the original 93/93 + 6/6 + 4/4 QA evidence tied to its historical commit; no new tests have been executed by this documentation extension.
+
+Before future product launch, owner must supply evidence/permissions for product data and assets; if API authorization is absent, choose manual fact-sheet + licensed media intake or block. Owner separately reviews factual claims, disclosures, emotional voice sample and full video prior to posting.

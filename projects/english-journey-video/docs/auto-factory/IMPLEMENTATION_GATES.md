@@ -56,3 +56,9 @@ Required NEW cases for Gate 1–4 (test names/contracts to implement, not existi
 ## Gate 1 handoff
 
 Start from this PR's verified HEAD; re-fetch Video 05/main and verify no unexpected divergence. Read AGENTS.md and these four docs. Implement only Gate 1 with fixtures; run new contract/state/budget/routing tests plus existing regressions and typecheck. Report exact HEAD, diff, evidence and limitations. Do not read/create secrets, call paid APIs, set schedules, create resources, merge or implement Gate 2. Stop for owner review.
+
+## Approved target-scope amendment — read before Gate 1
+
+Read `MULTI_MODE_AND_VOICE.md`. Gate 1 must now accept explicit `ENGLISH_LEARNING` and `PRODUCT_SHOWCASE` tagged modes, mode-specific offline fixtures, product field/asset provenance validators, expressive voice direction *metadata* and voice-routing regression tests. No marketplace network calls, scraped product data, real TTS auditions or paid generation in Gate 1. An offline synthetic video may be rendered per mode if tooling is available. Preserve all earlier Gate 1 acceptance requirements.
+
+Gates 2–4 retain durable authority, restricted pilot and English scheduler progression; any real voice audition requires new owner spending approval. Add Gate 5 for authorized marketplace/manual intake adapters and Gate 6 for separately approved real product-video pilot, legal/asset/claims review and independent launch decision. DO NOT describe Gate 5/6 as already implemented. Reference-video imitation is at the level of pacing, hook, subtitle styling and voice direction, never unlicensed voice cloning.

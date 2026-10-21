@@ -40,3 +40,9 @@ Initial paid pilot requires environment reviewer approval. Removing per-run revi
 | Artifacts expire or historical media unavailable | High | Existing durable media destination must be identified and retention verified before paid pilot; Actions artifacts alone are temporary delivery, not authoritative ledger. No destination currently verified. |
 | Automated scheduling absent from main | High | Gate 4 requires approved control-plane integration; never silently merge entire stack. |
 | License/runner quota | Medium | Asset license manifest, verify Remotion applicability and hosted minutes/storage limits before live operation; no cost-free claim. |
+
+## Product-mode safety and cost separation (scope extension)
+
+Product URLs, page contents, seller descriptions, affiliate metadata and uploaded assets are untrusted inputs. Enforce allowlisted platform domains, safe redirect/SSRF behavior, field-specific source snapshots, license grants for imagery and explicit disclosure/claim review. Product URLs cannot drive arbitrary HTTP fetches from credential jobs or inject executable instructions. Shopee/TikTok Shop APIs may require seller/creator/partner authorization, and no entitlement is verified. No cookie harvesting, scraping ban circumvention, fake personal tests or fabricated claims. Default product mode is OFFLINE/MANUAL_INPUT until authorized adapter verification.
+
+Voice direction profiles may use only supported provider capabilities; no unapproved voice cloning or new provider. Spend for voice auditions and product-video calls counts toward the same USD 8 production ceiling unless owner separately adjusts policy. The USD 2 protected reserve stays protected. Product processing never inherits automatic English schedule permission and remains on-demand with owner review. The USD 0.08 per-video maximum is a guardrail for all paid services, not evidence any product video can be produced under it.
