@@ -1,0 +1,23 @@
+✔ v1 exact/canonical/script/plan hashes and deterministic regeneration (31.112246ms)
+✔ v1 explicit UTF16 routing and visual-only errors (1.987537ms)
+✔ v1 all SSML parses, routes exactly and uses only supported generic tags (212.126798ms)
+✔ v1 cost is summed in integer microUSD; no hidden production re-synthesis (1.116066ms)
+✔ v1 changed text/language/SSML/cost/hash/approval is rejected (22.955923ms)
+✔ v2 exact/canonical/script/plan hashes and deterministic regeneration (4.477399ms)
+✔ v2 explicit UTF16 routing and visual-only errors (0.617815ms)
+✔ v2 all SSML parses, routes exactly and uses only supported generic tags (94.77642ms)
+✔ v2 cost is summed in integer microUSD; no hidden production re-synthesis (1.414752ms)
+✔ v2 changed text/language/SSML/cost/hash/approval is rejected (149.241317ms)
+✔ original V1 files and historical reviewed runtime stay unchanged (28.996285ms)
+✔ frame-zero/reveal and practice timings are proposals, not word timestamps (5.43968ms)
+✔ cost snapshots and all preparation sources are bound; no spending capability (17.971252ms)
+✔ invalid language, script approval and price cannot become readiness authority (18.494622ms)
+✔ owner package distinguishes runtime and documentation, authorizes neither option (8.190525ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1653.804878

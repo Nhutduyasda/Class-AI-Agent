@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "candidateVersion": "v2",
+  "scriptFileSha256": "04033938eb32dd5d2f72113863b89b87a8dac8fc4cbc3a694ba43c921abd5afc",
+  "canonicalScriptSha256": "01ff54a573fd28ba3909557bd34049cd4878f9a0e5470be3fa0a8c36faa7c440",
+  "canonicalSpeechSha256": "add63b4b00f0305ee658445820e625975bce21c9519471a44fd36946a7b7da56",
+  "canonicalization": "Recursive sorted JSON keys; arrays retain order; NFC text; UTF8 SHA256. File hash binds exact original bytes.",
+  "approved": false,
+  "approvedScriptSha256": null,
+  "languageSpans": [
+    {
+      "sceneId": "hook",
+      "offsetUnit": "UTF16",
+      "spans": [
+        {
+          "start": 0,
+          "end": 33,
+          "text": "Câu này sai vì thiếu đúng một từ!",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural"
+        }
+      ]
+    },
+    {
+      "sceneId": "example",
+      "offsetUnit": "UTF16",
+      "spans": [
+        {
+          "start": 0,
+          "end": 12,
+          "text": "I am hungry.",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural"
+        }
+      ]
+    },
+    {
+      "sceneId": "explain",
+      "offsetUnit": "UTF16",
+      "spans": [
+        {
+          "start": 0,
+          "end": 58,
+          "text": "Trong câu này, cần thêm từ được tô sáng, ngay sau chủ ngữ.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural"
+        }
+      ]
+    },
+    {
+      "sceneId": "practice",
+      "offsetUnit": "UTF16",
+      "spans": [
+        {
+          "start": 0,
+          "end": 48,
+          "text": "Giờ thử nhé: muốn nói tôi mệt, bạn chọn câu nào?",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural"
+        }
+      ]
+    },
+    {
+      "sceneId": "answer",
+      "offsetUnit": "UTF16",
+      "spans": [
+        {
+          "start": 0,
+          "end": 11,
+          "text": "I am tired.",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural"
+        }
+      ]
+    },
+    {
+      "sceneId": "close",
+      "offsetUnit": "UTF16",
+      "spans": [
+        {
+          "start": 0,
+          "end": 33,
+          "text": "Chọn B. Thử nói lại câu đúng nhé!",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural"
+        }
+      ]
+    }
+  ],
+  "audition": {
+    "schemaVersion": 1,
+    "scriptSha256": "04033938eb32dd5d2f72113863b89b87a8dac8fc4cbc3a694ba43c921abd5afc",
+    "scriptApproval": "PENDING_OWNER",
+    "approvedScriptSha256": null,
+    "reviewedCodeSha256": null,
+    "variants": [
+      {
+        "variant": "neutral",
+        "requests": [
+          {
+            "id": "hook",
+            "language": "vi-VN",
+            "voice": "vi-VN-NamMinhNeural",
+            "text": "Câu này sai vì thiếu đúng một từ!",
+            "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"0%\">Câu này sai vì thiếu đúng một từ!</prosody><break time=\"180ms\"/></voice></speak>",
+            "ssmlSha256": "5398edf0553d0b056ca414204610689ec8b66e24031ee1e16f4f948472a06163",
+            "billableCharacters": 83,
+            "estimatedMicrousd": 1245
+          },
+          {
+            "id": "example",
+            "language": "en-US",
+            "voice": "en-US-AndrewNeural",
+            "text": "I am hungry.",
+            "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody rate=\"0%\">I am hungry.</prosody><break time=\"180ms\"/></voice></speak>",
+            "ssmlSha256": "2cf368d2af7b10950b8f681beee11590c4398513320ba7f932e93ba0885addcd",
+            "billableCharacters": 62,
+            "estimatedMicrousd": 930
+          },
+          {
+            "id": "explain",
+            "language": "vi-VN",
+            "voice": "vi-VN-NamMinhNeural",
+            "text": "Trong câu này, cần thêm từ được tô sáng, ngay sau chủ ngữ.",
+            "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"0%\">Trong câu này, cần thêm từ được tô sáng, ngay sau chủ ngữ.</prosody><break time=\"180ms\"/></voice></speak>",
+            "ssmlSha256": "07f7d42c78e8f063c2c254d6a87f764430bcf6713a6bc4737d64855118ca8cdc",
+            "billableCharacters": 108,
+            "estimatedMicrousd": 1620
+          },
+          {
+            "id": "practice",
+            "language": "vi-VN",
+            "voice": "vi-VN-NamMinhNeural",
+            "text": "Giờ thử nhé: muốn nói tôi mệt, bạn chọn câu nào?",
+            "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"0%\">Giờ thử nhé: muốn nói tôi mệt, bạn chọn câu nào?</prosody><break time=\"180ms\"/></voice></speak>",
+            "ssmlSha256": "3ec3e1cb62735e6bdd9c91f1de8476dc1bb82a2289684f90486fa7adab13e9d0",
+            "billableCharacters": 98,
+            "estimatedMicrousd": 1470
+          },
+          {
+            "id": "answer",
+            "language": "en-US",
+            "voice": "en-US-AndrewNeural",
+            "text": "I am tired.",
+            "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody rate=\"0%\">I am tired.</prosody><break time=\"180ms\"/></voice></speak>",
+            "ssmlSha256": "3aec665445abac4cc707d03cbd71c85f77898e451fc3a58bf1057c7803e863f2",
+            "billableCharacters": 61,
+            "estimatedMicrousd": 915
+          },
+          {
+            "id": "close",
+            "language": "vi-VN",
+            "voice": "vi-VN-NamMinhNeural",
+            "text": "Chọn B. Thử nói lại câu đúng nhé!",
+            "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"0%\">Chọn B. Thử nói lại câu đúng nhé!</prosody><break time=\"180ms\"/></voice></speak>",
+            "ssmlSha256": "b77eee2ae1725b52c5d9195b6b808da2fe6c6faf9d3adc3c4b2dbbabd1d4606f",
+            "billableCharacters": 83,
+            "estimatedMicrousd": 1245
+          }
+        ],
+        "requestCount": 6,
+        "billableCharacters": 495,
+        "estimatedMicrousd": 7425
+      },
+      {
+        "variant": "dynamic",
+        "requests": [
+          {
+            "id": "hook",
+            "language": "vi-VN",
+            "voice": "vi-VN-NamMinhNeural",
+            "text": "Câu này sai vì thiếu đúng một từ!",
+            "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"+4%\">Câu này sai vì thiếu đúng một từ!</prosody><break time=\"260ms\"/></voice></speak>",
+            "ssmlSha256": "9fe01be70cd44f2c631715460c831b3e668926d792d35543e46e996471c946c5",
+            "billableCharacters": 84,
+            "estimatedMicrousd": 1260
+          },
+          {
+            "id": "example",
+            "language": "en-US",
+            "voice": "en-US-AndrewNeural",
+            "text": "I am hungry.",
+            "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody rate=\"-8%\">I am hungry.</prosody><break time=\"260ms\"/></voice></speak>",
+            "ssmlSha256": "d9b201265fac75a8aa05a19955c71a6aeab2838758ba34a8dd1afa2aa4318db7",
+            "billableCharacters": 63,
+            "estimatedMicrousd": 945
+          },
+          {
+            "id": "explain",
+            "language": "vi-VN",
+            "voice": "vi-VN-NamMinhNeural",
+            "text": "Trong câu này, cần thêm từ được tô sáng, ngay sau chủ ngữ.",
+            "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"0%\">Trong câu này, cần thêm từ được tô sáng, ngay sau chủ ngữ.</prosody><break time=\"260ms\"/></voice></speak>",
+            "ssmlSha256": "437b010bf8f2baca284b1656da718b918072929326939500c81574e1e3709baa",
+            "billableCharacters": 108,
+            "estimatedMicrousd": 1620
+          },
+          {
+            "id": "practice",
+            "language": "vi-VN",
+            "voice": "vi-VN-NamMinhNeural",
+            "text": "Giờ thử nhé: muốn nói tôi mệt, bạn chọn câu nào?",
+            "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"0%\">Giờ thử nhé: muốn nói tôi mệt, bạn chọn câu nào?</prosody><break time=\"260ms\"/></voice></speak>",
+            "ssmlSha256": "15c98006f8f02a23f046227db18741f9d76275abc18f6a96b8e508290f0a7c73",
+            "billableCharacters": 98,
+            "estimatedMicrousd": 1470
+          },
+          {
+            "id": "answer",
+            "language": "en-US",
+            "voice": "en-US-AndrewNeural",
+            "text": "I am tired.",
+            "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody rate=\"-8%\">I am tired.</prosody><break time=\"260ms\"/></voice></speak>",
+            "ssmlSha256": "2716eb105799d0ce6952ad68d246071f73a3ecb03b49805041efca9e8fe9b393",
+            "billableCharacters": 62,
+            "estimatedMicrousd": 930
+          },
+          {
+            "id": "close",
+            "language": "vi-VN",
+            "voice": "vi-VN-NamMinhNeural",
+            "text": "Chọn B. Thử nói lại câu đúng nhé!",
+            "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"0%\">Chọn B. Thử nói lại câu đúng nhé!</prosody><break time=\"260ms\"/></voice></speak>",
+            "ssmlSha256": "2cab328a602399cb41426e289ecb09a888c3988ab14d957dc37ff8ee1dcab5d0",
+            "billableCharacters": 83,
+            "estimatedMicrousd": 1245
+          }
+        ],
+        "requestCount": 6,
+        "billableCharacters": 498,
+        "estimatedMicrousd": 7470
+      }
+    ],
+    "requestCount": 12,
+    "billableCharacters": 993,
+    "estimatedMicrousd": 14895,
+    "pricing": {
+      "schemaVersion": 1,
+      "currency": "USD",
+      "region": "southeastasia",
+      "usdPerMillion": 15,
+      "checkedAt": "2026-10-21",
+      "source": "https://azure.microsoft.com/en-us/pricing/details/speech/",
+      "regionalRetailSnapshot": "config/bilingual-neural-price.json (2026-10-17)",
+      "basis": "Public standard neural reference, not account quote; page may show placeholders by locale",
+      "invoiceVerified": false,
+      "accountPriceVerified": false,
+      "expiresAt": "2026-10-22T00:00:00Z"
+    },
+    "proposedAllServiceCeilingMicrousd": 80000,
+    "estimateIsNotAuthorization": true,
+    "paidExecutionAllowed": false
+  },
+  "storyboard": {
+    "timingBasis": "EDITORIAL_PROPOSAL_NOT_AUDIO_MEASURED",
+    "fps": 30,
+    "targetSeconds": [
+      20,
+      35
+    ],
+    "frameZero": {
+      "text": "I hungry ❌",
+      "revealText": "I am hungry ✓",
+      "plannedRevealFrame": 15,
+      "hook": "Câu này sai vì thiếu đúng một từ!"
+    },
+    "shots": [
+      {
+        "sceneId": "hook",
+        "visual": "Frame 0: I hungry ❌. Planned frame 15: reveal I am hungry ✓; highlight am. Illustrative mistake, not a real learner quote."
+      },
+      {
+        "sceneId": "example",
+        "visual": "Correct sentence remains visible. Andrew speaks only the correct English example."
+      },
+      {
+        "sceneId": "explain",
+        "visual": "I + am + hungry. Highlight am. Explanation on screen: Trong câu này, sau I cần có am trước hungry. No general rule about every adjective."
+      },
+      {
+        "sceneId": "practice",
+        "visual": "A. I tired / B. I am tired — initially omit correctness marks. Both are visual-only. Hold for an editorial practice pause before answer."
+      },
+      {
+        "sceneId": "answer",
+        "visual": "Reveal B. I am tired ✓ only after the practice hold. No reading of the incorrect option."
+      },
+      {
+        "sceneId": "close",
+        "visual": "Keep I am tired ✓ visible; one short repeat CTA, no extra follow/comment CTA."
+      }
+    ],
+    "practiceHoldProposedMs": 1500,
+    "answerReveal": "After full practice audio plus proposed hold; English answer and correct option begin together. Actual frame set only from verified WAV samples.",
+    "captionPlan": "Canonical full sentence cues from imported WAV sample boundaries; no invented word timestamps. Visual-only wrong answers never enter spoken captions."
+  },
+  "creativeReview": [
+    "Frame zero is readable within safe area on a phone.",
+    "V2 correct answer visible at proposed frame15; no fade from black.",
+    "Only correct standalone English examples use Andrew; Vietnamese uses NamMinh.",
+    "Wrong sentences are illustrative visual-only text, never spoken or attributed to a real learner.",
+    "The grammar explanation applies to this I/am sentence, not every adjective.",
+    "Practice hold and answer reveal give enough time to choose; measure with genuine audio.",
+    "20–35s is a target, not measured speech; no speedup/trimming to force duration.",
+    "Owner hears both variants and checks pronunciation, naturalness, pacing and usefulness."
+  ],
+  "paidExecutionAllowed": false,
+  "publicationAllowed": false,
+  "planSha256": "8487406dca081a9ae91fe0bd9e1fe8602fe32f06e1b784edd3bc7b1a50a19b83"
+}

@@ -1,3 +1,5 @@
+> P1.5 update: V1 is preserved; V2 and exact file/canonical/SSML-plan hashes are in VIDEO06_SCRIPT_OPTIONS.md and briefs/auto-factory/video06-readiness-index.json. Neither script is approved. PAID_PILOT_APPROVAL_PACKAGE.json schema2 distinguishes historical reviewed runtime from preparation/documentation. Local and hosted paid execution remain NO-GO. The original V1 details below are retained as comparison context.
+
 # Video 06 — proposed A/B voice audition (not authorized)
 
 Canonical input: briefs/english-video-06-candidate.json. Exact byte SHA-256: `79926b5736c3e2f1317205ff127e3b29547f35a2885bc7332675fec524b77d86`. It is explicitly unapproved. Machine-readable SSML, per-request hashes and costs: briefs/auto-factory/video06-auditions.json. Do not pass that file to the historical paid launcher: this preparation format intentionally has no executable authorization. A later reviewed bridge must bind a new approved script and plan to the existing bilingual/Gate 2 contracts.

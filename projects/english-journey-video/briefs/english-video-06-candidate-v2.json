@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "english-video-06",
+  "approved": false,
+  "presenterId": "minh-main",
+  "visibility": "VOICE_ONLY",
+  "targetSeconds": [20, 35],
+  "segments": [
+    {"id":"hook","language":"vi-VN","text":"Câu này sai vì thiếu đúng một từ!","visual":"Frame 0: I hungry ❌. Planned frame 15: reveal I am hungry ✓; highlight am. Illustrative mistake, not a real learner quote."},
+    {"id":"example","language":"en-US","text":"I am hungry.","visual":"Correct sentence remains visible. Andrew speaks only the correct English example."},
+    {"id":"explain","language":"vi-VN","text":"Trong câu này, cần thêm từ được tô sáng, ngay sau chủ ngữ.","visual":"I + am + hungry. Highlight am. Explanation on screen: Trong câu này, sau I cần có am trước hungry. No general rule about every adjective."},
+    {"id":"practice","language":"vi-VN","text":"Giờ thử nhé: muốn nói tôi mệt, bạn chọn câu nào?","visual":"A. I tired / B. I am tired — initially omit correctness marks. Both are visual-only. Hold for an editorial practice pause before answer."},
+    {"id":"answer","language":"en-US","text":"I am tired.","visual":"Reveal B. I am tired ✓ only after the practice hold. No reading of the incorrect option."},
+    {"id":"close","language":"vi-VN","text":"Chọn B. Thử nói lại câu đúng nhé!","visual":"Keep I am tired ✓ visible; one short repeat CTA, no extra follow/comment CTA."}
+  ]
+}

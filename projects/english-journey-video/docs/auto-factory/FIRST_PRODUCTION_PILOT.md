@@ -1,3 +1,5 @@
+> P1.5 update: V1 is preserved; V2 and exact file/canonical/SSML-plan hashes are in VIDEO06_SCRIPT_OPTIONS.md and briefs/auto-factory/video06-readiness-index.json. Neither script is approved. PAID_PILOT_APPROVAL_PACKAGE.json schema2 distinguishes historical reviewed runtime from preparation/documentation. Local and hosted paid execution remain NO-GO. The original V1 details below are retained as comparison context.
+
 # First production pilot — owner approval package, NOT authorization
 
 Status: P1 preparation only; P2 paid execution NO-GO. Code implementation is on the existing Draft PR #10. Bind approval to the exact final HEAD reported in PR metadata/final handoff; do not approve a moving branch. `git rev-parse HEAD` supplies the reviewed code SHA on Windows/Linux. No script/code approval is inferred from this document or a mock review button.
