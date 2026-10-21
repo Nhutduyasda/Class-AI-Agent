@@ -1,6 +1,6 @@
 import { execFileSync } from "node:child_process";
 import { mkdir, readFile, writeFile, rename, unlink, realpath, open } from "node:fs/promises";
-import { resolve, dirname } from "node:path";
+import { resolve, dirname, isAbsolute } from "node:path";
 import { randomUUID } from "node:crypto";
 import { devNull } from "node:os";
 import { z } from "zod";
@@ -23,6 +23,7 @@ export type Snapshot = {
 
 export class GitLedger {
   readonly remote: string;
+  readonly gitExecutable: string;
   readonly work: string;
   readonly ref: string;
   readonly checkpoint: string;
@@ -31,6 +32,7 @@ export class GitLedger {
   constructor(
     options: {
       remote: string;
+      gitExecutable?: string;
       work: string;
       ref: string;
       checkpoint: string;
@@ -44,6 +46,8 @@ export class GitLedger {
       "HOSTED_TRANSPORT_DISABLED"
     );
 
+    must(!options.gitExecutable || (isAbsolute(options.gitExecutable) && !/[\r\n\x00]/.test(options.gitExecutable)), "INVALID_GIT_EXECUTABLE");
+    this.gitExecutable = options.gitExecutable ?? "git";
     this.remote = resolve(options.remote);
     this.work = resolve(options.work);
     this.ref = options.ref;
@@ -53,7 +57,7 @@ export class GitLedger {
 
   private git(args: string[], input?: string) {
     try {
-      return execFileSync("git", args, {
+      return execFileSync(this.gitExecutable, args, {
         cwd: this.work,
         input,
         encoding: "utf8",

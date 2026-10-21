@@ -1,0 +1,138 @@
+{
+  "kind": "MOCK_ONLY_LOCAL_GIT_EVIDENCE",
+  "codeSha": "a52376e98fab286356fd8124e74e7698a1f034b7",
+  "journalSha256": "d0f963e654576b99ea34d2800368a8eb4e70eeda386ff6d1db6b7063930369f5",
+  "checkpointSha256": "cf852f4a4a0fa7e3b3680412f69d2000062b4732550010adb2027031beea3b0b",
+  "first": {
+    "newMockCalls": 1,
+    "revision": 6,
+    "projection": {
+      "productions": {
+        "video06-v2-audition": {
+          "plan": {
+            "schemaVersion": 1,
+            "productionId": "video06-v2-audition",
+            "mode": "ENGLISH_LEARNING",
+            "trigger": "ON_DEMAND",
+            "scheduledFor": "2026-10-21T00:00:00Z",
+            "localDate": "2026-10-21",
+            "contentSha256": "04033938eb32dd5d2f72113863b89b87a8dac8fc4cbc3a694ba43c921abd5afc",
+            "policySha256": "0b9aa6f320b5f0e6fdf1e680d992c39c20c9260519c11dd8507ce0e380858841",
+            "codeSha": "a52376e98fab286356fd8124e74e7698a1f034b7",
+            "requests": [
+              {
+                "requestId": "neutral-hook",
+                "provider": "MOCK_AZURE_SPEECH",
+                "maxMicrousd": 1245,
+                "inputSha256": "5398edf0553d0b056ca414204610689ec8b66e24031ee1e16f4f948472a06163"
+              },
+              {
+                "requestId": "neutral-example",
+                "provider": "MOCK_AZURE_SPEECH",
+                "maxMicrousd": 930,
+                "inputSha256": "2cf368d2af7b10950b8f681beee11590c4398513320ba7f932e93ba0885addcd"
+              },
+              {
+                "requestId": "neutral-explain",
+                "provider": "MOCK_AZURE_SPEECH",
+                "maxMicrousd": 1620,
+                "inputSha256": "07f7d42c78e8f063c2c254d6a87f764430bcf6713a6bc4737d64855118ca8cdc"
+              },
+              {
+                "requestId": "neutral-practice",
+                "provider": "MOCK_AZURE_SPEECH",
+                "maxMicrousd": 1470,
+                "inputSha256": "3ec3e1cb62735e6bdd9c91f1de8476dc1bb82a2289684f90486fa7adab13e9d0"
+              },
+              {
+                "requestId": "neutral-answer",
+                "provider": "MOCK_AZURE_SPEECH",
+                "maxMicrousd": 915,
+                "inputSha256": "3aec665445abac4cc707d03cbd71c85f77898e451fc3a58bf1057c7803e863f2"
+              },
+              {
+                "requestId": "neutral-close",
+                "provider": "MOCK_AZURE_SPEECH",
+                "maxMicrousd": 1245,
+                "inputSha256": "b77eee2ae1725b52c5d9195b6b808da2fe6c6faf9d3adc3c4b2dbbabd1d4606f"
+              },
+              {
+                "requestId": "dynamic-hook",
+                "provider": "MOCK_AZURE_SPEECH",
+                "maxMicrousd": 1260,
+                "inputSha256": "9fe01be70cd44f2c631715460c831b3e668926d792d35543e46e996471c946c5"
+              },
+              {
+                "requestId": "dynamic-example",
+                "provider": "MOCK_AZURE_SPEECH",
+                "maxMicrousd": 945,
+                "inputSha256": "d9b201265fac75a8aa05a19955c71a6aeab2838758ba34a8dd1afa2aa4318db7"
+              },
+              {
+                "requestId": "dynamic-explain",
+                "provider": "MOCK_AZURE_SPEECH",
+                "maxMicrousd": 1620,
+                "inputSha256": "437b010bf8f2baca284b1656da718b918072929326939500c81574e1e3709baa"
+              },
+              {
+                "requestId": "dynamic-practice",
+                "provider": "MOCK_AZURE_SPEECH",
+                "maxMicrousd": 1470,
+                "inputSha256": "15c98006f8f02a23f046227db18741f9d76275abc18f6a96b8e508290f0a7c73"
+              },
+              {
+                "requestId": "dynamic-answer",
+                "provider": "MOCK_AZURE_SPEECH",
+                "maxMicrousd": 930,
+                "inputSha256": "2716eb105799d0ce6952ad68d246071f73a3ecb03b49805041efca9e8fe9b393"
+              },
+              {
+                "requestId": "dynamic-close",
+                "provider": "MOCK_AZURE_SPEECH",
+                "maxMicrousd": 1245,
+                "inputSha256": "2cab328a602399cb41426e289ecb09a888c3988ab14d957dc37ff8ee1dcab5d0"
+              }
+            ]
+          },
+          "state": "VERIFIED",
+          "attempts": {
+            "4b4f61834ad03015fd1b94b832da4ea6c24e0cfc893b01c9c963305569dc5782": {
+              "attemptId": "4b4f61834ad03015fd1b94b832da4ea6c24e0cfc893b01c9c963305569dc5782",
+              "requestId": "neutral-hook",
+              "provider": "MOCK_AZURE_SPEECH",
+              "maxMicrousd": 1245,
+              "state": "VERIFIED",
+              "wasDispatched": true,
+              "confirmedMicrousd": 1245,
+              "artifactSha256": "25a5ef0c231ecdc8d3ba27d87df0179da06e49cb70d2ddc41622acd441530f03",
+              "receiptSha256": "069f43bc3eb0acdee22b4545e6398c22974ee544f5e8e2a963a33532c865a2f3"
+            }
+          },
+          "authorization": {
+            "ownerApprovalId": "outside-repo-mock-only",
+            "productionId": "video06-v2-audition",
+            "planSha256": "ee066e3bf1201e02a0831859911d00bc4d1f8ab3c1f75bb60f6a5b0f42cce384",
+            "policySha256": "0b9aa6f320b5f0e6fdf1e680d992c39c20c9260519c11dd8507ce0e380858841",
+            "codeSha": "a52376e98fab286356fd8124e74e7698a1f034b7",
+            "expiresAt": "2026-10-22T00:00:00Z"
+          }
+        }
+      },
+      "dailySlots": {},
+      "openingLiabilities": 12345,
+      "outstandingReservations": 0,
+      "submittedRequests": 1,
+      "confirmedCosts": 1245,
+      "unknownCharges": 0,
+      "remainingProduction": 7986410,
+      "unresolved": false
+    }
+  },
+  "resume": {
+    "newMockCalls": 0,
+    "cached": 1
+  },
+  "physicalIndependence": "NOT_VERIFIED_SAME_LINUX_TEST_FILESYSTEM",
+  "productionLedger": "BLOCKED",
+  "paidExecutionAllowed": false
+}

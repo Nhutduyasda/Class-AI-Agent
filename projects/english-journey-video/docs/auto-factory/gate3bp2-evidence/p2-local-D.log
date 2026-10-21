@@ -1,0 +1,12 @@
+✔ abrupt child termination BEFORE_RESERVATION (19670.490002ms)
+✔ abrupt child termination AFTER_RESERVATION (18475.67772ms)
+✔ abrupt child termination AFTER_DISPATCH (15907.609309ms)
+✔ abrupt child termination AFTER_RESPONSE (17715.680394ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 73088.601151

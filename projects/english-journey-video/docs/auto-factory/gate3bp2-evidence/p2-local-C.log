@@ -1,0 +1,12 @@
+✔ missing auth, wrong code/dependency/hash/count/price/balance and paid scope fail closed (24154.210518ms)
+✔ missing journal/storage and remote rollback refuse resume; no silent initialization (24704.959565ms)
+✔ two Node processes cannot double dispatch one request (21468.821308ms)
+✔ Unicode private directories, immutable media, backup and hash-verified restore (4459.761202ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 75430.413922
