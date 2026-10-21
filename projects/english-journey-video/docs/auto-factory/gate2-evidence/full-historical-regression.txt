@@ -1,0 +1,143 @@
+✔ English clause / canonical: I saw a cat. (11.697206ms)
+✔ English clause / canonical: The cat was sleeping. (0.726022ms)
+✔ English clause / canonical: I ate an apple. (0.503889ms)
+✔ English clause / canonical: I ate an apple, (0.429962ms)
+✔ English clause / canonical: Yesterday, I went to school. (0.533477ms)
+✔ English clause / canonical: Yesterday, I go to school. (0.894079ms)
+✔ mixed example selects Vietnamese, Andrew sentence and contextual article (1.365035ms)
+✔ contextual A / AN / THE including a list (3.326169ms)
+✔ Vietnamese letters and proper names are not blindly English (1.440936ms)
+✔ named term Error Log is Andrew; ChatGPT protected by default (1.373097ms)
+✔ manual pronunciation metadata supports proper names in either language (0.795019ms)
+✔ unknown Latin text blocks live plan until classified (10.797772ms)
+✔ stale, overlapping or invalid manual metadata rejected (0.409941ms)
+✔ exact copy includes whitespace, XML-sensitive characters and Unicode (0.852127ms)
+✔ SSML does not inject rate, pitch, translation or language-only fallback (5.056307ms)
+✔ billable markup count includes phonemes; text codepoints differ (1.077733ms)
+✔ multi-voice preferred: one request, and fallback split preserves exact text (3.639949ms)
+✔ new scoped cost approval required; old video budgets never work (3.378516ms)
+✔ historical video IDs protected at live boundary (1.117844ms)
+✔ plan and SSML integrity are bound (1.531161ms)
+✔ regional voice catalogue check is GET-only and requires both exact Neural voices (1.546407ms)
+✔ live validation requires current voice and public price evidence, without synthesis (8.433015ms)
+✔ Windows paths, traversal and reserved device names (0.828411ms)
+✔ WAV validation detects malformed, truncated and wrong sample-rate payloads (22.481662ms)
+✔ offline transport verifies WAV; successful cached rerun sends zero more calls (1467.518445ms)
+✔ ambiguous attempt persists and stops ALL subsequent requests and reruns (440.244468ms)
+✔ missing cost approval cannot enter transport (1.634019ms)
+✔ live source is reread and any script change after planning is rejected (15.181979ms)
+✔ session lock prevents two simultaneous offline submissions (756.634311ms)
+✔ split fallback cannot reuse a multi-voice cost authorization (1.478999ms)
+✔ observed timing, voice spans, article events and canonical subtitles: multivoice (4.319667ms)
+✔ observed timing, voice spans, article events and canonical subtitles: split (1.411126ms)
+✔ mock or incomplete timing cannot masquerade as production (2.016733ms)
+✔ Remotion clock uses actual frame time for Andrew, captions and article animation (1.096564ms)
+✔ phrase-closing quotes do not assign English audio to the following Vietnamese voice (1.578023ms)
+✔ HTTP rejection records only status/request id; never reads body and never retries (8.618053ms)
+✔ timeout and stream failure retain safe stages without raw errors or retry (1.994994ms)
+✔ arbitrary error fields and request IDs cannot inject secrets into diagnostics (0.773539ms)
+✔ local malformed WAV failure consumes one attempt, records stage and blocks all reruns (590.220136ms)
+✔ valid WAV with destination collision records filesystem stage and preserves existing file (482.403726ms)
+✔ 15/30/90-second offline WAV fixtures fully drain Windows ffprobe stdin (1244.552037ms)
+✔ failed local audio validation retains quarantined bytes and provenance; never a production WAV (28.215975ms)
+✔ two approved samples have exactly 270 characters and expected quote (3.613167ms)
+✔ rejects changed approval and excessive chars (0.988273ms)
+✔ voice matches Nam Minh and SSML does not shift pitch or rate (0.650333ms)
+✔ detects malformed audio (0.562228ms)
+✔ no credential and untyped legacy bearer fail closed (3.02599ms)
+✔ key uses key header, rejects whitespace and mixed credentials (4.194088ms)
+✔ regional STS token requires explicit mode, matching origin and fresh expiry (2.343374ms)
+✔ Entra builds aad resource token envelope with correct scope (1.739223ms)
+✔ Entra rejects missing custom domain, wrong resource, audience, expired or malformed JWT (2.287508ms)
+✔ status never exposes secret or decoded claims (0.692481ms)
+✔ standalone preflight cannot call network and stays blocked (273.658285ms)
+✔ masked local helper refuses non-interactive environment before reading input (142.197017ms)
+✔ canonical 48k mono PCM file reports measured size, duration and SHA (7.381707ms)
+✔ RIFF parser handles odd-length metadata chunks before fmt (2.770599ms)
+✔ reject HTML/error text, truncated binary and wrong PCM format (15.153891ms)
+✔ atomic receiver decodes and reads back real WAV; refuses overwrite (689.704827ms)
+✔ malformed response never publishes final WAV or receipt (23.033786ms)
+✔ default-deny authorization and missing secret prevent transport calls (10.964066ms)
+✔ existing HOOK attempt remains blocked under original one-call limit (6.713081ms)
+✔ budget and script-hash guards run before any transport (20.361059ms)
+✔ non-finite ledger costs and missing historical scenes cannot bypass budget (17.410514ms)
+✔ REST wire contract uses fixed region, exact SSML and 48k PCM; mocked fetch only (8.691882ms)
+✔ REST 429 response causes one mocked fetch, without retry or response-body disclosure (1.078458ms)
+✔ one failed transport persists attempt and is never retried (29.23622ms)
+✔ bad WAV consumes the submitted attempt without marking audio received (25.680837ms)
+✔ successful mock saves and verifies before marking ledger, preserving HOOK history (247.260904ms)
+✔ pre-existing output or reservation prevents submission and remains untouched (10.176304ms)
+✔ credential status reveals presence only, never secret values (0.640352ms)
+✔ runtime initialization preserves existing attempts instead of replacing with checkpoint (11.157076ms)
+✔ Python recovery importer rejects corrupt WAV before touching destination or ledger (93.556299ms)
+✔ Python local fixture import preserves attempts and requires separate source proof (187.865493ms)
+✔ canonical ledger in repository remains byte identical throughout offline tests (2.833278ms)
+node:fs:484
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'out/marketing03/timeline.json'
+    at readFileSync (node:fs:484:20)
+    at load (file:///workspace/scratch/796923cb73bb/repo/projects/english-journey-video/scripts/marketing03/production.test.mjs:5:26)
+    at file:///workspace/scratch/796923cb73bb/repo/projects/english-journey-video/scripts/marketing03/production.test.mjs:6:9
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'out/marketing03/timeline.json'
+}
+
+Node.js v24.19.0
+✖ scripts/marketing03/production.test.mjs (290.182234ms)
+✔ immutable approved script, six scenes and authorized single attempts (22.08741ms)
+✔ ambiguous transport consumes attempt and blocks second request (51.205578ms)
+✖ all six real Azure receipts match WAV and copy (12.460011ms)
+✔ approved paragraphs normalize only whitespace; all six scenes retain exact copy (3.446625ms)
+✔ all English examples and terms explicitly route Andrew; entity metadata routes Nam Minh (2.63712ms)
+✔ cost review never grants live approval and cannot pass synthesis authorization (39.479477ms)
+✔ DEMO markers fail closed without observed audio tokens (1.316212ms)
+✔ recovery02 excludes HOOK and preserves exact original SSML for five scenes (8.413038ms)
+✔ recovery02 never treats either previous authorization as new permission (22.67883ms)
+✔ recovery02 requires explicit extra PROBLEM permission even with a scoped cost policy (7.771469ms)
+✔ historical snapshots preserve outcomes; local runtime ledgers retain frozen byte hashes (9.403569ms)
+✔ 30 fps metadata and real AAC video pass technical probe (3.024523ms)
+✔ missing voice fails rather than pretending delivery is complete (0.457249ms)
+✔ scene copy must remain exactly owner approved (0.786507ms)
+✔ opening timestamps and stages are included for cold-viewer review (0.945946ms)
+✔ two valid reversed comparisons are necessary to declare a winner (0.602386ms)
+✔ one audio clock keeps a phrase in its outgoing scene and preserves all words (6.36047ms)
+✔ reject a scene that changes before the outgoing audio finishes (4.488772ms)
+✔ reject subtitles that omit a spoken token (3.340725ms)
+✔ reject accidental edits to verified English (0.887462ms)
+✔ caption time is end-exclusive; interphrase silence has no invented active word (0.560593ms)
+✔ scene switch happens on the first frame of the next scene (0.441403ms)
+ℹ tests 97
+ℹ suites 0
+ℹ pass 95
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3278.527642
+
+✖ failing tests:
+
+test at scripts/marketing03/production.test.mjs:1:1
+✖ scripts/marketing03/production.test.mjs (290.182234ms)
+  'test failed'
+
+test at scripts/marketing04/production.test.mjs:17:1
+✖ all six real Azure receipts match WAV and copy (12.460011ms)
+  Error: ENOENT: no such file or directory, open 'out/marketing04/ledger.json'
+      at async open (node:internal/fs/promises:697:25)
+      at async readFile (node:internal/fs/promises:1348:14)
+      at async TestContext.<anonymous> (file:///workspace/scratch/796923cb73bb/repo/projects/english-journey-video/scripts/marketing04/production.test.mjs:18:54)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'out/marketing04/ledger.json'
+  }

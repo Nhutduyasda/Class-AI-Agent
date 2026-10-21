@@ -1,0 +1,1 @@
+{"scope":"OFFLINE_SIMULATION_ONLY","revision":9,"confirmedMockMicrousd":200,"remainingProduction":7999800}

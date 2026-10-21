@@ -1,0 +1,48 @@
+{
+  "inspectionDate": "2026-10-21",
+  "repository": "Nhutduyasda/Class-AI-Agent",
+  "readOnly": true,
+  "credentialValuesAccessed": false,
+  "connectorMetadata": {
+    "visibility": "public",
+    "defaultBranch": "main",
+    "connectionPermissions": {
+      "admin": true,
+      "push": true
+    },
+    "draftPR": 10,
+    "base": "feat/english-journey-marketing-video-05",
+    "observedHead": "f4e20463ba83f27e40520321feb146673e88f081"
+  },
+  "publicRestObservations": [
+    {
+      "path": "branches/main",
+      "status": 200,
+      "protected": false,
+      "requiredStatusChecksEnforcement": "off"
+    },
+    {
+      "path": "branches/feat%2Fenglish-journey-auto-video-factory",
+      "status": 200,
+      "protected": false,
+      "requiredStatusChecksEnforcement": "off"
+    },
+    {
+      "path": "environments",
+      "status": 200,
+      "total_count": 0,
+      "environments": []
+    },
+    {
+      "path": "rulesets",
+      "status": 200,
+      "rulesets": []
+    },
+    {
+      "path": "branches/main/protection",
+      "status": 401,
+      "detailedAuthenticatedConfiguration": "UNVERIFIED"
+    }
+  ],
+  "limitations": "Public REST metadata does not establish all private/admin controls. No configuration mutation. HOSTED_PRODUCTION_NO_GO."
+}

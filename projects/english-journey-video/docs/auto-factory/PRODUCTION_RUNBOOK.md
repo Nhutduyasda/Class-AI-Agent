@@ -51,3 +51,7 @@ GATE_1B_REPORT.md contains the Linux-verified and Windows 11 handoff commands. B
 ## Remote dashboard (option B) — design amendment only
 
 See `DASHBOARD_ROADMAP.md`. A browser UI is a control plane; it must NEVER store provider/API/GitHub keys, access private media without owner authorization, or directly execute paid jobs. Cloudflare Pages/Workers Free + Supabase Free are candidates subject to account plan, usage, auth, security and media retention verification; Workers Free is not a Remotion renderer. Gate 3A must offer an honestly labeled local/mock working UI and typed backend boundary; remote LIVE operations and any deployment must wait for owner approval and later gate readiness. Gate 2 durable ledger is not bypassed by dashboard controls. Schedule and spend remain OFF.
+
+## Gate 2 local control verification
+
+Run `node scripts/auto-factory/control/schemas.ts`, then `node --test scripts/auto-factory/control/control.test.ts` from the project directory using Node 24.19.0 and Git on PATH. Tests create temporary local bare repositories and refs/heads/test-* only; no credentials, internet provider or production Git ref is needed. Keep owner checkpoints independent of disposable writer folders; missing/corrupt/rewound authority blocks dispatch. Follow LEDGER_RECOVERY.md rather than deleting attempts/locks or resetting balances. Current hosted controls are documented in SECURE_EXECUTION.md; no production workflow or ledger is enabled.

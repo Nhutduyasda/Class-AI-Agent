@@ -1,0 +1,10 @@
+{
+  "platform": "Linux 6.18.55 x86_64",
+  "node": "v24.19.0",
+  "git": "git version 2.51.1",
+  "scope": "OFFLINE_SIMULATION_ONLY",
+  "paidApiCalls": 0,
+  "newProductionLedgerRefs": 0,
+  "windowsExecution": "UNVERIFIED",
+  "sourceBaseline": "f4e20463ba83f27e40520321feb146673e88f081"
+}

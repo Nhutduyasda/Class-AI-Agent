@@ -70,3 +70,7 @@ See GATE_1B_REPORT.md and gate1b-evidence. Actual AutoFactory Remotion render, d
 ## Remote Dashboard option B — roadmap amendment, before Gate 3A
 
 Owner selected a remotely accessible authenticated web dashboard as the daily operating UI instead of Work/AI Agent. Read `DASHBOARD_ROADMAP.md` for the normative cloud/web architecture, UI scope, honest mock-mode behavior, budgets, security and sequencing. Gate 2 remains the NEXT security/ledger implementation. Insert NEW Gate 3A for local working React dashboard + typed offline/mock API (no cloud deployment), rename the original real paid pilot to Gate 3B, then retain Gates 4–6 with cloud/auth and marketplace constraints. No new resource, paid hosting, secrets, production work or schedule authorization is conferred. Work/AI Agent remain development tools; actual remote use requires separately approved protected backend and deployment.
+
+## Gate 2 current implementation
+
+See GATE_2_REPORT.md, LEDGER_RECOVERY.md, SECURE_EXECUTION.md and GATE_3_PREREQUISITES.md. The local bare-Git append-only adapter and mock execution boundary are implemented and tested in isolated test refs. This does not configure GitHub protection or a production ledger branch. Hosted production remains NO-GO until actual controls, billing and credentials are separately approved and verified. The preserved roadmap now places the local dashboard in Gate 3A and the separately authorized paid pilot in Gate 3B. Neither starts automatically.
