@@ -1,0 +1,19 @@
+✔ actual Remotion remotion-learning bytes and input contracts (4305.736263ms)
+✔ actual Remotion fixture-phone-case bytes and input contracts (3187.144604ms)
+✔ actual Remotion fixture-fashion bytes and input contracts (3151.375968ms)
+✔ actual local presenter fixture metadata and hash checked; identity stays unverified (485.724406ms)
+✔ actual fixture-learning MP4 full decode and SHA receipt (1882.522284ms)
+✔ actual fixture-phone-case MP4 full decode and SHA receipt (1671.328328ms)
+✔ actual fixture-fashion MP4 full decode and SHA receipt (3105.575493ms)
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x55ab6608d400] moov atom not found
+/tmp/factory-bad-tTibcS/bad.mp4: Invalid data found when processing input
+✔ bad format/corrupt MP4 rejected (125.040626ms)
+✔ completed run resumes without resynthesis or changed hashes (9000.106072ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16446.758734

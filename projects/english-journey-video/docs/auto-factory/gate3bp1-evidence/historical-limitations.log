@@ -1,0 +1,50 @@
+node:fs:484
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'out/marketing03/timeline.json'
+    at readFileSync (node:fs:484:20)
+    at load (file:///workspace/scratch/796923cb73bb/repo/projects/english-journey-video/scripts/marketing03/production.test.mjs:5:26)
+    at file:///workspace/scratch/796923cb73bb/repo/projects/english-journey-video/scripts/marketing03/production.test.mjs:6:9
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'out/marketing03/timeline.json'
+}
+
+Node.js v24.19.0
+✖ scripts/marketing03/production.test.mjs (305.349273ms)
+✔ immutable approved script, six scenes and authorized single attempts (25.517662ms)
+✔ ambiguous transport consumes attempt and blocks second request (200.377739ms)
+✖ all six real Azure receipts match WAV and copy (13.998785ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 2
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 731.86584
+
+✖ failing tests:
+
+test at scripts/marketing03/production.test.mjs:1:1
+✖ scripts/marketing03/production.test.mjs (305.349273ms)
+  'test failed'
+
+test at scripts/marketing04/production.test.mjs:17:1
+✖ all six real Azure receipts match WAV and copy (13.998785ms)
+  Error: ENOENT: no such file or directory, open 'out/marketing04/ledger.json'
+      at async open (node:internal/fs/promises:697:25)
+      at async readFile (node:internal/fs/promises:1348:14)
+      at async TestContext.<anonymous> (file:///workspace/scratch/796923cb73bb/repo/projects/english-journey-video/scripts/marketing04/production.test.mjs:18:54)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'out/marketing04/ledger.json'
+  }

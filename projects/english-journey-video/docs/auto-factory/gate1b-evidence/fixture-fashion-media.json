@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "audio": {
+    "file": "tone.wav",
+    "sha256": "18a6833b0e9fd6789f13b263077e40bb4d1e57a34e0c00f31627e8f0102ae81a",
+    "sampleRate": 48000,
+    "durationSamples": 1152000,
+    "observedDurationSeconds": 24,
+    "provenance": "SYNTHETIC_OFFLINE",
+    "alignment": "UNVERIFIED"
+  },
+  "captions": [
+    {
+      "sceneId": "fact-0",
+      "text": "Áo mẫu minh họa.",
+      "startFrame": 0,
+      "endFrame": 180
+    },
+    {
+      "sceneId": "fact-1",
+      "text": "Màu xanh theo dữ liệu mẫu.",
+      "startFrame": 180,
+      "endFrame": 360
+    },
+    {
+      "sceneId": "fact-2",
+      "text": "Cỡ M theo dữ liệu mẫu.",
+      "startFrame": 360,
+      "endFrame": 540
+    },
+    {
+      "sceneId": "cta",
+      "text": "Xem thông tin mẫu trước khi lựa chọn.",
+      "startFrame": 540,
+      "endFrame": 720
+    }
+  ],
+  "presenterAssets": []
+}

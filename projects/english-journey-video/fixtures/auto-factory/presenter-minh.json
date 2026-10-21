@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "minh-main",
+  "displayName": "Minh",
+  "visualAgeRange": "24-30",
+  "role": "MAIN_HOST",
+  "style": [
+    "modern",
+    "friendly",
+    "trustworthy"
+  ],
+  "personality": [
+    "enthusiastic",
+    "positive",
+    "approachable",
+    "intelligent",
+    "inspiring"
+  ],
+  "channelUse": [
+    "ENGLISH_LEARNING",
+    "PRODUCT_SHOWCASE",
+    "EDUCATIONAL",
+    "TUTORIAL",
+    "REVIEW"
+  ],
+  "recognition": {
+    "ethnicity": "young Asian male",
+    "hair": "thick slightly wavy dark brown/black hair",
+    "eyes": "brown",
+    "smile": "natural friendly smile",
+    "appearance": "clean modern smart-casual appearance"
+  },
+  "wardrobe": [
+    "SMART_CASUAL",
+    "FORMAL_SHIRT",
+    "CASUAL_DAILY",
+    "EXPERT_DARK",
+    "OUTDOOR_ACTIVE"
+  ],
+  "expressions": [
+    "NEUTRAL",
+    "HAPPY",
+    "FRIENDLY",
+    "SURPRISED",
+    "THINKING",
+    "CONFIDENT",
+    "EXPLAINING",
+    "ENCOURAGING"
+  ],
+  "gestures": [
+    "GREETING",
+    "INTRODUCING",
+    "EXPLAINING",
+    "POINTING",
+    "THINKING",
+    "IDEA",
+    "INTERACTING",
+    "ENDING"
+  ],
+  "assetStatus": "TEXT_REFERENCE_ONLY"
+}

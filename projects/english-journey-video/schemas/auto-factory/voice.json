@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "enum": [
+        "learning-clear",
+        "review-energetic",
+        "narrative-natural",
+        "neutral-fallback"
+      ]
+    },
+    "pacing": {
+      "type": "string",
+      "enum": [
+        "MEASURED",
+        "DYNAMIC",
+        "NATURAL",
+        "NEUTRAL"
+      ]
+    },
+    "pauseMs": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000
+    },
+    "emphasis": {
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 2000
+      }
+    },
+    "segmentation": {
+      "type": "string",
+      "const": "SENTENCE"
+    },
+    "intent": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "hints": {
+      "type": "object",
+      "properties": {
+        "breaks": {
+          "type": "boolean"
+        },
+        "ratePercent": {
+          "type": "number",
+          "const": 0
+        },
+        "pitch": {
+          "type": "string",
+          "const": "default"
+        },
+        "expressiveStyle": {
+          "type": "null"
+        },
+        "cloneReference": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "breaks",
+        "ratePercent",
+        "pitch",
+        "expressiveStyle",
+        "cloneReference"
+      ],
+      "additionalProperties": false
+    },
+    "routing": {
+      "type": "string",
+      "const": "EXPLICIT_SPANS_ONLY"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "pacing",
+    "pauseMs",
+    "emphasis",
+    "segmentation",
+    "intent",
+    "hints",
+    "routing"
+  ],
+  "additionalProperties": false
+}

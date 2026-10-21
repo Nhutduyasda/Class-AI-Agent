@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "runId": "remotion-learning",
+  "planSha256": "188358aaae628530a9580e1eebd6b9f7a24242fa235700fce6947ef499c73502",
+  "videoSha256": "d5e57517d4be4a15c637afe5558eeac5bcdeadbf2b530dc422bbd91975d12280",
+  "status": "PENDING_OWNER",
+  "fixture": true,
+  "publicationAllowed": false
+}

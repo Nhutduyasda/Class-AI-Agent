@@ -1,0 +1,12 @@
+✔ actual Remotion remotion-learning bytes and input contracts (1949.618164ms)
+✔ actual Remotion fixture-phone-case bytes and input contracts (2238.467598ms)
+✔ actual Remotion fixture-fashion bytes and input contracts (2725.981317ms)
+✔ actual local presenter fixture metadata and hash checked; identity stays unverified (445.087891ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8455.315928

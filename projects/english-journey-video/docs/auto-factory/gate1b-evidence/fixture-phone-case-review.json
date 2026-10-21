@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "runId": "fixture-phone-case",
+  "planSha256": "8137c59cde29b72618790d44f1bc22db5d49aad7fc2e2f79facdfa6556711421",
+  "videoSha256": "e03076c91b43ca974f6657098ee595b373539b22d1653dbc99da4e6524bc0db8",
+  "status": "PENDING_OWNER",
+  "fixture": true,
+  "publicationAllowed": false
+}

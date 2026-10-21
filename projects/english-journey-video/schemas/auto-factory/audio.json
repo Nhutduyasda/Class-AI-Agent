@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "file": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]+\\.(wav|png|jpg|mp4)$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "sampleRate": {
+      "type": "integer",
+      "minimum": 8000,
+      "maximum": 192000
+    },
+    "durationSamples": {
+      "type": "integer",
+      "exclusiveMinimum": 0,
+      "maximum": 9007199254740991
+    },
+    "observedDurationSeconds": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "provenance": {
+      "type": "string",
+      "enum": [
+        "SYNTHETIC_OFFLINE",
+        "AUTHORIZED_LOCAL"
+      ]
+    },
+    "alignment": {
+      "type": "string",
+      "const": "UNVERIFIED"
+    }
+  },
+  "required": [
+    "file",
+    "sha256",
+    "sampleRate",
+    "durationSamples",
+    "observedDurationSeconds",
+    "provenance",
+    "alignment"
+  ],
+  "additionalProperties": false
+}

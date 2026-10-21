@@ -1,0 +1,286 @@
+{
+  "scope": "OFFLINE_SIMULATION_ONLY",
+  "remoteKind": "TEMPORARY_LOCAL_BARE_GIT",
+  "ref": "refs/heads/test-factory-ledger",
+  "commit": "5f35a3dd86ce97a027a9277202e5cbc709b6e1aa",
+  "revision": 9,
+  "policySha256": "bfaddebf8a767e366c3c1f287aad903ec47a56e15543e8e0aabe7df9994e4456",
+  "eventHead": "0bb91e81704a8cf239397a694f526f139823c329ae1d993071f704a35b472292",
+  "commitAncestry": [
+    "5f35a3dd86ce97a027a9277202e5cbc709b6e1aa",
+    "9390887f7353b7d62911819830cb7b6b87978852",
+    "0c28f1b53e33e6f596c0969d3bfb2b3cc7aed8ca",
+    "26a8135a741522e4f5f176b14db13becffdbc8e7",
+    "1167ff7c0df9ae38fdcb4aa34838eda6dad74bba",
+    "01efd0b6dbf37e2e8419a5ce525161161e342f48",
+    "738276de3e598b4b739d9a71790f2de4187e84b1",
+    "6fb26e19999fd0071a7d3a9620133565964c2417",
+    "112da46d88b4b0df5bbce6cb1f6c326f1ea6ccb7",
+    "72bf137f6278479571b82dc6c603aa389c319a7d"
+  ],
+  "checkpoint": {
+    "schemaVersion": 1,
+    "commit": "5f35a3dd86ce97a027a9277202e5cbc709b6e1aa",
+    "revision": 9,
+    "headHash": "0bb91e81704a8cf239397a694f526f139823c329ae1d993071f704a35b472292",
+    "policySha256": "bfaddebf8a767e366c3c1f287aad903ec47a56e15543e8e0aabe7df9994e4456"
+  },
+  "projection": {
+    "productions": {
+      "production-one": {
+        "plan": {
+          "schemaVersion": 1,
+          "productionId": "production-one",
+          "mode": "ENGLISH_LEARNING",
+          "trigger": "SCHEDULED",
+          "scheduledFor": "2026-10-21T06:00:00Z",
+          "localDate": "2026-10-21",
+          "contentSha256": "89e07695a2042bdcd3463cc2f865d021d6e581934f162064263a898f236d7097",
+          "policySha256": "bfaddebf8a767e366c3c1f287aad903ec47a56e15543e8e0aabe7df9994e4456",
+          "codeSha": "f4e20463ba83f27e40520321feb146673e88f081",
+          "requests": [
+            {
+              "requestId": "llm",
+              "provider": "MOCK_LLM",
+              "maxMicrousd": 1000,
+              "inputSha256": "629affae53e8d37ef970f2f25d73d75f85de278fce4b74de49d662bdfc259048"
+            },
+            {
+              "requestId": "speech",
+              "provider": "MOCK_AZURE_SPEECH",
+              "maxMicrousd": 2000,
+              "inputSha256": "a9c9852d93f8f9e215bba82da923e313f9f7e6804d2d814578a8b27b0c7e3ad2"
+            }
+          ]
+        },
+        "state": "VERIFIED",
+        "attempts": {
+          "b5f46fb63e3e4345acb449a0af3edf4c0294a548e02e693f13659ffce686c4fe": {
+            "attemptId": "b5f46fb63e3e4345acb449a0af3edf4c0294a548e02e693f13659ffce686c4fe",
+            "requestId": "llm",
+            "provider": "MOCK_LLM",
+            "maxMicrousd": 1000,
+            "state": "VERIFIED",
+            "wasDispatched": true,
+            "confirmedMicrousd": 100,
+            "artifactSha256": "3c0573f29737489b3d17c445a30af87a792ac3d97e4a078aea8aa6689b7e0da1",
+            "receiptSha256": "acbbb83327cbcef61d4396c7150366e91db79d7638c544d14bdad074e095d282"
+          },
+          "87172aba61ce0d0bae7288f2027f5f39460d08f495663ffdb141768f42c02962": {
+            "attemptId": "87172aba61ce0d0bae7288f2027f5f39460d08f495663ffdb141768f42c02962",
+            "requestId": "speech",
+            "provider": "MOCK_AZURE_SPEECH",
+            "maxMicrousd": 2000,
+            "state": "VERIFIED",
+            "wasDispatched": true,
+            "confirmedMicrousd": 100,
+            "artifactSha256": "5f604e092055df8f6d8e9e7c9a1873d0452f9b93bea59109baf445557af1db47",
+            "receiptSha256": "0ee45a3d57f2fe13f78ac27c85b5eb12a975c06c2099f4de469455aeae8c2517"
+          }
+        },
+        "authorization": {
+          "ownerApprovalId": "mock-owner-approval",
+          "productionId": "production-one",
+          "planSha256": "1b3a91bf3f55aa717148ec2bade78a214baf2f6a223ca4b9937f0ca16c0da493",
+          "policySha256": "bfaddebf8a767e366c3c1f287aad903ec47a56e15543e8e0aabe7df9994e4456",
+          "codeSha": "f4e20463ba83f27e40520321feb146673e88f081",
+          "expiresAt": "2026-10-22T00:00:00Z"
+        }
+      }
+    },
+    "dailySlots": {
+      "2026-10-21": "production-one"
+    },
+    "openingLiabilities": 0,
+    "outstandingReservations": 0,
+    "submittedRequests": 2,
+    "confirmedCosts": 200,
+    "unknownCharges": 0,
+    "remainingProduction": 7999800,
+    "unresolved": false
+  },
+  "journal": {
+    "schemaVersion": 1,
+    "policy": {
+      "schemaVersion": 1,
+      "scope": "OFFLINE_SIMULATION_ONLY",
+      "policyId": "offline-policy",
+      "ownerApprovalId": "mock-owner-approval",
+      "codeSha": "f4e20463ba83f27e40520321feb146673e88f081",
+      "expiresAt": "2026-11-21T00:00:00Z",
+      "productionMicrousd": 8000000,
+      "reserveMicrousd": 2000000,
+      "totalMicrousd": 10000000,
+      "maxVideoMicrousd": 80000,
+      "openingLiabilities": 0,
+      "openingBalanceVerified": true,
+      "englishScheduledAllowed": true,
+      "productOnDemandAllowed": true,
+      "pricing": {
+        "id": "mock-price-only",
+        "checkedAt": "2026-10-21T00:00:00Z",
+        "expiresAt": "2026-10-22T00:00:00Z",
+        "evidenceSha256": "f4fbba317503f6978a2aad254a72f543a3809fba2dbf73168ef73eec8610f3ac"
+      },
+      "blockUnresolved": true
+    },
+    "events": [
+      {
+        "schemaVersion": 1,
+        "revision": 1,
+        "eventId": "458d8c0363bdea1c7ed4ad3a818aacb35c17cbd295157c6bf9a65eef91b2e8bf",
+        "previousHash": "bfaddebf8a767e366c3c1f287aad903ec47a56e15543e8e0aabe7df9994e4456",
+        "at": "2026-10-21T06:00:00Z",
+        "payload": {
+          "kind": "PLANNED",
+          "plan": {
+            "schemaVersion": 1,
+            "productionId": "production-one",
+            "mode": "ENGLISH_LEARNING",
+            "trigger": "SCHEDULED",
+            "scheduledFor": "2026-10-21T06:00:00Z",
+            "localDate": "2026-10-21",
+            "contentSha256": "89e07695a2042bdcd3463cc2f865d021d6e581934f162064263a898f236d7097",
+            "policySha256": "bfaddebf8a767e366c3c1f287aad903ec47a56e15543e8e0aabe7df9994e4456",
+            "codeSha": "f4e20463ba83f27e40520321feb146673e88f081",
+            "requests": [
+              {
+                "requestId": "llm",
+                "provider": "MOCK_LLM",
+                "maxMicrousd": 1000,
+                "inputSha256": "629affae53e8d37ef970f2f25d73d75f85de278fce4b74de49d662bdfc259048"
+              },
+              {
+                "requestId": "speech",
+                "provider": "MOCK_AZURE_SPEECH",
+                "maxMicrousd": 2000,
+                "inputSha256": "a9c9852d93f8f9e215bba82da923e313f9f7e6804d2d814578a8b27b0c7e3ad2"
+              }
+            ]
+          }
+        },
+        "hash": "caad1e28f77dd2b3e41d58e543d9ccb62fcaa1c4a30dae730ade2abf7d2bb3b6"
+      },
+      {
+        "schemaVersion": 1,
+        "revision": 2,
+        "eventId": "b9a291b8e4ed988680edbf1df6bdf311fda0511a430519128a4a19777216f2fd",
+        "previousHash": "caad1e28f77dd2b3e41d58e543d9ccb62fcaa1c4a30dae730ade2abf7d2bb3b6",
+        "at": "2026-10-21T06:00:00Z",
+        "payload": {
+          "kind": "VALIDATED",
+          "productionId": "production-one"
+        },
+        "hash": "3257e34020104899477e2acbaa66a892288b54426bcb69eb8d2616513b817654"
+      },
+      {
+        "schemaVersion": 1,
+        "revision": 3,
+        "eventId": "d1605391f51bed0d74697ce7d36e5f434785660acad9adf2692b6b7aecc8d200",
+        "previousHash": "3257e34020104899477e2acbaa66a892288b54426bcb69eb8d2616513b817654",
+        "at": "2026-10-21T06:00:00Z",
+        "payload": {
+          "kind": "AUTHORIZED",
+          "productionId": "production-one",
+          "authorization": {
+            "ownerApprovalId": "mock-owner-approval",
+            "productionId": "production-one",
+            "planSha256": "1b3a91bf3f55aa717148ec2bade78a214baf2f6a223ca4b9937f0ca16c0da493",
+            "policySha256": "bfaddebf8a767e366c3c1f287aad903ec47a56e15543e8e0aabe7df9994e4456",
+            "codeSha": "f4e20463ba83f27e40520321feb146673e88f081",
+            "expiresAt": "2026-10-22T00:00:00Z"
+          }
+        },
+        "hash": "683ad3db899cecb6de9c9c2137d65bbb18fb80647a260581bbce6fbb0bedeb46"
+      },
+      {
+        "schemaVersion": 1,
+        "revision": 4,
+        "eventId": "d547f53ad9890f3cf329853618e2171e74d90c38902691507229199aaffdbead",
+        "previousHash": "683ad3db899cecb6de9c9c2137d65bbb18fb80647a260581bbce6fbb0bedeb46",
+        "at": "2026-10-21T06:00:00Z",
+        "payload": {
+          "kind": "RESERVED",
+          "productionId": "production-one",
+          "requestId": "llm",
+          "attemptId": "b5f46fb63e3e4345acb449a0af3edf4c0294a548e02e693f13659ffce686c4fe"
+        },
+        "hash": "5d3ff98c4c87222e65c8b54f228e1477ede27e8574caf2f34f8e93ff20d27565"
+      },
+      {
+        "schemaVersion": 1,
+        "revision": 5,
+        "eventId": "ca004ad902b5adb122e90bb2e2e1f4b1ccb71f79c5a2ca250123bf33c4ab9b5c",
+        "previousHash": "5d3ff98c4c87222e65c8b54f228e1477ede27e8574caf2f34f8e93ff20d27565",
+        "at": "2026-10-21T06:00:00Z",
+        "payload": {
+          "kind": "DISPATCHING",
+          "productionId": "production-one",
+          "attemptId": "b5f46fb63e3e4345acb449a0af3edf4c0294a548e02e693f13659ffce686c4fe"
+        },
+        "hash": "8b9fc5883d4df0d1e1d732c74e6fe6a21e64444fbbed57226705efc467419c47"
+      },
+      {
+        "schemaVersion": 1,
+        "revision": 6,
+        "eventId": "08f93d37962bb89a494f172cc34cfb52da4412cb7dbe1ca9228186e81f8b00b8",
+        "previousHash": "8b9fc5883d4df0d1e1d732c74e6fe6a21e64444fbbed57226705efc467419c47",
+        "at": "2026-10-21T06:00:00Z",
+        "payload": {
+          "kind": "VERIFIED",
+          "productionId": "production-one",
+          "attemptId": "b5f46fb63e3e4345acb449a0af3edf4c0294a548e02e693f13659ffce686c4fe",
+          "artifactSha256": "3c0573f29737489b3d17c445a30af87a792ac3d97e4a078aea8aa6689b7e0da1",
+          "receiptSha256": "acbbb83327cbcef61d4396c7150366e91db79d7638c544d14bdad074e095d282",
+          "confirmedMicrousd": 100,
+          "billingKind": "MOCK_BILLING_ONLY"
+        },
+        "hash": "a12a42cbc646b27d75e80a92abe9d1eb1eff1c7c335ecf05f56a6207746e4729"
+      },
+      {
+        "schemaVersion": 1,
+        "revision": 7,
+        "eventId": "969a87f24bb01e276a6c34e7d172e5426651b28f679cda2efa9d491abd23f28c",
+        "previousHash": "a12a42cbc646b27d75e80a92abe9d1eb1eff1c7c335ecf05f56a6207746e4729",
+        "at": "2026-10-21T06:00:00Z",
+        "payload": {
+          "kind": "RESERVED",
+          "productionId": "production-one",
+          "requestId": "speech",
+          "attemptId": "87172aba61ce0d0bae7288f2027f5f39460d08f495663ffdb141768f42c02962"
+        },
+        "hash": "f942b439941b6cad62bdc7a8b4b8ed5aaecc84f78cb9d3d1939feec4198950a8"
+      },
+      {
+        "schemaVersion": 1,
+        "revision": 8,
+        "eventId": "c82dd025e9191852e8647385fc4a8dfda5c06dbaaba5a0fde46ad7b10d7be505",
+        "previousHash": "f942b439941b6cad62bdc7a8b4b8ed5aaecc84f78cb9d3d1939feec4198950a8",
+        "at": "2026-10-21T06:00:00Z",
+        "payload": {
+          "kind": "DISPATCHING",
+          "productionId": "production-one",
+          "attemptId": "87172aba61ce0d0bae7288f2027f5f39460d08f495663ffdb141768f42c02962"
+        },
+        "hash": "8d63c88bbcb2949ec21cc21bb238122d98ea78cedc7c5f871608e89c5285e885"
+      },
+      {
+        "schemaVersion": 1,
+        "revision": 9,
+        "eventId": "1e48d392017d8a1b0fcbe3e7f9592a83119c9ab349da5167a4d0597885b4e85f",
+        "previousHash": "8d63c88bbcb2949ec21cc21bb238122d98ea78cedc7c5f871608e89c5285e885",
+        "at": "2026-10-21T06:00:00Z",
+        "payload": {
+          "kind": "VERIFIED",
+          "productionId": "production-one",
+          "attemptId": "87172aba61ce0d0bae7288f2027f5f39460d08f495663ffdb141768f42c02962",
+          "artifactSha256": "5f604e092055df8f6d8e9e7c9a1873d0452f9b93bea59109baf445557af1db47",
+          "receiptSha256": "0ee45a3d57f2fe13f78ac27c85b5eb12a975c06c2099f4de469455aeae8c2517",
+          "confirmedMicrousd": 100,
+          "billingKind": "MOCK_BILLING_ONLY"
+        },
+        "hash": "0bb91e81704a8cf239397a694f526f139823c329ae1d993071f704a35b472292"
+      }
+    ]
+  }
+}

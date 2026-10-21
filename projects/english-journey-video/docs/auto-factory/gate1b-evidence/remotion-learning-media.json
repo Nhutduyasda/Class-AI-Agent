@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "audio": {
+    "file": "tone.wav",
+    "sha256": "fe5a1fa736c4b578cc4b27f1475bf18b2654b1732cc9ad8eea1f919c92c9eb83",
+    "sampleRate": 48000,
+    "durationSamples": 1056000,
+    "observedDurationSeconds": 22,
+    "provenance": "SYNTHETIC_OFFLINE",
+    "alignment": "UNVERIFIED"
+  },
+  "captions": [
+    {
+      "sceneId": "hook",
+      "text": "Chọn a hay an trước apple?",
+      "startFrame": 0,
+      "endFrame": 120
+    },
+    {
+      "sceneId": "example",
+      "text": "I ate an apple.",
+      "startFrame": 120,
+      "endFrame": 360
+    },
+    {
+      "sceneId": "explain",
+      "text": "Dùng an trước âm nguyên âm.",
+      "startFrame": 360,
+      "endFrame": 480
+    },
+    {
+      "sceneId": "cta",
+      "text": "Thử đặt một câu với an nhé.",
+      "startFrame": 480,
+      "endFrame": 660
+    }
+  ],
+  "presenterAssets": []
+}

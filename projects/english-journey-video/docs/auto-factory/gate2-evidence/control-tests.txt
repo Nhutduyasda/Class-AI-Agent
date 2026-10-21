@@ -1,0 +1,44 @@
+✔ real bare remote acknowledgement, event chain, no double charge across services (4989.049456ms)
+✔ new runner with retained independent anchor reuses verified receipt (2725.409875ms)
+✔ two actual OS processes race through independent git writers (4147.662176ms)
+✔ restart after BEFORE_RESERVATION never repeats uncertain paid simulation (1633.900187ms)
+✔ restart after AFTER_RESERVATION never repeats uncertain paid simulation (1266.349741ms)
+✔ restart after BEFORE_DISPATCH never repeats uncertain paid simulation (1272.477523ms)
+✔ restart after AFTER_DISPATCH never repeats uncertain paid simulation (1677.984577ms)
+✔ restart after AFTER_RESPONSE never repeats uncertain paid simulation (2284.36079ms)
+✔ TIMEOUT consumes one attempt; global latch blocks later production (2676.626623ms)
+✔ MISSING_RECEIPT consumes one attempt; global latch blocks later production (2228.800358ms)
+✔ preflight failure proves no dispatch, retains immutable attempt and slot (1282.886184ms)
+✔ duplicate production ID is idempotent only for same immutable content (953.337353ms)
+✔ unknown opening balance blocks reservations before mock (1017.698715ms)
+✔ aggregate allocation boundary includes opening liabilities and protects USD 2 reserve (2357.822177ms)
+✔ per video ceiling includes combined LLM and speech; equality allowed (1.906347ms)
+✔ stale pricing blocks dispatch even with valid earlier authorization (842.22035ms)
+✔ invalid authorization is durable-plan-bound and cannot authorize calls (647.349608ms)
+✔ interrupted offline preparation resumes without recreating plan (804.873538ms)
+✔ different modes never inherit English schedule permissions (2.686396ms)
+✔ no real provider, arbitrary endpoint/ref or marketplace metadata crosses boundary (686.590826ms)
+✔ fake canary credential never appears in errors, journal, receipt or diagnostics (1354.757169ms)
+✔ hash-chain mutation detected before any use (743.537822ms)
+✔ ref rewind and missing branch detected from retained anchor (754.116414ms)
+✔ missing checkpoint and unavailable storage fail closed (208.181398ms)
+✔ owner reconciliation records a charge without reusing the attempt (1706.086104ms)
+✔ lost reservation acknowledgement never invokes provider after accepted commit (1299.219348ms)
+✔ corrupted real remote Git journal is rejected (960.94413ms)
+✔ valid rehashed history rewrite retaining Git ancestry fails anchored prefix (1415.952715ms)
+✔ read-only high-water checkpoint detects rollback after observation (1378.56419ms)
+✔ reconciliation cannot erase dispatch charge as proven unsent (2233.882806ms)
+✔ offline provider simulation has no network path (1667.138185ms)
+✔ confirmed overrun is recorded honestly and blocks further video spending (2600.23634ms)
+✔ product cannot reuse learning production authorization (1637.163837ms)
+✔ untrusted transport disguised as a mock is rejected before execution (1124.663045ms)
+✔ untrusted provider getters are never evaluated before adapter identity check (958.670376ms)
+✔ scheduled reservation cannot backdate or burst-catch-up on another local day (9.872039ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 54283.281938

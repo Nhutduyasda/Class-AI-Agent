@@ -1,0 +1,10 @@
+✔ CLI refuses real transport without reading or leaking fake credential environment (580.161106ms)
+✔ backup cannot replace its own integrity authority or escape paths via symlinks (62.876605ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1310.766075

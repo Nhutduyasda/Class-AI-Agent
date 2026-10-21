@@ -1,0 +1,19 @@
+✔ actual Remotion remotion-learning bytes and input contracts (5330.80787ms)
+✔ actual Remotion fixture-phone-case bytes and input contracts (3162.637041ms)
+✔ actual Remotion fixture-fashion bytes and input contracts (4358.143293ms)
+✔ actual local presenter fixture metadata and hash checked; identity stays unverified (843.670939ms)
+✔ actual fixture-learning MP4 full decode and SHA receipt (3195.095981ms)
+✔ actual fixture-phone-case MP4 full decode and SHA receipt (2745.367382ms)
+✔ actual fixture-fashion MP4 full decode and SHA receipt (2107.947015ms)
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x56165b63c400] moov atom not found
+/tmp/factory-bad-NPuLTI/bad.mp4: Invalid data found when processing input
+✔ bad format/corrupt MP4 rejected (138.983333ms)
+✔ completed run resumes without resynthesis or changed hashes (11771.0102ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 20816.359993

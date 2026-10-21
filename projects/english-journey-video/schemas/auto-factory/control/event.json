@@ -1,0 +1,438 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "revision": {
+      "type": "integer",
+      "exclusiveMinimum": 0,
+      "maximum": 9007199254740991
+    },
+    "eventId": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "previousHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+    },
+    "payload": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "PLANNED"
+            },
+            "plan": {
+              "type": "object",
+              "properties": {
+                "schemaVersion": {
+                  "type": "number",
+                  "const": 1
+                },
+                "productionId": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9-]{0,63}$"
+                },
+                "mode": {
+                  "type": "string",
+                  "enum": [
+                    "ENGLISH_LEARNING",
+                    "PRODUCT_SHOWCASE"
+                  ]
+                },
+                "trigger": {
+                  "type": "string",
+                  "enum": [
+                    "SCHEDULED",
+                    "ON_DEMAND"
+                  ]
+                },
+                "scheduledFor": {
+                  "type": "string",
+                  "format": "date-time",
+                  "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+                },
+                "localDate": {
+                  "type": "string",
+                  "format": "date",
+                  "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+                },
+                "contentSha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "policySha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "codeSha": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{40}$"
+                },
+                "requests": {
+                  "minItems": 1,
+                  "maxItems": 16,
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "requestId": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{0,63}$"
+                      },
+                      "provider": {
+                        "type": "string",
+                        "enum": [
+                          "MOCK_LLM",
+                          "MOCK_AZURE_SPEECH",
+                          "REAL_PROVIDER_DISABLED"
+                        ]
+                      },
+                      "maxMicrousd": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 1000000000
+                      },
+                      "inputSha256": {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{64}$"
+                      }
+                    },
+                    "required": [
+                      "requestId",
+                      "provider",
+                      "maxMicrousd",
+                      "inputSha256"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "schemaVersion",
+                "productionId",
+                "mode",
+                "trigger",
+                "scheduledFor",
+                "localDate",
+                "contentSha256",
+                "policySha256",
+                "codeSha",
+                "requests"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "kind",
+            "plan"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "VALIDATED"
+            },
+            "productionId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{0,63}$"
+            }
+          },
+          "required": [
+            "kind",
+            "productionId"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "AUTHORIZED"
+            },
+            "productionId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{0,63}$"
+            },
+            "authorization": {
+              "type": "object",
+              "properties": {
+                "ownerApprovalId": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9-]{0,63}$"
+                },
+                "productionId": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9-]{0,63}$"
+                },
+                "planSha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "policySha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "codeSha": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{40}$"
+                },
+                "expiresAt": {
+                  "type": "string",
+                  "format": "date-time",
+                  "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+                }
+              },
+              "required": [
+                "ownerApprovalId",
+                "productionId",
+                "planSha256",
+                "policySha256",
+                "codeSha",
+                "expiresAt"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "kind",
+            "productionId",
+            "authorization"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "RESERVED"
+            },
+            "productionId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{0,63}$"
+            },
+            "requestId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{0,63}$"
+            },
+            "attemptId": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "kind",
+            "productionId",
+            "requestId",
+            "attemptId"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "DISPATCHING"
+            },
+            "productionId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{0,63}$"
+            },
+            "attemptId": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "kind",
+            "productionId",
+            "attemptId"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "VERIFIED"
+            },
+            "productionId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{0,63}$"
+            },
+            "attemptId": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "artifactSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "receiptSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "confirmedMicrousd": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000
+            },
+            "billingKind": {
+              "type": "string",
+              "const": "MOCK_BILLING_ONLY"
+            }
+          },
+          "required": [
+            "kind",
+            "productionId",
+            "attemptId",
+            "artifactSha256",
+            "receiptSha256",
+            "confirmedMicrousd",
+            "billingKind"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "FAILED_BEFORE_DISPATCH",
+                "AMBIGUOUS_PAID",
+                "RECONCILIATION_REQUIRED"
+              ]
+            },
+            "productionId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{0,63}$"
+            },
+            "attemptId": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "reason": {
+              "type": "string",
+              "enum": [
+                "PREFLIGHT_NOT_SENT",
+                "UNKNOWN_RESPONSE",
+                "CRASH_RECOVERY",
+                "MISSING_RECEIPT"
+              ]
+            }
+          },
+          "required": [
+            "kind",
+            "productionId",
+            "attemptId",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "BLOCKED"
+            },
+            "productionId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{0,63}$"
+            },
+            "reason": {
+              "type": "string",
+              "const": "OWNER_STOP"
+            }
+          },
+          "required": [
+            "kind",
+            "productionId",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "RECONCILED"
+            },
+            "productionId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{0,63}$"
+            },
+            "attemptId": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "ownerApprovalId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{0,63}$"
+            },
+            "evidenceSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "confirmedMicrousd": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "CONFIRMED_CHARGE",
+                "PROVEN_NOT_SENT"
+              ]
+            }
+          },
+          "required": [
+            "kind",
+            "productionId",
+            "attemptId",
+            "ownerApprovalId",
+            "evidenceSha256",
+            "confirmedMicrousd",
+            "decision"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "revision",
+    "eventId",
+    "previousHash",
+    "at",
+    "payload",
+    "hash"
+  ],
+  "additionalProperties": false
+}

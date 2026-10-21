@@ -1,0 +1,17 @@
+test_full_offline_mixer_sample_clock_loudness_and_no_public_export (__main__.AudioTests.test_full_offline_mixer_sample_clock_loudness_and_no_public_export) ... ok
+test_non_silent_edges_refuse_join_without_clipping_syllables (__main__.AudioTests.test_non_silent_edges_refuse_join_without_clipping_syllables) ... ok
+test_production_mixer_refuses_mock_without_explicit_fixture_mode (__main__.AudioTests.test_production_mixer_refuses_mock_without_explicit_fixture_mode) ... ok
+test_roundtrip_and_loudness_no_pitch_rate_or_sample_count_change (__main__.AudioTests.test_roundtrip_and_loudness_no_pitch_rate_or_sample_count_change) ... ok
+test_silence_safe_join_preserves_samples_and_speech_middle (__main__.AudioTests.test_silence_safe_join_preserves_samples_and_speech_middle) ... ok
+test_wav_clipping_is_refused (__main__.AudioTests.test_wav_clipping_is_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 4.260s
+
+OK
+{"status": "OFFLINE_DSP_ONLY_NOT_VOICE", "durationSeconds": 1.6, "metrics": {"input_i": "-16.02", "input_tp": "-14.51", "input_lra": "0.00", "input_thresh": "-26.02", "output_i": "-16.01", "output_tp": "-14.49", "output_lra": "0.00", "output_thresh": "-26.01", "normalization_type": "linear", "target_offset": "0.01"}}
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.102s
+
+OK

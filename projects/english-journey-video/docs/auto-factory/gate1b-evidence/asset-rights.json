@@ -1,0 +1,19 @@
+{
+  "visuals": "Original text cards and solid backgrounds; no authentic Minh/product media",
+  "audio": "Original synthetic sine tone generated locally with FFmpeg; no narration or reference recording",
+  "fonts": [
+    {
+      "family": "Nimbus Sans (system Arial alias candidate)",
+      "notice": "/usr/share/doc/fonts-urw-base35/copyright",
+      "license": "AGPL-3 with Font exception",
+      "binaryDistributed": false
+    },
+    {
+      "family": "DejaVu Sans (system sans-serif fallback candidate)",
+      "notice": "/usr/share/doc/fonts-dejavu-core/copyright",
+      "license": "Bitstream Vera / DejaVu changes public domain",
+      "binaryDistributed": false
+    }
+  ],
+  "usage": "Offline engineering fixture only. No publication or production media-rights approval is granted."
+}

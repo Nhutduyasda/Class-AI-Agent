@@ -1,0 +1,70 @@
+{
+  "learning-clear": {
+    "schemaVersion": 1,
+    "id": "learning-clear",
+    "pacing": "MEASURED",
+    "pauseMs": 250,
+    "emphasis": [],
+    "segmentation": "SENTENCE",
+    "intent": "clear teaching",
+    "hints": {
+      "breaks": true,
+      "ratePercent": 0,
+      "pitch": "default",
+      "expressiveStyle": null,
+      "cloneReference": null
+    },
+    "routing": "EXPLICIT_SPANS_ONLY"
+  },
+  "review-energetic": {
+    "schemaVersion": 1,
+    "id": "review-energetic",
+    "pacing": "DYNAMIC",
+    "pauseMs": 150,
+    "emphasis": [],
+    "segmentation": "SENTENCE",
+    "intent": "credible product explanation",
+    "hints": {
+      "breaks": true,
+      "ratePercent": 0,
+      "pitch": "default",
+      "expressiveStyle": null,
+      "cloneReference": null
+    },
+    "routing": "EXPLICIT_SPANS_ONLY"
+  },
+  "narrative-natural": {
+    "schemaVersion": 1,
+    "id": "narrative-natural",
+    "pacing": "NATURAL",
+    "pauseMs": 220,
+    "emphasis": [],
+    "segmentation": "SENTENCE",
+    "intent": "natural storytelling",
+    "hints": {
+      "breaks": true,
+      "ratePercent": 0,
+      "pitch": "default",
+      "expressiveStyle": null,
+      "cloneReference": null
+    },
+    "routing": "EXPLICIT_SPANS_ONLY"
+  },
+  "neutral-fallback": {
+    "schemaVersion": 1,
+    "id": "neutral-fallback",
+    "pacing": "NEUTRAL",
+    "pauseMs": 200,
+    "emphasis": [],
+    "segmentation": "SENTENCE",
+    "intent": "neutral narration",
+    "hints": {
+      "breaks": true,
+      "ratePercent": 0,
+      "pitch": "default",
+      "expressiveStyle": null,
+      "cloneReference": null
+    },
+    "routing": "EXPLICIT_SPANS_ONLY"
+  }
+}

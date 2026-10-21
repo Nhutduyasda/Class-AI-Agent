@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "kind": "SIMULATION_ONLY",
+  "revision": 1,
+  "openingLiability": 0,
+  "reservations": [
+    {
+      "runId": "fixture-learning",
+      "localDate": "2026-10-21",
+      "inputSha256": "48a6c82b43d79fa67d68421d23548036093a1ec1ae1d38aab0acc8380bc4afea",
+      "microusd": 0
+    }
+  ]
+}

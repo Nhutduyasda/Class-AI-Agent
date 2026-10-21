@@ -1,0 +1,15 @@
+✔ restart at BEFORE_RESERVATION (26446.350834ms)
+✔ restart at AFTER_RESERVATION (22098.597801ms)
+✔ restart at BEFORE_DISPATCH (19342.432894ms)
+✔ restart at AFTER_DISPATCH (24564.757179ms)
+✔ restart at AFTER_RESPONSE (18995.893319ms)
+✔ ambiguous mock TIMEOUT blocks all later requests (32056.336892ms)
+✔ ambiguous mock MISSING_RECEIPT blocks all later requests (22266.414618ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 166690.31015

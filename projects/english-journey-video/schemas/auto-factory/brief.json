@@ -1,0 +1,660 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "type": "number",
+          "const": 1
+        },
+        "runId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]{0,63}$"
+        },
+        "execution": {
+          "type": "string",
+          "const": "OFFLINE"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "localDate": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+        },
+        "presenterId": {
+          "type": "string",
+          "const": "minh-main"
+        },
+        "visibility": {
+          "type": "string",
+          "enum": [
+            "NO_PRESENTER",
+            "VOICE_ONLY",
+            "HANDS_ONLY",
+            "FACE_ONLY",
+            "HALF_BODY",
+            "FULL_BODY"
+          ]
+        },
+        "wardrobe": {
+          "type": "string",
+          "enum": [
+            "SMART_CASUAL",
+            "FORMAL_SHIRT",
+            "CASUAL_DAILY",
+            "EXPERT_DARK",
+            "OUTDOOR_ACTIVE"
+          ]
+        },
+        "expression": {
+          "type": "string",
+          "enum": [
+            "NEUTRAL",
+            "HAPPY",
+            "FRIENDLY",
+            "SURPRISED",
+            "THINKING",
+            "CONFIDENT",
+            "EXPLAINING",
+            "ENCOURAGING"
+          ]
+        },
+        "gesture": {
+          "type": "string",
+          "enum": [
+            "GREETING",
+            "INTRODUCING",
+            "EXPLAINING",
+            "POINTING",
+            "THINKING",
+            "IDEA",
+            "INTERACTING",
+            "ENDING"
+          ]
+        },
+        "voiceProfile": {
+          "type": "string",
+          "enum": [
+            "learning-clear",
+            "review-energetic",
+            "narrative-natural",
+            "neutral-fallback"
+          ]
+        },
+        "scenes": {
+          "minItems": 3,
+          "maxItems": 8,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]{0,63}$"
+              },
+              "spoken": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              "spans": {
+                "minItems": 1,
+                "maxItems": 30,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "start": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "end": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "text": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2000
+                    },
+                    "language": {
+                      "type": "string",
+                      "enum": [
+                        "vi-VN",
+                        "en-US"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "start",
+                    "end",
+                    "text",
+                    "language"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "frames": {
+                "type": "integer",
+                "minimum": 30,
+                "maximum": 300
+              },
+              "claimIds": {
+                "maxItems": 8,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9-]{0,63}$"
+                }
+              }
+            },
+            "required": [
+              "id",
+              "spoken",
+              "spans",
+              "frames",
+              "claimIds"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "mode": {
+          "type": "string",
+          "const": "ENGLISH_LEARNING"
+        },
+        "learning": {
+          "type": "object",
+          "properties": {
+            "point": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "level": {
+              "type": "string",
+              "const": "A1"
+            },
+            "examples": {
+              "minItems": 1,
+              "maxItems": 1,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              }
+            }
+          },
+          "required": [
+            "point",
+            "level",
+            "examples"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "runId",
+        "execution",
+        "createdAt",
+        "localDate",
+        "presenterId",
+        "visibility",
+        "wardrobe",
+        "expression",
+        "gesture",
+        "voiceProfile",
+        "scenes",
+        "mode",
+        "learning"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "type": "number",
+          "const": 1
+        },
+        "runId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]{0,63}$"
+        },
+        "execution": {
+          "type": "string",
+          "const": "OFFLINE"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "localDate": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+        },
+        "presenterId": {
+          "type": "string",
+          "const": "minh-main"
+        },
+        "visibility": {
+          "type": "string",
+          "enum": [
+            "NO_PRESENTER",
+            "VOICE_ONLY",
+            "HANDS_ONLY",
+            "FACE_ONLY",
+            "HALF_BODY",
+            "FULL_BODY"
+          ]
+        },
+        "wardrobe": {
+          "type": "string",
+          "enum": [
+            "SMART_CASUAL",
+            "FORMAL_SHIRT",
+            "CASUAL_DAILY",
+            "EXPERT_DARK",
+            "OUTDOOR_ACTIVE"
+          ]
+        },
+        "expression": {
+          "type": "string",
+          "enum": [
+            "NEUTRAL",
+            "HAPPY",
+            "FRIENDLY",
+            "SURPRISED",
+            "THINKING",
+            "CONFIDENT",
+            "EXPLAINING",
+            "ENCOURAGING"
+          ]
+        },
+        "gesture": {
+          "type": "string",
+          "enum": [
+            "GREETING",
+            "INTRODUCING",
+            "EXPLAINING",
+            "POINTING",
+            "THINKING",
+            "IDEA",
+            "INTERACTING",
+            "ENDING"
+          ]
+        },
+        "voiceProfile": {
+          "type": "string",
+          "enum": [
+            "learning-clear",
+            "review-energetic",
+            "narrative-natural",
+            "neutral-fallback"
+          ]
+        },
+        "scenes": {
+          "minItems": 3,
+          "maxItems": 8,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]{0,63}$"
+              },
+              "spoken": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              "spans": {
+                "minItems": 1,
+                "maxItems": 30,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "start": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "end": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "text": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2000
+                    },
+                    "language": {
+                      "type": "string",
+                      "enum": [
+                        "vi-VN",
+                        "en-US"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "start",
+                    "end",
+                    "text",
+                    "language"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "frames": {
+                "type": "integer",
+                "minimum": 30,
+                "maximum": 300
+              },
+              "claimIds": {
+                "maxItems": 8,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9-]{0,63}$"
+                }
+              }
+            },
+            "required": [
+              "id",
+              "spoken",
+              "spans",
+              "frames",
+              "claimIds"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "mode": {
+          "type": "string",
+          "const": "PRODUCT_SHOWCASE"
+        },
+        "product": {
+          "type": "object",
+          "properties": {
+            "platform": {
+              "type": "string",
+              "enum": [
+                "SHOPEE",
+                "TIKTOK_SHOP"
+              ]
+            },
+            "inputUrl": {
+              "type": "string",
+              "maxLength": 2048,
+              "format": "uri"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "category": {
+              "type": "string",
+              "enum": [
+                "PHONE_CASE",
+                "DESK",
+                "ART",
+                "FASHION"
+              ]
+            },
+            "sourceAccessType": {
+              "type": "string",
+              "const": "MANUAL_PROVIDED_EVIDENCE"
+            },
+            "capturedAt": {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+            },
+            "evidence": {
+              "minItems": 1,
+              "maxItems": 30,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]{0,63}$"
+                  },
+                  "source": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  "capturedAt": {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+                  },
+                  "expiresAt": {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+                  },
+                  "field": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  "value": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  }
+                },
+                "required": [
+                  "id",
+                  "source",
+                  "capturedAt",
+                  "expiresAt",
+                  "field",
+                  "value"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "attributes": {
+              "minItems": 1,
+              "maxItems": 20,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  "value": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  "evidenceId": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]{0,63}$"
+                  }
+                },
+                "required": [
+                  "name",
+                  "value",
+                  "evidenceId"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "claims": {
+              "minItems": 1,
+              "maxItems": 20,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]{0,63}$"
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  "evidenceIds": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^[a-z][a-z0-9-]{0,63}$"
+                    }
+                  },
+                  "type": {
+                    "type": "string",
+                    "const": "PRODUCT_FACT"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text",
+                  "evidenceIds",
+                  "type"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "assets": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]{0,63}$"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "source": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  "rightsBasis": {
+                    "type": "string",
+                    "const": "ORIGINAL_SYNTHETIC_FIXTURE"
+                  },
+                  "authorizedUseScope": {
+                    "type": "string",
+                    "const": "OFFLINE_DEMO_ONLY"
+                  },
+                  "reviewed": {
+                    "type": "boolean",
+                    "const": true
+                  }
+                },
+                "required": [
+                  "id",
+                  "sha256",
+                  "source",
+                  "rightsBasis",
+                  "authorizedUseScope",
+                  "reviewed"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "price": {
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "currency": {
+                  "type": "string",
+                  "const": "VND"
+                },
+                "evidenceId": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9-]{0,63}$"
+                }
+              },
+              "required": [
+                "amount",
+                "currency",
+                "evidenceId"
+              ],
+              "additionalProperties": false
+            },
+            "cta": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "disclosure": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "claimedHandsOn": {
+              "type": "boolean",
+              "const": false
+            }
+          },
+          "required": [
+            "platform",
+            "inputUrl",
+            "name",
+            "category",
+            "sourceAccessType",
+            "capturedAt",
+            "evidence",
+            "attributes",
+            "claims",
+            "assets",
+            "cta",
+            "claimedHandsOn"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "runId",
+        "execution",
+        "createdAt",
+        "localDate",
+        "presenterId",
+        "visibility",
+        "wardrobe",
+        "expression",
+        "gesture",
+        "voiceProfile",
+        "scenes",
+        "mode",
+        "product"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}

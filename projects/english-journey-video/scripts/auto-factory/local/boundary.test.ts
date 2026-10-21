@@ -1,0 +1,10 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtemp,mkdir,readFile,writeFile,rm,symlink,access} from 'node:fs/promises';
+import {join} from 'node:path';
+import {tmpdir} from 'node:os';
+import {execFileSync} from 'node:child_process';
+import {safeEnv,sha} from './trust.ts';
+import {layout,exclusive,backupFiles,restore} from './retention.ts';
+test('CLI refuses real transport without reading or leaking fake credential environment',()=>{const canary='FAKE_ONLY_CANARY_NEVER_REAL';let error:any;try{execFileSync(process.execPath,[join(import.meta.dirname,'cli.ts'),'azure'],{encoding:'utf8',env:{...safeEnv(),SPEECH_KEY:canary},stdio:'pipe'});}catch(e){error=e;}assert.ok(error);const output=String(error.stdout)+String(error.stderr);assert.ok(output.includes('REAL_PROVIDER_DISABLED'));assert.ok(!output.includes(canary));});
+test('backup cannot replace its own integrity authority or escape paths via symlinks',async()=>{const root=await mkdtemp(join(tmpdir(),'retention-Đ-'));try{const media=join(root,'media'),backup=join(root,'backup'),target=join(root,'restore'),outside=join(root,'outside');for(const p of [media,backup,target,outside])await mkdir(p);await layout(media);await exclusive(media,'ssml/example.ssml','<speak>MOCK</speak>');const m=await backupFiles(media,backup,['ssml/example.ssml']),authority=sha(JSON.stringify(m)+'\n');await writeFile(join(backup,'ledger-evidence/backup-manifest.json'),JSON.stringify({...m,files:[{path:'ssml/example.ssml',sha256:'0'.repeat(64)}]})+'\n');await assert.rejects(restore(backup,target,authority),/BACKUP_MANIFEST_AUTHORITY/);await symlink(outside,join(media,'ssml','escape'),process.platform==='win32'?'junction':'dir');await assert.rejects(exclusive(media,'ssml/escape/blocked.json','x'),/RETENTION_PATH/);await assert.rejects(access(join(outside,'blocked.json')));}finally{await rm(root,{recursive:true,force:true});}});
