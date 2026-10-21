@@ -1,0 +1,7 @@
+{
+ "schemaVersion":1,"currency":"USD","region":"southeastasia","usdPerMillion":15,
+ "checkedAt":"2026-10-21","source":"https://azure.microsoft.com/en-us/pricing/details/speech/",
+ "regionalRetailSnapshot":"config/bilingual-neural-price.json (2026-10-17)",
+ "basis":"Public standard neural reference, not account quote; page may show placeholders by locale",
+ "invoiceVerified":false,"accountPriceVerified":false,"expiresAt":"2026-10-22T00:00:00Z"
+}

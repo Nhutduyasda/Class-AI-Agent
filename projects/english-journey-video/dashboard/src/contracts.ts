@@ -67,6 +67,7 @@ export type Job = {
   visibility: z.infer<typeof Visibility>;
   mediaAvailable: boolean;
   reviewNotes: string | null;
+  pilot?: import("zod").z.infer<typeof import("./pilot").PilotState>;
 };
 export type Overview = {
   schemaVersion: 1;

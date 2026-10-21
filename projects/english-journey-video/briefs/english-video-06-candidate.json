@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "english-video-06",
+  "approved": false,
+  "presenterId": "minh-main",
+  "visibility": "VOICE_ONLY",
+  "targetSeconds": [20, 35],
+  "segments": [
+    {"id":"hook","language":"vi-VN","text":"Muốn nói mình đói? Đừng dịch từng chữ từ tiếng Việt.","visual":"Hook visible at frame zero: Nói mình đói thế nào? Original typography only."},
+    {"id":"example","language":"en-US","text":"I am hungry.","visual":"Large standalone English example, highlight am visually without word timing."},
+    {"id":"explain","language":"vi-VN","text":"Câu này nghĩa là: Tôi đói. Khi nói mình đang đói, nhớ có động từ trước tính từ.","visual":"I + am + hungry. Vietnamese explanation; no fake chat UI."},
+    {"id":"practice","language":"vi-VN","text":"Thử nhé: muốn nói tôi mệt, bạn chọn câu nào?","visual":"Practice: A. I tired. / B. I am tired. Hold for response."},
+    {"id":"answer","language":"en-US","text":"I am tired.","visual":"Answer B. Keep whole sentence visible."},
+    {"id":"close","language":"vi-VN","text":"Đáp án B. Giờ thử nói lại cả câu nhé.","visual":"Repeat the correct sentence. No extra CTA."}
+  ]
+}

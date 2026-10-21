@@ -1,0 +1,23 @@
+{
+  "format": "PASS",
+  "fullDecode": "PASS",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 670,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "duration": 22.336,
+  "audio": "SYNTHETIC_NOT_SPEECH",
+  "wordAlignment": "NOT_AVAILABLE",
+  "technicalProduction": "NOT_EVALUATED",
+  "human": "HUMAN_REVIEW_PENDING",
+  "publicationAllowed": false,
+  "renderer": "REMOTION_RENDER_PASS",
+  "kind": "SYNTHETIC_OFFLINE",
+  "artifactSha256": "f94e3eb47c589fd3c03b090734e93ad09cefe8c17b6dc1924ea985d89ee081e5",
+  "importSha256": "44acd713c2d72faa811da00bc5676e768eb453e2ca157079268ddba7bf3d09da",
+  "scriptSha256": "79926b5736c3e2f1317205ff127e3b29547f35a2885bc7332675fec524b77d86",
+  "audioSha256": "e47a6945a22872b3d94e89aa1334c24cab1040b96a8dd25d3d9b2e48f6090cc8",
+  "subjectiveVoice": "BLOCKED_PENDING_AUTHENTIC_LISTENING"
+}

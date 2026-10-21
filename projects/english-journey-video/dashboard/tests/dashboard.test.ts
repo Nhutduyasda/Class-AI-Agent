@@ -104,3 +104,23 @@ test("missing fixture is explicit rather than fabricated", async () => {
   await assert.rejects(s.mediaFor("missing"));
   assert.equal(s.overview().jobs.length, 0);
 });
+
+test("Video06 preparation remains pending and cannot review a missing artifact", async () => {
+  const s = new DemoStore();
+  await s.init();
+  const p = s.overview().jobs.find((j) => j.pilot);
+  assert.ok(p?.pilot);
+  assert.equal(p.pilot.approvedScriptSha256, null);
+  assert.equal(p.pilot.audioStatus, "BLOCKED");
+  assert.equal(p.pilot.paidExecutionAllowed, false);
+  assert.throws(
+    () =>
+      s.review(p.id, {
+        revision: 0,
+        artifactSha256: "0".repeat(64),
+        decision: "APPROVE",
+        notes: "No media",
+      }),
+    /ARTIFACT_HASH/,
+  );
+});

@@ -906,6 +906,29 @@ function Review({
             <li key={i}>{s}</li>
           ))}
         </ol>
+        {job.pilot && (
+          <div className="notice" aria-label="Production pilot readiness">
+            <strong>
+              {job.pilot.productionJobId} · {job.pilot.scriptVersion}
+            </strong>
+            <p>
+              Script:{" "}
+              {job.pilot.approvedScriptSha256
+                ? "Approved"
+                : "PENDING OWNER APPROVAL"}
+            </p>
+            <p>SHA-256: {job.pilot.scriptSha256}</p>
+            <p>
+              Media: {job.pilot.mediaProvenance} · Audio:{" "}
+              {job.pilot.audioStatus} · Render: {job.pilot.renderStatus}
+            </p>
+            <p>{job.pilot.voiceConfiguration.join(" / ")}</p>
+            <p>
+              QA: {job.pilot.qaStatus} · Owner: {job.pilot.ownerDecision}
+            </p>
+            <p>Paid execution DISABLED · Publication DISABLED</p>
+          </div>
+        )}
         <div className="qa-chips">
           {job.qa ? (
             <>

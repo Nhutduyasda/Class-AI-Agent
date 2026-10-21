@@ -1,0 +1,23 @@
+✔ offline import full decode, sample clock, exact captions, reuse and boundaries (2718.832721ms)
+✔ untrusted approval (1082.903571ms)
+✔ script hash (905.124443ms)
+✔ wrong language (1332.972665ms)
+✔ wrong voice (1201.708591ms)
+✔ canonical text (1124.093385ms)
+✔ wrong hash (845.359461ms)
+✔ missing audio (1022.015145ms)
+✔ corrupt, truncated and length-lied WAV fail closed (952.596397ms)
+✔ no face mode or false script approval; duplicate ids rejected (4.853328ms)
+✔ A/B costs use existing conservative billing; no live authority (2.702067ms)
+✔ dashboard state cannot elevate paid or stale approval (9.45813ms)
+✔ preparation modules contain no credential reads or network/dispatch imports (10.838325ms)
+✔ actual pilot Remotion encode, full decode, frame proofs and synthetic-only QA (2298.608989ms)
+✔ AAC preserves tone/silence sample windows at all imported segment boundaries (not speech alignment) (383.997287ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 12307.014289

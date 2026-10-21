@@ -18,6 +18,7 @@ import {
   validateUrl,
   visibilityPolicy,
 } from "../../src/auto-factory/engine.ts";
+import { PilotState } from "../src/pilot.ts";
 const fixtureRoot = resolve(
   import.meta.dirname,
   "../../out/auto-factory-remotion",
@@ -33,6 +34,45 @@ export class DemoStore {
   private media = new Map<string, string>();
   private sequence = 0;
   async init() {
+    const bytes = await readFile(
+      resolve(
+        import.meta.dirname,
+        "../../briefs/english-video-06-candidate.json",
+      ),
+    );
+    const candidate = JSON.parse(bytes.toString());
+    const id = "pilot-video06-preparation";
+    this.jobs.set(id, {
+      id,
+      revision: 0,
+      mode: "ENGLISH_LEARNING",
+      title: "Video 06 — Chờ duyệt kịch bản",
+      status: "VALIDATED",
+      fixture: false,
+      artifactSha256: null,
+      script: candidate.segments.map((s: { text: string }) => s.text),
+      captions: [],
+      qa: null,
+      estimateMicrousd: 80000,
+      voiceProfile: "learning-clear",
+      visibility: "VOICE_ONLY",
+      mediaAvailable: false,
+      reviewNotes: null,
+      pilot: PilotState.parse({
+        productionJobId: id,
+        scriptVersion: "candidate-v1",
+        scriptSha256: sha(bytes),
+        approvedScriptSha256: null,
+        mediaProvenance: "MISSING",
+        voiceConfiguration: ["vi-VN-NamMinhNeural", "en-US-AndrewNeural"],
+        audioStatus: "BLOCKED",
+        renderStatus: "NOT_STARTED",
+        qaStatus: "NOT_EVALUATED",
+        ownerDecision: "PENDING",
+        paidExecutionAllowed: false,
+        publicationAllowed: false,
+      }),
+    });
     for (const dir of dirs) {
       try {
         const base = join(fixtureRoot, dir);

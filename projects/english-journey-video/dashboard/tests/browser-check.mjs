@@ -106,6 +106,10 @@ if (!(await evalJs('document.body.innerText.includes("UNRENDERED DRAFT")')))
       ),
   );
 await nav("Preview & Review");
+await evalJs('document.querySelector(".select-job select").value="pilot-video06-preparation";document.querySelector(".select-job select").dispatchEvent(new Event("change",{bubbles:true}))');
+await delay(250);
+if (!(await evalJs('document.body.innerText.includes("PENDING OWNER APPROVAL") && document.body.innerText.includes("Audio: BLOCKED") && !document.querySelector(".review-actions") && !document.querySelector("video")'))) throw Error("PILOT_STATE_INVALID");
+await shot("desktop-pilot-state.png");
 const fixture = await evalJs(
   'Array.from(document.querySelectorAll(".select-job option")).some(x=>x.textContent.includes("fixture"))',
 );
@@ -156,6 +160,7 @@ console.log(
     productDraft: true,
     fixtureVideo: true,
     reviewAction: true,
+    pilotState: true,
     desktop: "1440x900",
     mobile: "390x844",
     horizontalOverflow: false,

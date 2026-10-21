@@ -1,0 +1,11 @@
+{
+  "checkedDate": "2026-10-21",
+  "featureHead": "24c02b9ebdb3244de3da931127d3255714309772",
+  "featureProtected": false,
+  "mainProtected": false,
+  "publicRulesets": [],
+  "environments": "UNVERIFIED_ENDPOINT_REJECTED_BY_CONNECTOR_ALLOWLIST",
+  "credentialsAccessed": false,
+  "configurationChanged": false,
+  "paidExecution": "NO_GO"
+}
