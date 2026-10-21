@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "reviewedCodeSha": "3bf3c3a807e4f1a96f7dafdcd9e3ce7a4fae875c",
+  "candidateScriptSha256": "79926b5736c3e2f1317205ff127e3b29547f35a2885bc7332675fec524b77d86",
+  "approvedScriptSha256": null,
+  "scriptApproval": "PENDING_OWNER",
+  "voicePlan": "briefs/auto-factory/video06-auditions.json",
+  "azureRequests": 12,
+  "billableEnvelopeCharacters": 1073,
+  "referenceEstimateMicrousd": 16095,
+  "proposedAzureCeilingMicrousd": 30000,
+  "proposedAllServiceCeilingMicrousd": 80000,
+  "remainingBalance": "UNVERIFIED",
+  "pricingExpiresAt": "2026-10-22T00:00:00Z",
+  "privateRetentionDestination": "UNVERIFIED",
+  "trustedExecutor": "UNVERIFIED",
+  "hostedLedger": "UNVERIFIED",
+  "ambiguousRequestPolicy": "STOP_NO_RETRY_RECONCILE_IMMUTABLE_LEDGER",
+  "paidExecutionAllowed": false,
+  "decision": "NO_GO"
+}
