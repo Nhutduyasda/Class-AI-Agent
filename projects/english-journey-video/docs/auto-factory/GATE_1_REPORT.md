@@ -1,4 +1,6 @@
-# Gate 1 — PARTIAL
+# Gate 1 — original snapshot (PARTIAL)
+
+Current targeted integration results are in [GATE_1B_REPORT.md](GATE_1B_REPORT.md). The findings below remain the historical Gate 1 snapshot; Gate 1B verifies the real Remotion runtime separately.
 
 Verified starting branch HEAD: `5f6e8c6730c02e5365565ffe64d5bee4b3ce21ae`. Existing Draft PR #10 remains based on Video 05. Implementation only adds new namespaces; no historical Video 01–05 source/media/ledger, package manifest, lockfile, workflow or main changed.
 

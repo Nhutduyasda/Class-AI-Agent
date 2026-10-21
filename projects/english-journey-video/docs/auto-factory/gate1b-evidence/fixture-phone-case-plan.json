@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "execution": "OFFLINE",
+  "provenance": "SYNTHETIC_SILENT_CAPTION_FIXTURE",
+  "runId": "fixture-phone-case",
+  "mode": "PRODUCT_SHOWCASE",
+  "briefSha256": "4affa72151df6cd2c8769601fd4b53546cafbd6732120fc6318c0bd91e7288b5",
+  "presenterSha256": "b7687d65dae3066bff7e8e342e504ab32a427226f192e4e11d3b86ff5632ef36",
+  "voiceDirection": {
+    "schemaVersion": 1,
+    "id": "review-energetic",
+    "pacing": "DYNAMIC",
+    "pauseMs": 150,
+    "emphasis": [],
+    "segmentation": "SENTENCE",
+    "intent": "credible product explanation",
+    "hints": {
+      "breaks": true,
+      "ratePercent": 0,
+      "pitch": "default",
+      "expressiveStyle": null,
+      "cloneReference": null
+    },
+    "routing": "EXPLICIT_SPANS_ONLY"
+  },
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "durationInFrames": 720,
+  "shots": [
+    {
+      "id": "fact-0",
+      "spoken": "Ốp mẫu minh họa.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 16,
+          "text": "Ốp mẫu minh họa.",
+          "language": "vi-VN"
+        }
+      ],
+      "frames": 180,
+      "claimIds": [
+        "c-0"
+      ],
+      "startFrame": 0,
+      "endFrame": 180,
+      "visibility": "HANDS_ONLY",
+      "presenterId": "minh-main",
+      "wardrobe": "SMART_CASUAL",
+      "expression": "EXPLAINING",
+      "gesture": "EXPLAINING",
+      "routing": [
+        {
+          "start": 0,
+          "end": 16,
+          "text": "Ốp mẫu minh họa.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural"
+        }
+      ]
+    },
+    {
+      "id": "fact-1",
+      "spoken": "Màu xanh theo dữ liệu mẫu.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 26,
+          "text": "Màu xanh theo dữ liệu mẫu.",
+          "language": "vi-VN"
+        }
+      ],
+      "frames": 180,
+      "claimIds": [
+        "c-1"
+      ],
+      "startFrame": 180,
+      "endFrame": 360,
+      "visibility": "HANDS_ONLY",
+      "presenterId": "minh-main",
+      "wardrobe": "SMART_CASUAL",
+      "expression": "EXPLAINING",
+      "gesture": "EXPLAINING",
+      "routing": [
+        {
+          "start": 0,
+          "end": 26,
+          "text": "Màu xanh theo dữ liệu mẫu.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural"
+        }
+      ]
+    },
+    {
+      "id": "fact-2",
+      "spoken": "Dành cho máy mẫu theo dữ liệu mẫu.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 34,
+          "text": "Dành cho máy mẫu theo dữ liệu mẫu.",
+          "language": "vi-VN"
+        }
+      ],
+      "frames": 180,
+      "claimIds": [
+        "c-2"
+      ],
+      "startFrame": 360,
+      "endFrame": 540,
+      "visibility": "HANDS_ONLY",
+      "presenterId": "minh-main",
+      "wardrobe": "SMART_CASUAL",
+      "expression": "EXPLAINING",
+      "gesture": "EXPLAINING",
+      "routing": [
+        {
+          "start": 0,
+          "end": 34,
+          "text": "Dành cho máy mẫu theo dữ liệu mẫu.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural"
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "spoken": "Xem thông tin mẫu trước khi lựa chọn.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 37,
+          "text": "Xem thông tin mẫu trước khi lựa chọn.",
+          "language": "vi-VN"
+        }
+      ],
+      "frames": 180,
+      "claimIds": [],
+      "startFrame": 540,
+      "endFrame": 720,
+      "visibility": "HANDS_ONLY",
+      "presenterId": "minh-main",
+      "wardrobe": "SMART_CASUAL",
+      "expression": "EXPLAINING",
+      "gesture": "EXPLAINING",
+      "routing": [
+        {
+          "start": 0,
+          "end": 37,
+          "text": "Xem thông tin mẫu trước khi lựa chọn.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural"
+        }
+      ]
+    }
+  ],
+  "paidRequests": 0
+}

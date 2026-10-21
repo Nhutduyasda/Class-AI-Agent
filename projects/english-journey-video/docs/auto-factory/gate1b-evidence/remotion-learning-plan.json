@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "execution": "OFFLINE",
+  "provenance": "SYNTHETIC_SILENT_CAPTION_FIXTURE",
+  "runId": "remotion-learning",
+  "mode": "ENGLISH_LEARNING",
+  "briefSha256": "c57c4c3c904ef3ad16450a528fd46d9f595b93ef97c5d87c93183f1a9d951db9",
+  "presenterSha256": "b7687d65dae3066bff7e8e342e504ab32a427226f192e4e11d3b86ff5632ef36",
+  "voiceDirection": {
+    "schemaVersion": 1,
+    "id": "learning-clear",
+    "pacing": "MEASURED",
+    "pauseMs": 250,
+    "emphasis": [],
+    "segmentation": "SENTENCE",
+    "intent": "clear teaching",
+    "hints": {
+      "breaks": true,
+      "ratePercent": 0,
+      "pitch": "default",
+      "expressiveStyle": null,
+      "cloneReference": null
+    },
+    "routing": "EXPLICIT_SPANS_ONLY"
+  },
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "durationInFrames": 660,
+  "shots": [
+    {
+      "id": "hook",
+      "spoken": "Chọn a hay an trước apple?",
+      "spans": [
+        {
+          "start": 0,
+          "end": 26,
+          "text": "Chọn a hay an trước apple?",
+          "language": "vi-VN"
+        }
+      ],
+      "frames": 120,
+      "claimIds": [],
+      "startFrame": 0,
+      "endFrame": 120,
+      "visibility": "VOICE_ONLY",
+      "presenterId": "minh-main",
+      "wardrobe": "SMART_CASUAL",
+      "expression": "EXPLAINING",
+      "gesture": "EXPLAINING",
+      "routing": [
+        {
+          "start": 0,
+          "end": 26,
+          "text": "Chọn a hay an trước apple?",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural"
+        }
+      ]
+    },
+    {
+      "id": "example",
+      "spoken": "I ate an apple.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 15,
+          "text": "I ate an apple.",
+          "language": "en-US"
+        }
+      ],
+      "frames": 240,
+      "claimIds": [],
+      "startFrame": 120,
+      "endFrame": 360,
+      "visibility": "VOICE_ONLY",
+      "presenterId": "minh-main",
+      "wardrobe": "SMART_CASUAL",
+      "expression": "EXPLAINING",
+      "gesture": "EXPLAINING",
+      "routing": [
+        {
+          "start": 0,
+          "end": 15,
+          "text": "I ate an apple.",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural"
+        }
+      ]
+    },
+    {
+      "id": "explain",
+      "spoken": "Dùng an trước âm nguyên âm.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 27,
+          "text": "Dùng an trước âm nguyên âm.",
+          "language": "vi-VN"
+        }
+      ],
+      "frames": 120,
+      "claimIds": [],
+      "startFrame": 360,
+      "endFrame": 480,
+      "visibility": "VOICE_ONLY",
+      "presenterId": "minh-main",
+      "wardrobe": "SMART_CASUAL",
+      "expression": "EXPLAINING",
+      "gesture": "EXPLAINING",
+      "routing": [
+        {
+          "start": 0,
+          "end": 27,
+          "text": "Dùng an trước âm nguyên âm.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural"
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "spoken": "Thử đặt một câu với an nhé.",
+      "spans": [
+        {
+          "start": 0,
+          "end": 27,
+          "text": "Thử đặt một câu với an nhé.",
+          "language": "vi-VN"
+        }
+      ],
+      "frames": 180,
+      "claimIds": [],
+      "startFrame": 480,
+      "endFrame": 660,
+      "visibility": "VOICE_ONLY",
+      "presenterId": "minh-main",
+      "wardrobe": "SMART_CASUAL",
+      "expression": "EXPLAINING",
+      "gesture": "EXPLAINING",
+      "routing": [
+        {
+          "start": 0,
+          "end": 27,
+          "text": "Thử đặt một câu với an nhé.",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural"
+        }
+      ]
+    }
+  ],
+  "paidRequests": 0
+}

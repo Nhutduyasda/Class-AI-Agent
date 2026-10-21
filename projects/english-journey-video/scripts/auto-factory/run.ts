@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile, rename } from "node:fs/promises";
+import { mkdir, readFile, writeFile, rename, open, unlink, copyFile } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import { resolve, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -20,6 +20,8 @@ import {
 } from "../../src/auto-factory/engine.ts";
 
 import { z } from "zod";
+import { randomUUID } from "node:crypto";
+import { qaStates } from "../../src/auto-factory/playback.ts";
 import { fixtures, NOW } from "./fixtures.ts";
 
 export function verifyMp4(file: string, frames: number) {
@@ -29,7 +31,7 @@ export function verifyMp4(file: string, frames: number) {
 
   const v = probe.streams.find((s: any) => s.codec_type === "video"), a = probe.streams.find((s: any) => s.codec_type === "audio");
 
-  if (!v || v.width !== 1080 || v.height !== 1920 || v.codec_name !== "h264" || v.r_frame_rate !== "30/1" || Number(v.nb_frames) !== frames || a?.codec_name !== "aac" || Math.abs(Number(probe.format.duration) - frames / 30) > .05)
+  if (!v || v.width !== 1080 || v.height !== 1920 || v.codec_name !== "h264" || v.r_frame_rate !== "30/1" || !Number.isFinite(Number(probe.format.duration)) || Number(v.nb_frames) !== frames || a?.codec_name !== "aac" || Math.abs(Number(probe.format.duration) - frames / 30) > .05)
     throw Error("MP4_INVALID");
 
   execFileSync("ffmpeg", ["-v", "error", "-xerror", "-i", file, "-f", "null", "-"], {
@@ -37,6 +39,7 @@ export function verifyMp4(file: string, frames: number) {
   });
 
   return {
+    ...qaStates(false),
     format: "PASS",
     fullDecode: "PASS",
     width: v.width,
@@ -54,11 +57,41 @@ export function verifyMp4(file: string, frames: number) {
 }
 
 async function atomic(path: string, data: unknown) {
-  await writeFile(path + ".pending", JSON.stringify(data, null, 2) + "\n");
-  await rename(path + ".pending", path);
+  const pending = path + ".pending-" + randomUUID();
+
+  try {
+    await writeFile(pending, JSON.stringify(data, null, 2) + "\n", {
+      flag: "wx"
+    });
+
+    await rename(pending, path);
+  } finally {
+    await unlink(pending).catch((e: any) => {
+      if (e.code !== "ENOENT")
+        throw e;
+    });
+  }
 }
 
-export async function run(root: string) {
+export async function run(root: string, fontPath?: string) {
+  root = resolve(root);
+
+  await mkdir(root, {
+    recursive: true
+  });
+
+  const lockPath = join(root, "run.lock");
+  const lock = await open(lockPath, "wx");
+
+  try {
+    return await runUnlocked(root, fontPath);
+  } finally {
+    await lock.close();
+    await unlink(lockPath);
+  }
+}
+
+async function runUnlocked(root: string, fontPath?: string) {
   await mkdir(root, {
     recursive: true
   });
@@ -127,7 +160,7 @@ export async function run(root: string) {
       await move("RENDER_PLANNED");
     }
 
-    if (state.state !== "RENDER_PLANNED") {
+    if (state.state !== "PLANNED" && state.state !== "VALIDATED") {
       const saved = JSON.parse(await readFile(join(dir, "plan.json"), "utf8"));
 
       if (hash(saved) !== hash(p))
@@ -137,13 +170,16 @@ export async function run(root: string) {
     const mp4 = join(dir, "fixture.mp4");
 
     if (state.state === "RENDER_PLANNED") {
+      const candidates = fontPath ? [resolve(fontPath)] : process.platform === "win32" ? ["C:/Windows/Fonts/arial.ttf"] : process.platform === "darwin" ? ["/System/Library/Fonts/Supplemental/Arial.ttf"] : ["/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"];
+      await copyFile(candidates[0], join(dir, "fixture-font.ttf"));
+
       const filter = [
-        `drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='OFFLINE FIXTURE - NO SPEECH':x=90:y=150:fontsize=37:fontcolor=0xffcf65`,
-        `drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='${p.mode}':x=90:y=240:fontsize=40:fontcolor=white`,
+        `drawtext=fontfile=fixture-font.ttf:text='OFFLINE FIXTURE - NO SPEECH':x=90:y=150:fontsize=37:fontcolor=0xffcf65`,
+        `drawtext=fontfile=fixture-font.ttf:text='${p.mode}':x=90:y=240:fontsize=40:fontcolor=white`,
         `drawbox=x=100:y=510:w=800:h=650:color=0x203851:t=fill`,
-        `drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='${input.visibility}':x=150:y=670:fontsize=56:fontcolor=0x65dacb`,
-        `drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Minh - identity placeholder':x=150:y=790:fontsize=36:fontcolor=white`,
-        `drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='No filmed person or product':x=150:y=880:fontsize=34:fontcolor=white`
+        `drawtext=fontfile=fixture-font.ttf:text='${input.visibility}':x=150:y=670:fontsize=56:fontcolor=0x65dacb`,
+        `drawtext=fontfile=fixture-font.ttf:text='Minh - identity placeholder':x=150:y=790:fontsize=36:fontcolor=white`,
+        `drawtext=fontfile=fixture-font.ttf:text='No filmed person or product':x=150:y=880:fontsize=34:fontcolor=white`
       ];
 
       for (const [i, s] of p.shots.entries()) {
@@ -151,7 +187,7 @@ export async function run(root: string) {
         await writeFile(file, s.spoken);
 
         filter.push(
-          `drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:textfile='${file}':x=90:y=1300:fontsize=34:fontcolor=white:enable='gte(n,${s.startFrame})*lt(n,${s.endFrame})'`
+          `drawtext=fontfile=fixture-font.ttf:textfile='caption-${i}.txt':x=90:y=1300:fontsize=34:fontcolor=white:enable='gte(n,${s.startFrame})*lt(n,${s.endFrame})'`
         );
       }
 
@@ -184,7 +220,8 @@ export async function run(root: string) {
         "-shortest",
         mp4
       ], {
-        stdio: "pipe"
+        stdio: "pipe",
+        cwd: dir
       });
 
       await move("RENDERED");
@@ -226,7 +263,7 @@ export async function run(root: string) {
       publicationAllowed: false
     }));
 
-    for (const [name, sec] of [["hook", 0], ["middle", 12], ["end", 23]] as const) execFileSync(
+    for (const [name, sec] of [["hook", 0], ["middle", p.durationInFrames / 60], ["end", (p.durationInFrames - 1) / 30]] as const) execFileSync(
       "ffmpeg",
       ["-v", "error", "-y", "-ss", String(sec), "-i", mp4, "-frames:v", "1", join(dir, `${name}.png`)],
       {
@@ -258,6 +295,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       renderPlan: RenderPlan
     }))
       await atomic(`schemas/auto-factory/${name}.json`, z.toJSONSchema(schema));
-  } else
-    console.log(JSON.stringify(await run(root)));
+  } else console.log(JSON.stringify(
+    await run(root, process.argv.includes("--font") ? process.argv[process.argv.indexOf("--font") + 1] : undefined)
+  ));
 }

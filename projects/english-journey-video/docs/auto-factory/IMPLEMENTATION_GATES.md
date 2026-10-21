@@ -62,3 +62,7 @@ Start from this PR's verified HEAD; re-fetch Video 05/main and verify no unexpec
 Read `MULTI_MODE_AND_VOICE.md`. Gate 1 must now accept explicit `ENGLISH_LEARNING` and `PRODUCT_SHOWCASE` tagged modes, mode-specific offline fixtures, product field/asset provenance validators, expressive voice direction *metadata* and voice-routing regression tests. No marketplace network calls, scraped product data, real TTS auditions or paid generation in Gate 1. An offline synthetic video may be rendered per mode if tooling is available. Preserve all earlier Gate 1 acceptance requirements.
 
 Gates 2–4 retain durable authority, restricted pilot and English scheduler progression; any real voice audition requires new owner spending approval. Add Gate 5 for authorized marketplace/manual intake adapters and Gate 6 for separately approved real product-video pilot, legal/asset/claims review and independent launch decision. DO NOT describe Gate 5/6 as already implemented. Reference-video imitation is at the level of pacing, hook, subtitle styling and voice direction, never unlicensed voice cloning.
+
+## Gate 1B targeted acceptance
+
+See GATE_1B_REPORT.md and gate1b-evidence. Actual AutoFactory Remotion render, dynamic metadata, synthetic audio input and canonical scene captions are tested separately from the earlier FFmpeg fixture harness. Real presenter identity assets and authentic speech/emotion acceptance remain future work; technical production QA is not granted to fixtures. No Gate 2 implementation or production authorization follows automatically.

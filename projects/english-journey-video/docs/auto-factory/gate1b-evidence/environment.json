@@ -1,0 +1,14 @@
+{
+  "platform": "Linux 6.18.55 x86_64",
+  "node": "v24.19.0",
+  "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+  "browserVersion": "Chromium 157.0.8080.0",
+  "browserSha256": "6499ae333be19f27484c73a61da262754a02ab3d82bbba856f44bef785ec3e62",
+  "browserCacheMarker": "157.0.8080.0-remotion-v3",
+  "remotion": "4.0.535",
+  "windowsExecution": "UNVERIFIED",
+  "paidApiCalls": 0,
+  "sourceBaseline": "8f8aa3b3c3f8dc5ca438c6ab34958f60f51cb9ce",
+  "mediaRights": "Original generated sine tone and text/background only; no external presenter/product media",
+  "browserNotDistributed": true
+}

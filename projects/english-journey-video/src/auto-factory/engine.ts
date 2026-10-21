@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { createHash } from "node:crypto";
+import { checkTimeline } from "./playback.ts";
 export const hash = (x: unknown): string => createHash("sha256").update(typeof x === "string" ? x : JSON.stringify(x)).digest("hex");
 const str = z.string().min(1).max(2000), id = z.string().regex(/^[a-z][a-z0-9-]{0,63}$/), time = z.iso.datetime();
 export const Visibility = z.enum(["NO_PRESENTER", "VOICE_ONLY", "HANDS_ONLY", "FACE_ONLY", "HALF_BODY", "FULL_BODY"]);
@@ -285,9 +286,10 @@ export function validate(input: unknown, now: string) {
 
     const ev = new Map(p.evidence.map(e => [e.id, e]));
     check(ev.size === p.evidence.length, "DUPLICATE_EVIDENCE");
+    check(p.evidence.some(e => e.value === p.name), "PRODUCT_NAME_EVIDENCE_REQUIRED");
 
     for (const e of p.evidence) check(
-      Date.parse(e.capturedAt) <= Date.parse(now) && Date.parse(e.expiresAt) > Date.parse(now),
+      Date.parse(e.capturedAt) <= Date.parse(now) && Date.parse(e.expiresAt) > Date.parse(now) && Date.parse(e.expiresAt) > Date.parse(e.capturedAt),
       "STALE_EVIDENCE"
     );
 
@@ -377,7 +379,7 @@ export function plan(input: unknown, now: string) {
     return shot;
   });
 
-  return RenderPlan.parse({
+  const result = RenderPlan.parse({
     schemaVersion: 1 as const,
     execution: "OFFLINE" as const,
     provenance: "SYNTHETIC_SILENT_CAPTION_FIXTURE" as const,
@@ -393,6 +395,9 @@ export function plan(input: unknown, now: string) {
     shots,
     paidRequests: 0 as const
   });
+
+  checkTimeline(result);
+  return result;
 }
 
 export const States = ["PLANNED", "VALIDATED", "RENDER_PLANNED", "RENDERED", "QA_PASSED", "PENDING_OWNER_REVIEW"] as const;
@@ -408,6 +413,7 @@ export const Run = z.strictObject({
 export function transition(input: unknown, to: typeof States[number], revision: number) {
   const r = Run.parse(input);
   check(r.revision === revision, "STALE_REVISION");
+  check(r.revision === States.indexOf(r.state), "STATE_REVISION_INTEGRITY");
   check(States.indexOf(to) === States.indexOf(r.state) + 1, "INVALID_TRANSITION");
 
   return Run.parse({
@@ -439,6 +445,11 @@ export function reserve(input: unknown, r: unknown, expected: number) {
   check(
     l.revision === l.reservations.length && new Set(l.reservations.map(x => x.runId)).size === l.reservations.length && new Set(l.reservations.map(x => x.localDate)).size === l.reservations.length,
     "LEDGER_INTEGRITY"
+  );
+
+  check(
+    l.openingLiability + l.reservations.reduce((n, x) => n + x.microusd, 0) <= 8000000,
+    "LEDGER_BALANCE_INVALID"
   );
 
   const prev = l.reservations.find(x => x.runId === q.runId);
@@ -474,6 +485,7 @@ export const ReviewItem = z.strictObject({
 
 export function resume(input: unknown, p: ReturnType<typeof plan>) {
   const r = Run.parse(input);
+  check(r.revision === States.indexOf(r.state), "STATE_REVISION_INTEGRITY");
   check(r.inputSha256 === hash(p) && r.runId === p.runId, "RESUME_INTEGRITY");
   return r;
 }
