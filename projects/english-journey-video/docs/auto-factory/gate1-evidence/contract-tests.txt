@@ -1,0 +1,42 @@
+✔ all fixtures route through one engine with deterministic SHA (40.946998ms)
+✔ reject mode (2.998041ms)
+✔ reject version (1.472305ms)
+✔ reject unknown (1.246488ms)
+✔ reject visibility (0.805311ms)
+✔ reject duration (1.8902ms)
+✔ reject span (1.336797ms)
+✔ reject language (1.168415ms)
+✔ reject claim (1.23934ms)
+✔ presenter strict metadata and presets (1.466119ms)
+✔ lesson visibility FACE_ONLY (2.983535ms)
+✔ lesson visibility HALF_BODY (1.752119ms)
+✔ lesson visibility VOICE_ONLY (4.128695ms)
+✔ lesson visibility NO_PRESENTER (1.552788ms)
+✔ small product rejects face and fashion rejects hands (2.469485ms)
+✔ fashion full body and art none supported (3.026165ms)
+✔ reject URL http://shopee.vn/a (0.685647ms)
+✔ reject URL https://shopee.vn.evil.com/a (0.381512ms)
+✔ reject URL https://127.0.0.1/a (0.415255ms)
+✔ reject URL https://user:pass@shopee.vn/a (0.474484ms)
+✔ reject URL file:///tmp/a (0.272097ms)
+✔ reject URL https://shopee.vn:8443/a (0.289538ms)
+✔ reject URL https://shopee.vn/a#x (0.320832ms)
+✔ reject URL https://shopee.vn/ (0.380967ms)
+✔ missing evidence, unsupported claims and false hands-on blocked (4.934611ms)
+✔ stale evidence fails closed (1.135568ms)
+✔ price matching plus 24h freshness (4.428846ms)
+✔ Vietnamese surrounding narration remains Nam Minh (1.679527ms)
+✔ unsupported SSML, prosody, cloning metadata rejected (1.948574ms)
+✔ cost boundaries reserve exclusion and aggregate liability (3.764511ms)
+✔ idempotent reservations and daily slot (2.909199ms)
+✔ state transition resume hash and revision guards (4.204146ms)
+✔ offline plan makes no network or paid calls (5.933069ms)
+✔ rule-based default shot selection (0.440298ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 788.865896

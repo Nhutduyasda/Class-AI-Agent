@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "kind": "SIMULATION_ONLY",
+  "revision": 1,
+  "openingLiability": 0,
+  "reservations": [
+    {
+      "runId": "fixture-fashion",
+      "localDate": "2026-10-21",
+      "inputSha256": "45f72f2b81db7056f687493a0c895d801ee902e75ff991d71cc66c9a9b9ac057",
+      "microusd": 0
+    }
+  ]
+}

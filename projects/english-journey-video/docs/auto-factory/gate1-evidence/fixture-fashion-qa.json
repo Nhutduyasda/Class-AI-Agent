@@ -1,0 +1,17 @@
+{
+  "format": "PASS",
+  "fullDecode": "PASS",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 720,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "duration": 24,
+  "speech": "OMITTED_SILENT_FIXTURE",
+  "captionTiming": "SCENE_CLOCK_ONLY_NOT_SPEECH_ALIGNMENT",
+  "humanReview": "PENDING",
+  "presenterVisual": "GEOMETRIC_PLACEHOLDER_ONLY",
+  "sha256": "0e0e37ee7f6fc65ade65d04da0e6456fb56f5545ed7f140f7387ee0e38798e0c",
+  "planSha256": "45f72f2b81db7056f687493a0c895d801ee902e75ff991d71cc66c9a9b9ac057"
+}
