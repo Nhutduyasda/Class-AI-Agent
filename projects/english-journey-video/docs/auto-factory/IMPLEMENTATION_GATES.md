@@ -66,3 +66,7 @@ Gates 2–4 retain durable authority, restricted pilot and English scheduler pro
 ## Gate 1B targeted acceptance
 
 See GATE_1B_REPORT.md and gate1b-evidence. Actual AutoFactory Remotion render, dynamic metadata, synthetic audio input and canonical scene captions are tested separately from the earlier FFmpeg fixture harness. Real presenter identity assets and authentic speech/emotion acceptance remain future work; technical production QA is not granted to fixtures. No Gate 2 implementation or production authorization follows automatically.
+
+## Remote Dashboard option B — roadmap amendment, before Gate 3A
+
+Owner selected a remotely accessible authenticated web dashboard as the daily operating UI instead of Work/AI Agent. Read `DASHBOARD_ROADMAP.md` for the normative cloud/web architecture, UI scope, honest mock-mode behavior, budgets, security and sequencing. Gate 2 remains the NEXT security/ledger implementation. Insert NEW Gate 3A for local working React dashboard + typed offline/mock API (no cloud deployment), rename the original real paid pilot to Gate 3B, then retain Gates 4–6 with cloud/auth and marketplace constraints. No new resource, paid hosting, secrets, production work or schedule authorization is conferred. Work/AI Agent remain development tools; actual remote use requires separately approved protected backend and deployment.

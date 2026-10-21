@@ -47,3 +47,7 @@ Before future product launch, owner must supply evidence/permissions for product
 ## Gate 1B offline verification commands
 
 GATE_1B_REPORT.md contains the Linux-verified and Windows 11 handoff commands. Browser installation is an explicit development setup step; default render performs no browser download. Use remotion.ts for actual AutoFactory runtime tests, never infer Remotion success from run.ts FFmpeg outputs. Keep separate out/auto-factory-remotion and out/auto-factory fixture directories. No secret, schedule or provider setup is needed. Inspect per-run QA states and maintain publicationAllowed=false. A stale local run.lock requires process/evidence inspection before manual removal; do not delete it automatically. Production recovery/credential steps above remain future-gate design.
+
+## Remote dashboard (option B) — design amendment only
+
+See `DASHBOARD_ROADMAP.md`. A browser UI is a control plane; it must NEVER store provider/API/GitHub keys, access private media without owner authorization, or directly execute paid jobs. Cloudflare Pages/Workers Free + Supabase Free are candidates subject to account plan, usage, auth, security and media retention verification; Workers Free is not a Remotion renderer. Gate 3A must offer an honestly labeled local/mock working UI and typed backend boundary; remote LIVE operations and any deployment must wait for owner approval and later gate readiness. Gate 2 durable ledger is not bypassed by dashboard controls. Schedule and spend remain OFF.
