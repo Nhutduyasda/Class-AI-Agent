@@ -1,0 +1,60 @@
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'out/marketing03/timeline.json'
+    at readFileSync (node:fs:483:20)
+    at load (file:///workspace/scratch/53e1f03f47a6/Class-AI-Agent/projects/english-journey-video/scripts/marketing03/production.test.mjs:5:26)
+    at file:///workspace/scratch/53e1f03f47a6/Class-AI-Agent/projects/english-journey-video/scripts/marketing03/production.test.mjs:6:9
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'out/marketing03/timeline.json'
+}
+
+Node.js v24.22.1
+✖ scripts/marketing03/production.test.mjs (98.323313ms)
+✖ immutable approved script, six scenes and authorized single attempts (6.913677ms)
+✖ ambiguous transport consumes attempt and blocks second request (6.620216ms)
+✖ all six real Azure receipts match WAV and copy (3.430332ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 0
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 156.657954
+
+✖ failing tests:
+
+test at scripts/marketing03/production.test.mjs:1:1
+✖ scripts/marketing03/production.test.mjs (98.323313ms)
+  'test failed'
+
+test at scripts/marketing04/production.test.mjs:8:1
+✖ immutable approved script, six scenes and authorized single attempts (6.913677ms)
+  Error: INVALID_POLICY
+      at plan (file:///workspace/scratch/53e1f03f47a6/Class-AI-Agent/projects/english-journey-video/scripts/marketing04/voice-runner.mjs:10:237)
+      at async TestContext.<anonymous> (file:///workspace/scratch/53e1f03f47a6/Class-AI-Agent/projects/english-journey-video/scripts/marketing04/production.test.mjs:9:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at scripts/marketing04/production.test.mjs:11:1
+✖ ambiguous transport consumes attempt and blocks second request (6.620216ms)
+  Error: INVALID_POLICY
+      at plan (file:///workspace/scratch/53e1f03f47a6/Class-AI-Agent/projects/english-journey-video/scripts/marketing04/voice-runner.mjs:10:237)
+      at async TestContext.<anonymous> (file:///workspace/scratch/53e1f03f47a6/Class-AI-Agent/projects/english-journey-video/scripts/marketing04/production.test.mjs:12:108)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at scripts/marketing04/production.test.mjs:17:1
+✖ all six real Azure receipts match WAV and copy (3.430332ms)
+  Error: INVALID_POLICY
+      at plan (file:///workspace/scratch/53e1f03f47a6/Class-AI-Agent/projects/english-journey-video/scripts/marketing04/voice-runner.mjs:10:237)
+      at async TestContext.<anonymous> (file:///workspace/scratch/53e1f03f47a6/Class-AI-Agent/projects/english-journey-video/scripts/marketing04/production.test.mjs:18:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)

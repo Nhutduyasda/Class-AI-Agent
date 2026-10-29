@@ -1,0 +1,15 @@
+✔ actual fixture-learning MP4 full decode and SHA receipt (872.429674ms)
+✔ actual fixture-phone-case MP4 full decode and SHA receipt (755.285635ms)
+✔ actual fixture-fashion MP4 full decode and SHA receipt (871.351312ms)
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x565171c03400] moov atom not found
+/tmp/factory-bad-J1y4KD/bad.mp4: Invalid data found when processing input
+✔ bad format/corrupt MP4 rejected (101.93594ms)
+✔ completed run resumes without resynthesis or changed hashes (4515.741982ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7441.686972

@@ -69,3 +69,8 @@ Gate 3A can be developed in parallel with Gate 2 ONLY in separate temporary feat
 ## Spend, cloud and deployment approvals
 
 No new paid hosting plan, VPS, DB paid upgrade, paid storage, voice provider, avatar service or external media subscription; no service provisioning or deployment without owner authorization. Public free-tier preview could be evaluated later with explicit owner approval and only synthetic public demo data, provided security has been reviewed. The existing $10 budget is for constrained future production ($8 usable + $2 protected), not a budget to silently spend on infrastructure. Never present plan quotes or free-tier ceilings as verified account entitlements.
+
+
+## Gate3 closeout update — 2026-10-29
+
+Owner instruction now conditionally authorizes the exact V2 neutral6/dynamic6 pilot, one attempt each, AzureUSD0.03/aggregateUSD0.08, with USD8 production and USD2 reserve unchanged. This supersedes older statements about missing pilot scope approval, but grants no bypass of prerequisites. Real transport stays disabled: Windows/ACL/private backup, independent executable and credential/production-ledger review, exact plan hash interpretation and current account-specific billing/pricing/tax are unresolved. No new paid calls, cloud hosting, scheduling, publication or merge. See GATE_3_FINAL_REPORT.md and WINDOWS_MOCK_ACCEPTANCE_FINAL.md for measured results and runnable handoff. Gate4 entry remains NO-GO; authentic pilot dashboard ingestion has no genuine artifact to ingest.

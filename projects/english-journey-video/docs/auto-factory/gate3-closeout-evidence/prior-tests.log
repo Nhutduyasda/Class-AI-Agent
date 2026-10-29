@@ -1,0 +1,140 @@
+✔ English clause / canonical: I saw a cat. (6.920733ms)
+✔ English clause / canonical: The cat was sleeping. (0.628852ms)
+✔ English clause / canonical: I ate an apple. (0.280264ms)
+✔ English clause / canonical: I ate an apple, (0.206096ms)
+✔ English clause / canonical: Yesterday, I went to school. (0.317083ms)
+✔ English clause / canonical: Yesterday, I go to school. (0.220301ms)
+✔ mixed example selects Vietnamese, Andrew sentence and contextual article (0.957292ms)
+✔ contextual A / AN / THE including a list (0.75369ms)
+✔ Vietnamese letters and proper names are not blindly English (0.47473ms)
+✔ named term Error Log is Andrew; ChatGPT protected by default (0.464081ms)
+✔ manual pronunciation metadata supports proper names in either language (0.518671ms)
+✔ unknown Latin text blocks live plan until classified (4.863119ms)
+✔ stale, overlapping or invalid manual metadata rejected (0.470053ms)
+✔ exact copy includes whitespace, XML-sensitive characters and Unicode (0.391477ms)
+✔ SSML does not inject rate, pitch, translation or language-only fallback (1.578604ms)
+✔ billable markup count includes phonemes; text codepoints differ (0.367611ms)
+✔ multi-voice preferred: one request, and fallback split preserves exact text (1.599637ms)
+✔ new scoped cost approval required; old video budgets never work (1.766807ms)
+✔ historical video IDs protected at live boundary (0.961173ms)
+✔ plan and SSML integrity are bound (0.937673ms)
+✔ regional voice catalogue check is GET-only and requires both exact Neural voices (1.501396ms)
+✖ live validation requires current voice and public price evidence, without synthesis (3.029466ms)
+✔ Windows paths, traversal and reserved device names (0.781306ms)
+✔ WAV validation detects malformed, truncated and wrong sample-rate payloads (10.601081ms)
+✔ offline transport verifies WAV; successful cached rerun sends zero more calls (1030.706115ms)
+✔ ambiguous attempt persists and stops ALL subsequent requests and reruns (262.806309ms)
+✔ missing cost approval cannot enter transport (3.624781ms)
+✔ live source is reread and any script change after planning is rejected (4.93188ms)
+✔ session lock prevents two simultaneous offline submissions (447.062369ms)
+✔ split fallback cannot reuse a multi-voice cost authorization (1.037402ms)
+✔ observed timing, voice spans, article events and canonical subtitles: multivoice (6.298913ms)
+✔ observed timing, voice spans, article events and canonical subtitles: split (0.993254ms)
+✔ mock or incomplete timing cannot masquerade as production (1.61359ms)
+✔ Remotion clock uses actual frame time for Andrew, captions and article animation (0.78436ms)
+✔ phrase-closing quotes do not assign English audio to the following Vietnamese voice (0.862883ms)
+✔ HTTP rejection records only status/request id; never reads body and never retries (6.047985ms)
+✔ timeout and stream failure retain safe stages without raw errors or retry (1.113219ms)
+✔ arbitrary error fields and request IDs cannot inject secrets into diagnostics (0.329014ms)
+✔ local malformed WAV failure consumes one attempt, records stage and blocks all reruns (461.815143ms)
+✔ valid WAV with destination collision records filesystem stage and preserves existing file (471.855129ms)
+✔ 15/30/90-second offline WAV fixtures fully drain Windows ffprobe stdin (726.326462ms)
+✔ failed local audio validation retains quarantined bytes and provenance; never a production WAV (19.608556ms)
+✔ two approved samples have exactly 270 characters and expected quote (1.647809ms)
+✔ rejects changed approval and excessive chars (0.56727ms)
+✔ voice matches Nam Minh and SSML does not shift pitch or rate (0.569839ms)
+✔ detects malformed audio (0.245211ms)
+✔ no credential and untyped legacy bearer fail closed (2.111209ms)
+✔ key uses key header, rejects whitespace and mixed credentials (1.630441ms)
+✔ regional STS token requires explicit mode, matching origin and fresh expiry (0.968197ms)
+✔ Entra builds aad resource token envelope with correct scope (1.072953ms)
+✔ Entra rejects missing custom domain, wrong resource, audience, expired or malformed JWT (0.742581ms)
+✔ status never exposes secret or decoded claims (0.509264ms)
+✔ standalone preflight cannot call network and stays blocked (154.02309ms)
+✔ masked local helper refuses non-interactive environment before reading input (79.209729ms)
+✔ canonical 48k mono PCM file reports measured size, duration and SHA (5.06623ms)
+✔ RIFF parser handles odd-length metadata chunks before fmt (0.668073ms)
+✔ reject HTML/error text, truncated binary and wrong PCM format (2.741971ms)
+✔ atomic receiver decodes and reads back real WAV; refuses overwrite (408.735598ms)
+✔ malformed response never publishes final WAV or receipt (8.731597ms)
+✔ default-deny authorization and missing secret prevent transport calls (8.13247ms)
+✔ existing HOOK attempt remains blocked under original one-call limit (5.096937ms)
+✔ budget and script-hash guards run before any transport (5.324885ms)
+✔ non-finite ledger costs and missing historical scenes cannot bypass budget (6.479202ms)
+✔ REST wire contract uses fixed region, exact SSML and 48k PCM; mocked fetch only (10.762824ms)
+✔ REST 429 response causes one mocked fetch, without retry or response-body disclosure (1.264293ms)
+✔ one failed transport persists attempt and is never retried (24.349578ms)
+✔ bad WAV consumes the submitted attempt without marking audio received (13.337783ms)
+✔ successful mock saves and verifies before marking ledger, preserving HOOK history (195.972512ms)
+✔ pre-existing output or reservation prevents submission and remains untouched (9.087977ms)
+✔ credential status reveals presence only, never secret values (0.30172ms)
+✔ runtime initialization preserves existing attempts instead of replacing with checkpoint (20.896204ms)
+✔ Python recovery importer rejects corrupt WAV before touching destination or ledger (85.457645ms)
+✔ Python local fixture import preserves attempts and requires separate source proof (172.064962ms)
+✔ canonical ledger in repository remains byte identical throughout offline tests (1.234111ms)
+✔ approved paragraphs normalize only whitespace; all six scenes retain exact copy (1.832687ms)
+✔ all English examples and terms explicitly route Andrew; entity metadata routes Nam Minh (1.062593ms)
+✖ cost review never grants live approval and cannot pass synthesis authorization (15.578348ms)
+✔ DEMO markers fail closed without observed audio tokens (2.078576ms)
+✔ recovery02 excludes HOOK and preserves exact original SSML for five scenes (7.400471ms)
+✔ recovery02 never treats either previous authorization as new permission (11.761448ms)
+✔ recovery02 requires explicit extra PROBLEM permission even with a scoped cost policy (2.477679ms)
+✔ historical snapshots preserve outcomes; local runtime ledgers retain frozen byte hashes (12.329316ms)
+✔ 30 fps metadata and real AAC video pass technical probe (1.959285ms)
+✔ missing voice fails rather than pretending delivery is complete (0.225555ms)
+✔ scene copy must remain exactly owner approved (0.488549ms)
+✔ opening timestamps and stages are included for cold-viewer review (0.531324ms)
+✔ two valid reversed comparisons are necessary to declare a winner (0.308427ms)
+✔ one audio clock keeps a phrase in its outgoing scene and preserves all words (3.959998ms)
+✔ reject a scene that changes before the outgoing audio finishes (2.3205ms)
+✔ reject subtitles that omit a spoken token (2.181195ms)
+✔ reject accidental edits to verified English (0.786979ms)
+✔ caption time is end-exclusive; interphrase silence has no invented active word (0.303716ms)
+✔ scene switch happens on the first frame of the next scene (0.171706ms)
+ℹ tests 93
+ℹ suites 0
+ℹ pass 91
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2088.295052
+
+✖ failing tests:
+
+test at scripts/bilingual/bilingual.test.mjs:73:1
+✖ live validation requires current voice and public price evidence, without synthesis (3.029466ms)
+  AssertionError [ERR_ASSERTION]: Got unwanted exception.
+  Actual message: "CURRENT_NEURAL_PRICE_REQUIRED"
+      at TestContext.<anonymous> (file:///workspace/scratch/53e1f03f47a6/Class-AI-Agent/projects/english-journey-video/scripts/bilingual/bilingual.test.mjs:75:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: Error: CURRENT_NEURAL_PRICE_REQUIRED
+        at validateAuthorization (file:///workspace/scratch/53e1f03f47a6/Class-AI-Agent/projects/english-journey-video/scripts/bilingual/runner.mjs:33:293)
+        at file:///workspace/scratch/53e1f03f47a6/Class-AI-Agent/projects/english-journey-video/scripts/bilingual/bilingual.test.mjs:75:26
+        at getActual (node:assert:611:5)
+        at strict.doesNotThrow (node:assert:779:32)
+        at TestContext.<anonymous> (file:///workspace/scratch/53e1f03f47a6/Class-AI-Agent/projects/english-journey-video/scripts/bilingual/bilingual.test.mjs:75:9)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1402:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+        at Test.postRun (node:internal/test_runner/test:1542:19)
+        at Test.run (node:internal/test_runner/test:1467:12),
+    expected: undefined,
+    operator: 'doesNotThrow',
+    diff: 'simple'
+  }
+
+test at scripts/marketing05/production.test.mjs:23:1
+✖ cost review never grants live approval and cannot pass synthesis authorization (15.578348ms)
+  Error: PRICE_EVIDENCE_EXPIRED_STOP
+      at preflight (file:///workspace/scratch/53e1f03f47a6/Class-AI-Agent/projects/english-journey-video/scripts/marketing05/preflight.mjs:10:151)
+      at async TestContext.<anonymous> (file:///workspace/scratch/53e1f03f47a6/Class-AI-Agent/projects/english-journey-video/scripts/marketing05/production.test.mjs:24:15)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)

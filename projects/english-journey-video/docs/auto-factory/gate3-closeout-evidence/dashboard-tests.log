@@ -1,0 +1,19 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> auto-factory-dashboard@0.1.0 test
+> node --test tests/*.test.ts
+
+✔ learning and product drafts are server validated, never rendered or charged (49.040848ms)
+✔ unsupported URL, missing evidence and claim fail (3.287371ms)
+✔ visibility and paid variants fail, voice routing and captions use engine (9.484181ms)
+✔ fixture review pins revision and SHA; no publication (22.790391ms)
+✔ missing fixture is explicit rather than fabricated (0.552047ms)
+✔ Video06 preparation remains pending and cannot review a missing artifact (5.727531ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 499.373982

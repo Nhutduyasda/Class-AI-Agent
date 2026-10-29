@@ -17,3 +17,8 @@ Required implementation and acceptance before even one local paid pilot:
 **No-retry operator procedure**: stop executor and prevent later dispatch; retain journal/checkpoint/WAV/receipt unchanged; record last acknowledged boundary and affected attempt IDs; compare local receipt/source hashes with provider usage/billing using the owner's account outside this task; append an evidence-backed settlement/reconciliation; keep uncertainty reserved until resolved; only a new explicitly reviewed authorization can permit subsequent requests. A network failure does not prove NOT_SENT.
 
 Candidate choice and spending permission are separate. Approving a script is not approving 12 requests. Approving a cost ceiling is not approval to bypass missing durable storage. Hosted and local paths remain NO-GO until their own prerequisites pass. Do not run the historical launcher as a shortcut to this factory's paid pilot.
+
+
+## Gate3 closeout update — 2026-10-29
+
+Owner instruction now conditionally authorizes the exact V2 neutral6/dynamic6 pilot, one attempt each, AzureUSD0.03/aggregateUSD0.08, with USD8 production and USD2 reserve unchanged. This supersedes older statements about missing pilot scope approval, but grants no bypass of prerequisites. Real transport stays disabled: Windows/ACL/private backup, independent executable and credential/production-ledger review, exact plan hash interpretation and current account-specific billing/pricing/tax are unresolved. No new paid calls, cloud hosting, scheduling, publication or merge. See GATE_3_FINAL_REPORT.md and WINDOWS_MOCK_ACCEPTANCE_FINAL.md for measured results and runnable handoff. Gate4 entry remains NO-GO; authentic pilot dashboard ingestion has no genuine artifact to ingest.
