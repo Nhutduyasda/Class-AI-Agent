@@ -1,3 +1,5 @@
+> Work-only update (2026-10-29): the owner replaced Windows/USB production with the cloud direction. Current authoritative status is in WORK_ONLY_GATE3_REPORT.md and WORK_ONLY_ARCHITECTURE.md. Windows is not claimed PASS and is not required for the selected Linux cloud host. The new cloud core is implemented/reviewed, but protected host/bootstrap, actual durable private storage and financial acceptance remain NO-GO. The text below preserves the earlier Windows-route report.
+
 # Windows mock acceptance final — 2026-10-29
 
 Status: BLOCKED / NOT EXECUTED ON WINDOWS. Host here is Linux, not the owner's Windows11 machine. No owner-local compatibility branch, F: filesystem, ACL, Windows identity or Credential Manager access is available to this session.

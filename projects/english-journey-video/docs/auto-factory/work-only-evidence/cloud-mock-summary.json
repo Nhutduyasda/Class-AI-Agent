@@ -1,0 +1,25 @@
+{
+  "kind": "IN_MEMORY_CLOUD_PORT_TEST_NOT_HOSTED_ACCEPTANCE",
+  "first": {
+    "productionId": "video06-v2-audition",
+    "newRequests": 12,
+    "cached": 0,
+    "revision": 36,
+    "maximumOutstandingLiabilityMicrousd": 24000,
+    "confirmedInvoiceMicrousd": null,
+    "technicalProduction": "NOT_EVALUATED",
+    "ownerCreativeReview": "PENDING"
+  },
+  "resume": {
+    "productionId": "video06-v2-audition",
+    "newRequests": 0,
+    "cached": 12,
+    "revision": 36,
+    "maximumOutstandingLiabilityMicrousd": 24000,
+    "confirmedInvoiceMicrousd": null,
+    "technicalProduction": "NOT_EVALUATED",
+    "ownerCreativeReview": "PENDING"
+  },
+  "realAzureRequests": 0,
+  "apiCostUsd": 0
+}

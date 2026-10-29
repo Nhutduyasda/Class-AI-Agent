@@ -1,3 +1,5 @@
+> Work-only update (2026-10-29): the owner replaced Windows/USB production with the cloud direction. Current authoritative status is in WORK_ONLY_GATE3_REPORT.md and WORK_ONLY_ARCHITECTURE.md. Windows is not claimed PASS and is not required for the selected Linux cloud host. The new cloud core is implemented/reviewed, but protected host/bootstrap, actual durable private storage and financial acceptance remain NO-GO. The text below preserves the earlier Windows-route report.
+
 # Production security review — 2026-10-29
 
 Decision: NO-GO. This is an implementation self-review, NOT independent security acceptance.

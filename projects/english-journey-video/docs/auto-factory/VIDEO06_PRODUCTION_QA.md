@@ -1,3 +1,5 @@
+> Work-only update (2026-10-29): the owner replaced Windows/USB production with the cloud direction. Current authoritative status is in WORK_ONLY_GATE3_REPORT.md and WORK_ONLY_ARCHITECTURE.md. Windows is not claimed PASS and is not required for the selected Linux cloud host. The new cloud core is implemented/reviewed, but protected host/bootstrap, actual durable private storage and financial acceptance remain NO-GO. The text below preserves the earlier Windows-route report.
+
 # Video 06 production QA — 2026-10-29
 
 Authentic Video06 V2 production: BLOCKED. Technical production QA: NOT_EVALUATED. Owner listening/creative acceptance: PENDING. No authentic MP4, WAV audition, production SRT/VTT, charge receipt or selected voice direction was produced in this closeout.

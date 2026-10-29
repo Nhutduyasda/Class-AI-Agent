@@ -22,3 +22,8 @@ Candidate choice and spending permission are separate. Approving a script is not
 ## Gate3 closeout update — 2026-10-29
 
 Owner instruction now conditionally authorizes the exact V2 neutral6/dynamic6 pilot, one attempt each, AzureUSD0.03/aggregateUSD0.08, with USD8 production and USD2 reserve unchanged. This supersedes older statements about missing pilot scope approval, but grants no bypass of prerequisites. Real transport stays disabled: Windows/ACL/private backup, independent executable and credential/production-ledger review, exact plan hash interpretation and current account-specific billing/pricing/tax are unresolved. No new paid calls, cloud hosting, scheduling, publication or merge. See GATE_3_FINAL_REPORT.md and WINDOWS_MOCK_ACCEPTANCE_FINAL.md for measured results and runnable handoff. Gate4 entry remains NO-GO; authentic pilot dashboard ingestion has no genuine artifact to ingest.
+
+
+## Work-only architecture supersedes local production — 2026-10-29
+
+Owner now selects Work-only development/execution; Windows/F: USB is no longer a production prerequisite. See WORK_ONLY_ARCHITECTURE.md, WORK_ONLY_GATE3_REPORT.md and WORK_ONLY_PREFLIGHT.json. The cloud core has30/30 credential-free tests and independent source review; actual immutable host/secret release, external signers, private state/independent backup and financial acceptance remain unconfigured/unaccepted. Real synth requests0; no hosting, CI, schedule, publication or merge. Dashboard stays MOCK_OFFLINE until genuine artifacts exist; no remote Gate4 implementation. Three content hash representations are now explicit and match; the old hash-label ambiguity is resolved.
