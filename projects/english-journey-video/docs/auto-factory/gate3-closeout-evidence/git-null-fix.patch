@@ -1,0 +1,76 @@
+commit 624b3bd52b273f6b2621d4ae78a8854b4825b28c
+Author:     Codex <codex@users.noreply.github.com>
+AuthorDate: Thu Oct 29 14:55:35 2026 +0900
+Commit:     Codex <codex@users.noreply.github.com>
+CommitDate: Thu Oct 29 14:55:35 2026 +0900
+
+    Fix Windows Git null configuration and isolate ledger hooks
+
+diff --git a/projects/english-journey-video/scripts/auto-factory/local/trust.ts b/projects/english-journey-video/scripts/auto-factory/local/trust.ts
+index 53037fc..37b8861 100644
+--- a/projects/english-journey-video/scripts/auto-factory/local/trust.ts
++++ b/projects/english-journey-video/scripts/auto-factory/local/trust.ts
+@@ -3,6 +3,7 @@ import { readFile, readdir, realpath, lstat } from "node:fs/promises";
+ import { resolve, relative, isAbsolute, join } from "node:path";
+ import { execFileSync } from "node:child_process";
+ import { createHash } from "node:crypto";
++import { gitNullDevice } from "../../../src/auto-factory/control/git-ledger.ts";
+ export const sha = (b: Buffer | string) =>
+   createHash("sha256").update(b).digest("hex");
+ export const loadedProject = resolve(import.meta.dirname, "../../..");
+@@ -44,7 +45,7 @@ export const safeEnv = () => ({
+   PATH: process.env.PATH ?? "",
+   ...(process.env.SystemRoot ? { SystemRoot: process.env.SystemRoot } : {}),
+   GIT_CONFIG_NOSYSTEM: "1",
+-  GIT_CONFIG_GLOBAL: process.platform === "win32" ? "NUL" : "/dev/null",
++  GIT_CONFIG_GLOBAL: gitNullDevice(),
+   GIT_TERMINAL_PROMPT: "0",
+   GIT_ALLOW_PROTOCOL: "file",
+ });
+@@ -55,7 +56,7 @@ export function git(root: string, tool: string, args: string[]) {
+       [
+         "-c",
+         "core.hooksPath=" +
+-          (process.platform === "win32" ? "NUL" : "/dev/null"),
++          gitNullDevice(),
+         "-C",
+         root,
+         ...args,
+diff --git a/projects/english-journey-video/src/auto-factory/control/git-ledger.ts b/projects/english-journey-video/src/auto-factory/control/git-ledger.ts
+index beb6d72..4d6c058 100644
+--- a/projects/english-journey-video/src/auto-factory/control/git-ledger.ts
++++ b/projects/english-journey-video/src/auto-factory/control/git-ledger.ts
+@@ -2,10 +2,13 @@ import { execFileSync } from "node:child_process";
+ import { mkdir, readFile, writeFile, rename, unlink, realpath, open } from "node:fs/promises";
+ import { resolve, dirname, isAbsolute } from "node:path";
+ import { randomUUID } from "node:crypto";
+-import { devNull } from "node:os";
+ import { z } from "zod";
+ import { Journal, Policy, project, digest, appendEvent, must, type JournalType, type PayloadType } from "./model.ts";
+ 
++// Git for Windows accepts NUL, but rejects Node's Win32 device namespace path.
++export const gitNullDevice = (platform: NodeJS.Platform = process.platform) =>
++  platform === "win32" ? "NUL" : "/dev/null";
++
+ const Anchor = z.strictObject({
+   schemaVersion: z.literal(1),
+   commit: z.string().regex(/^[a-f0-9]{40}$/),
+@@ -57,7 +60,8 @@ export class GitLedger {
+ 
+   private git(args: string[], input?: string) {
+     try {
+-      return execFileSync(this.gitExecutable, args, {
++      const nullDevice = gitNullDevice();
++      return execFileSync(this.gitExecutable, ["-c", `core.hooksPath=${nullDevice}`, ...args], {
+         cwd: this.work,
+         input,
+         encoding: "utf8",
+@@ -73,7 +77,7 @@ export class GitLedger {
+ 
+           GIT_TERMINAL_PROMPT: "0",
+           GIT_CONFIG_NOSYSTEM: "1",
+-          GIT_CONFIG_GLOBAL: devNull,
++          GIT_CONFIG_GLOBAL: nullDevice,
+           GIT_ALLOW_PROTOCOL: "file",
+           GIT_AUTHOR_NAME: "Offline Ledger",
+           GIT_AUTHOR_EMAIL: "offline-ledger@example.invalid",

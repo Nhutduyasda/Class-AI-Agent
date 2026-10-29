@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "scriptSha256": "79926b5736c3e2f1317205ff127e3b29547f35a2885bc7332675fec524b77d86",
+  "scriptApproval": "PENDING_OWNER",
+  "approvedScriptSha256": null,
+  "reviewedCodeSha256": null,
+  "variants": [
+    {
+      "variant": "neutral",
+      "requests": [
+        {
+          "id": "hook",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "text": "Muốn nói mình đói? Đừng dịch từng chữ từ tiếng Việt.",
+          "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"0%\">Muốn nói mình đói? Đừng dịch từng chữ từ tiếng Việt.</prosody><break time=\"180ms\"/></voice></speak>",
+          "ssmlSha256": "435b1ed02a073ace86bbfe75394ea318bc928e380621c52931a728743ee18e9b",
+          "billableCharacters": 102,
+          "estimatedMicrousd": 1530
+        },
+        {
+          "id": "example",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "text": "I am hungry.",
+          "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody rate=\"0%\">I am hungry.</prosody><break time=\"180ms\"/></voice></speak>",
+          "ssmlSha256": "2cf368d2af7b10950b8f681beee11590c4398513320ba7f932e93ba0885addcd",
+          "billableCharacters": 62,
+          "estimatedMicrousd": 930
+        },
+        {
+          "id": "explain",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "text": "Câu này nghĩa là: Tôi đói. Khi nói mình đang đói, nhớ có động từ trước tính từ.",
+          "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"0%\">Câu này nghĩa là: Tôi đói. Khi nói mình đang đói, nhớ có động từ trước tính từ.</prosody><break time=\"180ms\"/></voice></speak>",
+          "ssmlSha256": "da0917b329cb3613893139b3a2f74032a1c763b51ab30fe7c73ecb18d8285309",
+          "billableCharacters": 129,
+          "estimatedMicrousd": 1935
+        },
+        {
+          "id": "practice",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "text": "Thử nhé: muốn nói tôi mệt, bạn chọn câu nào?",
+          "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"0%\">Thử nhé: muốn nói tôi mệt, bạn chọn câu nào?</prosody><break time=\"180ms\"/></voice></speak>",
+          "ssmlSha256": "3fecfc002eaec0de62fe6f8f14846bd90db4379920c5c5f9e75b1a2f4175ce5e",
+          "billableCharacters": 94,
+          "estimatedMicrousd": 1410
+        },
+        {
+          "id": "answer",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "text": "I am tired.",
+          "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody rate=\"0%\">I am tired.</prosody><break time=\"180ms\"/></voice></speak>",
+          "ssmlSha256": "3aec665445abac4cc707d03cbd71c85f77898e451fc3a58bf1057c7803e863f2",
+          "billableCharacters": 61,
+          "estimatedMicrousd": 915
+        },
+        {
+          "id": "close",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "text": "Đáp án B. Giờ thử nói lại cả câu nhé.",
+          "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"0%\">Đáp án B. Giờ thử nói lại cả câu nhé.</prosody><break time=\"180ms\"/></voice></speak>",
+          "ssmlSha256": "4da14e7b09c57f0ae2c36715c10c512ceb0d6d6a3a18106a6974e18ba871847a",
+          "billableCharacters": 87,
+          "estimatedMicrousd": 1305
+        }
+      ],
+      "requestCount": 6,
+      "billableCharacters": 535,
+      "estimatedMicrousd": 8025
+    },
+    {
+      "variant": "dynamic",
+      "requests": [
+        {
+          "id": "hook",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "text": "Muốn nói mình đói? Đừng dịch từng chữ từ tiếng Việt.",
+          "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"+4%\">Muốn nói mình đói? Đừng dịch từng chữ từ tiếng Việt.</prosody><break time=\"260ms\"/></voice></speak>",
+          "ssmlSha256": "d8025d7bdb2a9eaefa1c3d72b1385ea9c76d513ac87ec51b3ea9efa7737a282f",
+          "billableCharacters": 103,
+          "estimatedMicrousd": 1545
+        },
+        {
+          "id": "example",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "text": "I am hungry.",
+          "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody rate=\"-8%\">I am hungry.</prosody><break time=\"260ms\"/></voice></speak>",
+          "ssmlSha256": "d9b201265fac75a8aa05a19955c71a6aeab2838758ba34a8dd1afa2aa4318db7",
+          "billableCharacters": 63,
+          "estimatedMicrousd": 945
+        },
+        {
+          "id": "explain",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "text": "Câu này nghĩa là: Tôi đói. Khi nói mình đang đói, nhớ có động từ trước tính từ.",
+          "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"0%\">Câu này nghĩa là: Tôi đói. Khi nói mình đang đói, nhớ có động từ trước tính từ.</prosody><break time=\"260ms\"/></voice></speak>",
+          "ssmlSha256": "5d92ea7d9ba93f429a210082126cdd48614ec99d37fcea89d288a9ac8129b5aa",
+          "billableCharacters": 129,
+          "estimatedMicrousd": 1935
+        },
+        {
+          "id": "practice",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "text": "Thử nhé: muốn nói tôi mệt, bạn chọn câu nào?",
+          "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"0%\">Thử nhé: muốn nói tôi mệt, bạn chọn câu nào?</prosody><break time=\"260ms\"/></voice></speak>",
+          "ssmlSha256": "dbe031f94edadbd66da3ddb820d216705b1b48f7ab2da61f32e55f3e86fcf061",
+          "billableCharacters": 94,
+          "estimatedMicrousd": 1410
+        },
+        {
+          "id": "answer",
+          "language": "en-US",
+          "voice": "en-US-AndrewNeural",
+          "text": "I am tired.",
+          "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody rate=\"-8%\">I am tired.</prosody><break time=\"260ms\"/></voice></speak>",
+          "ssmlSha256": "2716eb105799d0ce6952ad68d246071f73a3ecb03b49805041efca9e8fe9b393",
+          "billableCharacters": 62,
+          "estimatedMicrousd": 930
+        },
+        {
+          "id": "close",
+          "language": "vi-VN",
+          "voice": "vi-VN-NamMinhNeural",
+          "text": "Đáp án B. Giờ thử nói lại cả câu nhé.",
+          "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"vi-VN\"><voice name=\"vi-VN-NamMinhNeural\"><prosody rate=\"0%\">Đáp án B. Giờ thử nói lại cả câu nhé.</prosody><break time=\"260ms\"/></voice></speak>",
+          "ssmlSha256": "c0e2a61373dd3edb62b6049c85fcbea409b5ab2bd1ab278bac024ce6fa89b941",
+          "billableCharacters": 87,
+          "estimatedMicrousd": 1305
+        }
+      ],
+      "requestCount": 6,
+      "billableCharacters": 538,
+      "estimatedMicrousd": 8070
+    }
+  ],
+  "requestCount": 12,
+  "billableCharacters": 1073,
+  "estimatedMicrousd": 16095,
+  "pricing": {
+    "schemaVersion": 1,
+    "currency": "USD",
+    "region": "southeastasia",
+    "usdPerMillion": 15,
+    "checkedAt": "2026-10-21",
+    "source": "https://azure.microsoft.com/en-us/pricing/details/speech/",
+    "regionalRetailSnapshot": "config/bilingual-neural-price.json (2026-10-17)",
+    "basis": "Public standard neural reference, not account quote; page may show placeholders by locale",
+    "invoiceVerified": false,
+    "accountPriceVerified": false,
+    "expiresAt": "2026-10-22T00:00:00Z"
+  },
+  "proposedAllServiceCeilingMicrousd": 80000,
+  "estimateIsNotAuthorization": true,
+  "paidExecutionAllowed": false
+}

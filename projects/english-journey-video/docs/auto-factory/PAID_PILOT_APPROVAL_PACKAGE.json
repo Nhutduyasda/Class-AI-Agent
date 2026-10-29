@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "purpose": "OWNER_REVIEW_ONLY_NOT_EXECUTABLE_AUTHORIZATION",
+  "reviewedRuntimeCodeSha": "3bf3c3a807e4f1a96f7dafdcd9e3ce7a4fae875c",
+  "runtimeReviewScope": "P1 offline implementation only; no approved paid executor",
+  "p1DocumentationHead": "72274a9d1202b63f3064727213dd6aaab9c6d7a6",
+  "preparationCodeSha": "a0ae1513d3f99b9787d9d6a4ca24b1d15a083924",
+  "documentationHeadSource": "Final handoff/PR immutable HEAD; not the historical runtime SHA",
+  "preparationSourceDigests": [
+    {
+      "path": "scripts/auto-factory/pilot/readiness.mjs",
+      "sha256": "77d3bb4d441e950a8b57fc09079636bb49642a83d389eb1124b0f491fff7267f"
+    },
+    {
+      "path": "scripts/auto-factory/pilot/prepare.mjs",
+      "sha256": "53e6f6b25c1c9bd54f0d42eda6119ee7a4bac702a54d9b2cf66b0f32883334e5"
+    },
+    {
+      "path": "scripts/auto-factory/pilot/media.ts",
+      "sha256": "bf41dbd5e8cd96637668bbace64eb60592804b8b0fe47ab61e7cf8d07ee69a59"
+    },
+    {
+      "path": "scripts/bilingual/core.mjs",
+      "sha256": "448e2497f55106f6c481ca487c9bc7ec2a0e4d16f7ba95e60e8043a35202a8ac"
+    }
+  ],
+  "candidateOptions": [
+    {
+      "version": "v1",
+      "scriptPath": "briefs/english-video-06-candidate.json",
+      "scriptFileSha256": "79926b5736c3e2f1317205ff127e3b29547f35a2885bc7332675fec524b77d86",
+      "canonicalScriptSha256": "58d5903df88578545b5fa27ec5ecd52563866e31e48a144042c67d301e8359d6",
+      "canonicalSpeechSha256": "eece36372b1aa318eb1320f4d441bfb94fa9bfc5d59e2dd3b12f874de4975645",
+      "planPath": "briefs/auto-factory/video06-v1-readiness.json",
+      "planSha256": "61a4625fcef334ae6f314155105df4cd53bf56e5f740afd7dfefec049d3fc8a6",
+      "planFileSha256": "f6b064b993bb5860542360f02e44ff8e82a805a177a3ea346e4aca6300fd37e3",
+      "variants": [
+        {
+          "variant": "neutral",
+          "requestCount": 6,
+          "billableCharacters": 535,
+          "estimatedMicrousd": 8025
+        },
+        {
+          "variant": "dynamic",
+          "requestCount": 6,
+          "billableCharacters": 538,
+          "estimatedMicrousd": 8070
+        }
+      ],
+      "requestCount": 12,
+      "billableCharacters": 1073,
+      "estimatedMicrousd": 16095
+    },
+    {
+      "version": "v2",
+      "scriptPath": "briefs/english-video-06-candidate-v2.json",
+      "scriptFileSha256": "04033938eb32dd5d2f72113863b89b87a8dac8fc4cbc3a694ba43c921abd5afc",
+      "canonicalScriptSha256": "01ff54a573fd28ba3909557bd34049cd4878f9a0e5470be3fa0a8c36faa7c440",
+      "canonicalSpeechSha256": "add63b4b00f0305ee658445820e625975bce21c9519471a44fd36946a7b7da56",
+      "planPath": "briefs/auto-factory/video06-v2-readiness.json",
+      "planSha256": "8487406dca081a9ae91fe0bd9e1fe8602fe32f06e1b784edd3bc7b1a50a19b83",
+      "planFileSha256": "6836db73d76ba69f18c9bcac8ea725abef1f6eb3c0bd9e5b0553886c7cb045e8",
+      "variants": [
+        {
+          "variant": "neutral",
+          "requestCount": 6,
+          "billableCharacters": 495,
+          "estimatedMicrousd": 7425
+        },
+        {
+          "variant": "dynamic",
+          "requestCount": 6,
+          "billableCharacters": 498,
+          "estimatedMicrousd": 7470
+        }
+      ],
+      "requestCount": 12,
+      "billableCharacters": 993,
+      "estimatedMicrousd": 14895
+    }
+  ],
+  "selectedCandidate": null,
+  "approvedScriptSha256": null,
+  "approvedPlanSha256": null,
+  "actualRequestAuthorization": null,
+  "pricingBasis": "Existing USD15/million public reference, not refreshed account-specific pricing",
+  "pricingExpiresAt": "2026-10-22T00:00:00Z",
+  "proposedAzureCeilingMicrousd": 30000,
+  "proposedAllServiceCeilingMicrousd": 80000,
+  "combinedBothCandidates": {
+    "requests": 24,
+    "billableCharacters": 2066,
+    "estimatedMicrousd": 30990
+  },
+  "combinedBothExceedProposedAzureCeiling": true,
+  "bothCandidatesAuthorized": false,
+  "remainingBalance": "UNVERIFIED",
+  "outstandingCharges": "UNVERIFIED",
+  "accountPricingAndTax": "UNVERIFIED",
+  "privateMediaDestination": "UNSELECTED",
+  "privateBackupDestination": "UNSELECTED",
+  "trustedHostedExecutor": "UNVERIFIED",
+  "durableHostedLedger": "UNVERIFIED",
+  "localExecutor": "NOT_IMPLEMENTED_OR_APPROVED",
+  "reconciliationProcedure": "LOCAL_FIRST_PILOT_FEASIBILITY.md; no retry while ambiguous; evidence-backed append-only settlement required",
+  "paidExecutionAllowed": false,
+  "publicationAllowed": false,
+  "hostedDecision": "NO_GO",
+  "localDecision": "NO_GO",
+  "decision": "NO_GO"
+}

@@ -1,0 +1,11 @@
+✔ actual V2 render full decode, frame0 error, correction frame15, practice/answer frame proofs (704.247417ms)
+✔ synthetic sample clock preserves complete clips and practice silence after mux (181.267036ms)
+✔ tone frequencies follow declared Vietnamese/English routing without claiming real voices (9.197468ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1200.74403

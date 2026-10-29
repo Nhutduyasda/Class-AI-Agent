@@ -1,0 +1,26 @@
+✔ forged checkpoint revision blocked on resume and transition (5.558692ms)
+✔ overdrawn persisted ledger rejected even on idempotent reservation (3.525113ms)
+✔ product name requires evidence (15.11303ms)
+✔ discontinuous and inconsistent scene timelines blocked (0.614953ms)
+✔ canonical caption copy, boundaries and coverage enforced (13.362774ms)
+✔ audio contract accepts observed offline samples and rejects mismatched duration (3.504043ms)
+✔ asset manifest supports HANDS_ONLY (2.578635ms)
+✔ asset manifest supports FACE_ONLY (1.209055ms)
+✔ asset manifest supports HALF_BODY (0.193275ms)
+✔ asset manifest supports FULL_BODY (0.33749ms)
+✔ no visible asset for voice-only and no-presenter plans (0.371128ms)
+✔ unreviewed, mismatched MIME and asserted identity rejected (1.505602ms)
+✔ silent fixture statuses never imply production readiness (0.206298ms)
+✔ media hash mismatch stops before decoder or renderer (36.019483ms)
+✔ invalid browser path does not trigger install or fetch (1.000277ms)
+✔ explicit missing browser fails without fallback (0.524944ms)
+✔ RENDER_PLANNED tampered plan stops before renderer (20.375811ms)
+✔ exclusive run lock blocks concurrent invocation (3.060934ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1208.459273

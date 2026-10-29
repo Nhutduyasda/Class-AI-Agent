@@ -1,0 +1,38 @@
+✔ three V2 identities are distinct, exact and unchanged; twelve SSML requests (25.276195ms)
+✔ two external signatures, distinct reviewer and current exact build required (983.10464ms)
+✔ signed invalid authorization rejects expired (924.280359ms)
+✔ signed invalid authorization rejects budget (880.229321ms)
+✔ signed invalid authorization rejects liability (8984.507882ms)
+✔ signed invalid authorization rejects duplicate (857.167214ms)
+✔ signed invalid authorization rejects ssml (1144.206684ms)
+✔ signed invalid authorization rejects store (1072.168904ms)
+✔ cloud journal full fake run12/resume0, independently acknowledged copies and liabilities (21649.906155ms)
+✔ uninitialized remote state does not silently initialize (2767.578042ms)
+✔ restart after RESERVED never dispatches again (2215.467674ms)
+✔ restart after DISPATCHING never dispatches again (1956.625654ms)
+✔ lost primary acknowledgement cannot dispatch; checkpoint mismatch blocks restart (3564.719291ms)
+✔ independent checkpoint unavailable before dispatch fails closed (2213.630537ms)
+✔ two concurrent coordinators cannot double dispatch (20661.328698ms)
+✔ timeout latches one attempt globally; no secret in returned error (4106.461124ms)
+✔ invalid WAV or failed backup never reaches next request (8421.62542ms)
+✔ rollback or corrupt checkpoint blocks before provider (17989.159627ms)
+✔ cached response requires exact primary and backup hashes (17449.095656ms)
+✔ HTTP broker fixes endpoint/output, disables redirects; error is sanitized and never retried (538.125383ms)
+✔ private GitHub store rejects public/unsafe endpoints before mutation (6.209021ms)
+✔ broker subprocess missing credential emits only fixed error with no Azure call (529.680009ms)
+✔ fast-forward restoration of BOTH journal and checkpoint is detected from immutable history (524.084347ms)
+✔ credential boundary rejects substituted SSML even with a self-consistent hash (526.622236ms)
+✔ hung credential supplier times out without provider invocation (5543.400657ms)
+✔ valid SSML with swapped voice/id is rejected before credential lookup (615.741184ms)
+✔ oversized credential buffer is wiped on rejection (599.731804ms)
+✔ independently pinned journal backup restores to a clean disposable destination after primary loss (21385.062498ms)
+✔ GitHub adapter reads a >1MB private receipt using a verified Git blob (16.212039ms)
+✔ protected flag alone is insufficient for state-store acceptance (1.106107ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 148605.405751

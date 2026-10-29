@@ -1,0 +1,585 @@
+[
+  {
+    "schemaVersion": 1,
+    "execution": "OFFLINE",
+    "createdAt": "2026-10-21T04:00:00Z",
+    "localDate": "2026-10-21",
+    "presenterId": "minh-main",
+    "wardrobe": "SMART_CASUAL",
+    "expression": "EXPLAINING",
+    "gesture": "EXPLAINING",
+    "runId": "fixture-learning",
+    "mode": "ENGLISH_LEARNING",
+    "visibility": "VOICE_ONLY",
+    "voiceProfile": "learning-clear",
+    "learning": {
+      "point": "Dùng an trước âm nguyên âm.",
+      "level": "A1",
+      "examples": [
+        "I ate an apple."
+      ]
+    },
+    "scenes": [
+      {
+        "id": "hook",
+        "spoken": "Chọn a hay an trước apple?",
+        "spans": [
+          {
+            "start": 0,
+            "end": 26,
+            "text": "Chọn a hay an trước apple?",
+            "language": "vi-VN"
+          }
+        ],
+        "frames": 120,
+        "claimIds": []
+      },
+      {
+        "id": "example",
+        "spoken": "I ate an apple.",
+        "spans": [
+          {
+            "start": 0,
+            "end": 15,
+            "text": "I ate an apple.",
+            "language": "en-US"
+          }
+        ],
+        "frames": 240,
+        "claimIds": []
+      },
+      {
+        "id": "explain",
+        "spoken": "Dùng an trước âm nguyên âm.",
+        "spans": [
+          {
+            "start": 0,
+            "end": 27,
+            "text": "Dùng an trước âm nguyên âm.",
+            "language": "vi-VN"
+          }
+        ],
+        "frames": 180,
+        "claimIds": []
+      },
+      {
+        "id": "cta",
+        "spoken": "Thử đặt một câu với an nhé.",
+        "spans": [
+          {
+            "start": 0,
+            "end": 27,
+            "text": "Thử đặt một câu với an nhé.",
+            "language": "vi-VN"
+          }
+        ],
+        "frames": 180,
+        "claimIds": []
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "execution": "OFFLINE",
+    "createdAt": "2026-10-21T04:00:00Z",
+    "localDate": "2026-10-21",
+    "presenterId": "minh-main",
+    "wardrobe": "SMART_CASUAL",
+    "expression": "EXPLAINING",
+    "gesture": "EXPLAINING",
+    "runId": "fixture-phone-case",
+    "mode": "PRODUCT_SHOWCASE",
+    "visibility": "HANDS_ONLY",
+    "voiceProfile": "review-energetic",
+    "product": {
+      "platform": "SHOPEE",
+      "inputUrl": "https://shopee.vn/offline-fixture-i.1.1",
+      "name": "Ốp mẫu minh họa.",
+      "category": "PHONE_CASE",
+      "sourceAccessType": "MANUAL_PROVIDED_EVIDENCE",
+      "capturedAt": "2026-10-21T04:00:00Z",
+      "evidence": [
+        {
+          "id": "e-0",
+          "source": "owner-supplied fictional fixture; not marketplace verification",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "expiresAt": "2026-10-22T04:00:00Z",
+          "field": "fact-0",
+          "value": "Ốp mẫu minh họa."
+        },
+        {
+          "id": "e-1",
+          "source": "owner-supplied fictional fixture; not marketplace verification",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "expiresAt": "2026-10-22T04:00:00Z",
+          "field": "fact-1",
+          "value": "Màu xanh theo dữ liệu mẫu."
+        },
+        {
+          "id": "e-2",
+          "source": "owner-supplied fictional fixture; not marketplace verification",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "expiresAt": "2026-10-22T04:00:00Z",
+          "field": "fact-2",
+          "value": "Dành cho máy mẫu theo dữ liệu mẫu."
+        }
+      ],
+      "attributes": [
+        {
+          "name": "fact-0",
+          "value": "Ốp mẫu minh họa.",
+          "evidenceId": "e-0"
+        },
+        {
+          "name": "fact-1",
+          "value": "Màu xanh theo dữ liệu mẫu.",
+          "evidenceId": "e-1"
+        },
+        {
+          "name": "fact-2",
+          "value": "Dành cho máy mẫu theo dữ liệu mẫu.",
+          "evidenceId": "e-2"
+        }
+      ],
+      "claims": [
+        {
+          "id": "c-0",
+          "text": "Ốp mẫu minh họa.",
+          "evidenceIds": [
+            "e-0"
+          ],
+          "type": "PRODUCT_FACT"
+        },
+        {
+          "id": "c-1",
+          "text": "Màu xanh theo dữ liệu mẫu.",
+          "evidenceIds": [
+            "e-1"
+          ],
+          "type": "PRODUCT_FACT"
+        },
+        {
+          "id": "c-2",
+          "text": "Dành cho máy mẫu theo dữ liệu mẫu.",
+          "evidenceIds": [
+            "e-2"
+          ],
+          "type": "PRODUCT_FACT"
+        }
+      ],
+      "assets": [
+        {
+          "id": "diagram",
+          "sha256": "d25bf1b2e19c3e9b038f230986d8a0ae962b4aecd74cfd1dae5f2203be1931b9",
+          "source": "original geometric placeholder v1",
+          "rightsBasis": "ORIGINAL_SYNTHETIC_FIXTURE",
+          "authorizedUseScope": "OFFLINE_DEMO_ONLY",
+          "reviewed": true
+        }
+      ],
+      "cta": "Xem thông tin mẫu trước khi lựa chọn.",
+      "disclosure": "Dữ liệu giả lập, không phải đánh giá trải nghiệm.",
+      "claimedHandsOn": false
+    },
+    "scenes": [
+      {
+        "id": "fact-0",
+        "spoken": "Ốp mẫu minh họa.",
+        "spans": [
+          {
+            "start": 0,
+            "end": 16,
+            "text": "Ốp mẫu minh họa.",
+            "language": "vi-VN"
+          }
+        ],
+        "frames": 180,
+        "claimIds": [
+          "c-0"
+        ]
+      },
+      {
+        "id": "fact-1",
+        "spoken": "Màu xanh theo dữ liệu mẫu.",
+        "spans": [
+          {
+            "start": 0,
+            "end": 26,
+            "text": "Màu xanh theo dữ liệu mẫu.",
+            "language": "vi-VN"
+          }
+        ],
+        "frames": 180,
+        "claimIds": [
+          "c-1"
+        ]
+      },
+      {
+        "id": "fact-2",
+        "spoken": "Dành cho máy mẫu theo dữ liệu mẫu.",
+        "spans": [
+          {
+            "start": 0,
+            "end": 34,
+            "text": "Dành cho máy mẫu theo dữ liệu mẫu.",
+            "language": "vi-VN"
+          }
+        ],
+        "frames": 180,
+        "claimIds": [
+          "c-2"
+        ]
+      },
+      {
+        "id": "cta",
+        "spoken": "Xem thông tin mẫu trước khi lựa chọn.",
+        "spans": [
+          {
+            "start": 0,
+            "end": 37,
+            "text": "Xem thông tin mẫu trước khi lựa chọn.",
+            "language": "vi-VN"
+          }
+        ],
+        "frames": 180,
+        "claimIds": []
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "execution": "OFFLINE",
+    "createdAt": "2026-10-21T04:00:00Z",
+    "localDate": "2026-10-21",
+    "presenterId": "minh-main",
+    "wardrobe": "SMART_CASUAL",
+    "expression": "EXPLAINING",
+    "gesture": "EXPLAINING",
+    "runId": "fixture-fashion",
+    "mode": "PRODUCT_SHOWCASE",
+    "visibility": "FACE_ONLY",
+    "voiceProfile": "review-energetic",
+    "product": {
+      "platform": "TIKTOK_SHOP",
+      "inputUrl": "https://shop.tiktok.com/view/product/123",
+      "name": "Áo mẫu minh họa.",
+      "category": "FASHION",
+      "sourceAccessType": "MANUAL_PROVIDED_EVIDENCE",
+      "capturedAt": "2026-10-21T04:00:00Z",
+      "evidence": [
+        {
+          "id": "e-0",
+          "source": "owner-supplied fictional fixture; not marketplace verification",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "expiresAt": "2026-10-22T04:00:00Z",
+          "field": "fact-0",
+          "value": "Áo mẫu minh họa."
+        },
+        {
+          "id": "e-1",
+          "source": "owner-supplied fictional fixture; not marketplace verification",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "expiresAt": "2026-10-22T04:00:00Z",
+          "field": "fact-1",
+          "value": "Màu xanh theo dữ liệu mẫu."
+        },
+        {
+          "id": "e-2",
+          "source": "owner-supplied fictional fixture; not marketplace verification",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "expiresAt": "2026-10-22T04:00:00Z",
+          "field": "fact-2",
+          "value": "Cỡ M theo dữ liệu mẫu."
+        }
+      ],
+      "attributes": [
+        {
+          "name": "fact-0",
+          "value": "Áo mẫu minh họa.",
+          "evidenceId": "e-0"
+        },
+        {
+          "name": "fact-1",
+          "value": "Màu xanh theo dữ liệu mẫu.",
+          "evidenceId": "e-1"
+        },
+        {
+          "name": "fact-2",
+          "value": "Cỡ M theo dữ liệu mẫu.",
+          "evidenceId": "e-2"
+        }
+      ],
+      "claims": [
+        {
+          "id": "c-0",
+          "text": "Áo mẫu minh họa.",
+          "evidenceIds": [
+            "e-0"
+          ],
+          "type": "PRODUCT_FACT"
+        },
+        {
+          "id": "c-1",
+          "text": "Màu xanh theo dữ liệu mẫu.",
+          "evidenceIds": [
+            "e-1"
+          ],
+          "type": "PRODUCT_FACT"
+        },
+        {
+          "id": "c-2",
+          "text": "Cỡ M theo dữ liệu mẫu.",
+          "evidenceIds": [
+            "e-2"
+          ],
+          "type": "PRODUCT_FACT"
+        }
+      ],
+      "assets": [
+        {
+          "id": "diagram",
+          "sha256": "d25bf1b2e19c3e9b038f230986d8a0ae962b4aecd74cfd1dae5f2203be1931b9",
+          "source": "original geometric placeholder v1",
+          "rightsBasis": "ORIGINAL_SYNTHETIC_FIXTURE",
+          "authorizedUseScope": "OFFLINE_DEMO_ONLY",
+          "reviewed": true
+        }
+      ],
+      "cta": "Xem thông tin mẫu trước khi lựa chọn.",
+      "disclosure": "Dữ liệu giả lập, không phải đánh giá trải nghiệm.",
+      "claimedHandsOn": false
+    },
+    "scenes": [
+      {
+        "id": "fact-0",
+        "spoken": "Áo mẫu minh họa.",
+        "spans": [
+          {
+            "start": 0,
+            "end": 16,
+            "text": "Áo mẫu minh họa.",
+            "language": "vi-VN"
+          }
+        ],
+        "frames": 180,
+        "claimIds": [
+          "c-0"
+        ]
+      },
+      {
+        "id": "fact-1",
+        "spoken": "Màu xanh theo dữ liệu mẫu.",
+        "spans": [
+          {
+            "start": 0,
+            "end": 26,
+            "text": "Màu xanh theo dữ liệu mẫu.",
+            "language": "vi-VN"
+          }
+        ],
+        "frames": 180,
+        "claimIds": [
+          "c-1"
+        ]
+      },
+      {
+        "id": "fact-2",
+        "spoken": "Cỡ M theo dữ liệu mẫu.",
+        "spans": [
+          {
+            "start": 0,
+            "end": 22,
+            "text": "Cỡ M theo dữ liệu mẫu.",
+            "language": "vi-VN"
+          }
+        ],
+        "frames": 180,
+        "claimIds": [
+          "c-2"
+        ]
+      },
+      {
+        "id": "cta",
+        "spoken": "Xem thông tin mẫu trước khi lựa chọn.",
+        "spans": [
+          {
+            "start": 0,
+            "end": 37,
+            "text": "Xem thông tin mẫu trước khi lựa chọn.",
+            "language": "vi-VN"
+          }
+        ],
+        "frames": 180,
+        "claimIds": []
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "execution": "OFFLINE",
+    "createdAt": "2026-10-21T04:00:00Z",
+    "localDate": "2026-10-21",
+    "presenterId": "minh-main",
+    "wardrobe": "SMART_CASUAL",
+    "expression": "EXPLAINING",
+    "gesture": "EXPLAINING",
+    "runId": "fixture-art",
+    "mode": "PRODUCT_SHOWCASE",
+    "visibility": "NO_PRESENTER",
+    "voiceProfile": "review-energetic",
+    "product": {
+      "platform": "SHOPEE",
+      "inputUrl": "https://shopee.vn/offline-fixture-i.1.1",
+      "name": "Tranh mẫu minh họa.",
+      "category": "ART",
+      "sourceAccessType": "MANUAL_PROVIDED_EVIDENCE",
+      "capturedAt": "2026-10-21T04:00:00Z",
+      "evidence": [
+        {
+          "id": "e-0",
+          "source": "owner-supplied fictional fixture; not marketplace verification",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "expiresAt": "2026-10-22T04:00:00Z",
+          "field": "fact-0",
+          "value": "Tranh mẫu minh họa."
+        },
+        {
+          "id": "e-1",
+          "source": "owner-supplied fictional fixture; not marketplace verification",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "expiresAt": "2026-10-22T04:00:00Z",
+          "field": "fact-1",
+          "value": "Nền trắng theo dữ liệu mẫu."
+        },
+        {
+          "id": "e-2",
+          "source": "owner-supplied fictional fixture; not marketplace verification",
+          "capturedAt": "2026-10-21T04:00:00Z",
+          "expiresAt": "2026-10-22T04:00:00Z",
+          "field": "fact-2",
+          "value": "Khổ A4 theo dữ liệu mẫu."
+        }
+      ],
+      "attributes": [
+        {
+          "name": "fact-0",
+          "value": "Tranh mẫu minh họa.",
+          "evidenceId": "e-0"
+        },
+        {
+          "name": "fact-1",
+          "value": "Nền trắng theo dữ liệu mẫu.",
+          "evidenceId": "e-1"
+        },
+        {
+          "name": "fact-2",
+          "value": "Khổ A4 theo dữ liệu mẫu.",
+          "evidenceId": "e-2"
+        }
+      ],
+      "claims": [
+        {
+          "id": "c-0",
+          "text": "Tranh mẫu minh họa.",
+          "evidenceIds": [
+            "e-0"
+          ],
+          "type": "PRODUCT_FACT"
+        },
+        {
+          "id": "c-1",
+          "text": "Nền trắng theo dữ liệu mẫu.",
+          "evidenceIds": [
+            "e-1"
+          ],
+          "type": "PRODUCT_FACT"
+        },
+        {
+          "id": "c-2",
+          "text": "Khổ A4 theo dữ liệu mẫu.",
+          "evidenceIds": [
+            "e-2"
+          ],
+          "type": "PRODUCT_FACT"
+        }
+      ],
+      "assets": [
+        {
+          "id": "diagram",
+          "sha256": "d25bf1b2e19c3e9b038f230986d8a0ae962b4aecd74cfd1dae5f2203be1931b9",
+          "source": "original geometric placeholder v1",
+          "rightsBasis": "ORIGINAL_SYNTHETIC_FIXTURE",
+          "authorizedUseScope": "OFFLINE_DEMO_ONLY",
+          "reviewed": true
+        }
+      ],
+      "cta": "Xem thông tin mẫu trước khi lựa chọn.",
+      "disclosure": "Dữ liệu giả lập, không phải đánh giá trải nghiệm.",
+      "claimedHandsOn": false
+    },
+    "scenes": [
+      {
+        "id": "fact-0",
+        "spoken": "Tranh mẫu minh họa.",
+        "spans": [
+          {
+            "start": 0,
+            "end": 19,
+            "text": "Tranh mẫu minh họa.",
+            "language": "vi-VN"
+          }
+        ],
+        "frames": 180,
+        "claimIds": [
+          "c-0"
+        ]
+      },
+      {
+        "id": "fact-1",
+        "spoken": "Nền trắng theo dữ liệu mẫu.",
+        "spans": [
+          {
+            "start": 0,
+            "end": 27,
+            "text": "Nền trắng theo dữ liệu mẫu.",
+            "language": "vi-VN"
+          }
+        ],
+        "frames": 180,
+        "claimIds": [
+          "c-1"
+        ]
+      },
+      {
+        "id": "fact-2",
+        "spoken": "Khổ A4 theo dữ liệu mẫu.",
+        "spans": [
+          {
+            "start": 0,
+            "end": 24,
+            "text": "Khổ A4 theo dữ liệu mẫu.",
+            "language": "vi-VN"
+          }
+        ],
+        "frames": 180,
+        "claimIds": [
+          "c-2"
+        ]
+      },
+      {
+        "id": "cta",
+        "spoken": "Xem thông tin mẫu trước khi lựa chọn.",
+        "spans": [
+          {
+            "start": 0,
+            "end": 37,
+            "text": "Xem thông tin mẫu trước khi lựa chọn.",
+            "language": "vi-VN"
+          }
+        ],
+        "frames": 180,
+        "claimIds": []
+      }
+    ]
+  }
+]

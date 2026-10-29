@@ -1,0 +1,15 @@
+✔ fast-forward restoration of BOTH journal and checkpoint is detected from immutable history (1066.770961ms)
+✔ credential boundary rejects substituted SSML even with a self-consistent hash (639.636972ms)
+✔ hung credential supplier times out without provider invocation (5764.757664ms)
+✔ valid SSML with swapped voice/id is rejected before credential lookup (1042.740063ms)
+✔ oversized credential buffer is wiped on rejection (843.986204ms)
+✔ GitHub adapter reads a >1MB private receipt using a verified Git blob (31.898009ms)
+✔ protected flag alone is insufficient for state-store acceptance (2.156399ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9854.376548

@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "scope": {
+      "type": "string",
+      "const": "OFFLINE_SIMULATION_ONLY"
+    },
+    "policyId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]{0,63}$"
+    },
+    "ownerApprovalId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]{0,63}$"
+    },
+    "codeSha": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+    },
+    "productionMicrousd": {
+      "type": "number",
+      "const": 8000000
+    },
+    "reserveMicrousd": {
+      "type": "number",
+      "const": 2000000
+    },
+    "totalMicrousd": {
+      "type": "number",
+      "const": 10000000
+    },
+    "maxVideoMicrousd": {
+      "type": "number",
+      "const": 80000
+    },
+    "openingLiabilities": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000000000
+    },
+    "openingBalanceVerified": {
+      "type": "boolean"
+    },
+    "englishScheduledAllowed": {
+      "type": "boolean"
+    },
+    "productOnDemandAllowed": {
+      "type": "boolean"
+    },
+    "pricing": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]{0,63}$"
+        },
+        "checkedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "expiresAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "evidenceSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "id",
+        "checkedAt",
+        "expiresAt",
+        "evidenceSha256"
+      ],
+      "additionalProperties": false
+    },
+    "blockUnresolved": {
+      "type": "boolean",
+      "const": true
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "scope",
+    "policyId",
+    "ownerApprovalId",
+    "codeSha",
+    "expiresAt",
+    "productionMicrousd",
+    "reserveMicrousd",
+    "totalMicrousd",
+    "maxVideoMicrousd",
+    "openingLiabilities",
+    "openingBalanceVerified",
+    "englishScheduledAllowed",
+    "productOnDemandAllowed",
+    "pricing",
+    "blockUnresolved"
+  ],
+  "additionalProperties": false
+}

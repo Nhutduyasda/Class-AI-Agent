@@ -1,0 +1,21 @@
+{
+  "kind": "SYNTHETIC_OFFLINE",
+  "renderer": "REMOTION_RENDER_PASS",
+  "format": "PASS",
+  "fullDecode": "PASS",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 709,
+  "duration": 23.637,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "artifactSha256": "82f598d5fc3cc876bcf9ec3984e5d8baab329bc61fdac4c7d4e5633bbcbd9ace",
+  "audioSha256": "1147bd05c6092bcaf0752a454ad1dccb7c578da24e6bb2a74c7fd0e4a6da8333",
+  "scriptSha256": "04033938eb32dd5d2f72113863b89b87a8dac8fc4cbc3a694ba43c921abd5afc",
+  "practiceHoldSamples": 72000,
+  "technicalProduction": "NOT_EVALUATED",
+  "speechAlignment": "BLOCKED_NO_AUTHENTIC_V2_SPEECH",
+  "human": "PENDING_OWNER",
+  "publicationAllowed": false
+}

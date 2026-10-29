@@ -1,0 +1,365 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "execution": {
+      "type": "string",
+      "const": "OFFLINE"
+    },
+    "provenance": {
+      "type": "string",
+      "const": "SYNTHETIC_SILENT_CAPTION_FIXTURE"
+    },
+    "runId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]{0,63}$"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "ENGLISH_LEARNING",
+        "PRODUCT_SHOWCASE"
+      ]
+    },
+    "briefSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "presenterSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "voiceDirection": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "type": "number",
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "enum": [
+            "learning-clear",
+            "review-energetic",
+            "narrative-natural",
+            "neutral-fallback"
+          ]
+        },
+        "pacing": {
+          "type": "string",
+          "enum": [
+            "MEASURED",
+            "DYNAMIC",
+            "NATURAL",
+            "NEUTRAL"
+          ]
+        },
+        "pauseMs": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "emphasis": {
+          "maxItems": 8,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          }
+        },
+        "segmentation": {
+          "type": "string",
+          "const": "SENTENCE"
+        },
+        "intent": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "hints": {
+          "type": "object",
+          "properties": {
+            "breaks": {
+              "type": "boolean"
+            },
+            "ratePercent": {
+              "type": "number",
+              "const": 0
+            },
+            "pitch": {
+              "type": "string",
+              "const": "default"
+            },
+            "expressiveStyle": {
+              "type": "null"
+            },
+            "cloneReference": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "breaks",
+            "ratePercent",
+            "pitch",
+            "expressiveStyle",
+            "cloneReference"
+          ],
+          "additionalProperties": false
+        },
+        "routing": {
+          "type": "string",
+          "const": "EXPLICIT_SPANS_ONLY"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "pacing",
+        "pauseMs",
+        "emphasis",
+        "segmentation",
+        "intent",
+        "hints",
+        "routing"
+      ],
+      "additionalProperties": false
+    },
+    "width": {
+      "type": "number",
+      "const": 1080
+    },
+    "height": {
+      "type": "number",
+      "const": 1920
+    },
+    "fps": {
+      "type": "number",
+      "const": 30
+    },
+    "durationInFrames": {
+      "type": "integer",
+      "minimum": 600,
+      "maximum": 1350
+    },
+    "shots": {
+      "minItems": 3,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,63}$"
+          },
+          "spoken": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "spans": {
+            "minItems": 1,
+            "maxItems": 30,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "start": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "end": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 2000
+                },
+                "language": {
+                  "type": "string",
+                  "enum": [
+                    "vi-VN",
+                    "en-US"
+                  ]
+                }
+              },
+              "required": [
+                "start",
+                "end",
+                "text",
+                "language"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "frames": {
+            "type": "integer",
+            "minimum": 30,
+            "maximum": 300
+          },
+          "claimIds": {
+            "maxItems": 8,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{0,63}$"
+            }
+          },
+          "startFrame": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "endFrame": {
+            "type": "integer",
+            "exclusiveMinimum": 0,
+            "maximum": 9007199254740991
+          },
+          "visibility": {
+            "type": "string",
+            "enum": [
+              "NO_PRESENTER",
+              "VOICE_ONLY",
+              "HANDS_ONLY",
+              "FACE_ONLY",
+              "HALF_BODY",
+              "FULL_BODY"
+            ]
+          },
+          "presenterId": {
+            "type": "string",
+            "const": "minh-main"
+          },
+          "wardrobe": {
+            "type": "string",
+            "enum": [
+              "SMART_CASUAL",
+              "FORMAL_SHIRT",
+              "CASUAL_DAILY",
+              "EXPERT_DARK",
+              "OUTDOOR_ACTIVE"
+            ]
+          },
+          "expression": {
+            "type": "string",
+            "enum": [
+              "NEUTRAL",
+              "HAPPY",
+              "FRIENDLY",
+              "SURPRISED",
+              "THINKING",
+              "CONFIDENT",
+              "EXPLAINING",
+              "ENCOURAGING"
+            ]
+          },
+          "gesture": {
+            "type": "string",
+            "enum": [
+              "GREETING",
+              "INTRODUCING",
+              "EXPLAINING",
+              "POINTING",
+              "THINKING",
+              "IDEA",
+              "INTERACTING",
+              "ENDING"
+            ]
+          },
+          "routing": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "start": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "end": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 2000
+                },
+                "language": {
+                  "type": "string",
+                  "enum": [
+                    "vi-VN",
+                    "en-US"
+                  ]
+                },
+                "voice": {
+                  "type": "string",
+                  "enum": [
+                    "vi-VN-NamMinhNeural",
+                    "en-US-AndrewNeural"
+                  ]
+                }
+              },
+              "required": [
+                "start",
+                "end",
+                "text",
+                "language",
+                "voice"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "spoken",
+          "spans",
+          "frames",
+          "claimIds",
+          "startFrame",
+          "endFrame",
+          "visibility",
+          "presenterId",
+          "wardrobe",
+          "expression",
+          "gesture",
+          "routing"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "paidRequests": {
+      "type": "number",
+      "const": 0
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "execution",
+    "provenance",
+    "runId",
+    "mode",
+    "briefSha256",
+    "presenterSha256",
+    "voiceDirection",
+    "width",
+    "height",
+    "fps",
+    "durationInFrames",
+    "shots",
+    "paidRequests"
+  ],
+  "additionalProperties": false
+}

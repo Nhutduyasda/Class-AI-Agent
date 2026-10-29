@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "scope": "WORK_ONLY_PREPARATION_NOT_EXECUTABLE_AUTHORIZATION",
+  "selectedCandidate": "v2",
+  "authorization": "OWNER_CONDITIONALLY_APPROVED_SCOPE_NOT_ACTIVATED",
+  "identities": {
+    "scriptByteSha256": "04033938eb32dd5d2f72113863b89b87a8dac8fc4cbc3a694ba43c921abd5afc",
+    "canonicalPlanPayloadSha256": "8487406dca081a9ae91fe0bd9e1fe8602fe32f06e1b784edd3bc7b1a50a19b83",
+    "planFileByteSha256": "6836db73d76ba69f18c9bcac8ea725abef1f6eb3c0bd9e5b0553886c7cb045e8"
+  },
+  "maxRequests": 12,
+  "neutralRequests": 6,
+  "dynamicRequests": 6,
+  "maxAttemptsPerRequest": 1,
+  "azureMaxMicrousd": 30000,
+  "aggregateMaxMicrousd": 80000,
+  "factoryCashMicrousd": 10000000,
+  "productionAllocationMicrousd": 8000000,
+  "reserveMicrousd": 2000000,
+  "executionArchitecture": "PORTABLE_CLOUD_CORE_PROTECTED_HOST_NOT_CONFIGURED",
+  "windowsRequired": false,
+  "usbRequired": false,
+  "cloudCoreTests": {
+    "pass": 30,
+    "fail": 0,
+    "evidenceKind": "FAKE_PORTS_NOT_REMOTE_ACCEPTANCE"
+  },
+  "priorRegressionTests": {
+    "pass": 109,
+    "fail": 0
+  },
+  "independentReview": {
+    "focusedPass": 7,
+    "focusedFail": 0,
+    "productionGo": false
+  },
+  "trustedHostBootstrap": "NOT_CONFIGURED",
+  "externalSignerEnrollment": "NOT_CONFIGURED",
+  "actualPrivateStoresAndIndependentBackup": "NOT_CONFIGURED_OR_ACCEPTED",
+  "accountPriceTaxAndLiabilityReconciliation": "INCOMPLETE",
+  "realAzureSynthesisRequests": 0,
+  "newPaidApiCostUsd": 0,
+  "authenticVideo06": "NOT_PRODUCED",
+  "productionQa": "NOT_EVALUATED",
+  "ownerCreativeReview": "PENDING",
+  "gate3": "PARTIAL",
+  "gate4": "NO_GO",
+  "paidExecutionAllowed": false,
+  "schedulingAllowed": false,
+  "publicationAllowed": false,
+  "githubIncludedComputeRemainingUsdObserved": 15.2,
+  "githubBillableUsdObserved": 0,
+  "githubEnvironmentCountObserved": 0,
+  "githubBillingAuthenticated": true
+}

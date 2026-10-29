@@ -1,0 +1,6 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> auto-factory-dashboard@0.1.0 test:browser
+> node tests/run-browser.mjs
+
+{"networkRequests":31,"navigation":8,"learningDraft":true,"productEmptyRejected":true,"productDraft":true,"fixtureVideo":true,"reviewAction":true,"pilotState":true,"desktop":"1440x900","mobile":"390x844","horizontalOverflow":false,"screenshots":["desktop-overview.png","desktop-review.png","mobile-overview.png","mobile-product.png"]}

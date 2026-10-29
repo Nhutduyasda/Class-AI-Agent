@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "font": {
+    "name": "DejaVu Sans",
+    "sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+    "rightsBasis": "Bitstream Vera license / DejaVu public domain changes",
+    "localNotice": "/usr/share/doc/fonts-dejavu-core/copyright",
+    "fontFileDistributed": false
+  },
+  "visuals": {
+    "source": "Original solid-color rectangles and text in scripts/auto-factory/run.ts",
+    "rightsBasis": "Original fixture graphics, no external product/presenter media"
+  },
+  "audio": {
+    "source": "FFmpeg anullsrc",
+    "rightsBasis": "Generated silence; no voice/music/reference audio copied"
+  },
+  "productEvidence": "Fictional manual-contract test data. Not real marketplace verification."
+}

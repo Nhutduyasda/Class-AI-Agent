@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "kind": "SIMULATION_ONLY",
+  "revision": 1,
+  "openingLiability": 0,
+  "reservations": [
+    {
+      "runId": "fixture-phone-case",
+      "localDate": "2026-10-21",
+      "inputSha256": "8137c59cde29b72618790d44f1bc22db5d49aad7fc2e2f79facdfa6556711421",
+      "microusd": 0
+    }
+  ]
+}

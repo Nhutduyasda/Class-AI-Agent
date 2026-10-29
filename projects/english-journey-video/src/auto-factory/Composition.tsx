@@ -1,0 +1,11 @@
+import React from 'react';
+import {AbsoluteFill,Audio,Composition,Img,OffthreadVideo,registerRoot,staticFile,useCurrentFrame} from 'remotion';
+import type {plan} from './engine';
+import {validatePlayback,type PlaybackType} from './playback';
+import defaultPlan from '../../fixtures/auto-factory/render-plan.json';
+type Plan=ReturnType<typeof plan>;
+type Props={plan:Plan;media:PlaybackType};
+export const FactoryVideo:React.FC<Props>=({plan:p,media})=>{const frame=useCurrentFrame();const m=validatePlayback(p,media);const shot=p.shots.find(s=>frame>=s.startFrame&&frame<s.endFrame)!;const caption=m.captions.find(c=>frame>=c.startFrame&&frame<c.endFrame);const asset=m.presenterAssets.find(a=>a.visibility===shot.visibility);return <AbsoluteFill style={{background:shot.id==='example'?'#173e46':'#101d32',color:'white',fontFamily:'Arial, sans-serif',padding:'160px 120px 330px 90px',justifyContent:'center',gap:60}}>{m.audio?<Audio src={staticFile(m.audio.file)}/>:null}<div style={{fontSize:32,color:'#ffcf65'}}>OFFLINE FIXTURE • {m.audio?'SYNTHETIC AUDIO':'NO SPEECH'} • NOT FOR PUBLICATION</div><div style={{fontSize:36}}>{p.mode}</div>{asset?(asset.fileType==='video/mp4'?<OffthreadVideo muted src={staticFile(asset.file)} style={{maxHeight:500,objectFit:'contain'}}/>:<Img src={staticFile(asset.file)} style={{maxHeight:500,objectFit:'contain'}}/>):null}<div style={{fontSize:64,fontWeight:800,overflowWrap:'anywhere'}}>{caption?.text}</div><div style={{fontSize:30,color:'#65dacb'}}>Shot {shot.id} • {shot.visibility}</div><div style={{fontSize:28}}>Minh: {asset?'OFFLINE ASSET — IDENTITY UNVERIFIED':'TEXT IDENTITY ONLY — NO MINH MEDIA'}</div></AbsoluteFill>};
+const initial=defaultPlan as Plan;
+const Root:React.FC=()=> <Composition id="AutoFactory" component={FactoryVideo} width={1080} height={1920} fps={30} durationInFrames={720} defaultProps={{plan:initial,media:{schemaVersion:1,captions:initial.shots.map(s=>({sceneId:s.id,text:s.spoken,startFrame:s.startFrame,endFrame:s.endFrame})),presenterAssets:[]}}} calculateMetadata={({props})=>{validatePlayback(props.plan,props.media);return {durationInFrames:props.plan.durationInFrames};}}/>;
+registerRoot(Root);

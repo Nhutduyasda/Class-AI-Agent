@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "const": "minh-main"
+    },
+    "displayName": {
+      "type": "string",
+      "const": "Minh"
+    },
+    "visualAgeRange": {
+      "type": "string",
+      "const": "24-30"
+    },
+    "role": {
+      "type": "string",
+      "const": "MAIN_HOST"
+    },
+    "style": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "string",
+          "const": "modern"
+        },
+        {
+          "type": "string",
+          "const": "friendly"
+        },
+        {
+          "type": "string",
+          "const": "trustworthy"
+        }
+      ],
+      "items": false,
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "personality": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "string",
+          "const": "enthusiastic"
+        },
+        {
+          "type": "string",
+          "const": "positive"
+        },
+        {
+          "type": "string",
+          "const": "approachable"
+        },
+        {
+          "type": "string",
+          "const": "intelligent"
+        },
+        {
+          "type": "string",
+          "const": "inspiring"
+        }
+      ],
+      "items": false,
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "channelUse": {
+      "minItems": 2,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "ENGLISH_LEARNING",
+          "PRODUCT_SHOWCASE",
+          "EDUCATIONAL",
+          "TUTORIAL",
+          "REVIEW"
+        ]
+      }
+    },
+    "recognition": {
+      "type": "object",
+      "properties": {
+        "ethnicity": {
+          "type": "string",
+          "const": "young Asian male"
+        },
+        "hair": {
+          "type": "string",
+          "const": "thick slightly wavy dark brown/black hair"
+        },
+        "eyes": {
+          "type": "string",
+          "const": "brown"
+        },
+        "smile": {
+          "type": "string",
+          "const": "natural friendly smile"
+        },
+        "appearance": {
+          "type": "string",
+          "const": "clean modern smart-casual appearance"
+        }
+      },
+      "required": [
+        "ethnicity",
+        "hair",
+        "eyes",
+        "smile",
+        "appearance"
+      ],
+      "additionalProperties": false
+    },
+    "wardrobe": {
+      "minItems": 5,
+      "maxItems": 5,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "SMART_CASUAL",
+          "FORMAL_SHIRT",
+          "CASUAL_DAILY",
+          "EXPERT_DARK",
+          "OUTDOOR_ACTIVE"
+        ]
+      }
+    },
+    "expressions": {
+      "minItems": 8,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "NEUTRAL",
+          "HAPPY",
+          "FRIENDLY",
+          "SURPRISED",
+          "THINKING",
+          "CONFIDENT",
+          "EXPLAINING",
+          "ENCOURAGING"
+        ]
+      }
+    },
+    "gestures": {
+      "minItems": 8,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "GREETING",
+          "INTRODUCING",
+          "EXPLAINING",
+          "POINTING",
+          "THINKING",
+          "IDEA",
+          "INTERACTING",
+          "ENDING"
+        ]
+      }
+    },
+    "assetStatus": {
+      "type": "string",
+      "const": "TEXT_REFERENCE_ONLY"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "displayName",
+    "visualAgeRange",
+    "role",
+    "style",
+    "personality",
+    "channelUse",
+    "recognition",
+    "wardrobe",
+    "expressions",
+    "gestures",
+    "assetStatus"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "DEVELOPMENT_EVIDENCE_NOT_PRODUCTION_AUTHORITY",
+  "implementationCommit": "4d5a1e813c659bd7545b084d13e8d91a5dbf53f1",
+  "testedRepositoryTree": "23f94bebc9ca0d6f3833d2a85ad20b7ade192c6b",
+  "nodeVersion": "24.19.0",
+  "os": "Linux",
+  "newCloudPass": 30,
+  "newCloudFail": 0,
+  "regressionPass": 109,
+  "regressionFail": 0,
+  "independentFocusedPass": 7,
+  "realAzureSynthesisRequests": 0,
+  "newPaidApiCostUsd": 0,
+  "productionGo": false,
+  "files": {
+    "README.md": "3d0e06a086d3f894426f670c234f07ac093a906d7f6b120735847eecaea9ed35",
+    "account-observations.json": "aefc6639fdba3db592273ab4f0dded6cd3232015a876e7530d4e9c2278225056",
+    "build-identity.json": "f33eb942fc7a1de0fa05e2e2cbb4471bbecbe63a9d0998af95f61a06d143151f",
+    "cloud-mock-summary.json": "2640be9ffd5b782afe08b0dc06358dafc07f8c24275590f5a44421d3ce1b701c",
+    "cloud-tests.log": "9dd6ae284240843b83b3bf5e5941aed2fccef0842afbd551f500bde41a2175b7",
+    "cloud-typecheck.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "independent-review.log": "39915ec416d08d8cb97eab5e152f89d169095a49de1aa41a18dfa7ffa54883c3",
+    "project-typecheck.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "regressions.log": "a1f9baf438d22bf70acecc9aa3844c329f708762c0d6a8abe7f1a7c509823453"
+  }
+}

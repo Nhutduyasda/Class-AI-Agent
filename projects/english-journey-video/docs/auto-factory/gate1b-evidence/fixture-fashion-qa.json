@@ -1,0 +1,70 @@
+{
+  "fixture": "OFFLINE_FIXTURE_PASS",
+  "renderer": "REMOTION_RENDER_PASS",
+  "audio": "AUDIO_ALIGNMENT_UNVERIFIED",
+  "presenter": "PRESENTER_ASSET_UNVERIFIED",
+  "technicalProduction": "NOT_EVALUATED",
+  "human": "HUMAN_REVIEW_PENDING",
+  "publicationAllowed": false,
+  "format": "PASS",
+  "fullDecode": "PASS",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 720,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "duration": 24,
+  "speech": "SYNTHETIC_TONE_NOT_SPEECH",
+  "captionTiming": "CANONICAL_SCENE_BOUNDARIES_NOT_SPEECH_ALIGNMENT",
+  "humanReview": "PENDING",
+  "presenterVisual": "GEOMETRIC_PLACEHOLDER_ONLY",
+  "sha256": "f943ef7c5d932c4e85dee1a13be47c6245c666285ee0966797d9892c1300b28a",
+  "planSha256": "45f72f2b81db7056f687493a0c895d801ee902e75ff991d71cc66c9a9b9ac057",
+  "mediaSha256": "c73d72a0546830086f0a0ea310dd8ef4d8f9e229011ced8adf16bdbb8c227d72",
+  "browserVersion": "Chromium 157.0.8080.0",
+  "remotionVersion": "4.0.535",
+  "durationInFrames": 720,
+  "proofs": [
+    {
+      "frame": 0,
+      "sha256": "7c8ed9cf5a25f69b32393bcb67ee4bbe1f8b5f6b0797525fae46a923ad680c97",
+      "scene": "fact-0"
+    },
+    {
+      "frame": 179,
+      "sha256": "cad492982afa1ba30b97c31814a5266c9c08d487fa069bbfed566ec846145c9e",
+      "scene": "fact-0"
+    },
+    {
+      "frame": 180,
+      "sha256": "db44b3b508e4fd4878926d3e208f3f434856202268d3ec78c6cbb995e040d078",
+      "scene": "fact-1"
+    },
+    {
+      "frame": 359,
+      "sha256": "22982c531ce5ffceffe62b2ee17231ff6e90e04637de5c7207debce80980ac42",
+      "scene": "fact-1"
+    },
+    {
+      "frame": 360,
+      "sha256": "019ca2443e18dd548758b3897443d2f32d9ab1c0cfa665bd031a3fb1b4ca41aa",
+      "scene": "fact-2"
+    },
+    {
+      "frame": 539,
+      "sha256": "63f7ee6bb2f9b5fe5343c3ba7000d417d88b695d9e3d6431f69fe04dc38f5d09",
+      "scene": "fact-2"
+    },
+    {
+      "frame": 540,
+      "sha256": "819fc5cb9a4039656cbd1d0cb7e461f0432a3010790aba6b8e37218b20fc306b",
+      "scene": "cta"
+    },
+    {
+      "frame": 719,
+      "sha256": "3f7b6a2413165afc6e226ada7873b60ace2ffd881aed3b289f2d5f3005ee00d5",
+      "scene": "cta"
+    }
+  ]
+}

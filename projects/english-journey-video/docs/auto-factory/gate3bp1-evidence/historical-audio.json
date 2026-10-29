@@ -1,0 +1,58 @@
+{
+  "scope": "AUTHORIZED_HISTORICAL_WAV_DECODER_INTEGRATION_ONLY",
+  "files": [
+    {
+      "scene": "hook",
+      "sha256": "336ad0bd89ff09af548efb069632c4969932d7ecb2de3a50243275b5fbb9650f",
+      "samples": 193800,
+      "durationSeconds": 4.0375,
+      "fullDecode": "PASS",
+      "voice": "vi-VN-NamMinhNeural"
+    },
+    {
+      "scene": "problem",
+      "sha256": "2d5ce709a12eeea3549875e91227803cd7d55278917eb8eed231d081f88dd478",
+      "samples": 455400,
+      "durationSeconds": 9.4875,
+      "fullDecode": "PASS",
+      "voice": "vi-VN-NamMinhNeural"
+    },
+    {
+      "scene": "solution",
+      "sha256": "233fac644068e1543dbdb3e3045a9494109970d9a168e0e1f79bebe28bfd592b",
+      "samples": 475200,
+      "durationSeconds": 9.9,
+      "fullDecode": "PASS",
+      "voice": "vi-VN-NamMinhNeural"
+    },
+    {
+      "scene": "demo",
+      "sha256": "f6640f0f6d981243ba3ec76e7bdfa00e1961cff863d0b24462619093590c9ee4",
+      "samples": 795000,
+      "durationSeconds": 16.5625,
+      "fullDecode": "PASS",
+      "voice": "vi-VN-NamMinhNeural"
+    },
+    {
+      "scene": "benefit",
+      "sha256": "d1cb212aef49f0f57d93d1f4a451c50ac81ee113417840caafa827dbfa2e96f7",
+      "samples": 577800,
+      "durationSeconds": 12.0375,
+      "fullDecode": "PASS",
+      "voice": "vi-VN-NamMinhNeural"
+    },
+    {
+      "scene": "cta",
+      "sha256": "b109f45d809aba0186eb036815e4b6fc67fd2e6ab331920d2351d7aceb73f647",
+      "samples": 375000,
+      "durationSeconds": 7.8125,
+      "fullDecode": "PASS",
+      "voice": "vi-VN-NamMinhNeural"
+    }
+  ],
+  "voice06": "BLOCKED_NO_AUTHENTIC_VIDEO06_AUDIO",
+  "bilingualSpeechListening": "UNVERIFIED",
+  "historicalSynthesisRequests": 0,
+  "historicalOutputsModified": false,
+  "publicationAllowed": false
+}

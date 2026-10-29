@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "runId": "fixture-fashion",
+  "planSha256": "45f72f2b81db7056f687493a0c895d801ee902e75ff991d71cc66c9a9b9ac057",
+  "videoSha256": "f943ef7c5d932c4e85dee1a13be47c6245c666285ee0966797d9892c1300b28a",
+  "status": "PENDING_OWNER",
+  "fixture": true,
+  "publicationAllowed": false
+}

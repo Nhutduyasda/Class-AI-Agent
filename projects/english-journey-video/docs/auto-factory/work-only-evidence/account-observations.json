@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "kind": "SANITIZED_READ_ONLY_ACCOUNT_OBSERVATIONS_NOT_SPENDING_AUTHORITY",
+  "observedDate": "2026-10-29",
+  "azure": {
+    "authenticatedPortalSession": true,
+    "resourceName": "english-journey-namminh",
+    "resourceStatus": "Active",
+    "region": "Southeast Asia",
+    "tierDisplayed": "Standard",
+    "subscriptionStatus": "Active",
+    "subscriptionPlanDisplayed": "Azure Plan",
+    "accountSpecificCurrentPriceTax": "UNVERIFIED",
+    "outstandingLiabilities": "PARTIAL_DISPLAYED_COST_AND_INVOICE_VIEW_NOT_FINAL_RECONCILIATION",
+    "availablePrepaidCredit": "NOT_ESTABLISHED",
+    "latestVisibleInvoiceBillingPeriod": "2026-09",
+    "priceSheetSelectedPeriod": "2026-09",
+    "priceSheetUsableForCurrentPilot": false,
+    "keyRevealedOrCopied": false,
+    "authenticatedVoiceCatalogue": "NOT_VERIFIED"
+  },
+  "github": {
+    "featureBranchProtected": false,
+    "repositoryRulesetsObserved": 0,
+    "productionEnvironments": 0,
+    "billingBrowser": "AUTHENTICATED_EXPECTED_OWNER_ACCOUNT",
+    "includedComputeAndBillableExposure": "CURRENT_PORTAL_OBSERVATION_NOT_FUTURE_SPEND_GUARANTEE",
+    "ciTriggered": false,
+    "productionEnvironmentsEvidence": "AUTHENTICATED_REPOSITORY_SETTINGS_PAGE",
+    "includedComputeTotalUsd": 18,
+    "includedComputeConsumedUsd": 2.8,
+    "includedComputeRemainingUsd": 15.2,
+    "actionsBillableUsageUsd": 0,
+    "actionsStorageUsedGbDisplayed": 0,
+    "actionsStorageIncludedGb": 2
+  },
+  "realAzureSynthesisRequests": 0,
+  "newPaidApiCostUsd": 0,
+  "publicEvidenceRedaction": "No account email, subscription/tenant/billing IDs, invoice ID, raw price sheet or keys included."
+}

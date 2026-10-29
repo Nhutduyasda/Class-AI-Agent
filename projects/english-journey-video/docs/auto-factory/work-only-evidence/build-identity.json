@@ -1,0 +1,76 @@
+{
+  "kind": "MEASURED_DEVELOPMENT_BUILD_NOT_PRODUCTION_APPROVAL",
+  "implementationCommit": "4d5a1e813c659bd7545b084d13e8d91a5dbf53f1",
+  "buildSha256": "64e01600d66a6427611d4e8dfa61b376d43253149572c0436c62017f0e255d74",
+  "nodeVersion": "24.19.0",
+  "nodeSha256": "bc17c508ffeed0ec622934f9b7fa72f8e78da65350e63c3eceb56fa688aa5e12",
+  "measuredFileCount": 844,
+  "sourceAndLockfiles": [
+    {
+      "path": "scripts/auto-factory/cloud/broker.ts",
+      "sha256": "ea442e75e44012179019933eaa61a37f07e3853a728c5e84f0c1c80b13092896"
+    },
+    {
+      "path": "scripts/auto-factory/cloud/build.ts",
+      "sha256": "ddf92e860d5ef783f7836e9b6665008e81be1185c1c5a64a4d3dcb53b5515081"
+    },
+    {
+      "path": "scripts/auto-factory/cloud/cloud.test.ts",
+      "sha256": "6225f4dae45d23f6d5371845bd28e1837a12f28cf1e4674935d4e5f7a97c14cb"
+    },
+    {
+      "path": "scripts/auto-factory/cloud/contracts.ts",
+      "sha256": "64e19e0d0da3428526a1483f4b3a9cc7db7c908e4cfe053985a9b822f9a387f5"
+    },
+    {
+      "path": "scripts/auto-factory/cloud/executor.ts",
+      "sha256": "36a7779c194192860b4383f67fd61658095aeff79557d94643b586d77e443f68"
+    },
+    {
+      "path": "scripts/auto-factory/cloud/isolated-speech.ts",
+      "sha256": "984a82e1e69105e66743083c2d3384618eea590f5b48e17a30e1182908492a45"
+    },
+    {
+      "path": "scripts/auto-factory/cloud/ledger.ts",
+      "sha256": "53a8ed444874c85044b35fcc20295892d5489bd510c68393364467fb5b0fe28c"
+    },
+    {
+      "path": "scripts/auto-factory/cloud/request-allowlist.ts",
+      "sha256": "20ba09d3fe3b2f8e0e63eba572341b45346c58c3e557d724dbe3859f17f0fcef"
+    },
+    {
+      "path": "scripts/auto-factory/cloud/speech.ts",
+      "sha256": "48face5f00355155e2d4d871af5310e05f01729d3b82d085491378a45afc3307"
+    },
+    {
+      "path": "scripts/auto-factory/cloud/store.ts",
+      "sha256": "48d6811428c4678e0d3952b8c5cf5e63a3948a472ef2fbc8554e144369271c61"
+    },
+    {
+      "path": "scripts/auto-factory/pilot/readiness.mjs",
+      "sha256": "77d3bb4d441e950a8b57fc09079636bb49642a83d389eb1124b0f491fff7267f"
+    },
+    {
+      "path": "scripts/auto-factory/pilot/prepare.mjs",
+      "sha256": "53e6f6b25c1c9bd54f0d42eda6119ee7a4bac702a54d9b2cf66b0f32883334e5"
+    },
+    {
+      "path": "scripts/auto-factory/pilot/media.ts",
+      "sha256": "bf41dbd5e8cd96637668bbace64eb60592804b8b0fe47ab61e7cf8d07ee69a59"
+    },
+    {
+      "path": "scripts/bilingual/core.mjs",
+      "sha256": "448e2497f55106f6c481ca487c9bc7ec2a0e4d16f7ba95e60e8043a35202a8ac"
+    },
+    {
+      "path": "package.json",
+      "sha256": "791f67d170fb92a3aef908caca91bb0481b2c7c743965883fd3de19995d43288"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "c2e5200eb07e7a7e654a76532a8c6ed142d05a833b0dbd1777fb8449f0e4e946"
+    }
+  ],
+  "installedZodFilesSha256": "c74678a0f2945cef83d60abcdac2e4444c6dea68b4a267a2809303c306662336",
+  "productionApproved": false
+}
