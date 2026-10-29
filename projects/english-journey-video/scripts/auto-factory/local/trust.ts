@@ -3,6 +3,7 @@ import { readFile, readdir, realpath, lstat } from "node:fs/promises";
 import { resolve, relative, isAbsolute, join } from "node:path";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
+import { gitNullDevice } from "../../../src/auto-factory/control/git-ledger.ts";
 export const sha = (b: Buffer | string) =>
   createHash("sha256").update(b).digest("hex");
 export const loadedProject = resolve(import.meta.dirname, "../../..");
@@ -44,7 +45,7 @@ export const safeEnv = () => ({
   PATH: process.env.PATH ?? "",
   ...(process.env.SystemRoot ? { SystemRoot: process.env.SystemRoot } : {}),
   GIT_CONFIG_NOSYSTEM: "1",
-  GIT_CONFIG_GLOBAL: process.platform === "win32" ? "NUL" : "/dev/null",
+  GIT_CONFIG_GLOBAL: gitNullDevice(),
   GIT_TERMINAL_PROMPT: "0",
   GIT_ALLOW_PROTOCOL: "file",
 });
@@ -55,7 +56,7 @@ export function git(root: string, tool: string, args: string[]) {
       [
         "-c",
         "core.hooksPath=" +
-          (process.platform === "win32" ? "NUL" : "/dev/null"),
+          gitNullDevice(),
         "-C",
         root,
         ...args,

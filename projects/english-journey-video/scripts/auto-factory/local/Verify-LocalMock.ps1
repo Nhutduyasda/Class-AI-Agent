@@ -26,7 +26,7 @@ try {
  # Build/tests happen with no provider credential present. Install dependencies separately before this script.
  & $node node_modules/typescript/bin/tsc --noEmit
  if ($LASTEXITCODE -ne 0) { throw 'Typecheck failed.' }
- & $node --test scripts/auto-factory/local/local.test.ts scripts/auto-factory/local/boundary.test.ts scripts/auto-factory/local/setup.test.ts
+ & $node --test scripts/auto-factory/local/local.test.ts scripts/auto-factory/local/boundary.test.ts scripts/auto-factory/local/setup.test.ts scripts/auto-factory/local/git-isolation.test.ts
  if ($LASTEXITCODE -ne 0) { throw 'Mock fault tests failed.' }
  & $node scripts/auto-factory/local/setup.ts $project $PrivateMedia $PrivateBackup $CheckpointRoot $MockWork $git $ffmpeg
  if ($LASTEXITCODE -ne 0) { throw 'Fake-only setup blocked.' }

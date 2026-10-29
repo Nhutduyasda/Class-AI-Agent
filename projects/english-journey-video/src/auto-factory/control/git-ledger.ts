@@ -2,9 +2,12 @@ import { execFileSync } from "node:child_process";
 import { mkdir, readFile, writeFile, rename, unlink, realpath, open } from "node:fs/promises";
 import { resolve, dirname, isAbsolute } from "node:path";
 import { randomUUID } from "node:crypto";
-import { devNull } from "node:os";
 import { z } from "zod";
 import { Journal, Policy, project, digest, appendEvent, must, type JournalType, type PayloadType } from "./model.ts";
+
+// Git for Windows accepts NUL, but rejects Node's Win32 device namespace path.
+export const gitNullDevice = (platform: NodeJS.Platform = process.platform) =>
+  platform === "win32" ? "NUL" : "/dev/null";
 
 const Anchor = z.strictObject({
   schemaVersion: z.literal(1),
@@ -57,7 +60,8 @@ export class GitLedger {
 
   private git(args: string[], input?: string) {
     try {
-      return execFileSync(this.gitExecutable, args, {
+      const nullDevice = gitNullDevice();
+      return execFileSync(this.gitExecutable, ["-c", `core.hooksPath=${nullDevice}`, ...args], {
         cwd: this.work,
         input,
         encoding: "utf8",
@@ -73,7 +77,7 @@ export class GitLedger {
 
           GIT_TERMINAL_PROMPT: "0",
           GIT_CONFIG_NOSYSTEM: "1",
-          GIT_CONFIG_GLOBAL: devNull,
+          GIT_CONFIG_GLOBAL: nullDevice,
           GIT_ALLOW_PROTOCOL: "file",
           GIT_AUTHOR_NAME: "Offline Ledger",
           GIT_AUTHOR_EMAIL: "offline-ledger@example.invalid",
